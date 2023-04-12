@@ -10,8 +10,9 @@ namespace univer_management.Domain.Entities
     public class Oquv_Reja_Mashgulot:BaseEntity
     {
         public long OquvRejaId { get; set; }
-        public virtual Oquv_Reja Oquv_Reja { get; set; } = default!;
+        public virtual Oquv_Reja OquvReja { get; set; } = default!;
         public long MashgulotId { get; set; }
         public virtual Mashgulot Mashgulot { get; set; } = default!;
+        public double MashgulotLength { get; set;}
     }
 }

@@ -17,5 +17,7 @@ namespace univer_management.Domain.Entities
         public virtual Auditoriya Auditoriya { get; set; } = default!;
         public long MutaxasislikId { get; set; }
         public virtual Mutaxasislik Mutaxasislik { get; set; } = default!;
+        public int Semestr { get; set; }
+
     }
 }

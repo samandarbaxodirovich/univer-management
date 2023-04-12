@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230412201642_EntitiesUpdate")]
+    partial class EntitiesUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -329,8 +331,20 @@ namespace univer_management.DataAccess.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<double>("DifZachot")
+                        .HasColumnType("double precision");
+
                     b.Property<long>("FanId")
                         .HasColumnType("bigint");
+
+                    b.Property<double>("Imtihon")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("Labaratoriya")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("Leksiya")
+                        .HasColumnType("double precision");
 
                     b.Property<long>("MutaxasislikId")
                         .HasColumnType("bigint");
@@ -338,12 +352,18 @@ namespace univer_management.DataAccess.Migrations
                     b.Property<int>("Semestr")
                         .HasColumnType("integer");
 
+                    b.Property<double>("Seminar")
+                        .HasColumnType("double precision");
+
                     b.Property<string>("TextUquvReja")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("Zachot")
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 
@@ -371,11 +391,14 @@ namespace univer_management.DataAccess.Migrations
                     b.Property<long>("OquvRejaId")
                         .HasColumnType("bigint");
 
+                    b.Property<long>("Oquv_RejaId")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MashgulotId");
 
-                    b.HasIndex("OquvRejaId");
+                    b.HasIndex("Oquv_RejaId");
 
                     b.ToTable("Oquv_Reja_Mashgulot");
                 });
@@ -582,15 +605,15 @@ namespace univer_management.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("univer_management.Domain.Entities.Oquv_Reja", "OquvReja")
+                    b.HasOne("univer_management.Domain.Entities.Oquv_Reja", "Oquv_Reja")
                         .WithMany()
-                        .HasForeignKey("OquvRejaId")
+                        .HasForeignKey("Oquv_RejaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Mashgulot");
 
-                    b.Navigation("OquvReja");
+                    b.Navigation("Oquv_Reja");
                 });
 
             modelBuilder.Entity("univer_management.Domain.Entities.Yuklama", b =>
