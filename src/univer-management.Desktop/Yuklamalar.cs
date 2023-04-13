@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop.UserControls2;
 
 namespace FinalProject.Forms
 {
@@ -38,6 +39,22 @@ namespace FinalProject.Forms
         {
             UC_Yuklama uC_Yuklama = new UC_Yuklama();
             addUserControl(uC_Yuklama);
+        }
+
+        private void Yuklamalar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContainer2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            UC_Oqituvchi_dars_reja uC_Oqituvchi_Dars_Reja = new UC_Oqituvchi_dars_reja();
+            addUserControl(uC_Oqituvchi_Dars_Reja);
         }
     }
 }
