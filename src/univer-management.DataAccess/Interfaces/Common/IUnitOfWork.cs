@@ -16,7 +16,13 @@ namespace univer_management.DataAccess.Interfaces.Common
         public IKafedraRepository Kafedralar { get; }
         public IMashgulotRepository Mashgulotlar { get; }
         public IMutaxasislikRepository Mutaxasisliklar { get; }
+        public IOqituvchiRepository Oqituvchilar { get; }
         public IOqituvchiFanRepository OqituvchiFanlari { get; }
+        public IOqituvchiMutaxasislikRepository OqituvchiMutaxasisliklar { get; }
+        public IOqituvchiRejasiRepository OqituvchiRejalar { get; } 
+        public IOquvRejaRepository Oquvrejalar { get; }
+        public IOquvRejaMashgulotRepository OquvRejaMashgulotlar { get; }
+        public IYuklamaRepository Yuklamalar { get; }
 
         public Task<int> SaveChangesAsync();
     }
