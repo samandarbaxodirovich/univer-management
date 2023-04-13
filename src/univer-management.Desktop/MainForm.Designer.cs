@@ -137,7 +137,7 @@
             btnRoyxat.TextAlign = ContentAlignment.MiddleLeft;
             btnRoyxat.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnRoyxat.UseVisualStyleBackColor = true;
-            //btnRoyxat.Click += btnRoyxat_Click;
+            btnRoyxat.Click += btnRoyxat_Click_1;
             // 
             // panelLogo
             // 
@@ -168,7 +168,7 @@
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(263, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(762, 80);
+            panelTitleBar.Size = new Size(769, 80);
             panelTitleBar.TabIndex = 1;
             // 
             // btnCloseChildForm
@@ -190,7 +190,7 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(348, 29);
+            lblTitle.Location = new Point(351, 29);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(98, 34);
             lblTitle.TabIndex = 0;
@@ -201,7 +201,7 @@
             panelDesktopPanel.Dock = DockStyle.Fill;
             panelDesktopPanel.Location = new Point(263, 80);
             panelDesktopPanel.Name = "panelDesktopPanel";
-            panelDesktopPanel.Size = new Size(762, 873);
+            panelDesktopPanel.Size = new Size(769, 873);
             panelDesktopPanel.TabIndex = 2;
             panelDesktopPanel.Paint += panelDesktopPanel_Paint;
             // 

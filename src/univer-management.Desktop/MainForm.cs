@@ -16,10 +16,8 @@ namespace FinalProject
 {
     public partial class MainForm : Form
     {
-        
+
         private Form activeForm;
-        private object random;
-        private object ThemeColor;
         private Button currentButton;
 
         public MainForm()
@@ -28,14 +26,14 @@ namespace FinalProject
             btnCloseChildForm.Visible = false;
         }
 
-       
+
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
             {
                 if (currentButton != (Button)btnSender)
                 {
-                    Color color= Color.Black;
+                    Color color = Color.Black;
                     btnCloseChildForm.Visible = true;
                 }
             }
@@ -60,13 +58,9 @@ namespace FinalProject
         }
 
 
-        private void btnRoyxat_Click(object sender, EventArgs e)
-        {
-             OpenChildForm(new Yuklamalar(), sender);
-        }
-
         private void btnYuklamalar_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Yuklamalar(), sender);
         }
 
         private void btnDarsJadvali_Click(object sender, EventArgs e)
@@ -83,6 +77,11 @@ namespace FinalProject
 
         private void panelDesktopPanel_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void btnRoyxat_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Royxatlar(), sender);
         }
     }
 }

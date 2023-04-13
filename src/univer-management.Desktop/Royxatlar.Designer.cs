@@ -1,6 +1,6 @@
 ﻿namespace univer_management.Desktop
 {
-    partial class Accounts
+    partial class Royxatlar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(407, 184);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            label1.Click += label1_Click;
-            // 
-            // Accounts
+            // Royxatlar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Accounts";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Accounts";
+            Name = "Royxatlar";
+            Text = "Royxatlar";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
     }
 }

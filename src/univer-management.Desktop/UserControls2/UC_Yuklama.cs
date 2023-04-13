@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace univer_management.Desktop
+namespace FinalProject.UserControls2
 {
-    public partial class Accounts : Form
+    public partial class UC_Yuklama : UserControl
     {
-        public Accounts()
+        public UC_Yuklama()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
         {
 
         }
