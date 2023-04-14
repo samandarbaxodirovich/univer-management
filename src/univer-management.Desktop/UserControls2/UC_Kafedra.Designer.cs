@@ -46,11 +46,6 @@
             panel1 = new Panel();
             lblTitle = new Label();
             datagridView_kafedra = new Guna.UI2.WinForms.Guna2DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            kafedra = new DataGridViewTextBoxColumn();
-            muttaxasislik = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -59,6 +54,11 @@
             kafedratxt_box = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
             mutaxasislik_Id = new Guna.UI2.WinForms.Guna2ComboBox();
+            Id = new DataGridViewTextBoxColumn();
+            kafedra = new DataGridViewTextBoxColumn();
+            muttaxasislik = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagridView_kafedra).BeginInit();
             SuspendLayout();
@@ -139,54 +139,6 @@
             datagridView_kafedra.ThemeStyle.RowsStyle.Height = 29;
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // kafedra
-            // 
-            kafedra.DividerWidth = 1;
-            kafedra.FillWeight = 20F;
-            kafedra.HeaderText = "Kafedra nomi";
-            kafedra.MinimumWidth = 6;
-            kafedra.Name = "kafedra";
-            kafedra.ReadOnly = true;
-            // 
-            // muttaxasislik
-            // 
-            muttaxasislik.DividerWidth = 1;
-            muttaxasislik.FillWeight = 15F;
-            muttaxasislik.HeaderText = "Muttaxasislik nomi";
-            muttaxasislik.MinimumWidth = 6;
-            muttaxasislik.Name = "muttaxasislik";
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
             // 
             // guna2TextBox1
             // 
@@ -346,6 +298,53 @@
             mutaxasislik_Id.Size = new Size(322, 36);
             mutaxasislik_Id.TabIndex = 17;
             mutaxasislik_Id.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // kafedra
+            // 
+            kafedra.DividerWidth = 1;
+            kafedra.FillWeight = 20F;
+            kafedra.HeaderText = "Kafedra nomi";
+            kafedra.MinimumWidth = 6;
+            kafedra.Name = "kafedra";
+            // 
+            // muttaxasislik
+            // 
+            muttaxasislik.DividerWidth = 1;
+            muttaxasislik.FillWeight = 15F;
+            muttaxasislik.HeaderText = "Muttaxasislik nomi";
+            muttaxasislik.MinimumWidth = 6;
+            muttaxasislik.Name = "muttaxasislik";
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
             // 
             // UC_Kafedra
             // 
