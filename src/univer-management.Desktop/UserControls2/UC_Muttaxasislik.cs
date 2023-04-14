@@ -46,16 +46,26 @@ namespace univer_management.Desktop.UserControls2
         {
 
         }
-        private void guna2DataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        private async void guna2DataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
             if (guna2DataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = guna2DataGridView1.SelectedRows[0];
                 var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
-                int actionId;
+                byte actionId = 10;
                 if (guna2DataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
-                    actionId = int.Parse(e.ColumnIndex.ToString());
+                    actionId = byte.Parse(e.ColumnIndex.ToString());
+                if (actionId == 3)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                }
+                await ActionControl(actionId, clientId);
+                SetValues();
             }
         }
         private void SetValues()
@@ -97,6 +107,21 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox3.Text = string.Empty;
             guna2TextBox2.Text = string.Empty;
             guna2CheckBox1.Checked = false;
+        }
+        private async Task ActionControl(byte action,long id)
+        {
+            if(action == 3) 
+            {
+                await Task.Run(async () =>
+                {
+                    {
+                        var result = await service.DeleteAsync(id);
+                        if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                });
+            };
+            
         }
     }
 }

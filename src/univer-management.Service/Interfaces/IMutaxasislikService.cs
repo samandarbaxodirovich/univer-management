@@ -9,8 +9,10 @@ namespace univer_management.Service.Interfaces
 {
     public interface IMutaxasislikService
     {
+        public Task<Mutaxasislik> GetById(long id);
         public IEnumerable<Mutaxasislik> GetAll();
         public IEnumerable<Mutaxasislik> GetByKeyword(string keyword);
         public Task<(bool,string)> CreateAsync(Mutaxasislik entity);
+        public Task<(bool, string)> DeleteAsync(long id);
     }
 }
