@@ -63,7 +63,7 @@ namespace univer_management.Desktop.UserControls2
             guna2DataGridView1.Rows.Clear();
             var targets = service.GetAll();
             foreach (var item in targets)
-                guna2DataGridView1.Rows.Add(item.Id,item.Name);
+                guna2DataGridView1.Rows.Add(item.Id, item.Name);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace univer_management.Desktop.UserControls2
 
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(guna2CheckBox1.Checked)
+            if (guna2CheckBox1.Checked)
             {
                 Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = guna2TextBox2.Text };
                 var result = await service.CreateAsync(mutaxasislik);
@@ -97,6 +97,11 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox3.Text = string.Empty;
             guna2TextBox2.Text = string.Empty;
             guna2CheckBox1.Checked = false;
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
