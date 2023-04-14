@@ -43,13 +43,12 @@ namespace FinalProject.Forms
 
         private void Yuklamalar_Load(object sender, EventArgs e)
         {
-
         }
 
         private void panelContainer2_Paint(object sender, PaintEventArgs e)
         {
-
         }
+
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {

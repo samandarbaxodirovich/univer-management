@@ -257,7 +257,7 @@
             // 
             // panelContainer3
             // 
-            panelContainer3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panelContainer3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelContainer3.Location = new Point(-2, 44);
             panelContainer3.Name = "panelContainer3";
             panelContainer3.Size = new Size(1282, 500);
