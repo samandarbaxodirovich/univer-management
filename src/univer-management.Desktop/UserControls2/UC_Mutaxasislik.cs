@@ -77,10 +77,10 @@ namespace univer_management.Desktop.UserControls2
                     }
                     else
                     {
-						await ActionControl(actionId, clientId);
-						SetValues();
-					}
-				}
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
+                }
             }
         }
         public void SetValues()
