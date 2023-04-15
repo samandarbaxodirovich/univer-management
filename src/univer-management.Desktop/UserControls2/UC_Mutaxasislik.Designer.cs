@@ -375,6 +375,7 @@
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Mutaxasislik";
 			this.Size = new System.Drawing.Size(1040, 481);
+			this.Tag = "Mutahasislik";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
