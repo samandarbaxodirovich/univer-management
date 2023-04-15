@@ -83,10 +83,5 @@ namespace FinalProject
         {
             OpenChildForm(new Royxatlar(), sender);
         }
-
-		private void MainForm_Load(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }

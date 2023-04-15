@@ -11,8 +11,8 @@ namespace univer_management.Domain.Entities
     {
         public string NumberOfOrder { get; set; } = string.Empty;
         public int Capacity { get; set; }
-        public string AuditoriyaTipi { get; set; } = string.Empty;
-        public virtual Auditoriya_Tipi Auditoriya_Tipi { get; set; } = default!;
+        public long AuditoriyaTipiId { get; set; }
+        public virtual Auditoriya_Tipi AuditoriyaTipi { get; set; } = default!;
         public string Korpus = string.Empty;
     }
 }

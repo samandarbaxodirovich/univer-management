@@ -15,5 +15,7 @@ namespace univer_management.Domain.Entities
         public long MutaxasislikId { get; set; }
         public virtual Mutaxasislik Mutaxasislik { get; set; } = default!;
         public int Semestr { get; set; }
+        public double Soat { get; set; }
+        public int Hafta { get; set; }
     }
 }

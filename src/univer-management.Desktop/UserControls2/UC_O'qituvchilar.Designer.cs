@@ -350,7 +350,6 @@
             // 
             // guna2TextBox1
             // 
-            guna2TextBox1.Anchor = AnchorStyles.Top;
             guna2TextBox1.BackColor = Color.White;
             guna2TextBox1.BorderColor = Color.White;
             guna2TextBox1.BorderRadius = 20;
@@ -373,12 +372,11 @@
             guna2TextBox1.PlaceholderText = "Enter keyword";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2TextBox1.Size = new Size(305, 41);
+            guna2TextBox1.Size = new Size(305, 39);
             guna2TextBox1.TabIndex = 26;
             // 
             // guna2Button1
             // 
-            guna2Button1.Anchor = AnchorStyles.Top;
             guna2Button1.BorderRadius = 20;
             guna2Button1.CustomizableEdges = customizableEdges13;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
@@ -390,7 +388,7 @@
             guna2Button1.Location = new Point(623, 112);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button1.Size = new Size(74, 40);
+            guna2Button1.Size = new Size(74, 38);
             guna2Button1.TabIndex = 27;
             guna2Button1.Text = "search";
             // 
