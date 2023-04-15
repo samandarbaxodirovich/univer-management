@@ -17,7 +17,7 @@ namespace univer_management.Desktop
         public Royxatlar()
         {
             InitializeComponent();
-            UC_Muttaxasislik uC_Muttaxasislik = new UC_Muttaxasislik();
+            UC_Mutaxasislik uC_Muttaxasislik = new UC_Mutaxasislik();
             addUserControl(uC_Muttaxasislik);
         }
 
@@ -31,7 +31,7 @@ namespace univer_management.Desktop
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UC_Muttaxasislik uC_Muttaxasislik = new UC_Muttaxasislik();
+            UC_Mutaxasislik uC_Muttaxasislik = new UC_Mutaxasislik();
             addUserControl(uC_Muttaxasislik);
         }
 
