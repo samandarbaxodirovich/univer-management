@@ -12,10 +12,10 @@ using univer_management.Service.Services;
 
 namespace univer_management.Desktop.UserControls2
 {
-    public partial class UC_Muttaxasislik : UserControl
+    public partial class UC_Mutaxasislik : UserControl
     {
         private readonly MutaxasislikService service;
-        public UC_Muttaxasislik()
+        public UC_Mutaxasislik()
         {
             InitializeComponent();
             service = new MutaxasislikService();

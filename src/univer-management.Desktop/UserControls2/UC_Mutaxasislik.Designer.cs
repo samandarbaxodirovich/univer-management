@@ -1,6 +1,6 @@
 ﻿namespace univer_management.Desktop.UserControls2
 {
-    partial class UC_Muttaxasislik
+    partial class UC_Mutaxasislik
     {
         /// <summary> 
         /// Required designer variable.
@@ -366,7 +366,6 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "UC_Muttaxasislik";
             this.Size = new System.Drawing.Size(1040, 481);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

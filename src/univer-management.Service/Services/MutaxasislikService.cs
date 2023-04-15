@@ -36,7 +36,7 @@ namespace univer_management.Service.Services
         {
             var targets = _work.Mutaxasisliklar.GetAll().ToList();
             return targets;
-        }
+        }   
 
         public async Task<Mutaxasislik> GetById(long id)
         {
