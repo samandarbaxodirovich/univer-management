@@ -12,10 +12,10 @@ using univer_management.Service.Services;
 
 namespace univer_management.Desktop.UserControls2
 {
-    public partial class UC_Mutaxasislik : UserControl
+    public partial class UC_Mutahasislik : UserControl
     {
         private readonly MutaxasislikService service;
-        public UC_Mutaxasislik()
+        public UC_Mutahasislik()
         {
             InitializeComponent();
             service = new MutaxasislikService();
@@ -102,7 +102,12 @@ namespace univer_management.Desktop.UserControls2
             {
                 Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = guna2TextBox2.Text };
                 var result = await service.CreateAsync(mutaxasislik);
-                if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (result.Item1)
+                {
+                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    guna2TextBox2.Text = "";
+                    guna2TextBox3.Text = "";
+                }
                 else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 SetValues();
             }

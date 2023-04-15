@@ -1,6 +1,6 @@
 ﻿namespace univer_management.Desktop.UserControls2
 {
-    partial class UC_Mutaxasislik
+    partial class UC_Mutahasislik
     {
         /// <summary> 
         /// Required designer variable.
