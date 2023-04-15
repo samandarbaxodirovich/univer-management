@@ -333,7 +333,6 @@ namespace univer_management.Desktop.UserControls2
             // 
             // label1
             // 
-<<<<<<< HEAD
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
@@ -344,18 +343,6 @@ namespace univer_management.Desktop.UserControls2
             label1.Size = new Size(221, 32);
             label1.TabIndex = 11;
             label1.Text = "Kafedra yaratish";
-=======
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(732, 199);
-            this.label1.Margin = new System.Windows.Forms.Padding(3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 32);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Kafedra yaratish";
->>>>>>> 84ad2e4 (AUditoriya page some cases built)
             // 
             // mutaxasislikCmb
             // 
