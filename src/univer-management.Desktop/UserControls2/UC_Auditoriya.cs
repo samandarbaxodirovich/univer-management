@@ -16,5 +16,9 @@ namespace univer_management.Desktop.UserControls2
         {
             InitializeComponent();
         }
+        private void DataGrid_Auditoriya(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
