@@ -61,7 +61,9 @@ namespace univer_management.Desktop.UserControls2
                 if (actionId == 2)
                 {
                     UpdateForm update = new UpdateForm();
-                    update.name = selectedRow.Cells[1].Value.ToString();
+                    update.Name = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Tag = this.Tag.ToString();
                     update.ShowDialog();
                 }
 
@@ -72,9 +74,12 @@ namespace univer_management.Desktop.UserControls2
                     {
                         return;
                     }
-                }
-                await ActionControl(actionId, clientId);
-                SetValues();
+                    else
+                    {
+						await ActionControl(actionId, clientId);
+						SetValues();
+					}
+				}
             }
         }
         private void SetValues()

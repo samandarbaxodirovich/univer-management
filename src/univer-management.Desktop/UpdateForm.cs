@@ -7,26 +7,60 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop.Components;
+using univer_management.Service.Services;
 
 namespace univer_management.Desktop
 {
     public partial class UpdateForm : Form
     {
+        MutaxasislikService _serviceMut;
         public UpdateForm()
         {
+            _serviceMut= new MutaxasislikService();
             InitializeComponent();
         }
 
-        public string name { get; set; }
+        public string Name { get; set; }
+        public long Id { get; set; }
+        public string Tag { get; set; }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+		private void UpdateForm_Load_1(object sender, EventArgs e)
+		{
+			guna2TextBox2.Text = Name;
+		}
+	
+		private void guna2Button2_Click(object sender, EventArgs e)
+		{
+            if (Tag == "Mutahasislik" && !string.IsNullOrEmpty(guna2TextBox2.Text))
+            {
+				Mutahasislik();
+			}
+		}
+
+
+        private void Mutahasislik()
         {
+			DialogResult dlg = MessageBox.Show("Mutahasislik nomini o'zgartirishni xoxlaysizmi??", "редактировать", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+			if (dlg == DialogResult.OK)
+			{
+				var result = _serviceMut.UpdateAsync(guna2TextBox2.Text, Id);
+				if (result != null)
+				{
+					AutoClosingMessageBox.Show("Muvaffaqiyatli yangilandi", "O'zgartirish", 500);
+				}
+				else
+				{
+					MessageBox.Show("Iltimos maydonni toldiring");
+				}
+			}
+			if (dlg == DialogResult.Cancel)
+			{
+				this.Close();
+			}
+			
+		}
 
-        }
 
-        private void UpdateForm_Load(object sender, EventArgs e)
-        {
-            guna2TextBox2.Text = name;
-        }
-    }
+	}
 }
