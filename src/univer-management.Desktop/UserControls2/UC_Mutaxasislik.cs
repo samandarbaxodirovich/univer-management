@@ -72,9 +72,12 @@ namespace univer_management.Desktop.UserControls2
                     {
                         return;
                     }
-                }
-                await ActionControl(actionId, clientId);
-                SetValues();
+                    else
+                    {
+						await ActionControl(actionId, clientId);
+						SetValues();
+					}
+				}
             }
         }
         private void SetValues()

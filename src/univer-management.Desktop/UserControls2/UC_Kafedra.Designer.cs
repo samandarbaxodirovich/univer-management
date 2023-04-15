@@ -150,6 +150,7 @@
 			this.datagridView_kafedra.ThemeStyle.RowsStyle.Height = 29;
 			this.datagridView_kafedra.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.datagridView_kafedra.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.datagridView_kafedra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridView_kafedra_CellContentClick);
 			// 
 			// Id
 			// 
@@ -286,6 +287,8 @@
 			this.guna2Button2.Size = new System.Drawing.Size(124, 39);
 			this.guna2Button2.TabIndex = 15;
 			this.guna2Button2.Text = "Create";
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+			this.guna2Button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2Button2_KeyDown);
 			// 
 			// guna2CheckBox1
 			// 
@@ -380,6 +383,7 @@
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Kafedra";
 			this.Size = new System.Drawing.Size(1040, 481);
+			this.Tag = "kafedra";
 			this.Load += new System.EventHandler(this.UC_Kafedra_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
