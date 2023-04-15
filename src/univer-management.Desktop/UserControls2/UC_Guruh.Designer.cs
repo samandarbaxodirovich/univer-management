@@ -290,6 +290,7 @@
             guna2Button2.Size = new Size(139, 50);
             guna2Button2.TabIndex = 10;
             guna2Button2.Text = "Guruh qo'shish";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // UC_Guruh
             // 
