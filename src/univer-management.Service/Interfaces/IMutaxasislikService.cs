@@ -14,7 +14,7 @@ namespace univer_management.Service.Interfaces
         public IEnumerable<Mutaxasislik> GetByKeyword(string keyword);
         public Task<(bool,string)> CreateAsync(Mutaxasislik entity);
         public Task<(bool, string)> DeleteAsync(long id);
-        public Task<Mutaxasislik> UpdateAsync(Mutaxasislik mutahassis, long id);
+        public Task<Mutaxasislik> UpdateAsync(string name, long id);
 
 	}
 }

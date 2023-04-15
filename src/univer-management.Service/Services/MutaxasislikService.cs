@@ -50,13 +50,13 @@ namespace univer_management.Service.Services
             return _work.Mutaxasisliklar.Where(x => x.Name.ToLower().Contains(keyword.ToLower())).ToList();
         }
 
-		public async Task<Mutaxasislik> UpdateAsync(Mutaxasislik mutahassis, long id)
+		public async Task<Mutaxasislik> UpdateAsync(string name, long id)
 		{
 			var mutahasislik = await _work.Mutaxasisliklar.FindByIdAsync(id);
 
 			if (mutahasislik != null)
 			{
-				mutahasislik.Name = mutahassis.Name;
+                mutahasislik.Name = name;
 				await _work.SaveChangesAsync(); 
 				return mutahasislik;
 			}
