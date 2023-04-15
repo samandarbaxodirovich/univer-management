@@ -65,8 +65,53 @@ namespace univer_management.Desktop.UserControls2
             SetValues();
         }
 
-        private void DataGridVIew_Auditor_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private async void DataGridVIew_Auditor_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            if (DataGridVIew_Auditor.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DataGridVIew_Auditor.SelectedRows[0];
+                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+                byte actionId = 10;
+                if (DataGridVIew_Auditor.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+                    actionId = byte.Parse(e.ColumnIndex.ToString());
+                if (actionId == 5)
+                {
+                    UpdateForm update = new UpdateForm();
+                    update.Name = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Tag = this.Tag.ToString();
+                    update.ShowDialog();
+                }
+
+                if (actionId == 6)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
+                }
+            }
+        }
+        private async Task ActionControl(byte action, long id)
+        {
+            if (action == 6)
+            {
+                await Task.Run(async () =>
+                {
+                    {
+                        var result = await service.DeleteAsync(id);
+                        if (result) MessageBox.Show($"Auditoriya muvaffaqiyatli o'chirildi", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else MessageBox.Show($"Nimadir xato ketdi,internet aloqasini tekshiring", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                });
+            };
 
         }
     }

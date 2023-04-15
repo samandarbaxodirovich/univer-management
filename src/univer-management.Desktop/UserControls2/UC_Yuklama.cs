@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop;
 
 namespace FinalProject.UserControls2
 {
@@ -25,6 +26,12 @@ namespace FinalProject.UserControls2
         private void lblTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            YuklamaForm yuklamaForm = new YuklamaForm();
+            yuklamaForm.ShowDialog();
         }
     }
 }
