@@ -46,6 +46,11 @@
             panel1 = new Panel();
             lblTitle = new Label();
             datagridView_kafedra = new Guna.UI2.WinForms.Guna2DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            kafedra = new DataGridViewTextBoxColumn();
+            muttaxasislik = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -54,11 +59,6 @@
             kafedratxt_box = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
             mutaxasislik_Id = new Guna.UI2.WinForms.Guna2ComboBox();
-            Id = new DataGridViewTextBoxColumn();
-            kafedra = new DataGridViewTextBoxColumn();
-            muttaxasislik = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagridView_kafedra).BeginInit();
             SuspendLayout();
@@ -87,10 +87,12 @@
             // 
             // datagridView_kafedra
             // 
-            datagridView_kafedra.AllowUserToOrderColumns = true;
+            datagridView_kafedra.AllowUserToAddRows = false;
+            datagridView_kafedra.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             datagridView_kafedra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             datagridView_kafedra.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            datagridView_kafedra.BackgroundColor = Color.WhiteSmoke;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -110,9 +112,10 @@
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             datagridView_kafedra.DefaultCellStyle = dataGridViewCellStyle3;
-            datagridView_kafedra.GridColor = Color.FromArgb(231, 229, 255);
+            datagridView_kafedra.GridColor = Color.LightGray;
             datagridView_kafedra.Location = new Point(31, 204);
             datagridView_kafedra.Name = "datagridView_kafedra";
+            datagridView_kafedra.ReadOnly = true;
             datagridView_kafedra.RowHeadersVisible = false;
             datagridView_kafedra.RowHeadersWidth = 51;
             datagridView_kafedra.RowTemplate.Height = 29;
@@ -123,15 +126,15 @@
             datagridView_kafedra.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             datagridView_kafedra.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             datagridView_kafedra.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            datagridView_kafedra.ThemeStyle.BackColor = Color.White;
-            datagridView_kafedra.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            datagridView_kafedra.ThemeStyle.BackColor = Color.WhiteSmoke;
+            datagridView_kafedra.ThemeStyle.GridColor = Color.LightGray;
             datagridView_kafedra.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
             datagridView_kafedra.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
             datagridView_kafedra.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             datagridView_kafedra.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             datagridView_kafedra.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             datagridView_kafedra.ThemeStyle.HeaderStyle.Height = 22;
-            datagridView_kafedra.ThemeStyle.ReadOnly = false;
+            datagridView_kafedra.ThemeStyle.ReadOnly = true;
             datagridView_kafedra.ThemeStyle.RowsStyle.BackColor = Color.White;
             datagridView_kafedra.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             datagridView_kafedra.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -139,6 +142,59 @@
             datagridView_kafedra.ThemeStyle.RowsStyle.Height = 29;
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // kafedra
+            // 
+            kafedra.DividerWidth = 1;
+            kafedra.FillWeight = 20F;
+            kafedra.HeaderText = "Kafedra nomi";
+            kafedra.MinimumWidth = 6;
+            kafedra.Name = "kafedra";
+            kafedra.ReadOnly = true;
+            // 
+            // muttaxasislik
+            // 
+            muttaxasislik.DividerWidth = 1;
+            muttaxasislik.FillWeight = 15F;
+            muttaxasislik.HeaderText = "Muttaxasislik nomi";
+            muttaxasislik.MinimumWidth = 6;
+            muttaxasislik.Name = "muttaxasislik";
+            muttaxasislik.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
             // 
             // guna2TextBox1
             // 
@@ -171,6 +227,7 @@
             // guna2Button1
             // 
             guna2Button1.Anchor = AnchorStyles.Top;
+            guna2Button1.BorderRadius = 20;
             guna2Button1.CustomizableEdges = customizableEdges3;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -178,7 +235,7 @@
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(681, 115);
+            guna2Button1.Location = new Point(706, 115);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.Size = new Size(74, 39);
@@ -232,11 +289,11 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(763, 347);
+            guna2CheckBox1.Location = new Point(684, 347);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(243, 24);
+            guna2CheckBox1.Size = new Size(215, 24);
             guna2CheckBox1.TabIndex = 14;
-            guna2CheckBox1.Text = "Mutaxasislik qo'shishga roziman";
+            guna2CheckBox1.Text = "Kafedra qo'shishga roziman";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.UncheckedState.BorderRadius = 0;
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
@@ -298,53 +355,6 @@
             mutaxasislik_Id.Size = new Size(322, 36);
             mutaxasislik_Id.TabIndex = 17;
             mutaxasislik_Id.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // kafedra
-            // 
-            kafedra.DividerWidth = 1;
-            kafedra.FillWeight = 20F;
-            kafedra.HeaderText = "Kafedra nomi";
-            kafedra.MinimumWidth = 6;
-            kafedra.Name = "kafedra";
-            // 
-            // muttaxasislik
-            // 
-            muttaxasislik.DividerWidth = 1;
-            muttaxasislik.FillWeight = 15F;
-            muttaxasislik.HeaderText = "Muttaxasislik nomi";
-            muttaxasislik.MinimumWidth = 6;
-            muttaxasislik.Name = "muttaxasislik";
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
             // 
             // UC_Kafedra
             // 
