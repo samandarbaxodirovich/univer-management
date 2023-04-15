@@ -15,11 +15,13 @@ namespace univer_management.Desktop.UserControls2
     public partial class UC_Mutaxasislik : UserControl
     {
         private readonly MutaxasislikService service;
+       
         public UC_Mutaxasislik()
         {
             InitializeComponent();
             service = new MutaxasislikService();
             SetValues();
+            guna2Button1.KeyDown += guna2Button1_KeyDown;
         }
 
         private void UC_Muttaxasislik_Load(object sender, EventArgs e)
@@ -134,6 +136,19 @@ namespace univer_management.Desktop.UserControls2
                 });
             };
 
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                guna2Button1.PerformClick();
+            }
         }
     }
 }
