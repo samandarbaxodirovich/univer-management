@@ -15,7 +15,7 @@ namespace univer_management.Desktop.UserControls2
     public partial class UC_Mutaxasislik : UserControl
     {
         private readonly MutaxasislikService service;
-       
+
         public UC_Mutaxasislik()
         {
             InitializeComponent();

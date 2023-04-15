@@ -198,7 +198,6 @@
             // 
             // guna2TextBox1
             // 
-            guna2TextBox1.Anchor = AnchorStyles.Top;
             guna2TextBox1.BackColor = Color.White;
             guna2TextBox1.BorderColor = Color.White;
             guna2TextBox1.BorderRadius = 20;
@@ -226,7 +225,6 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.Anchor = AnchorStyles.Top;
             guna2Button1.BorderRadius = 20;
             guna2Button1.CustomizableEdges = customizableEdges3;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;

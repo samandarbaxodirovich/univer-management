@@ -101,14 +101,14 @@
             guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox1.ForeColor = Color.Black;
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(320, 118);
+            guna2TextBox1.Location = new Point(353, 118);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
             guna2TextBox1.PlaceholderText = "Enter keyword";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox1.Size = new Size(360, 39);
+            guna2TextBox1.Size = new Size(327, 38);
             guna2TextBox1.TabIndex = 2;
             // 
             // guna2Button1
