@@ -10,6 +10,7 @@ using univer_management.DataAccess.DbContexts;
 using univer_management.DataAccess.Repositories.Common;
 using univer_management.DataAccess.Repositories.Main;
 using univer_management.Domain.Entities;
+using univer_management.Service.Dtos.CreateDtos;
 using univer_management.Service.Interfaces;
 using univer_management.Service.ViewModels;
 
@@ -23,6 +24,22 @@ namespace univer_management.Service.Services
         {
             _work = SingeltonUnitOfWork.Instance;
         }
+
+        public async Task<(string, bool)> CreateAsync(AuditoriyaCreateDto dto)
+        {
+            if (await _work.Auditoriyalar.FirstOrDefaultAsync(x => x.NumberOfOrder == dto.NumberOfOrder) != null)
+                return ("Bu tartib sonli auditoriya allaqachon mavjud", false);
+            _work.Auditoriyalar.Add(new Auditoriya() 
+            {
+                Auditoriya_TipiId = (await _work.AuditoriyaTiplari.FirstOrDefaultAsync(x=>x.Type == dto.AuditoriyaTipi))!.Id,
+                Capacity = dto.Capacity,
+                Korpus= dto.Korpus,
+                NumberOfOrder = dto.NumberOfOrder
+            });
+            if (await _work.SaveChangesAsync() != 0) return ("Auditoriya muvaffaqiyatli saqlandi", true);
+            return ("Nimadir xato ketdi,internet aloqasini tekshiring", false);
+        }
+
         public async Task<IEnumerable<AuditoriyaViewModel>> GetAllAsync()
         {
             var result = await _work.Auditoriyalar.GetAll().ToListAsync();
@@ -40,7 +57,7 @@ namespace univer_management.Service.Services
             var result = await _work.Auditoriyalar.FindByIdAsync(id);
             if (result != null)
             {
-                result.AuditoriyaTipiId = entity.AuditoriyaTipiId;
+                result.Auditoriya_TipiId = entity.Auditoriya_TipiId;
                 result.NumberOfOrder = entity.NumberOfOrder;
                 result.Capacity = entity.Capacity;
                 result.Korpus = entity.Korpus;
@@ -57,5 +74,12 @@ namespace univer_management.Service.Services
             if(await _work.SaveChangesAsync() != 0) return true;
             return false;
         }
+        public IEnumerable<string> GetAllTypes()
+        {
+            return _work.AuditoriyaTiplari.GetAll()
+                .Select(x => x.Type).ToList();
+        }
+
+        
     }
 }

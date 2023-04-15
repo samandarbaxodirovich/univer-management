@@ -150,5 +150,10 @@ namespace univer_management.Desktop.UserControls2
                 guna2Button1.PerformClick();
             }
         }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
