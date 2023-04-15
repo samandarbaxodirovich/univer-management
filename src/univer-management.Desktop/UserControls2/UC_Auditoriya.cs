@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Service.Dtos.CreateDtos;
 using univer_management.Service.Services;
 
 namespace univer_management.Desktop.UserControls2
@@ -19,10 +20,7 @@ namespace univer_management.Desktop.UserControls2
         public UC_Auditoriya()
         {
             InitializeComponent();
-            Task.Run(async () =>
-            {
-                await SetValues();
-            });
+            SetValues();
         }
         private void DataGrid_Auditoriya(object sender, DataGridViewCellEventArgs e)
         {
@@ -38,12 +36,38 @@ namespace univer_management.Desktop.UserControls2
         {
 
         }
-        private async Task SetValues()
+        private async void SetValues()
         {
             DataGridVIew_Auditor.Rows.Clear();
             var targets = await service.GetAllAsync();
             foreach (var item in targets)
                 DataGridVIew_Auditor.Rows.Add(item.Id, item.NumberOfOrder,item.AuditoriyaTipi,item.Capacity,item.Korpus);
+            guna2ComboBox1.DataSource = service.GetAllTypes();
+            
+        }
+
+        private async void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if(guna2CheckBox1.Checked)
+            {
+                var tool = new AuditoriyaCreateDto()
+                {
+                    NumberOfOrder = auditoriyaRaqami.Text,
+                    AuditoriyaTipi = guna2ComboBox1.Text,
+                    Capacity = int.Parse(joylarSoni.Text),
+                    Korpus = auditoriyaBino.Text
+                };
+                var result = await service.CreateAsync(tool);
+                if(result.Item2)
+                    MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            SetValues();
+        }
+
+        private void DataGridVIew_Auditor_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

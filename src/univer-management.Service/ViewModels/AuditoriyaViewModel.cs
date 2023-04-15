@@ -27,7 +27,7 @@ namespace univer_management.Service.ViewModels
                 NumberOfOrder = model.NumberOfOrder,
                 Capacity = model.Capacity,
                 Korpus = model.Korpus,
-                AuditoriyaTipi = _work.AuditoriyaTiplari.GetAll().Where(x=>x.Id == model.AuditoriyaTipiId).First().Type
+                AuditoriyaTipi = _work.AuditoriyaTiplari.GetAll().Where(x=>x.Id == model.Auditoriya_TipiId).First().Type
             };
         }
     }

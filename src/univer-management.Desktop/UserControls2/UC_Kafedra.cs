@@ -153,5 +153,10 @@ namespace univer_management.Desktop.UserControls2
 
             }
         }
+
+        private void mutaxasislikCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
