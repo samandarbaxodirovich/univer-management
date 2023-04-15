@@ -15,13 +15,14 @@ namespace univer_management.Desktop.UserControls2
     public partial class UC_Mutaxasislik : UserControl
     {
         private readonly MutaxasislikService service;
-
+        public static UC_Mutaxasislik Instance;
         public UC_Mutaxasislik()
         {
             InitializeComponent();
             service = new MutaxasislikService();
             SetValues();
             guna2Button1.KeyDown += guna2Button1_KeyDown;
+            Instance = this;
         }
 
         private void UC_Muttaxasislik_Load(object sender, EventArgs e)
@@ -82,7 +83,7 @@ namespace univer_management.Desktop.UserControls2
                 }
             }
         }
-        private void SetValues()
+        public void SetValues()
         {
             guna2DataGridView1.Rows.Clear();
             var targets = service.GetAll();

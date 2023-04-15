@@ -1,4 +1,4 @@
-﻿using Guna.UI2.WinForms;
+using Guna.UI2.WinForms;
 using univer_management.DataAccess.DbContexts;
 using univer_management.Domain.Entities;
 using univer_management.Service.Services;
@@ -17,6 +17,20 @@ namespace univer_management.Desktop.UserControls2
             SetValues();
             guna2Button2.KeyDown += guna2Button2_KeyDown;
         }
+
+	public partial class UC_Kafedra : UserControl
+	{
+		KafedraService _service;
+		public static UC_Kafedra Instance;
+
+		public UC_Kafedra()
+		{
+			_service = new KafedraService();
+			InitializeComponent();
+			SetValues();
+			Instance = this;
+			guna2Button2.KeyDown += guna2Button2_KeyDown;
+		}
 
 
 
@@ -47,7 +61,9 @@ namespace univer_management.Desktop.UserControls2
         private async void SetValues()
         {
             datagridView_kafedra.Rows.Clear();
-
+		public async void SetValues()
+		{
+			datagridView_kafedra.Rows.Clear();
             var targets = await _service.GetAll();
 
             foreach (var item in targets)

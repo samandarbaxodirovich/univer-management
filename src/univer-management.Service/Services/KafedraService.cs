@@ -59,9 +59,17 @@ namespace univer_management.Service.Services
 			throw new NotImplementedException();
 		}
 
-		public Task<Kafedra> UpdateAsync(string name, long id)
+		public async Task<Kafedra> UpdateAsync(string name, long id)
 		{
-			throw new NotImplementedException();
+			var kafedra = await _work.Kafedralar.FindByIdAsync(id);
+
+			if (kafedra != null)
+			{
+				kafedra.Name = name;
+				await _work.SaveChangesAsync();
+				return kafedra;
+			}
+			return null;
 		}
 	}
 }
