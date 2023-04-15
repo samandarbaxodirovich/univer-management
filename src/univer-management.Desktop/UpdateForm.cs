@@ -28,6 +28,7 @@ namespace univer_management.Desktop
 		private void UpdateForm_Load_1(object sender, EventArgs e)
 		{
 			guna2TextBox2.Text = Name;
+			label2.Text = Tag.ToString();
 		}
 	
 		private void guna2Button2_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace univer_management.Desktop
 				if (result != null)
 				{
 					AutoClosingMessageBox.Show("Muvaffaqiyatli yangilandi", "O'zgartirish", 500);
+					this.Close();
 				}
 				else
 				{

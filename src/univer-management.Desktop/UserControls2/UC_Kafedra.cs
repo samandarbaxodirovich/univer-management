@@ -43,7 +43,6 @@ namespace univer_management.Desktop.UserControls2
 
 
 
-
 		private async void SetValues()
 		{
 			datagridView_kafedra.Rows.Clear();
@@ -57,6 +56,11 @@ namespace univer_management.Desktop.UserControls2
 
 		}
 
+
+
+
+
+
 		private void guna2Button2_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode == Keys.Enter)
@@ -64,6 +68,10 @@ namespace univer_management.Desktop.UserControls2
 				guna2Button2.PerformClick();
 			}
 		}
+
+
+
+
 
 		private async void guna2Button2_Click(object sender, EventArgs e)
 		{

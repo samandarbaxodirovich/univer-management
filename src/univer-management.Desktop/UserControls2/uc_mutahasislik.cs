@@ -16,7 +16,7 @@ namespace univer_management.Desktop.UserControls2
     {
         private readonly MutaxasislikService service;
        
-        public UC_Mutaxasislik()
+        public UC_Mutahasislik()
         {
             InitializeComponent();
             service = new MutaxasislikService();
