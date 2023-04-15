@@ -48,20 +48,16 @@
 			this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.label1 = new System.Windows.Forms.Label();
 			this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-			this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
 			this.SuspendLayout();
@@ -118,6 +114,7 @@
 			// 
 			// guna2Button1
 			// 
+			this.guna2Button1.BorderRadius = 20;
 			this.guna2Button1.CustomizableEdges = customizableEdges3;
 			this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
 			this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -125,7 +122,7 @@
 			this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
 			this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.guna2Button1.ForeColor = System.Drawing.Color.White;
-			this.guna2Button1.Location = new System.Drawing.Point(657, 118);
+			this.guna2Button1.Location = new System.Drawing.Point(686, 118);
 			this.guna2Button1.Name = "guna2Button1";
 			this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
 			this.guna2Button1.Size = new System.Drawing.Size(74, 38);
@@ -172,7 +169,7 @@
 			this.guna2DataGridView1.RowHeadersVisible = false;
 			this.guna2DataGridView1.RowHeadersWidth = 51;
 			this.guna2DataGridView1.RowTemplate.Height = 29;
-			this.guna2DataGridView1.Size = new System.Drawing.Size(568, 257);
+			this.guna2DataGridView1.Size = new System.Drawing.Size(610, 257);
 			this.guna2DataGridView1.TabIndex = 4;
 			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -197,46 +194,50 @@
 			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick_2);
 			// 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Id.DividerWidth = 1;
-            this.Id.FillWeight = 8F;
-            this.Id.HeaderText = "ID";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 52;
-            // 
-            // Name
-            // 
-            this.Name.DividerWidth = 1;
-            this.Name.FillWeight = 20F;
-            this.Name.HeaderText = "Mutaxasislik nomi";
-            this.Name.MinimumWidth = 6;
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DividerWidth = 1;
-            this.Column3.FillWeight = 6F;
-            this.Column3.HeaderText = "Update";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column4
-            // 
-            this.Column4.DividerWidth = 1;
-            this.Column4.FillWeight = 6F;
-            this.Column4.HeaderText = "Delete";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
+			// Id
+			// 
+			this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.Id.DividerWidth = 1;
+			this.Id.FillWeight = 8F;
+			this.Id.HeaderText = "ID";
+			this.Id.MinimumWidth = 6;
+			this.Id.Name = "Id";
+			this.Id.ReadOnly = true;
+			this.Id.Width = 52;
+			// 
+			// Name
+			// 
+			this.Name.DividerWidth = 1;
+			this.Name.FillWeight = 20F;
+			this.Name.HeaderText = "Mutaxasislik nomi";
+			this.Name.MinimumWidth = 6;
+			this.Name.Name = "Name";
+			this.Name.ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this.Column3.DividerWidth = 1;
+			this.Column3.FillWeight = 6F;
+			this.Column3.HeaderText = "Update";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+			this.Column3.Text = "✏️";
+			this.Column3.UseColumnTextForButtonValue = true;
+			// 
+			// Column4
+			// 
+			this.Column4.DividerWidth = 1;
+			this.Column4.FillWeight = 6F;
+			this.Column4.HeaderText = "Delete";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Text = "X";
+			this.Column4.UseColumnTextForButtonValue = true;
+			// 
 			// label1
 			// 
 			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -307,7 +308,7 @@
 			this.guna2CheckBox1.CheckedState.BorderThickness = 0;
 			this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.guna2CheckBox1.ForeColor = System.Drawing.Color.Red;
-			this.guna2CheckBox1.Location = new System.Drawing.Point(736, 354);
+			this.guna2CheckBox1.Location = new System.Drawing.Point(657, 354);
 			this.guna2CheckBox1.Name = "guna2CheckBox1";
 			this.guna2CheckBox1.Size = new System.Drawing.Size(243, 24);
 			this.guna2CheckBox1.TabIndex = 8;
@@ -357,51 +358,7 @@
 			this.guna2Button3.Text = "Cancel";
 			this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
 			// 
-			// Id
-			// 
-			this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.Id.DividerWidth = 1;
-			this.Id.FillWeight = 8F;
-			this.Id.HeaderText = "ID";
-			this.Id.MinimumWidth = 6;
-			this.Id.Name = "Id";
-			this.Id.ReadOnly = true;
-			this.Id.Width = 52;
-			// 
-			// Name
-			// 
-			this.Name.DividerWidth = 1;
-			this.Name.FillWeight = 20F;
-			this.Name.HeaderText = "Mutaxasislik nomi";
-			this.Name.MinimumWidth = 6;
-			this.Name.Name = "Name";
-			this.Name.ReadOnly = true;
-			// 
-			// Column3
-			// 
-			this.Column3.DividerWidth = 1;
-			this.Column3.FillWeight = 6F;
-			this.Column3.HeaderText = "Update";
-			this.Column3.MinimumWidth = 6;
-			this.Column3.Name = "Column3";
-			this.Column3.ReadOnly = true;
-			this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-			this.Column3.Text = "✏️";
-			this.Column3.UseColumnTextForButtonValue = true;
-			// 
-			// Column4
-			// 
-			this.Column4.DividerWidth = 1;
-			this.Column4.FillWeight = 6F;
-			this.Column4.HeaderText = "Delete";
-			this.Column4.MinimumWidth = 6;
-			this.Column4.Name = "Column4";
-			this.Column4.ReadOnly = true;
-			this.Column4.Text = "X";
-			this.Column4.UseColumnTextForButtonValue = true;
-			// 
-			// UC_Muttaxasislik
+			// UC_Mutaxasislik
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -416,6 +373,7 @@
 			this.Controls.Add(this.guna2Button1);
 			this.Controls.Add(this.guna2TextBox1);
 			this.Controls.Add(this.panel1);
+			this.Name = "UC_Mutaxasislik";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
