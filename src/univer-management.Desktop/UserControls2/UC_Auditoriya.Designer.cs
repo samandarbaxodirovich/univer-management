@@ -56,11 +56,12 @@
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Auditor).BeginInit();
             SuspendLayout();
@@ -265,7 +266,7 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(695, 374);
+            guna2CheckBox1.Location = new Point(702, 374);
             guna2CheckBox1.Name = "guna2CheckBox1";
             guna2CheckBox1.Size = new Size(243, 24);
             guna2CheckBox1.TabIndex = 14;
@@ -275,35 +276,11 @@
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             // 
-            // guna2TextBox3
-            // 
-            guna2TextBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2TextBox3.BorderRadius = 20;
-            guna2TextBox3.CustomizableEdges = customizableEdges5;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.ForeColor = Color.Black;
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(688, 230);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderForeColor = Color.Gray;
-            guna2TextBox3.PlaceholderText = "Auditoriya type ";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(283, 39);
-            guna2TextBox3.TabIndex = 13;
-            // 
             // guna2TextBox2
             // 
             guna2TextBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2TextBox2.BorderRadius = 20;
-            guna2TextBox2.CustomizableEdges = customizableEdges7;
+            guna2TextBox2.CustomizableEdges = customizableEdges5;
             guna2TextBox2.DefaultText = "";
             guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -313,13 +290,13 @@
             guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(688, 184);
+            guna2TextBox2.Location = new Point(689, 181);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderForeColor = Color.Gray;
             guna2TextBox2.PlaceholderText = "Auditoriya raqami";
             guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBox2.Size = new Size(283, 37);
             guna2TextBox2.TabIndex = 12;
             // 
@@ -340,7 +317,7 @@
             // 
             guna2TextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2TextBox1.BorderRadius = 20;
-            guna2TextBox1.CustomizableEdges = customizableEdges9;
+            guna2TextBox1.CustomizableEdges = customizableEdges7;
             guna2TextBox1.DefaultText = "";
             guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -350,13 +327,13 @@
             guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox1.ForeColor = Color.Black;
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(688, 277);
+            guna2TextBox1.Location = new Point(688, 280);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Gray;
             guna2TextBox1.PlaceholderText = "Joylar soni kiriting";
             guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2TextBox1.Size = new Size(283, 39);
             guna2TextBox1.TabIndex = 17;
             // 
@@ -364,7 +341,7 @@
             // 
             guna2TextBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2TextBox4.BorderRadius = 20;
-            guna2TextBox4.CustomizableEdges = customizableEdges11;
+            guna2TextBox4.CustomizableEdges = customizableEdges9;
             guna2TextBox4.DefaultText = "";
             guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox4.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -380,20 +357,51 @@
             guna2TextBox4.PlaceholderForeColor = Color.Gray;
             guna2TextBox4.PlaceholderText = "binoni kiriting";
             guna2TextBox4.SelectedText = "";
-            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2TextBox4.Size = new Size(283, 39);
             guna2TextBox4.TabIndex = 18;
+            // 
+            // guna2ComboBox1
+            // 
+            guna2ComboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ComboBox1.BackColor = Color.Transparent;
+            guna2ComboBox1.BorderRadius = 20;
+            guna2ComboBox1.CustomizableEdges = customizableEdges11;
+            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
+            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox1.ItemHeight = 30;
+            guna2ComboBox1.Location = new Point(688, 236);
+            guna2ComboBox1.Name = "guna2ComboBox1";
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2ComboBox1.Size = new Size(284, 36);
+            guna2ComboBox1.TabIndex = 19;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(696, 221);
+            label2.Name = "label2";
+            label2.Size = new Size(128, 15);
+            label2.TabIndex = 20;
+            label2.Text = "Auditoriya type kiriting";
             // 
             // UC_Auditoriya
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label2);
+            Controls.Add(guna2ComboBox1);
             Controls.Add(guna2TextBox4);
             Controls.Add(guna2TextBox1);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button2);
             Controls.Add(guna2CheckBox1);
-            Controls.Add(guna2TextBox3);
             Controls.Add(guna2TextBox2);
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Auditor);
@@ -421,10 +429,11 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Label label1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Label label2;
     }
 }
