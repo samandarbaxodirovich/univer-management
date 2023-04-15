@@ -28,7 +28,6 @@ namespace univer_management.Desktop.UserControls2
         /// </summary>
         private void InitializeComponent()
         {
-
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -361,6 +360,7 @@ namespace univer_management.Desktop.UserControls2
 			this.mutaxasislikCmb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
 			this.mutaxasislikCmb.ItemHeight = 30;
 			this.mutaxasislikCmb.Location = new System.Drawing.Point(681, 305);
+			this.mutaxasislikCmb.MaxDropDownItems = 5;
 			this.mutaxasislikCmb.Name = "mutaxasislikCmb";
 			this.mutaxasislikCmb.ShadowDecoration.CustomizableEdges = customizableEdges12;
 			this.mutaxasislikCmb.Size = new System.Drawing.Size(322, 36);
