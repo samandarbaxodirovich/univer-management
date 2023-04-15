@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230415213844_EditingSomeEntities")]
+    partial class EditingSomeEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,10 +37,6 @@ namespace univer_management.DataAccess.Migrations
 
                     b.Property<int>("Capacity")
                         .HasColumnType("integer");
-
-                    b.Property<string>("Korpus")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<string>("NumberOfOrder")
                         .IsRequired()
@@ -443,13 +441,13 @@ namespace univer_management.DataAccess.Migrations
 
             modelBuilder.Entity("univer_management.Domain.Entities.Auditoriya", b =>
                 {
-                    b.HasOne("univer_management.Domain.Entities.Auditoriya_Tipi", "Auditoriya_Tipi")
+                    b.HasOne("univer_management.Domain.Entities.Auditoriya_Tipi", "AuditoriyaTipi")
                         .WithMany()
                         .HasForeignKey("Auditoriya_TipiId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Auditoriya_Tipi");
+                    b.Navigation("AuditoriyaTipi");
                 });
 
             modelBuilder.Entity("univer_management.Domain.Entities.Fan", b =>

@@ -64,25 +64,26 @@ namespace univer_management.Desktop.UserControls2
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.FromArgb(41, 128, 185);
-            panel1.Controls.Add(lblTitle);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1053, 80);
-            panel1.TabIndex = 1;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1053, 80);
+            this.panel1.TabIndex = 1;
             // 
             // lblTitle
             // 
-            lblTitle.Anchor = AnchorStyles.None;
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(359, 23);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(407, 32);
-            lblTitle.TabIndex = 2;
-            lblTitle.Text = "Muttaxasisliklarni shakllantirish";
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(359, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(407, 32);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Muttaxasisliklarni shakllantirish";
             // 
             // guna2TextBox1
             // 
@@ -192,47 +193,47 @@ namespace univer_management.Desktop.UserControls2
             // 
             // Id
             // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id.DividerWidth = 1;
+            this.Id.FillWeight = 8F;
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 52;
             // 
             // Name
             // 
-            Name.DividerWidth = 1;
-            Name.FillWeight = 20F;
-            Name.HeaderText = "Mutaxasislik nomi";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
+            this.Name.DividerWidth = 1;
+            this.Name.FillWeight = 20F;
+            this.Name.HeaderText = "Mutaxasislik nomi";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
             // 
             // Column3
             // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
+            this.Column3.DividerWidth = 1;
+            this.Column3.FillWeight = 6F;
+            this.Column3.HeaderText = "Update";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Text = "✏️";
+            this.Column3.UseColumnTextForButtonValue = true;
             // 
             // Column4
             // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
+            this.Column4.DividerWidth = 1;
+            this.Column4.FillWeight = 6F;
+            this.Column4.HeaderText = "Delete";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Text = "X";
+            this.Column4.UseColumnTextForButtonValue = true;
             // 
             // label1
             // 
@@ -297,23 +298,22 @@ namespace univer_management.Desktop.UserControls2
             // 
             // guna2CheckBox1
             // 
-            guna2CheckBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2CheckBox1.AutoSize = true;
-            guna2CheckBox1.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.CheckedState.BorderRadius = 0;
-            guna2CheckBox1.CheckedState.BorderThickness = 0;
-            guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
-            guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(657, 354);
-            guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(243, 24);
-            guna2CheckBox1.TabIndex = 8;
-            guna2CheckBox1.Text = "Mutaxasislik qo'shishga roziman";
-            guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged;
+            this.guna2CheckBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2CheckBox1.AutoSize = true;
+            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.ForeColor = System.Drawing.Color.Red;
+            this.guna2CheckBox1.Location = new System.Drawing.Point(657, 354);
+            this.guna2CheckBox1.Name = "guna2CheckBox1";
+            this.guna2CheckBox1.Size = new System.Drawing.Size(243, 24);
+            this.guna2CheckBox1.TabIndex = 8;
+            this.guna2CheckBox1.Text = "Mutaxasislik qo\'shishga roziman";
+            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
             // guna2Button2
             // 
@@ -357,27 +357,27 @@ namespace univer_management.Desktop.UserControls2
             // 
             // UC_Mutaxasislik
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            Controls.Add(guna2Button3);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2CheckBox1);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(label1);
-            Controls.Add(guna2DataGridView1);
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2TextBox1);
-            Controls.Add(panel1);
-            Name = "UC_Mutaxasislik";
-            Size = new Size(1040, 481);
-            Tag = "Mutahasislik";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.panel1);
+            this.Size = new System.Drawing.Size(1040, 481);
+            this.Tag = "Mutahasislik";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
