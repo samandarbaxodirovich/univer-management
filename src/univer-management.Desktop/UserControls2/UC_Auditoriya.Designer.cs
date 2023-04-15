@@ -442,6 +442,77 @@
             guna2TextBox1.Size = new Size(332, 39);
             guna2TextBox1.TabIndex = 21;
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id.DividerWidth = 1;
+            this.Id.FillWeight = 8F;
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 52;
+            // 
+            // Name
+            // 
+            this.Name.DividerWidth = 1;
+            this.Name.FillWeight = 7F;
+            this.Name.HeaderText = "Audi Raqami";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DividerWidth = 1;
+            this.Column2.FillWeight = 8F;
+            this.Column2.HeaderText = "Auditoriya tipi";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DividerWidth = 1;
+            this.Column1.FillWeight = 8F;
+            this.Column1.HeaderText = "Sig\'imi";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DividerWidth = 1;
+            this.Column5.FillWeight = 5F;
+            this.Column5.HeaderText = "Korpus";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DividerWidth = 1;
+            this.Column3.FillWeight = 6F;
+            this.Column3.HeaderText = "Update";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Text = "✏️";
+            this.Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DividerWidth = 1;
+            this.Column4.FillWeight = 6F;
+            this.Column4.HeaderText = "Delete";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Text = "X";
+            this.Column4.UseColumnTextForButtonValue = true;
+            // 
             // UC_Auditoriya
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
