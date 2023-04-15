@@ -43,6 +43,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+<<<<<<< HEAD
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -71,6 +72,29 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Auditor).BeginInit();
             SuspendLayout();
+=======
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.DataGridVIew_Auditor = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.auditoriyaTipi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.auditoriyaRaqami = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.joylarSoni = new Guna.UI2.WinForms.Guna2TextBox();
+            this.auditoriyaBino = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Auditor)).BeginInit();
+            this.SuspendLayout();
+>>>>>>> 2465a89 (zzi)
             // 
             // panel1
             // 
@@ -153,6 +177,7 @@
             DataGridVIew_Auditor.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridVIew_Auditor.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
+<<<<<<< HEAD
             // Id
             // 
             Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -224,6 +249,8 @@
             Column4.Text = "X";
             Column4.UseColumnTextForButtonValue = true;
             // 
+=======
+>>>>>>> 2465a89 (zzi)
             // guna2Button3
             // 
             guna2Button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -442,8 +469,80 @@
             guna2TextBox1.Size = new Size(332, 39);
             guna2TextBox1.TabIndex = 21;
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id.DividerWidth = 1;
+            this.Id.FillWeight = 8F;
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 52;
+            // 
+            // Name
+            // 
+            this.Name.DividerWidth = 1;
+            this.Name.FillWeight = 7F;
+            this.Name.HeaderText = "Audi Raqami";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DividerWidth = 1;
+            this.Column2.FillWeight = 8F;
+            this.Column2.HeaderText = "Auditoriya tipi";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DividerWidth = 1;
+            this.Column1.FillWeight = 8F;
+            this.Column1.HeaderText = "Sig\'imi";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DividerWidth = 1;
+            this.Column5.FillWeight = 5F;
+            this.Column5.HeaderText = "Korpus";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DividerWidth = 1;
+            this.Column3.FillWeight = 6F;
+            this.Column3.HeaderText = "Update";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Text = "✏️";
+            this.Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DividerWidth = 1;
+            this.Column4.FillWeight = 6F;
+            this.Column4.HeaderText = "Delete";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Text = "X";
+            this.Column4.UseColumnTextForButtonValue = true;
+            // 
             // UC_Auditoriya
             // 
+<<<<<<< HEAD
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
@@ -467,6 +566,28 @@
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Auditor).EndInit();
             ResumeLayout(false);
             PerformLayout();
+=======
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.auditoriyaBino);
+            this.Controls.Add(this.joylarSoni);
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.auditoriyaTipi);
+            this.Controls.Add(this.auditoriyaRaqami);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DataGridVIew_Auditor);
+            this.Controls.Add(this.panel1);
+            this.Name = "UC_Auditoriya";
+            this.Size = new System.Drawing.Size(1040, 481);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Auditor)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+>>>>>>> 2465a89 (zzi)
         }
 
         #endregion
@@ -477,6 +598,10 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+<<<<<<< HEAD
+=======
+        private Guna.UI2.WinForms.Guna2TextBox auditoriyaTipi;
+>>>>>>> 2465a89 (zzi)
         private Guna.UI2.WinForms.Guna2TextBox auditoriyaRaqami;
         private Label label1;
         private Guna.UI2.WinForms.Guna2TextBox joylarSoni;
@@ -488,9 +613,12 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewButtonColumn Column3;
         private DataGridViewButtonColumn Column4;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+=======
+>>>>>>> 2465a89 (zzi)
     }
 }
