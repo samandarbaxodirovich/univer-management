@@ -43,6 +43,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             lblTitle = new Label();
             DataGridVIew_Auditor = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -62,6 +66,8 @@
             auditoriyaBino = new Guna.UI2.WinForms.Guna2TextBox();
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             label2 = new Label();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Auditor).BeginInit();
             SuspendLayout();
@@ -390,10 +396,59 @@
             label2.TabIndex = 20;
             label2.Text = "Auditoriya type";
             // 
+            // guna2Button1
+            // 
+            guna2Button1.Anchor = AnchorStyles.Top;
+            guna2Button1.BorderRadius = 20;
+            guna2Button1.CustomizableEdges = customizableEdges13;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(616, 101);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Button1.Size = new Size(74, 38);
+            guna2Button1.TabIndex = 22;
+            guna2Button1.Text = "search";
+            // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.Anchor = AnchorStyles.Top;
+            guna2TextBox1.BackColor = Color.White;
+            guna2TextBox1.BorderColor = Color.White;
+            guna2TextBox1.BorderRadius = 20;
+            guna2TextBox1.BorderThickness = 0;
+            guna2TextBox1.CustomizableEdges = customizableEdges15;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FillColor = SystemColors.ActiveCaption;
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.ForeColor = Color.Black;
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Location = new Point(278, 101);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '\0';
+            guna2TextBox1.PlaceholderForeColor = Color.Black;
+            guna2TextBox1.PlaceholderText = "Enter keyword";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2TextBox1.Size = new Size(332, 39);
+            guna2TextBox1.TabIndex = 21;
+            // 
             // UC_Auditoriya
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(guna2Button1);
+            Controls.Add(guna2TextBox1);
             Controls.Add(label2);
             Controls.Add(guna2ComboBox1);
             Controls.Add(auditoriyaBino);
@@ -405,6 +460,7 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Auditor);
             Controls.Add(panel1);
+            Name = "UC_Auditoriya";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -434,5 +490,7 @@
         private DataGridViewButtonColumn Column4;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Label label2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
