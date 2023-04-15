@@ -370,7 +370,6 @@ namespace univer_management.Desktop.UserControls2
             Controls.Add(guna2Button1);
             Controls.Add(guna2TextBox1);
             Controls.Add(panel1);
-            Name = "UC_Mutaxasislik";
             Size = new Size(1040, 481);
             Tag = "Mutahasislik";
             panel1.ResumeLayout(false);
