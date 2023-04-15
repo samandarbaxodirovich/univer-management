@@ -26,5 +26,9 @@ namespace univer_management.Desktop.UserControls2
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
