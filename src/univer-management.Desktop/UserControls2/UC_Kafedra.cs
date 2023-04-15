@@ -8,13 +8,14 @@ namespace univer_management.Desktop.UserControls2
 	public partial class UC_Kafedra : UserControl
 	{
 		KafedraService _service;
-
+		public static UC_Kafedra Instance;
 
 		public UC_Kafedra()
 		{
 			_service = new KafedraService();
 			InitializeComponent();
 			SetValues();
+			Instance = this;
 			guna2Button2.KeyDown += guna2Button2_KeyDown;
 		}
 
@@ -44,7 +45,7 @@ namespace univer_management.Desktop.UserControls2
 
 
 
-		private async void SetValues()
+		public async void SetValues()
 		{
 			datagridView_kafedra.Rows.Clear();
 
