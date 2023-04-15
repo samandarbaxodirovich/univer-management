@@ -19,7 +19,7 @@ namespace univer_management.Desktop.UserControls2
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            AddGuruhForm addGuruhForm = new AddGuruhForm(); 
+            AddGuruhForm addGuruhForm = new AddGuruhForm();
             addGuruhForm.ShowDialog();
         }
     }
