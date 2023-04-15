@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace univer_management.Desktop.UserControls2
+namespace univer_management.Desktop
 {
-    public partial class UC_Guruh : UserControl
+    public partial class AddGuruhForm : Form
     {
-        public UC_Guruh()
+        public AddGuruhForm()
         {
             InitializeComponent();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            AddGuruhForm addGuruhForm = new AddGuruhForm(); 
-            addGuruhForm.ShowDialog();
+
         }
     }
 }
