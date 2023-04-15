@@ -271,11 +271,11 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(695, 374);
+            guna2CheckBox1.Location = new Point(702, 374);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(243, 24);
+            guna2CheckBox1.Size = new Size(236, 24);
             guna2CheckBox1.TabIndex = 14;
-            guna2CheckBox1.Text = "Mutaxasislik qo'shishga roziman";
+            guna2CheckBox1.Text = "Auditoriya qo'shishga rozi man";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.UncheckedState.BorderRadius = 0;
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
@@ -460,6 +460,7 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Auditor);
             Controls.Add(panel1);
+            Name = "UC_Auditoriya";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

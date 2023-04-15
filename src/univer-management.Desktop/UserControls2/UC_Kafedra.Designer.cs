@@ -331,7 +331,7 @@ namespace univer_management.Desktop.UserControls2
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.DeepSkyBlue;
             label1.Location = new Point(732, 199);
             label1.Margin = new Padding(3);
             label1.Name = "label1";

@@ -222,7 +222,7 @@
             guna2Button3.FillColor = Color.FromArgb(255, 128, 0);
             guna2Button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(850, 373);
+            guna2Button3.Location = new Point(850, 424);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button3.Size = new Size(122, 39);
@@ -241,7 +241,7 @@
             guna2Button2.FillColor = Color.FromArgb(0, 0, 192);
             guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(702, 374);
+            guna2Button2.Location = new Point(702, 425);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button2.Size = new Size(124, 39);
@@ -257,11 +257,11 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(703, 320);
+            guna2CheckBox1.Location = new Point(705, 371);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(243, 24);
+            guna2CheckBox1.Size = new Size(219, 24);
             guna2CheckBox1.TabIndex = 22;
-            guna2CheckBox1.Text = "Mutaxasislik qo'shishga roziman";
+            guna2CheckBox1.Text = "O'qituvchi kiritishga roziman";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.UncheckedState.BorderRadius = 0;
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
@@ -281,7 +281,7 @@
             gunatextbox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             gunatextbox2.ForeColor = Color.Black;
             gunatextbox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            gunatextbox2.Location = new Point(695, 218);
+            gunatextbox2.Location = new Point(695, 269);
             gunatextbox2.Name = "gunatextbox2";
             gunatextbox2.PasswordChar = '\0';
             gunatextbox2.PlaceholderForeColor = Color.Gray;
@@ -305,7 +305,7 @@
             gunatextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             gunatextBox.ForeColor = Color.Black;
             gunatextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            gunatextBox.Location = new Point(695, 172);
+            gunatextBox.Location = new Point(695, 223);
             gunatextBox.Name = "gunatextBox";
             gunatextBox.PasswordChar = '\0';
             gunatextBox.PlaceholderForeColor = Color.Gray;
@@ -321,7 +321,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.DeepSkyBlue;
-            label1.Location = new Point(725, 131);
+            label1.Location = new Point(725, 182);
             label1.Margin = new Padding(3);
             label1.Name = "label1";
             label1.Size = new Size(211, 29);
@@ -341,7 +341,7 @@
             kafedraId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             kafedraId.ForeColor = Color.FromArgb(68, 88, 112);
             kafedraId.ItemHeight = 30;
-            kafedraId.Location = new Point(695, 269);
+            kafedraId.Location = new Point(695, 320);
             kafedraId.Name = "kafedraId";
             kafedraId.ShadowDecoration.CustomizableEdges = customizableEdges10;
             kafedraId.Size = new Size(283, 36);
@@ -410,6 +410,7 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Oqituvchi);
             Controls.Add(panel1);
+            Name = "UC_O_qituvchilar";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
