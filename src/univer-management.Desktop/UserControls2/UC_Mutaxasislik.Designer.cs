@@ -357,26 +357,27 @@ namespace univer_management.Desktop.UserControls2
             // 
             // UC_Mutaxasislik
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            Controls.Add(guna2Button3);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2CheckBox1);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(label1);
-            Controls.Add(guna2DataGridView1);
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2TextBox1);
-            Controls.Add(panel1);
-            Size = new Size(1040, 481);
-            Tag = "Mutahasislik";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.panel1);
+            this.Size = new System.Drawing.Size(1040, 481);
+            this.Tag = "Mutahasislik";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
