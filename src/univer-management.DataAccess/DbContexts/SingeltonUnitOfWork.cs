@@ -10,7 +10,7 @@ namespace univer_management.DataAccess.DbContexts
     public sealed class SingeltonUnitOfWork
     {
         public SingeltonUnitOfWork() { }
-        public static UnitOfWork _work = new UnitOfWork(new AppDbContext());
+        private static UnitOfWork _work = new UnitOfWork(new AppDbContext());
 
         public static UnitOfWork Instance
         {

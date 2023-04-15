@@ -60,7 +60,7 @@ namespace univer_management.Service.Services
 				await _work.SaveChangesAsync(); 
 				return mutahasislik;
 			}
-			return null; 
+			return null!; 
 		}
 	}
 }
