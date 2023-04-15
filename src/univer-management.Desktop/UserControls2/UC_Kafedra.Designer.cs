@@ -1,4 +1,4 @@
-﻿namespace univer_management.Desktop.UserControls2
+namespace univer_management.Desktop.UserControls2
 {
     partial class UC_Kafedra
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();

@@ -19,6 +19,7 @@ namespace univer_management.Desktop.UserControls2
 		}
 
 
+
 		private void UC_Kafedra_Load(object sender, EventArgs e)
 		{
 			ComboBoxFill();

@@ -1,4 +1,4 @@
-﻿namespace univer_management.Desktop.UserControls2
+namespace univer_management.Desktop.UserControls2
 {
     partial class UC_Mutahasislik
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
 			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
 			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
 			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -382,6 +383,7 @@
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
+       
         }
 
         #endregion
