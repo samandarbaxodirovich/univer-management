@@ -19,7 +19,7 @@ namespace univer_management.Service.Services
             if (await _work.Mashgulotlar.FirstOrDefaultAsync(x => x.Name == entity.Name) != null)
                 return (false, "Bu nomdagi mashgu'ulot allaqachon mavjud");
             _work.Mashgulotlar.Add(entity);
-            if (await _work.SaveChangesAsync() != 0) return (true, "Mutaxasislik muvaffaqiyatli qo'shildi");
+            if (await _work.SaveChangesAsync() != 0) return (true, "Mashg'ulot muvaffaqiyatli qo'shildi");
             return (false, "Nimadir xato ketdi,internet bilan aloqani tekshiring");
         }
 
