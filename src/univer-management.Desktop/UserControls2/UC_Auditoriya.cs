@@ -76,14 +76,14 @@ namespace univer_management.Desktop.UserControls2
                 if (DataGridVIew_Auditor.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 5)
-                {
-                    UpdateForm update = new UpdateForm();
-                    update.Name = selectedRow.Cells[1].Value.ToString();
-                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                    update.Tag = this.Tag.ToString();
-                    update.ShowDialog();
-                }
+                //if (actionId == 5)
+                //{
+                //    UpdateForm update = new UpdateForm();
+                //    update.Name = selectedRow.Cells[1].Value.ToString();
+                //    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                //    update.Tag = this.Tag.ToString();
+                //    update.ShowDialog();
+                //}
 
                 if (actionId == 6)
                 {
