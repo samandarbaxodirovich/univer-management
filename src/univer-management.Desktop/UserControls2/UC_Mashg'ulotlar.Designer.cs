@@ -215,6 +215,7 @@
             guna2Button2.Size = new Size(124, 39);
             guna2Button2.TabIndex = 28;
             guna2Button2.Text = "Create";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2CheckBox1
             // 
