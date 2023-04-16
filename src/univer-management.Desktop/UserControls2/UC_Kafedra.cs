@@ -17,15 +17,12 @@ namespace univer_management.Desktop.UserControls2
             guna2Button2.KeyDown += guna2Button2_KeyDown;
         }
 
+        private void UC_Kafedra_Load(object sender, EventArgs e)
+        {
+            ComboBoxFill();
+        }
 
-
-		private void UC_Kafedra_Load_1(object sender, EventArgs e)
-		{
-			ComboBoxFill();
-		}
-   
-
-		private async void ComboBoxFill()
+        private async void ComboBoxFill()
         {
             using (var db = new AppDbContext())
             {
@@ -100,7 +97,10 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
+        private void mutaxasislikCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
 
         private async void datagridView_kafedra_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -137,6 +137,7 @@ namespace univer_management.Desktop.UserControls2
 
             }
         }
+
         private void kafedratxt_box_TextChanged(object sender, EventArgs e)
         {
 
@@ -147,6 +148,4 @@ namespace univer_management.Desktop.UserControls2
 
         }
     }
-	}
-
 }
