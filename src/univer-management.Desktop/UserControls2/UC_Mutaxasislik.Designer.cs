@@ -250,9 +250,9 @@ namespace univer_management.Desktop.UserControls2
             this.label1.Location = new System.Drawing.Point(653, 197);
             this.label1.Margin = new System.Windows.Forms.Padding(3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(312, 32);
+            this.label1.Size = new System.Drawing.Size(304, 32);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Muttaxasislikni qo\'shish";
+            this.label1.Text = "Mutaxasislikni qo\'shish";
             // 
             // guna2TextBox2
             // 
