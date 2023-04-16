@@ -37,6 +37,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             lblTitle = new Label();
             datagrid_Oquv_reja = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -55,6 +57,7 @@
             guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             label1 = new Label();
             label2 = new Label();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Oquv_reja).BeginInit();
             SuspendLayout();
@@ -249,7 +252,7 @@
             guna2Button1.FillColor = Color.FromArgb(128, 128, 255);
             guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(783, 120);
+            guna2Button1.Location = new Point(667, 120);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(74, 38);
@@ -268,7 +271,7 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(318, 120);
+            guna2ComboBox1.Location = new Point(211, 120);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ComboBox1.Size = new Size(283, 36);
@@ -286,7 +289,7 @@
             guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox2.ItemHeight = 30;
-            guna2ComboBox2.Location = new Point(624, 120);
+            guna2ComboBox2.Location = new Point(527, 120);
             guna2ComboBox2.Name = "guna2ComboBox2";
             guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2ComboBox2.Size = new Size(125, 36);
@@ -296,7 +299,7 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Location = new Point(318, 97);
+            label1.Location = new Point(211, 97);
             label1.Name = "label1";
             label1.Size = new Size(127, 20);
             label1.TabIndex = 14;
@@ -306,16 +309,38 @@
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
-            label2.Location = new Point(624, 97);
+            label2.Location = new Point(532, 97);
             label2.Name = "label2";
             label2.Size = new Size(120, 20);
             label2.TabIndex = 15;
             label2.Text = "Smestrni tanlang";
             // 
+            // guna2Button2
+            // 
+            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2Button2.BorderRadius = 5;
+            guna2Button2.CustomizableEdges = customizableEdges7;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.Blue;
+            guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(861, 118);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button2.Size = new Size(159, 38);
+            guna2Button2.TabIndex = 16;
+            guna2Button2.Text = "O'quv reja qo'shish";
+            guna2Button2.Click += guna2Button2_Click_1;
+            // 
             // UC_Uquv_reja
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(guna2Button2);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(guna2ComboBox2);
@@ -352,5 +377,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Label label1;
         private Label label2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

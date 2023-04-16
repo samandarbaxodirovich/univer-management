@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop;
 
 namespace FinalProject.UserControls2
 {
@@ -24,6 +25,12 @@ namespace FinalProject.UserControls2
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+           OquvrejaForm oquvrejaForm = new OquvrejaForm();
+        oquvrejaForm.ShowDialog();
         }
     }
 }

@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges109 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges110 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges111 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges112 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges113 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges114 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges115 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges116 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges117 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges118 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges119 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges120 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges121 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges122 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges123 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges124 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -63,7 +63,7 @@
             // 
             // guna2TextBox1
             // 
-            guna2TextBox1.CustomizableEdges = customizableEdges109;
+            guna2TextBox1.CustomizableEdges = customizableEdges1;
             guna2TextBox1.DefaultText = "";
             guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -77,14 +77,14 @@
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderText = "";
             guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges110;
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2TextBox1.Size = new Size(329, 40);
             guna2TextBox1.TabIndex = 3;
             // 
             // guna2ComboBox1
             // 
             guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.CustomizableEdges = customizableEdges111;
+            guna2ComboBox1.CustomizableEdges = customizableEdges3;
             guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -94,14 +94,14 @@
             guna2ComboBox1.ItemHeight = 30;
             guna2ComboBox1.Location = new Point(36, 110);
             guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges112;
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ComboBox1.Size = new Size(329, 36);
             guna2ComboBox1.TabIndex = 4;
             // 
             // guna2ComboBox2
             // 
             guna2ComboBox2.BackColor = Color.Transparent;
-            guna2ComboBox2.CustomizableEdges = customizableEdges113;
+            guna2ComboBox2.CustomizableEdges = customizableEdges5;
             guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -111,14 +111,14 @@
             guna2ComboBox2.ItemHeight = 30;
             guna2ComboBox2.Location = new Point(36, 169);
             guna2ComboBox2.Name = "guna2ComboBox2";
-            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges114;
+            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2ComboBox2.Size = new Size(329, 36);
             guna2ComboBox2.TabIndex = 5;
             // 
             // guna2ComboBox3
             // 
             guna2ComboBox3.BackColor = Color.Transparent;
-            guna2ComboBox3.CustomizableEdges = customizableEdges115;
+            guna2ComboBox3.CustomizableEdges = customizableEdges7;
             guna2ComboBox3.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox3.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -128,14 +128,14 @@
             guna2ComboBox3.ItemHeight = 30;
             guna2ComboBox3.Location = new Point(36, 288);
             guna2ComboBox3.Name = "guna2ComboBox3";
-            guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges116;
+            guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2ComboBox3.Size = new Size(329, 36);
             guna2ComboBox3.TabIndex = 6;
             // 
             // guna2ComboBox4
             // 
             guna2ComboBox4.BackColor = Color.Transparent;
-            guna2ComboBox4.CustomizableEdges = customizableEdges117;
+            guna2ComboBox4.CustomizableEdges = customizableEdges9;
             guna2ComboBox4.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox4.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -145,13 +145,13 @@
             guna2ComboBox4.ItemHeight = 30;
             guna2ComboBox4.Location = new Point(36, 229);
             guna2ComboBox4.Name = "guna2ComboBox4";
-            guna2ComboBox4.ShadowDecoration.CustomizableEdges = customizableEdges118;
+            guna2ComboBox4.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2ComboBox4.Size = new Size(329, 36);
             guna2ComboBox4.TabIndex = 7;
             // 
             // guna2TextBox2
             // 
-            guna2TextBox2.CustomizableEdges = customizableEdges119;
+            guna2TextBox2.CustomizableEdges = customizableEdges11;
             guna2TextBox2.DefaultText = "";
             guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -165,14 +165,14 @@
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderText = "";
             guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges120;
+            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2TextBox2.Size = new Size(329, 40);
             guna2TextBox2.TabIndex = 8;
             // 
             // guna2ComboBox5
             // 
             guna2ComboBox5.BackColor = Color.Transparent;
-            guna2ComboBox5.CustomizableEdges = customizableEdges121;
+            guna2ComboBox5.CustomizableEdges = customizableEdges13;
             guna2ComboBox5.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox5.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -182,7 +182,7 @@
             guna2ComboBox5.ItemHeight = 30;
             guna2ComboBox5.Location = new Point(36, 408);
             guna2ComboBox5.Name = "guna2ComboBox5";
-            guna2ComboBox5.ShadowDecoration.CustomizableEdges = customizableEdges122;
+            guna2ComboBox5.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2ComboBox5.Size = new Size(329, 36);
             guna2ComboBox5.TabIndex = 9;
             // 
@@ -260,7 +260,7 @@
             // 
             guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2Button2.BorderRadius = 5;
-            guna2Button2.CustomizableEdges = customizableEdges123;
+            guna2Button2.CustomizableEdges = customizableEdges15;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -270,7 +270,7 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.Location = new Point(88, 464);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges124;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2Button2.Size = new Size(208, 44);
             guna2Button2.TabIndex = 17;
             guna2Button2.Text = "Create";
@@ -297,6 +297,7 @@
             Controls.Add(guna2TextBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "YuklamaForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "YuklamaForm";
             ResumeLayout(false);
             PerformLayout();

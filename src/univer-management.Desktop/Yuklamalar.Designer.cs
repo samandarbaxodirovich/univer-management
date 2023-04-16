@@ -131,7 +131,7 @@
             // 
             // panelContainer2
             // 
-            panelContainer2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panelContainer2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelContainer2.Location = new Point(0, 44);
             panelContainer2.Name = "panelContainer2";
             panelContainer2.Size = new Size(1060, 500);
