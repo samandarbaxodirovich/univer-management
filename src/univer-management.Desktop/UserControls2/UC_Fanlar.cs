@@ -15,7 +15,7 @@ namespace univer_management.Desktop.UserControls2
     public partial class UC_Fanlar : UserControl
     {
         FanService service = new();
-        MutaxasislikService mService = new();
+        KafedraService kService = new();
         public UC_Fanlar()
         {
             InitializeComponent();
@@ -58,7 +58,7 @@ namespace univer_management.Desktop.UserControls2
             {
                 guna2DataGridView1.Rows.Add(item.Id, item.Name, item.Level,item.KafedraName);
             }
-            guna2ComboBox1.DataSource = mService.GetAll().Select(x=>x.Name).ToList();
+            guna2ComboBox1.DataSource = (await kService.GetAll()).Select(x=>x.Name).ToList();
         }
     }
 }

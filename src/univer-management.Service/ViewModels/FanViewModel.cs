@@ -12,13 +12,13 @@ namespace univer_management.Service.ViewModels
 {
     public class FanViewModel
     {
+        private static UnitOfWork _work = new UnitOfWork(new AppDbContext());
         public long Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string KafedraName { get; set; } = string.Empty;
         public double Level { get; set; }
         public static implicit operator FanViewModel(Fan entity)
         {
-            UnitOfWork _work = SingeltonUnitOfWork.Instance;
             return new FanViewModel()
             {
                 Id= entity.Id,

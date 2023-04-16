@@ -342,7 +342,7 @@
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "Fan nomini kiriting";
+            this.guna2TextBox2.PlaceholderText = "Fan nomi";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.guna2TextBox2.Size = new System.Drawing.Size(292, 39);
@@ -358,9 +358,9 @@
             this.label1.Location = new System.Drawing.Point(702, 316);
             this.label1.Margin = new System.Windows.Forms.Padding(3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 15);
+            this.label1.Size = new System.Drawing.Size(100, 15);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Muttaxasislikni qo\'shish";
+            this.label1.Text = "Kafedra tarkibida";
             // 
             // guna2ComboBox1
             // 
