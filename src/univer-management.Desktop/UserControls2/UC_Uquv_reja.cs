@@ -16,5 +16,14 @@ namespace FinalProject.UserControls2
         {
             InitializeComponent();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

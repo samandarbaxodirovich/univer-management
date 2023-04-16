@@ -198,7 +198,7 @@
             // 
             // panelDesktopPanel
             // 
-            panelDesktopPanel.Dock = DockStyle.Fill;
+            panelDesktopPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelDesktopPanel.Location = new Point(263, 80);
             panelDesktopPanel.Name = "panelDesktopPanel";
             panelDesktopPanel.Size = new Size(769, 873);
