@@ -41,14 +41,14 @@ namespace univer_management.Desktop.UserControls2
             DataGridVIew_Auditor.Rows.Clear();
             var targets = await service.GetAllAsync();
             foreach (var item in targets)
-                DataGridVIew_Auditor.Rows.Add(item.Id, item.NumberOfOrder,item.AuditoriyaTipi,item.Capacity,item.Korpus);
+                DataGridVIew_Auditor.Rows.Add(item.Id, item.NumberOfOrder, item.AuditoriyaTipi, item.Capacity, item.Korpus);
             guna2ComboBox1.DataSource = service.GetAllTypes();
-            
+
         }
 
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(guna2CheckBox1.Checked)
+            if (guna2CheckBox1.Checked)
             {
                 var tool = new AuditoriyaCreateDto()
                 {
@@ -58,7 +58,7 @@ namespace univer_management.Desktop.UserControls2
                     Korpus = auditoriyaBino.Text
                 };
                 var result = await service.CreateAsync(tool);
-                if(result.Item2)
+                if (result.Item2)
                     MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

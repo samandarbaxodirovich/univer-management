@@ -29,7 +29,7 @@ namespace univer_management.Desktop.UserControls2
 
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(guna2CheckBox1.Checked)
+            if (guna2CheckBox1.Checked)
             {
                 var result = await service.CreateAsync(new Fan()
                 {
@@ -56,9 +56,9 @@ namespace univer_management.Desktop.UserControls2
 
             foreach (var item in targets)
             {
-                guna2DataGridView1.Rows.Add(item.Id, item.Name, item.Level,item.KafedraName);
+                guna2DataGridView1.Rows.Add(item.Id, item.Name, item.Level, item.KafedraName);
             }
-            guna2ComboBox1.DataSource = (await kService.GetAll()).Select(x=>x.Name).ToList();
+            guna2ComboBox1.DataSource = (await kService.GetAll()).Select(x => x.Name).ToList();
         }
     }
 }

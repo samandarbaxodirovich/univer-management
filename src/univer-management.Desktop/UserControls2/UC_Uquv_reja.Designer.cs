@@ -263,13 +263,14 @@
             // 
             guna2ComboBox1.Anchor = AnchorStyles.Top;
             guna2ComboBox1.BackColor = Color.Transparent;
+            guna2ComboBox1.BorderRadius = 8;
             guna2ComboBox1.CustomizableEdges = customizableEdges3;
             guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox1.ForeColor = Color.Black;
             guna2ComboBox1.ItemHeight = 30;
             guna2ComboBox1.Location = new Point(211, 120);
             guna2ComboBox1.Name = "guna2ComboBox1";
@@ -281,13 +282,14 @@
             // 
             guna2ComboBox2.Anchor = AnchorStyles.Top;
             guna2ComboBox2.BackColor = Color.Transparent;
+            guna2ComboBox2.BorderRadius = 8;
             guna2ComboBox2.CustomizableEdges = customizableEdges5;
             guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox2.ForeColor = Color.Black;
             guna2ComboBox2.ItemHeight = 30;
             guna2ComboBox2.Location = new Point(527, 120);
             guna2ComboBox2.Name = "guna2ComboBox2";

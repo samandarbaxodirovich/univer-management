@@ -348,7 +348,7 @@ namespace univer_management.Desktop.UserControls2
             mutaxasislikCmb.FocusedColor = Color.FromArgb(94, 148, 255);
             mutaxasislikCmb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             mutaxasislikCmb.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            mutaxasislikCmb.ForeColor = Color.FromArgb(68, 88, 112);
+            mutaxasislikCmb.ForeColor = Color.Black;
             mutaxasislikCmb.ItemHeight = 30;
             mutaxasislikCmb.Location = new Point(681, 305);
             mutaxasislikCmb.Name = "mutaxasislikCmb";
