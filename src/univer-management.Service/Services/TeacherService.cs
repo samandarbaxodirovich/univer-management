@@ -13,16 +13,50 @@ namespace univer_management.Service.Services
 {
     public class TeacherService : ITechaerService
     {
-        public UnitOfWork _db;
-        public TeacherService()
+		UnitOfWork _work = SingeltonUnitOfWork.Instance;
+
+        public async Task<(bool, string)> CreateAsync(Oqituvchi entity)
         {
-                _db = new UnitOfWork(new AppDbContext());
+            if (await _work.Oqituvchilar.FirstOrDefaultAsync(x => x.FullName == entity.FullName) != null)
+            {
+                return (false, "Bu nomdagi O'qituvchi allaqachon mavjud");
+            }
+            _work.Oqituvchilar.Add(entity);
+            if (await _work.SaveChangesAsync() != 0)
+            {
+                return (true, "O'qituvchi muvaffaqiyatli qo'shildi");
+            }
+            else
+            {
+                return (false, "Nimadir xato ketdi,internet bilan aloqani tekshiring");
+            }
         }
+
+        public Task<(bool, string)> DeleteAsync(long id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<OqituvchiViewModel> GetAllTeachers()
         {
-            var teachers = _db.Oqituvchilar.GetAll().Select(x=>(OqituvchiViewModel)x).ToList();
+            var teachers = _work.Oqituvchilar.GetAll().Select(x=>(OqituvchiViewModel)x).ToList();
             if (teachers != null) return teachers;
             else return new List<OqituvchiViewModel>();
+        }
+
+        public Task<Oqituvchi> GetById(long id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Oqituvchi> GetByKeyword(string keyword)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Oqituvchi> UpdateAsync(string name, long id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
