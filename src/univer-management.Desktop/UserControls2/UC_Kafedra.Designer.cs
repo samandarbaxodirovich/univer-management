@@ -280,6 +280,7 @@ namespace univer_management.Desktop.UserControls2
             guna2Button2.Size = new Size(124, 39);
             guna2Button2.TabIndex = 15;
             guna2Button2.Text = "Create";
+            guna2Button2.Click += guna2Button2_Click_1;
             // 
             // guna2CheckBox1
             // 
@@ -323,6 +324,7 @@ namespace univer_management.Desktop.UserControls2
             kafedratxt_box.ShadowDecoration.CustomizableEdges = customizableEdges10;
             kafedratxt_box.Size = new Size(322, 39);
             kafedratxt_box.TabIndex = 12;
+            kafedratxt_box.TextChanged += kafedratxt_box_TextChanged;
             // 
             // label1
             // 
