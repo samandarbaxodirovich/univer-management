@@ -82,9 +82,9 @@ namespace univer_management.Service.Services
 
         public IEnumerable<AuditoriyaViewModel> GetByKeyword(string keyword)
         {
-            return _work.Auditoriyalar.Where(x=>x.NumberOfOrder.ToLower().Contains(keyword.ToLower())
-            ||TypeHelper(keyword).Contains(x.Auditoriya_TipiId))
-                .Select(x=>(AuditoriyaViewModel)x).ToList();
+            var types = TypeHelper(keyword);
+            var stepone = _work.Auditoriyalar.Where(x => x.NumberOfOrder.ToLower().Contains(keyword.ToLower()) || types.Contains(x.Auditoriya_TipiId)).ToList();
+            return stepone.Select(x=>(AuditoriyaViewModel)x).ToList();
         }
        
         private List<long> TypeHelper(string keyword)
