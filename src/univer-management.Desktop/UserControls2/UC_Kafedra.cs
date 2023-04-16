@@ -20,14 +20,14 @@ namespace univer_management.Desktop.UserControls2
 
 
 
-		private void UC_Kafedra_Load_1(object sender, EventArgs e)
-		{
-			ComboBoxFill();
-		}
+        private void UC_Kafedra_Load_1(object sender, EventArgs e)
+        {
+            ComboBoxFill();
+        }
 
 
 
-		private async void ComboBoxFill()
+        private async void ComboBoxFill()
         {
             using (var db = new AppDbContext())
             {
@@ -181,5 +181,32 @@ namespace univer_management.Desktop.UserControls2
             }
         }
 
-	}
+        private async void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            if (guna2CheckBox1.Checked)
+            {
+                Mutaxasislik obj = mutaxasislikCmb.SelectedItem as Mutaxasislik;
+
+                Kafedra kafedra = new Kafedra()
+                {
+                    Name = kafedratxt_box.Text,
+                    MutaxasislikId = obj.Id
+                };
+
+                var result = await _service.CreateAsync(kafedra);
+
+                if (result.Item1)
+                {
+                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                SetValues();
+            }
+            else MessageBox.Show($"Siz avvalo kafedra qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+    }
 }
