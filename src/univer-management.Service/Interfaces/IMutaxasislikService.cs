@@ -15,6 +15,5 @@ namespace univer_management.Service.Interfaces
         public Task<(bool,string)> CreateAsync(Mutaxasislik entity);
         public Task<(bool, string)> DeleteAsync(long id);
         public Task<Mutaxasislik> UpdateAsync(string name, long id);
-
 	}
 }
