@@ -130,6 +130,7 @@ namespace univer_management.Desktop.UserControls2
             this.guna2Button1.Size = new System.Drawing.Size(74, 38);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "search";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // guna2DataGridView1
             // 
@@ -194,6 +195,7 @@ namespace univer_management.Desktop.UserControls2
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick_3);
             // 
             // Id
             // 
@@ -360,26 +362,27 @@ namespace univer_management.Desktop.UserControls2
             // 
             // UC_Mutaxasislik
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            Controls.Add(guna2Button3);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2CheckBox1);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(label1);
-            Controls.Add(guna2DataGridView1);
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2TextBox1);
-            Controls.Add(panel1);
-            Size = new Size(1040, 481);
-            Tag = "Mutahasislik";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.panel1);
+            this.Size = new System.Drawing.Size(1040, 481);
+            this.Tag = "Mutahasislik";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
