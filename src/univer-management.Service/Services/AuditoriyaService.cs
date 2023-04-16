@@ -80,16 +80,6 @@ namespace univer_management.Service.Services
                 .Select(x => x.Type).ToList();
         }
 
-        public IEnumerable<AuditoriyaViewModel> GetByKeyword(string keyword)
-        {
-            var types = TypeHelper(keyword);
-            var stepone = _work.Auditoriyalar.Where(x => x.NumberOfOrder.ToLower().Contains(keyword.ToLower()) || types.Contains(x.Auditoriya_TipiId)).ToList();
-            return stepone.Select(x=>(AuditoriyaViewModel)x).ToList();
-        }
-       
-        private List<long> TypeHelper(string keyword)
-        {
-            return _work.AuditoriyaTiplari.Where(x => x.Type.ToLower().Contains(keyword.ToLower())).Select(x=>x.Id).ToList();
-        }
+        
     }
 }

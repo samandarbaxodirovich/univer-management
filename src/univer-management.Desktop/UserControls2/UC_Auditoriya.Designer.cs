@@ -276,22 +276,22 @@
             // 
             // guna2CheckBox1
             // 
-            this.guna2CheckBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.ForeColor = System.Drawing.Color.Red;
-            this.guna2CheckBox1.Location = new System.Drawing.Point(702, 374);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(236, 24);
-            this.guna2CheckBox1.TabIndex = 14;
-            this.guna2CheckBox1.Text = "Auditoriya qo\'shishga rozi man";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            guna2CheckBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2CheckBox1.AutoSize = true;
+            guna2CheckBox1.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2CheckBox1.CheckedState.BorderRadius = 0;
+            guna2CheckBox1.CheckedState.BorderThickness = 0;
+            guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            guna2CheckBox1.ForeColor = Color.Red;
+            guna2CheckBox1.Location = new Point(702, 374);
+            guna2CheckBox1.Name = "guna2CheckBox1";
+            guna2CheckBox1.Size = new Size(236, 24);
+            guna2CheckBox1.TabIndex = 14;
+            guna2CheckBox1.Text = "Auditoriya qo'shishga rozi man";
+            guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            guna2CheckBox1.UncheckedState.BorderRadius = 0;
+            guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             // 
             // auditoriyaRaqami
             // 
@@ -425,7 +425,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(74, 38);
             this.guna2Button1.TabIndex = 22;
             this.guna2Button1.Text = "search";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2TextBox1
             // 
@@ -454,6 +453,77 @@
             this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             this.guna2TextBox1.Size = new System.Drawing.Size(332, 39);
             this.guna2TextBox1.TabIndex = 21;
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id.DividerWidth = 1;
+            this.Id.FillWeight = 8F;
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 52;
+            // 
+            // Name
+            // 
+            this.Name.DividerWidth = 1;
+            this.Name.FillWeight = 7F;
+            this.Name.HeaderText = "Audi Raqami";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DividerWidth = 1;
+            this.Column2.FillWeight = 8F;
+            this.Column2.HeaderText = "Auditoriya tipi";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DividerWidth = 1;
+            this.Column1.FillWeight = 8F;
+            this.Column1.HeaderText = "Sig\'imi";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DividerWidth = 1;
+            this.Column5.FillWeight = 5F;
+            this.Column5.HeaderText = "Korpus";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DividerWidth = 1;
+            this.Column3.FillWeight = 6F;
+            this.Column3.HeaderText = "Update";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Text = "✏️";
+            this.Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DividerWidth = 1;
+            this.Column4.FillWeight = 6F;
+            this.Column4.HeaderText = "Delete";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Text = "X";
+            this.Column4.UseColumnTextForButtonValue = true;
             // 
             // UC_Auditoriya
             // 

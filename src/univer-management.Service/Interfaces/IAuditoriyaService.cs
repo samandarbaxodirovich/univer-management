@@ -11,7 +11,6 @@ namespace univer_management.Service.Interfaces
 {
     public interface IAuditoriyaService
     {
-        public IEnumerable<AuditoriyaViewModel> GetByKeyword(string keyword);
         public Task<(string, bool)> CreateAsync(AuditoriyaCreateDto dto);
         public Task<IEnumerable<AuditoriyaViewModel>> GetAllAsync();
         public Task<AuditoriyaViewModel> GetAsync(long id);

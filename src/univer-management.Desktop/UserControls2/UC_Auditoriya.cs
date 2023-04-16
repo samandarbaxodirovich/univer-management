@@ -115,14 +115,5 @@ namespace univer_management.Desktop.UserControls2
             };
 
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            DataGridVIew_Auditor.Rows.Clear();
-            var targets = service.GetByKeyword(guna2TextBox1.Text);
-            foreach (var item in targets)
-                DataGridVIew_Auditor.Rows.Add(item.Id, item.NumberOfOrder, item.AuditoriyaTipi, item.Capacity, item.Korpus);
-
-        }
     }
 }
