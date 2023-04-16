@@ -33,5 +33,10 @@ namespace FinalProject.UserControls2
             YuklamaForm yuklamaForm = new YuklamaForm();
             yuklamaForm.ShowDialog();
         }
+
+        private void datagrid_Yuklama_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
