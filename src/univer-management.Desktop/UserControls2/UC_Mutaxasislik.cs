@@ -120,8 +120,17 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
-        private void guna2Button2_Click_2(object sender, EventArgs e)
+        private async void guna2Button2_Click_2(object sender, EventArgs e)
         {
+            if (guna2CheckBox1.Checked)
+            {
+                Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = guna2TextBox2.Text };
+                var result = await service.CreateAsync(mutaxasislik);
+                if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SetValues();
+            }
+            else MessageBox.Show($"Siz avvalo mutaxasislik qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
 
