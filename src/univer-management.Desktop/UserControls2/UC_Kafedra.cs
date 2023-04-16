@@ -9,6 +9,7 @@ namespace univer_management.Desktop.UserControls2
     {
         KafedraService _service;
 
+
         public UC_Kafedra()
         {
             _service = new KafedraService();
@@ -23,7 +24,8 @@ namespace univer_management.Desktop.UserControls2
 		{
 			ComboBoxFill();
 		}
-   
+
+
 
 		private async void ComboBoxFill()
         {
@@ -84,6 +86,8 @@ namespace univer_management.Desktop.UserControls2
             else MessageBox.Show($"Siz avvalo kafedra qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
+
+
         private async Task ActionControl(byte action, long id)
         {
             if (action == 3)
@@ -100,6 +104,45 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
+
+
+
+
+        //private async void datagridView_kafedra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if (datagridView_kafedra.SelectedRows.Count > 0)
+        //    {
+        //        DataGridViewRow selectedRow = datagridView_kafedra.SelectedRows[0];
+        //        var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+        //        byte actionId = 10;
+        //        if (datagridView_kafedra.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+        //        e.RowIndex >= 0)
+        //            actionId = byte.Parse(e.ColumnIndex.ToString());
+        //        if (actionId == 3)
+        //        {
+        //            UpdateForm update = new UpdateForm();
+        //            update.Name = selectedRow.Cells[1].Value.ToString();
+        //            update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+        //            update.Tag = this.Tag.ToString();
+        //            update.ShowDialog();
+        //        }
+
+        //        else if (actionId == 4)
+        //        {
+        //            DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        //            if (dialogResult == DialogResult.Cancel)
+        //            {
+        //                return;
+        //            }
+        //            else
+        //            {
+        //                await ActionControl(actionId, clientId);
+        //                SetValues();
+        //            }
+        //        }
+
+        //    }
+        //}
 
 
         private async void datagridView_kafedra_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -137,16 +180,6 @@ namespace univer_management.Desktop.UserControls2
 
             }
         }
-        private void kafedratxt_box_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void guna2Button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-    }
 	}
-
 }
