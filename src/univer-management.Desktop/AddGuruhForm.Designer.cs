@@ -28,242 +28,256 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            SuspendLayout();
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.BorderRadius = 15;
-            guna2TextBox1.CustomizableEdges = customizableEdges1;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.ForeColor = Color.Black;
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(31, 66);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Guruh nomi/raqami";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox1.Size = new Size(299, 36);
-            guna2TextBox1.TabIndex = 0;
-            // 
-            // guna2TextBox2
-            // 
-            guna2TextBox2.BorderRadius = 15;
-            guna2TextBox2.CustomizableEdges = customizableEdges3;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox2.ForeColor = Color.Black;
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(31, 169);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderText = "Talaba soni";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(299, 36);
-            guna2TextBox2.TabIndex = 1;
-            // 
-            // guna2TextBox3
-            // 
-            guna2TextBox3.BorderRadius = 15;
-            guna2TextBox3.CustomizableEdges = customizableEdges5;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.ForeColor = Color.Black;
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(31, 327);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderText = "Smester";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(299, 36);
-            guna2TextBox3.TabIndex = 2;
-            // 
-            // guna2TextBox4
-            // 
-            guna2TextBox4.BorderRadius = 15;
-            guna2TextBox4.CustomizableEdges = customizableEdges7;
-            guna2TextBox4.DefaultText = "";
-            guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox4.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox4.ForeColor = Color.Black;
-            guna2TextBox4.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Location = new Point(31, 118);
-            guna2TextBox4.Name = "guna2TextBox4";
-            guna2TextBox4.PasswordChar = '\0';
-            guna2TextBox4.PlaceholderForeColor = Color.Silver;
-            guna2TextBox4.PlaceholderText = "Smena";
-            guna2TextBox4.SelectedText = "";
-            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox4.Size = new Size(299, 36);
-            guna2TextBox4.TabIndex = 3;
-            // 
-            // guna2ComboBox1
-            // 
-            guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.BorderRadius = 15;
-            guna2ComboBox1.CustomizableEdges = customizableEdges9;
-            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox1.ForeColor = Color.Black;
-            guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(31, 227);
-            guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2ComboBox1.Size = new Size(299, 36);
-            guna2ComboBox1.TabIndex = 4;
-            // 
-            // guna2ComboBox2
-            // 
-            guna2ComboBox2.BackColor = Color.Transparent;
-            guna2ComboBox2.BorderRadius = 15;
-            guna2ComboBox2.CustomizableEdges = customizableEdges11;
-            guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox2.ForeColor = Color.Black;
-            guna2ComboBox2.ItemHeight = 30;
-            guna2ComboBox2.Location = new Point(31, 280);
-            guna2ComboBox2.Name = "guna2ComboBox2";
-            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2ComboBox2.Size = new Size(299, 36);
-            guna2ComboBox2.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(41, 212);
-            label1.Name = "label1";
-            label1.Size = new Size(76, 15);
-            label1.TabIndex = 6;
-            label1.Text = "Muttaxasislik";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(43, 264);
-            label2.Name = "label2";
-            label2.Size = new Size(62, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Auditoriya";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(44, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(243, 46);
-            label3.TabIndex = 8;
-            label3.Text = "Guruh qo'shish";
-            label3.Click += label3_Click;
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            guna2Button2.BorderRadius = 20;
-            guna2Button2.CustomizableEdges = customizableEdges13;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Blue;
-            guna2Button2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(67, 375);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button2.Size = new Size(220, 50);
-            guna2Button2.TabIndex = 11;
-            guna2Button2.Text = "create";
-            // 
-            // AddGuruhForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(389, 453);
-            Controls.Add(guna2Button2);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(guna2ComboBox2);
-            Controls.Add(guna2ComboBox1);
-            Controls.Add(guna2TextBox4);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2TextBox1);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "AddGuruhForm";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "AddGuruhForm";
-            ResumeLayout(false);
-            PerformLayout();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+			this.nameTb = new Guna.UI2.WinForms.Guna2TextBox();
+			this.numberofSTb = new Guna.UI2.WinForms.Guna2TextBox();
+			this.semestrTb = new Guna.UI2.WinForms.Guna2TextBox();
+			this.mutaxasislikCombobox = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.auditorycombobox = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+			this.smenaCmB = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// nameTb
+			// 
+			this.nameTb.BorderRadius = 15;
+			this.nameTb.CustomizableEdges = customizableEdges15;
+			this.nameTb.DefaultText = "";
+			this.nameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.nameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.nameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.nameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.nameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.nameTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.nameTb.ForeColor = System.Drawing.Color.Black;
+			this.nameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.nameTb.Location = new System.Drawing.Point(54, 64);
+			this.nameTb.Name = "nameTb";
+			this.nameTb.PasswordChar = '\0';
+			this.nameTb.PlaceholderText = "Guruh nomi/raqami";
+			this.nameTb.SelectedText = "";
+			this.nameTb.ShadowDecoration.CustomizableEdges = customizableEdges16;
+			this.nameTb.Size = new System.Drawing.Size(299, 36);
+			this.nameTb.TabIndex = 0;
+			// 
+			// numberofSTb
+			// 
+			this.numberofSTb.BorderRadius = 15;
+			this.numberofSTb.CustomizableEdges = customizableEdges17;
+			this.numberofSTb.DefaultText = "";
+			this.numberofSTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.numberofSTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.numberofSTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.numberofSTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.numberofSTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.numberofSTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.numberofSTb.ForeColor = System.Drawing.Color.Black;
+			this.numberofSTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.numberofSTb.Location = new System.Drawing.Point(54, 167);
+			this.numberofSTb.Name = "numberofSTb";
+			this.numberofSTb.PasswordChar = '\0';
+			this.numberofSTb.PlaceholderText = "Talaba soni";
+			this.numberofSTb.SelectedText = "";
+			this.numberofSTb.ShadowDecoration.CustomizableEdges = customizableEdges18;
+			this.numberofSTb.Size = new System.Drawing.Size(299, 36);
+			this.numberofSTb.TabIndex = 1;
+			// 
+			// semestrTb
+			// 
+			this.semestrTb.BorderRadius = 15;
+			this.semestrTb.CustomizableEdges = customizableEdges19;
+			this.semestrTb.DefaultText = "";
+			this.semestrTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.semestrTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.semestrTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.semestrTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.semestrTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.semestrTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.semestrTb.ForeColor = System.Drawing.Color.Black;
+			this.semestrTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.semestrTb.Location = new System.Drawing.Point(54, 325);
+			this.semestrTb.Name = "semestrTb";
+			this.semestrTb.PasswordChar = '\0';
+			this.semestrTb.PlaceholderText = "Smester";
+			this.semestrTb.SelectedText = "";
+			this.semestrTb.ShadowDecoration.CustomizableEdges = customizableEdges20;
+			this.semestrTb.Size = new System.Drawing.Size(299, 36);
+			this.semestrTb.TabIndex = 2;
+			// 
+			// mutaxasislikCombobox
+			// 
+			this.mutaxasislikCombobox.BackColor = System.Drawing.Color.Transparent;
+			this.mutaxasislikCombobox.BorderRadius = 15;
+			this.mutaxasislikCombobox.CustomizableEdges = customizableEdges21;
+			this.mutaxasislikCombobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.mutaxasislikCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.mutaxasislikCombobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.mutaxasislikCombobox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.mutaxasislikCombobox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.mutaxasislikCombobox.ForeColor = System.Drawing.Color.Black;
+			this.mutaxasislikCombobox.ItemHeight = 30;
+			this.mutaxasislikCombobox.Location = new System.Drawing.Point(54, 225);
+			this.mutaxasislikCombobox.Name = "mutaxasislikCombobox";
+			this.mutaxasislikCombobox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+			this.mutaxasislikCombobox.Size = new System.Drawing.Size(299, 36);
+			this.mutaxasislikCombobox.TabIndex = 4;
+			// 
+			// auditorycombobox
+			// 
+			this.auditorycombobox.BackColor = System.Drawing.Color.Transparent;
+			this.auditorycombobox.BorderRadius = 15;
+			this.auditorycombobox.CustomizableEdges = customizableEdges23;
+			this.auditorycombobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.auditorycombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.auditorycombobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.auditorycombobox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.auditorycombobox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.auditorycombobox.ForeColor = System.Drawing.Color.Black;
+			this.auditorycombobox.ItemHeight = 30;
+			this.auditorycombobox.Location = new System.Drawing.Point(54, 278);
+			this.auditorycombobox.Name = "auditorycombobox";
+			this.auditorycombobox.ShadowDecoration.CustomizableEdges = customizableEdges24;
+			this.auditorycombobox.Size = new System.Drawing.Size(299, 36);
+			this.auditorycombobox.TabIndex = 5;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.Location = new System.Drawing.Point(64, 210);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(76, 15);
+			this.label1.TabIndex = 6;
+			this.label1.Text = "Muttaxasislik";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label2.Location = new System.Drawing.Point(66, 262);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(62, 15);
+			this.label2.TabIndex = 7;
+			this.label2.Text = "Auditoriya";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label3.Location = new System.Drawing.Point(82, 9);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(243, 46);
+			this.label3.TabIndex = 8;
+			this.label3.Text = "Guruh qo\'shish";
+			// 
+			// guna2Button2
+			// 
+			this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.guna2Button2.BorderRadius = 20;
+			this.guna2Button2.CustomizableEdges = customizableEdges25;
+			this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.guna2Button2.FillColor = System.Drawing.Color.Blue;
+			this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(64, 391);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+			this.guna2Button2.Size = new System.Drawing.Size(271, 50);
+			this.guna2Button2.TabIndex = 11;
+			this.guna2Button2.Text = "Add";
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+			// 
+			// smenaCmB
+			// 
+			this.smenaCmB.BackColor = System.Drawing.Color.Transparent;
+			this.smenaCmB.BorderRadius = 15;
+			this.smenaCmB.CustomizableEdges = customizableEdges27;
+			this.smenaCmB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.smenaCmB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.smenaCmB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.smenaCmB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.smenaCmB.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.smenaCmB.ForeColor = System.Drawing.Color.Black;
+			this.smenaCmB.ItemHeight = 30;
+			this.smenaCmB.Items.AddRange(new object[] {
+            "1",
+            "2"});
+			this.smenaCmB.Location = new System.Drawing.Point(54, 123);
+			this.smenaCmB.Name = "smenaCmB";
+			this.smenaCmB.ShadowDecoration.CustomizableEdges = customizableEdges28;
+			this.smenaCmB.Size = new System.Drawing.Size(299, 36);
+			this.smenaCmB.TabIndex = 12;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label4.Location = new System.Drawing.Point(65, 105);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(43, 15);
+			this.label4.TabIndex = 13;
+			this.label4.Text = "Smena";
+			// 
+			// AddGuruhForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.ClientSize = new System.Drawing.Size(404, 453);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.smenaCmB);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.auditorycombobox);
+			this.Controls.Add(this.mutaxasislikCombobox);
+			this.Controls.Add(this.semestrTb);
+			this.Controls.Add(this.numberofSTb);
+			this.Controls.Add(this.nameTb);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.Name = "AddGuruhForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "AddGuruhForm";
+			this.Load += new System.EventHandler(this.AddGuruhForm_Load);
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2TextBox nameTb;
+        private Guna.UI2.WinForms.Guna2TextBox numberofSTb;
+        private Guna.UI2.WinForms.Guna2TextBox semestrTb;
+        private Guna.UI2.WinForms.Guna2ComboBox mutaxasislikCombobox;
+        private Guna.UI2.WinForms.Guna2ComboBox auditorycombobox;
         private Label label1;
         private Label label2;
         private Label label3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-    }
+		private Guna.UI2.WinForms.Guna2ComboBox smenaCmB;
+		private Label label4;
+	}
 }
