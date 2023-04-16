@@ -308,13 +308,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             Controls.Add(guna2Button2);
             Controls.Add(guna2Button1);
             Controls.Add(guna2TextBox1);
             Controls.Add(datagrid_Yuklama);
             Controls.Add(panel1);
-            Name = "UC_Yuklama";
             Size = new Size(1053, 481);
+            Load += UC_Yuklama_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Yuklama).EndInit();

@@ -48,7 +48,7 @@ namespace univer_management.Desktop.UserControls2
         {
 
         }
-        
+
         private void SetValues()
         {
             guna2DataGridView1.Rows.Clear();
@@ -59,7 +59,7 @@ namespace univer_management.Desktop.UserControls2
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private async void guna2Button2_Click(object sender, EventArgs e)
@@ -175,6 +175,11 @@ namespace univer_management.Desktop.UserControls2
                     }
                 }
             }
+        }
+
+        private void UC_Mutaxasislik_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,5 +38,10 @@ namespace FinalProject.UserControls2
         {
 
         }
+
+        private void UC_Yuklama_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

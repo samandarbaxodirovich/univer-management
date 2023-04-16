@@ -31,19 +31,30 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             lblTitle = new Label();
             datagrid_Oquv_reja = new Guna.UI2.WinForms.Guna2DataGridView();
             Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewButtonColumn();
             Column4 = new DataGridViewButtonColumn();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Oquv_reja).BeginInit();
             SuspendLayout();
@@ -88,7 +99,7 @@
             datagrid_Oquv_reja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             datagrid_Oquv_reja.ColumnHeadersHeight = 22;
             datagrid_Oquv_reja.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            datagrid_Oquv_reja.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Column1, Column2, Column5, Column6, Column8, Column7, Column3, Column4 });
+            datagrid_Oquv_reja.Columns.AddRange(new DataGridViewColumn[] { Id, Column1, Column2, Column5, Column6, Column8, Column7, Column9, Column3, Column4 });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -98,13 +109,13 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             datagrid_Oquv_reja.DefaultCellStyle = dataGridViewCellStyle3;
             datagrid_Oquv_reja.GridColor = Color.FromArgb(224, 224, 224);
-            datagrid_Oquv_reja.Location = new Point(37, 165);
+            datagrid_Oquv_reja.Location = new Point(12, 188);
             datagrid_Oquv_reja.Name = "datagrid_Oquv_reja";
             datagrid_Oquv_reja.ReadOnly = true;
             datagrid_Oquv_reja.RowHeadersVisible = false;
             datagrid_Oquv_reja.RowHeadersWidth = 51;
             datagrid_Oquv_reja.RowTemplate.Height = 29;
-            datagrid_Oquv_reja.Size = new Size(966, 257);
+            datagrid_Oquv_reja.Size = new Size(1008, 269);
             datagrid_Oquv_reja.TabIndex = 7;
             datagrid_Oquv_reja.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             datagrid_Oquv_reja.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -139,19 +150,10 @@
             Id.ReadOnly = true;
             Id.Width = 52;
             // 
-            // Name
-            // 
-            Name.DividerWidth = 1;
-            Name.FillWeight = 8F;
-            Name.HeaderText = "Guruh raqami";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            // 
             // Column1
             // 
             Column1.DividerWidth = 1;
-            Column1.FillWeight = 8F;
+            Column1.FillWeight = 12F;
             Column1.HeaderText = "Fan nomi";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
@@ -161,7 +163,7 @@
             // 
             Column2.DividerWidth = 1;
             Column2.FillWeight = 8F;
-            Column2.HeaderText = "O'qituvchi nomi";
+            Column2.HeaderText = "Lektsiya";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
             Column2.ReadOnly = true;
@@ -170,7 +172,7 @@
             // 
             Column5.DividerWidth = 1;
             Column5.FillWeight = 8F;
-            Column5.HeaderText = "Mashg'ulot ";
+            Column5.HeaderText = "Seminar";
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
             Column5.ReadOnly = true;
@@ -179,7 +181,7 @@
             // 
             Column6.DividerWidth = 1;
             Column6.FillWeight = 8F;
-            Column6.HeaderText = "Dars soati(1-s)";
+            Column6.HeaderText = "Labaratoriya";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
             Column6.ReadOnly = true;
@@ -188,7 +190,7 @@
             // 
             Column8.DividerWidth = 1;
             Column8.FillWeight = 8F;
-            Column8.HeaderText = "Hafta/dars/s";
+            Column8.HeaderText = "Zachot";
             Column8.MinimumWidth = 6;
             Column8.Name = "Column8";
             Column8.ReadOnly = true;
@@ -197,10 +199,19 @@
             // 
             Column7.DividerWidth = 1;
             Column7.FillWeight = 8F;
-            Column7.HeaderText = "Auditoriya";
+            Column7.HeaderText = "Def.Zachot";
             Column7.MinimumWidth = 6;
             Column7.Name = "Column7";
             Column7.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            Column9.DividerWidth = 1;
+            Column9.FillWeight = 8F;
+            Column9.HeaderText = "Imtihon";
+            Column9.MinimumWidth = 6;
+            Column9.Name = "Column9";
+            Column9.ReadOnly = true;
             // 
             // Column3
             // 
@@ -226,10 +237,90 @@
             Column4.Text = "X";
             Column4.UseColumnTextForButtonValue = true;
             // 
+            // guna2Button1
+            // 
+            guna2Button1.Anchor = AnchorStyles.Top;
+            guna2Button1.BorderRadius = 5;
+            guna2Button1.CustomizableEdges = customizableEdges1;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(128, 128, 255);
+            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(783, 120);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button1.Size = new Size(74, 38);
+            guna2Button1.TabIndex = 11;
+            guna2Button1.Text = "search";
+            // 
+            // guna2ComboBox1
+            // 
+            guna2ComboBox1.Anchor = AnchorStyles.Top;
+            guna2ComboBox1.BackColor = Color.Transparent;
+            guna2ComboBox1.CustomizableEdges = customizableEdges3;
+            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
+            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox1.ItemHeight = 30;
+            guna2ComboBox1.Location = new Point(318, 120);
+            guna2ComboBox1.Name = "guna2ComboBox1";
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2ComboBox1.Size = new Size(283, 36);
+            guna2ComboBox1.TabIndex = 12;
+            // 
+            // guna2ComboBox2
+            // 
+            guna2ComboBox2.Anchor = AnchorStyles.Top;
+            guna2ComboBox2.BackColor = Color.Transparent;
+            guna2ComboBox2.CustomizableEdges = customizableEdges5;
+            guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
+            guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox2.ItemHeight = 30;
+            guna2ComboBox2.Location = new Point(624, 120);
+            guna2ComboBox2.Name = "guna2ComboBox2";
+            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2ComboBox2.Size = new Size(125, 36);
+            guna2ComboBox2.TabIndex = 13;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.Location = new Point(318, 97);
+            label1.Name = "label1";
+            label1.Size = new Size(127, 20);
+            label1.TabIndex = 14;
+            label1.Text = "Kafedrani tanlang";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.Location = new Point(624, 97);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 20);
+            label2.TabIndex = 15;
+            label2.Text = "Smestrni tanlang";
+            // 
             // UC_Uquv_reja
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(guna2ComboBox2);
+            Controls.Add(guna2ComboBox1);
+            Controls.Add(guna2Button1);
             Controls.Add(datagrid_Oquv_reja);
             Controls.Add(panel1);
             Name = "UC_Uquv_reja";
@@ -238,6 +329,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Oquv_reja).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -246,14 +338,19 @@
         private Label lblTitle;
         private Guna.UI2.WinForms.Guna2DataGridView datagrid_Oquv_reja;
         private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column8;
         private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column9;
         private DataGridViewButtonColumn Column3;
         private DataGridViewButtonColumn Column4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Label label1;
+        private Label label2;
     }
 }
