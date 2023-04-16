@@ -61,9 +61,9 @@ namespace univer_management.Desktop.UserControls2
                 if (actionId == 2)
                 {
                     UpdateForm update = new UpdateForm();
-                    update.Name = selectedRow.Cells[1].Value.ToString();
+                    update.Name = selectedRow.Cells[1].Value.ToString()!;
                     update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                    update.Tag = this.Tag.ToString();
+                    update.Tag = this.Tag.ToString()!;
                     update.ShowDialog();
                 }
 
@@ -152,6 +152,11 @@ namespace univer_management.Desktop.UserControls2
         }
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click_2(object sender, EventArgs e)
         {
 
         }
