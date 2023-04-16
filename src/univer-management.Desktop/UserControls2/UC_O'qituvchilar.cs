@@ -34,6 +34,8 @@ namespace univer_management.Desktop.UserControls2
             }
         }
 
+         
+
         private void DataGridVIew_Oqituvchi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
