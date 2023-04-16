@@ -340,7 +340,7 @@
             kafedraId.FocusedColor = Color.FromArgb(94, 148, 255);
             kafedraId.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             kafedraId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            kafedraId.ForeColor = Color.FromArgb(68, 88, 112);
+            kafedraId.ForeColor = Color.Black;
             kafedraId.ItemHeight = 30;
             kafedraId.Location = new Point(695, 320);
             kafedraId.Name = "kafedraId";

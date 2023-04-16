@@ -58,11 +58,12 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            Yuxlamabtn = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // guna2TextBox1
             // 
+            guna2TextBox1.BorderRadius = 15;
             guna2TextBox1.CustomizableEdges = customizableEdges1;
             guna2TextBox1.DefaultText = "";
             guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -71,6 +72,7 @@
             guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.ForeColor = Color.Black;
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Location = new Point(36, 44);
             guna2TextBox1.Name = "guna2TextBox1";
@@ -84,13 +86,14 @@
             // guna2ComboBox1
             // 
             guna2ComboBox1.BackColor = Color.Transparent;
+            guna2ComboBox1.BorderRadius = 15;
             guna2ComboBox1.CustomizableEdges = customizableEdges3;
             guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox1.ForeColor = Color.Black;
             guna2ComboBox1.ItemHeight = 30;
             guna2ComboBox1.Location = new Point(36, 110);
             guna2ComboBox1.Name = "guna2ComboBox1";
@@ -101,13 +104,14 @@
             // guna2ComboBox2
             // 
             guna2ComboBox2.BackColor = Color.Transparent;
+            guna2ComboBox2.BorderRadius = 15;
             guna2ComboBox2.CustomizableEdges = customizableEdges5;
             guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox2.ForeColor = Color.Black;
             guna2ComboBox2.ItemHeight = 30;
             guna2ComboBox2.Location = new Point(36, 169);
             guna2ComboBox2.Name = "guna2ComboBox2";
@@ -118,13 +122,14 @@
             // guna2ComboBox3
             // 
             guna2ComboBox3.BackColor = Color.Transparent;
+            guna2ComboBox3.BorderRadius = 15;
             guna2ComboBox3.CustomizableEdges = customizableEdges7;
             guna2ComboBox3.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox3.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox3.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox3.ForeColor = Color.Black;
             guna2ComboBox3.ItemHeight = 30;
             guna2ComboBox3.Location = new Point(36, 288);
             guna2ComboBox3.Name = "guna2ComboBox3";
@@ -135,13 +140,14 @@
             // guna2ComboBox4
             // 
             guna2ComboBox4.BackColor = Color.Transparent;
+            guna2ComboBox4.BorderRadius = 15;
             guna2ComboBox4.CustomizableEdges = customizableEdges9;
             guna2ComboBox4.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox4.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox4.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox4.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox4.ForeColor = Color.Black;
             guna2ComboBox4.ItemHeight = 30;
             guna2ComboBox4.Location = new Point(36, 229);
             guna2ComboBox4.Name = "guna2ComboBox4";
@@ -151,6 +157,7 @@
             // 
             // guna2TextBox2
             // 
+            guna2TextBox2.BorderRadius = 15;
             guna2TextBox2.CustomizableEdges = customizableEdges11;
             guna2TextBox2.DefaultText = "";
             guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -159,6 +166,7 @@
             guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Location = new Point(36, 348);
             guna2TextBox2.Name = "guna2TextBox2";
@@ -172,13 +180,14 @@
             // guna2ComboBox5
             // 
             guna2ComboBox5.BackColor = Color.Transparent;
+            guna2ComboBox5.BorderRadius = 15;
             guna2ComboBox5.CustomizableEdges = customizableEdges13;
             guna2ComboBox5.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox5.FocusedColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox5.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2ComboBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox5.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox5.ForeColor = Color.Black;
             guna2ComboBox5.ItemHeight = 30;
             guna2ComboBox5.Location = new Point(36, 408);
             guna2ComboBox5.Name = "guna2ComboBox5";
@@ -256,31 +265,31 @@
             label7.TabIndex = 16;
             label7.Text = "Auditoriya raqami";
             // 
-            // guna2Button2
+            // Yuxlamabtn
             // 
-            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Button2.BorderRadius = 5;
-            guna2Button2.CustomizableEdges = customizableEdges15;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Blue;
-            guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(88, 464);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button2.Size = new Size(208, 44);
-            guna2Button2.TabIndex = 17;
-            guna2Button2.Text = "Create";
+            Yuxlamabtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Yuxlamabtn.BorderRadius = 5;
+            Yuxlamabtn.CustomizableEdges = customizableEdges15;
+            Yuxlamabtn.DisabledState.BorderColor = Color.DarkGray;
+            Yuxlamabtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            Yuxlamabtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Yuxlamabtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Yuxlamabtn.FillColor = Color.Blue;
+            Yuxlamabtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            Yuxlamabtn.ForeColor = Color.White;
+            Yuxlamabtn.Location = new Point(88, 464);
+            Yuxlamabtn.Name = "Yuxlamabtn";
+            Yuxlamabtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Yuxlamabtn.Size = new Size(208, 44);
+            Yuxlamabtn.TabIndex = 17;
+            Yuxlamabtn.Text = "Create";
             // 
             // YuklamaForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(404, 539);
-            Controls.Add(guna2Button2);
+            Controls.Add(Yuxlamabtn);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -319,6 +328,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button Yuxlamabtn;
     }
 }

@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             lblTitle = new Label();
             datagrid_Yuklama = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -51,8 +51,9 @@
             Column3 = new DataGridViewButtonColumn();
             Column4 = new DataGridViewButtonColumn();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            YuklamaGuruhR = new Guna.UI2.WinForms.Guna2ComboBox();
+            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Yuklama).BeginInit();
             SuspendLayout();
@@ -84,29 +85,29 @@
             // 
             datagrid_Yuklama.AllowUserToAddRows = false;
             datagrid_Yuklama.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            datagrid_Yuklama.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            datagrid_Yuklama.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             datagrid_Yuklama.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             datagrid_Yuklama.BackgroundColor = Color.WhiteSmoke;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            datagrid_Yuklama.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            datagrid_Yuklama.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             datagrid_Yuklama.ColumnHeadersHeight = 22;
             datagrid_Yuklama.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             datagrid_Yuklama.Columns.AddRange(new DataGridViewColumn[] { Id, Name, Column1, Column2, Column5, Column6, Column8, Column7, Column3, Column4 });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            datagrid_Yuklama.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            datagrid_Yuklama.DefaultCellStyle = dataGridViewCellStyle3;
             datagrid_Yuklama.GridColor = Color.FromArgb(224, 224, 224);
             datagrid_Yuklama.Location = new Point(45, 186);
             datagrid_Yuklama.Name = "datagrid_Yuklama";
@@ -241,7 +242,7 @@
             // 
             guna2Button1.Anchor = AnchorStyles.Top;
             guna2Button1.BorderRadius = 5;
-            guna2Button1.CustomizableEdges = customizableEdges7;
+            guna2Button1.CustomizableEdges = customizableEdges1;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -249,46 +250,18 @@
             guna2Button1.FillColor = Color.FromArgb(128, 128, 255);
             guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(654, 115);
+            guna2Button1.Location = new Point(626, 117);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(74, 38);
             guna2Button1.TabIndex = 9;
             guna2Button1.Text = "search";
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.Anchor = AnchorStyles.Top;
-            guna2TextBox1.BackColor = Color.White;
-            guna2TextBox1.BorderColor = Color.White;
-            guna2TextBox1.BorderRadius = 5;
-            guna2TextBox1.BorderThickness = 0;
-            guna2TextBox1.CustomizableEdges = customizableEdges9;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FillColor = SystemColors.ActiveCaption;
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.ForeColor = Color.Black;
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(301, 114);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderForeColor = Color.Black;
-            guna2TextBox1.PlaceholderText = "Gruppani raqamini kiriting";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox1.Size = new Size(332, 39);
-            guna2TextBox1.TabIndex = 8;
             // 
             // guna2Button2
             // 
             guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2Button2.BorderRadius = 5;
-            guna2Button2.CustomizableEdges = customizableEdges11;
+            guna2Button2.CustomizableEdges = customizableEdges3;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -298,20 +271,49 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.Location = new Point(860, 115);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button2.Size = new Size(152, 38);
             guna2Button2.TabIndex = 10;
             guna2Button2.Text = "Yuklama qo'shish";
             guna2Button2.Click += guna2Button2_Click;
+            // 
+            // YuklamaGuruhR
+            // 
+            YuklamaGuruhR.Anchor = AnchorStyles.Top;
+            YuklamaGuruhR.BackColor = Color.Transparent;
+            YuklamaGuruhR.BorderRadius = 8;
+            YuklamaGuruhR.CustomizableEdges = customizableEdges5;
+            YuklamaGuruhR.DrawMode = DrawMode.OwnerDrawFixed;
+            YuklamaGuruhR.DropDownStyle = ComboBoxStyle.DropDownList;
+            YuklamaGuruhR.FocusedColor = Color.FromArgb(94, 148, 255);
+            YuklamaGuruhR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            YuklamaGuruhR.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            YuklamaGuruhR.ForeColor = Color.Black;
+            YuklamaGuruhR.ItemHeight = 30;
+            YuklamaGuruhR.Location = new Point(379, 117);
+            YuklamaGuruhR.Name = "YuklamaGuruhR";
+            YuklamaGuruhR.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            YuklamaGuruhR.Size = new Size(225, 36);
+            YuklamaGuruhR.TabIndex = 11;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(379, 94);
+            label1.Name = "label1";
+            label1.Size = new Size(161, 20);
+            label1.TabIndex = 12;
+            label1.Text = "Guruh raqamini kiriting";
             // 
             // UC_Yuklama
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(label1);
+            Controls.Add(YuklamaGuruhR);
             Controls.Add(guna2Button2);
             Controls.Add(guna2Button1);
-            Controls.Add(guna2TextBox1);
             Controls.Add(datagrid_Yuklama);
             Controls.Add(panel1);
             Size = new Size(1053, 481);
@@ -320,6 +322,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Yuklama).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -338,7 +341,8 @@
         private DataGridViewButtonColumn Column3;
         private DataGridViewButtonColumn Column4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2ComboBox YuklamaGuruhR;
+        private Label label1;
     }
 }

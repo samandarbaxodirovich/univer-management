@@ -29,8 +29,8 @@ namespace FinalProject.UserControls2
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
-           OquvrejaForm oquvrejaForm = new OquvrejaForm();
-        oquvrejaForm.ShowDialog();
+            OquvrejaForm oquvrejaForm = new OquvrejaForm();
+            oquvrejaForm.ShowDialog();
         }
     }
 }
