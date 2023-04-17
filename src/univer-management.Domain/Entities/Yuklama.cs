@@ -16,7 +16,7 @@ namespace univer_management.Domain.Entities
         public virtual Fan Fan { get;set; } = default!;
         public long OqituvchiId { get; set; }
         public Oqituvchi Oqituvchi { get; set; } = default!;
-        public long Oquv_Reja_Id { get; set; }
+        public long Oquv_RejaId { get; set; }
         public virtual Oquv_Reja Oquv_Reja { get; set; } = default!;
         public long AuditoriyaId { get; set; }
         public virtual Auditoriya Auditoriya { get; set; } = default!;
