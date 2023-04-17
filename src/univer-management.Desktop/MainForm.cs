@@ -65,6 +65,7 @@ namespace FinalProject
 
         private void btnDarsJadvali_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Dars_RejaForm(), sender);
         }
 
         private void btnAlmashtirishlar_Click(object sender, EventArgs e)
