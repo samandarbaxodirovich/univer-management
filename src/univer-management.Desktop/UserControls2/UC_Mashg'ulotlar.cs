@@ -30,7 +30,9 @@ namespace univer_management.Desktop.UserControls2
                 DataGridVIew_Oqituvchi.Rows.Add(item.Id, item.Name);
         }
 
-        private async void guna2Button2_Click(object sender, EventArgs e)
+       
+
+        private async void guna2Button2_Click_1(object sender, EventArgs e)
         {
             if (guna2CheckBox1.Checked)
             {
@@ -42,10 +44,6 @@ namespace univer_management.Desktop.UserControls2
             }
             else MessageBox.Show($"Siz avvalo mashgulot qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-        }
-
-        private void guna2Button2_Click_1(object sender, EventArgs e)
-        {
 
         }
     }

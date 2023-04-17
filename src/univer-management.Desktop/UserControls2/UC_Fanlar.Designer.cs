@@ -437,7 +437,6 @@
             Controls.Add(guna2TextBox1);
             Controls.Add(guna2DataGridView1);
             Controls.Add(panel1);
-            Name = "UC_Fanlar";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

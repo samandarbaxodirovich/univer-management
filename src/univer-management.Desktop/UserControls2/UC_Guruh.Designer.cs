@@ -282,7 +282,6 @@
             Controls.Add(guna2TextBox1);
             Controls.Add(datagridview1);
             Controls.Add(panel1);
-            Name = "UC_Guruh";
             Size = new Size(1040, 481);
             Load += UC_Guruh_Load;
             panel1.ResumeLayout(false);

@@ -70,12 +70,10 @@ namespace univer_management.Desktop
 
             Mutaxasislik obj = mutaxasislikCombobox.SelectedItem as Mutaxasislik;
             Auditoriya obj2 = auditorycombobox.SelectedItem as Auditoriya;
-            object smena = (object)smenaCmB.SelectedItem;
 
             Gurux gurux = new Gurux()
             {
                 Name = nameTb.Text,
-                Smena = Convert.ToInt32(smena),
                 Semestr = int.Parse(semestrTb.Text),
                 Capacity = int.Parse(numberofSTb.Text),
                 MutaxasislikId = obj.Id,
