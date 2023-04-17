@@ -79,6 +79,10 @@ namespace univer_management.Service.Services
             return _work.AuditoriyaTiplari.GetAll()
                 .Select(x => x.Type).ToList();
         }
+        public IEnumerable<Auditoriya> GetAll()
+        {
+            return _work.Auditoriyalar.GetAll().ToList();
+        }
 
         public IEnumerable<AuditoriyaViewModel> GetByKeyword(string keyword)
         {
