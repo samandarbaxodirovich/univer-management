@@ -50,10 +50,6 @@ namespace FinalProject.Forms
         }
 
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            UC_Oqituvchi_dars_reja uC_Oqituvchi_Dars_Reja = new UC_Oqituvchi_dars_reja();
-            addUserControl(uC_Oqituvchi_Dars_Reja);
-        }
+       
     }
 }
