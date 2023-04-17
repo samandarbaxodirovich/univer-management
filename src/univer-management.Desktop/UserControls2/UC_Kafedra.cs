@@ -117,13 +117,11 @@ namespace univer_management.Desktop.UserControls2
                     actionId = byte.Parse(e.ColumnIndex.ToString());
                 if (actionId == 3)
                 {
-                    Updatess updates= new Updatess();
-                    updates.ShowDialog();
                     UpdateForm update = new UpdateForm();
                     update.Name = selectedRow.Cells[1].Value.ToString();
                     update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
                     update.Tag = this.Tag.ToString();
-                    //update.ShowDialog();
+                    update.ShowDialog();
                 }
 
                 else if (actionId == 4)
