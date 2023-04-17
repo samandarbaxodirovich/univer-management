@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,7 @@ namespace FinalProject.UserControls2
         }
 
         MutaxasislikService mService = new();
+        OquvRejaService oquvRejaService= new();
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -51,6 +53,20 @@ namespace FinalProject.UserControls2
         private void SetValues()
         {
             guna2ComboBox1.DataSource = mService.GetAll().Select(x=>x.Name).ToList();
+        }
+        private void SetTable()
+        {
+            var oquvRejalar = oquvRejaService.GetAll(mService.GetByKeyword(guna2ComboBox1.SelectedItem.ToString()).First().Id
+                , int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
+            foreach (var item in oquvRejalar)
+            {
+                datagrid_Oquv_reja.Rows.Add(item.Id, item.FanName, item.Lektsiya, item.Seminar, item.Labaratoriya, item.Zachot, item.DefZachot, item.Imtihon);
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SetTable();
         }
     }
 }
