@@ -59,34 +59,6 @@ namespace univer_management.Desktop.UserControls2
             }
         }
 
-        private async void guna2Button2_Click(object sender, EventArgs e)
-        {
-            if (guna2CheckBox1.Checked)
-            {
-                Mutaxasislik obj = mutaxasislikCmb.SelectedItem as Mutaxasislik;
-
-                Kafedra kafedra = new Kafedra()
-                {
-                    Name = kafedratxt_box.Text,
-                    MutaxasislikId = obj.Id
-                };
-
-                var result = await _service.CreateAsync(kafedra);
-
-                if (result.Item1)
-                {
-                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                SetValues();
-            }
-            else MessageBox.Show($"Siz avvalo kafedra qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-        }
-
 
         private async Task ActionControl(byte action, long id)
         {
@@ -104,82 +76,6 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
-
-
-
-
-        //private async void datagridView_kafedra_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    if (datagridView_kafedra.SelectedRows.Count > 0)
-        //    {
-        //        DataGridViewRow selectedRow = datagridView_kafedra.SelectedRows[0];
-        //        var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
-        //        byte actionId = 10;
-        //        if (datagridView_kafedra.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-        //        e.RowIndex >= 0)
-        //            actionId = byte.Parse(e.ColumnIndex.ToString());
-        //        if (actionId == 3)
-        //        {
-        //            UpdateForm update = new UpdateForm();
-        //            update.Name = selectedRow.Cells[1].Value.ToString();
-        //            update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-        //            update.Tag = this.Tag.ToString();
-        //            update.ShowDialog();
-        //        }
-
-        //        else if (actionId == 4)
-        //        {
-        //            DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-        //            if (dialogResult == DialogResult.Cancel)
-        //            {
-        //                return;
-        //            }
-        //            else
-        //            {
-        //                await ActionControl(actionId, clientId);
-        //                SetValues();
-        //            }
-        //        }
-
-        //    }
-        //}
-
-
-        private async void datagridView_kafedra_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            if (datagridView_kafedra.SelectedRows.Count > 0)
-            {
-                DataGridViewRow selectedRow = datagridView_kafedra.SelectedRows[0];
-                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
-                byte actionId = 10;
-                if (datagridView_kafedra.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.RowIndex >= 0)
-                    actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 3)
-                {
-                    UpdateForm update = new UpdateForm();
-                    update.Name = selectedRow.Cells[1].Value.ToString();
-                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                    update.Tag = this.Tag.ToString();
-                    update.ShowDialog();
-                }
-
-                else if (actionId == 4)
-                {
-                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    if (dialogResult == DialogResult.Cancel)
-                    {
-                        return;
-                    }
-                    else
-                    {
-                        await ActionControl(actionId, clientId);
-                        SetValues();
-                    }
-                }
-
-            }
-        }
 
         private async void guna2Button2_Click_1(object sender, EventArgs e)
         {
@@ -207,6 +103,44 @@ namespace univer_management.Desktop.UserControls2
             }
             else MessageBox.Show($"Siz avvalo kafedra qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+        }
+
+        private async void datagridView_kafedra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (datagridView_kafedra.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = datagridView_kafedra.SelectedRows[0];
+                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+                byte actionId = 10;
+                if (datagridView_kafedra.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+                    actionId = byte.Parse(e.ColumnIndex.ToString());
+                if (actionId == 3)
+                {
+                    Updatess updates= new Updatess();
+                    updates.ShowDialog();
+                    UpdateForm update = new UpdateForm();
+                    update.Name = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Tag = this.Tag.ToString();
+                    //update.ShowDialog();
+                }
+
+                else if (actionId == 4)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
+                }
+
+            }
         }
     }
 }

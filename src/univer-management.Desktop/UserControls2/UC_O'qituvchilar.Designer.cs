@@ -48,6 +48,12 @@
             panel1 = new Panel();
             lblTitle = new Label();
             DataGridVIew_Oqituvchi = new Guna.UI2.WinForms.Guna2DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2CheckBox11 = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -57,12 +63,6 @@
             kafedraId = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Oqituvchi).BeginInit();
@@ -148,6 +148,68 @@
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.Height = 29;
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // Name
+            // 
+            Name.DividerWidth = 1;
+            Name.FillWeight = 10F;
+            Name.HeaderText = "FullName";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.DividerWidth = 1;
+            Column2.FillWeight = 8F;
+            Column2.HeaderText = "O'qituvchi darajasi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            Column1.DividerWidth = 1;
+            Column1.FillWeight = 8F;
+            Column1.HeaderText = "Kafedra";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
             // 
             // guna2Button3
             // 
@@ -334,70 +396,9 @@
             guna2Button1.TabIndex = 27;
             guna2Button1.Text = "search";
             // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // Name
-            // 
-            Name.DividerWidth = 1;
-            Name.FillWeight = 10F;
-            Name.HeaderText = "FullName";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            Column2.DividerWidth = 1;
-            Column2.FillWeight = 8F;
-            Column2.HeaderText = "O'qituvchi darajasi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            Column1.DividerWidth = 1;
-            Column1.FillWeight = 8F;
-            Column1.HeaderText = "Kafedra";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(706, 310);
@@ -423,7 +424,6 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Oqituvchi);
             Controls.Add(panel1);
-            Name = "UC_O_qituvchilar";
             Size = new Size(1040, 481);
             Load += UC_O_qituvchilar_Load;
             panel1.ResumeLayout(false);

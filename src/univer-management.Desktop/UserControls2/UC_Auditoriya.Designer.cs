@@ -463,7 +463,6 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Auditor);
             Controls.Add(panel1);
-            Name = "UC_Auditoriya";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
