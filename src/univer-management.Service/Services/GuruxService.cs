@@ -65,5 +65,10 @@ namespace univer_management.Service.Services
 		{
 			throw new NotImplementedException();
 		}
-	}
+		public IEnumerable<Gurux> GetAllBit()
+		{
+            return _work.Guruxlar.GetAll().Include(x => x.Mutaxasislik).Include(x => x.Auditoriya).OrderByDescending(x => x.Id).ToList();
+
+        }
+    }
 }

@@ -7,6 +7,7 @@ using univer_management.DataAccess.DbContexts;
 using univer_management.DataAccess.Repositories.Common;
 using univer_management.Domain.Entities;
 using univer_management.Service.Interfaces;
+using univer_management.Service.ViewModels;
 
 namespace univer_management.Service.Services
 {
@@ -37,10 +38,9 @@ namespace univer_management.Service.Services
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Yuklama> GetAll()
+        public IEnumerable<YuklamaViewModel> GetAll()
         {
-            var targets =  _work.Yuklamalar.GetAll().ToList();
-            return targets;
+            return _work.Yuklamalar.GetAll().Select(x=>(YuklamaViewModel)x).ToList();
         }
 
         public Task<Yuklama> GetById(long id)
