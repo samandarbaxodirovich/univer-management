@@ -64,6 +64,7 @@
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             label2 = new Label();
             guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -251,7 +252,7 @@
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
-            guna2TextBox1.PlaceholderText = "Enter keyword";
+            guna2TextBox1.PlaceholderText = "Fan-ni qidirish";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TextBox1.Size = new Size(332, 39);
@@ -269,7 +270,7 @@
             guna2Button3.FillColor = Color.FromArgb(255, 128, 0);
             guna2Button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(873, 418);
+            guna2Button3.Location = new Point(873, 420);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button3.Size = new Size(102, 39);
@@ -288,7 +289,7 @@
             guna2Button2.FillColor = Color.Blue;
             guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(720, 418);
+            guna2Button2.Location = new Point(720, 420);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button2.Size = new Size(110, 39);
@@ -305,7 +306,7 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(720, 378);
+            guna2CheckBox1.Location = new Point(720, 380);
             guna2CheckBox1.Name = "guna2CheckBox1";
             guna2CheckBox1.Size = new Size(185, 24);
             guna2CheckBox1.TabIndex = 14;
@@ -329,7 +330,7 @@
             guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2TextBox2.ForeColor = Color.Black;
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(697, 226);
+            guna2TextBox2.Location = new Point(697, 222);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderForeColor = Color.Gray;
@@ -346,12 +347,12 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 7F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(702, 316);
+            label1.Location = new Point(703, 319);
             label1.Margin = new Padding(3);
             label1.Name = "label1";
-            label1.Size = new Size(100, 15);
+            label1.Size = new Size(99, 15);
             label1.TabIndex = 11;
-            label1.Text = "Kafedra tarkibida";
+            label1.Text = "Kafedrani kiriting";
             // 
             // guna2ComboBox1
             // 
@@ -366,7 +367,7 @@
             guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             guna2ComboBox1.ForeColor = Color.Black;
             guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(697, 336);
+            guna2ComboBox1.Location = new Point(697, 338);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2ComboBox1.Size = new Size(292, 36);
@@ -399,17 +400,31 @@
             guna2ComboBox2.ForeColor = Color.Black;
             guna2ComboBox2.ItemHeight = 30;
             guna2ComboBox2.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            guna2ComboBox2.Location = new Point(697, 271);
+            guna2ComboBox2.Location = new Point(697, 281);
             guna2ComboBox2.Name = "guna2ComboBox2";
             guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2ComboBox2.Size = new Size(292, 36);
             guna2ComboBox2.TabIndex = 19;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(703, 263);
+            label3.Margin = new Padding(3);
+            label3.Name = "label3";
+            label3.Size = new Size(140, 15);
+            label3.TabIndex = 20;
+            label3.Text = "Fan qiyinchiligini kiriting ";
             // 
             // UC_Fanlar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(label3);
             Controls.Add(guna2ComboBox2);
             Controls.Add(label2);
             Controls.Add(guna2ComboBox1);
@@ -422,6 +437,7 @@
             Controls.Add(guna2TextBox1);
             Controls.Add(guna2DataGridView1);
             Controls.Add(panel1);
+            Name = "UC_Fanlar";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -451,5 +467,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Label label3;
     }
 }

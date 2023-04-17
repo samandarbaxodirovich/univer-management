@@ -48,12 +48,6 @@
             panel1 = new Panel();
             lblTitle = new Label();
             DataGridVIew_Oqituvchi = new Guna.UI2.WinForms.Guna2DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2CheckBox11 = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -63,6 +57,13 @@
             kafedraId = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Oqituvchi).BeginInit();
             SuspendLayout();
@@ -148,68 +149,6 @@
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // Name
-            // 
-            Name.DividerWidth = 1;
-            Name.FillWeight = 10F;
-            Name.HeaderText = "FullName";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            Column2.DividerWidth = 1;
-            Column2.FillWeight = 8F;
-            Column2.HeaderText = "Dars_qiyinchiligi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            Column1.DividerWidth = 1;
-            Column1.FillWeight = 8F;
-            Column1.HeaderText = "Kafedra";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            // 
             // guna2Button3
             // 
             guna2Button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -258,11 +197,11 @@
             guna2CheckBox11.CheckedState.BorderThickness = 0;
             guna2CheckBox11.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox11.ForeColor = Color.Red;
-            guna2CheckBox11.Location = new Point(705, 371);
+            guna2CheckBox11.Location = new Point(707, 371);
             guna2CheckBox11.Name = "guna2CheckBox11";
-            guna2CheckBox11.Size = new Size(219, 24);
+            guna2CheckBox11.Size = new Size(229, 24);
             guna2CheckBox11.TabIndex = 22;
-            guna2CheckBox11.Text = "O'qituvchi kiritishga roziman";
+            guna2CheckBox11.Text = "O'qituvchi qo'shishga roziman";
             guna2CheckBox11.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox11.UncheckedState.BorderRadius = 0;
             guna2CheckBox11.UncheckedState.BorderThickness = 0;
@@ -310,7 +249,7 @@
             gunatextBox.Name = "gunatextBox";
             gunatextBox.PasswordChar = '\0';
             gunatextBox.PlaceholderForeColor = Color.Gray;
-            gunatextBox.PlaceholderText = "name kiriting";
+            gunatextBox.PlaceholderText = "To'liq ism sharafni kiriting";
             gunatextBox.SelectedText = "";
             gunatextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
             gunatextBox.Size = new Size(283, 37);
@@ -342,7 +281,7 @@
             kafedraId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             kafedraId.ForeColor = Color.Black;
             kafedraId.ItemHeight = 30;
-            kafedraId.Location = new Point(695, 320);
+            kafedraId.Location = new Point(695, 325);
             kafedraId.Name = "kafedraId";
             kafedraId.ShadowDecoration.CustomizableEdges = customizableEdges10;
             kafedraId.Size = new Size(283, 36);
@@ -371,7 +310,7 @@
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
-            guna2TextBox1.PlaceholderText = "Enter keyword";
+            guna2TextBox1.PlaceholderText = "O'qituvchini qidirish";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2TextBox1.Size = new Size(305, 39);
@@ -395,11 +334,84 @@
             guna2Button1.TabIndex = 27;
             guna2Button1.Text = "search";
             // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // Name
+            // 
+            Name.DividerWidth = 1;
+            Name.FillWeight = 10F;
+            Name.HeaderText = "FullName";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.DividerWidth = 1;
+            Column2.FillWeight = 8F;
+            Column2.HeaderText = "O'qituvchi darajasi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            Column1.DividerWidth = 1;
+            Column1.FillWeight = 8F;
+            Column1.HeaderText = "Kafedra";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(706, 310);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 15);
+            label2.TabIndex = 28;
+            label2.Text = "Kafedrani tanlang";
+            // 
             // UC_O_qituvchilar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(label2);
             Controls.Add(guna2Button1);
             Controls.Add(guna2TextBox1);
             Controls.Add(kafedraId);
@@ -411,6 +423,7 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Oqituvchi);
             Controls.Add(panel1);
+            Name = "UC_O_qituvchilar";
             Size = new Size(1040, 481);
             Load += UC_O_qituvchilar_Load;
             panel1.ResumeLayout(false);
@@ -425,12 +438,6 @@
         private Panel panel1;
         private Label lblTitle;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridVIew_Oqituvchi;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Name;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewButtonColumn Column3;
-        private DataGridViewButtonColumn Column4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox11;
@@ -440,5 +447,12 @@
         private Guna.UI2.WinForms.Guna2ComboBox kafedraId;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewButtonColumn Column3;
+        private DataGridViewButtonColumn Column4;
+        private Label label2;
     }
 }

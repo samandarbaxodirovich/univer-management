@@ -177,7 +177,7 @@
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button4.Size = new Size(179, 38);
             guna2Button4.TabIndex = 4;
-            guna2Button4.Text = "O'qituvchi";
+            guna2Button4.Text = "O‘qituvchi";
             guna2Button4.Click += guna2Button4_Click;
             // 
             // guna2Button3
@@ -252,7 +252,7 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button1.Size = new Size(179, 38);
             guna2Button1.TabIndex = 1;
-            guna2Button1.Text = "Muttaxasislik";
+            guna2Button1.Text = "Mutaxassislik";
             guna2Button1.Click += guna2Button1_Click;
             // 
             // panelContainer3
