@@ -9,6 +9,7 @@ using univer_management.DataAccess.Repositories.Common;
 using univer_management.Domain.Entities;
 using univer_management.Service.Dtos.CreateDtos;
 using univer_management.Service.Interfaces;
+using univer_management.Service.ViewModels;
 
 namespace univer_management.Service.Services
 {
@@ -86,6 +87,15 @@ namespace univer_management.Service.Services
             
             
         }
+        public IEnumerable<OquvRejaViewModel> GetAll(long mutaxasislikId,int semestr)
+        {
+            var trainings = _work.Oquvrejalar.GetAll().Where(x=>x.MutaxasislikId == mutaxasislikId&&x.Semestr == semestr).ToList();
+            return trainings.Select(x => (OquvRejaViewModel)x).ToList();
+        } 
+
+
+
+
         public async Task<Oquv_Reja> CurrentGet(OquvRejaFanCreateDto dto)
         {
             return await _work.Oquvrejalar.FirstOrDefaultAsync(x=>x.FanId == dto.Fan&&x.MutaxasislikId == dto.Mutaxasislik&&x.Semestr == x.Semestr);

@@ -29,5 +29,6 @@ namespace univer_management.Service.Services
         {
             return _work.Fanlar.GetAll().Select(x => (FanViewModel)x).ToList();
         }
+        
     }
 }
