@@ -154,6 +154,7 @@
             this.datagrid_Oquv_reja.ThemeStyle.RowsStyle.Height = 29;
             this.datagrid_Oquv_reja.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagrid_Oquv_reja.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.datagrid_Oquv_reja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Oquv_reja_CellContentClick);
             // 
             // Id
             // 
@@ -304,6 +305,17 @@
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.guna2ComboBox2.Location = new System.Drawing.Point(527, 120);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -348,6 +360,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(159, 38);
             this.guna2Button2.TabIndex = 16;
             this.guna2Button2.Text = "O\'quv reja qo\'shish";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_2);
             // 
             // UC_Uquv_reja
             // 
