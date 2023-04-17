@@ -115,7 +115,7 @@
             datagrid_Yuklama.RowHeadersVisible = false;
             datagrid_Yuklama.RowHeadersWidth = 51;
             datagrid_Yuklama.RowTemplate.Height = 29;
-            datagrid_Yuklama.Size = new Size(966, 257);
+            datagrid_Yuklama.Size = new Size(984, 257);
             datagrid_Yuklama.TabIndex = 6;
             datagrid_Yuklama.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             datagrid_Yuklama.ThemeStyle.AlternatingRowsStyle.Font = null;

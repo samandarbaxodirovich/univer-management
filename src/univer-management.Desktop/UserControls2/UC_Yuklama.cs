@@ -51,9 +51,9 @@ namespace FinalProject.UserControls2
         {
             datagrid_Yuklama.Columns.Clear();
             var result = service.GetAll();
-            foreach(var item in result)
+            foreach (var item in result)
             {
-                datagrid_Yuklama.Rows.Add(item.Id,item.GuruxNomi,item.FanNomi,item.OqituvchiIsmi,item.Mashgulot,item.Haftalar,item.HaftalarSoatlar,item.AuditoriyaIsmi);
+                datagrid_Yuklama.Rows.Add(item.Id, item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
             }
         }
     }

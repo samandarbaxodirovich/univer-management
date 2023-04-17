@@ -48,16 +48,16 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            Name = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             label1 = new Label();
             guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            Id = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -80,9 +80,9 @@ namespace univer_management.Desktop.UserControls2
             lblTitle.ForeColor = Color.White;
             lblTitle.Location = new Point(359, 23);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(407, 32);
+            lblTitle.Size = new Size(413, 32);
             lblTitle.TabIndex = 2;
-            lblTitle.Text = "Muttaxasisliklarni shakllantirish";
+            lblTitle.Text = "Mutaxassisliklarni shakllantirish";
             // 
             // guna2TextBox1
             // 
@@ -190,50 +190,6 @@ namespace univer_management.Desktop.UserControls2
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick_3;
             // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // Name
-            // 
-            Name.DividerWidth = 1;
-            Name.FillWeight = 20F;
-            Name.HeaderText = "Mutaxasislik nomi";
-            Name.MinimumWidth = 6;
-            Name.Name = "Name";
-            Name.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -243,9 +199,9 @@ namespace univer_management.Desktop.UserControls2
             label1.Location = new Point(653, 197);
             label1.Margin = new Padding(3);
             label1.Name = "label1";
-            label1.Size = new Size(304, 32);
+            label1.Size = new Size(318, 32);
             label1.TabIndex = 5;
-            label1.Text = "Mutaxasislikni qo'shish";
+            label1.Text = "Mutaxassislikni qo'shish";
             // 
             // guna2TextBox2
             // 
@@ -265,7 +221,7 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderForeColor = Color.Gray;
-            guna2TextBox2.PlaceholderText = "Mutaxasislik nomini kiriting";
+            guna2TextBox2.PlaceholderText = "Mutaxassislik nomini kiriting";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBox2.Size = new Size(322, 39);
@@ -289,7 +245,7 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox3.Name = "guna2TextBox3";
             guna2TextBox3.PasswordChar = '\0';
             guna2TextBox3.PlaceholderForeColor = Color.Gray;
-            guna2TextBox3.PlaceholderText = "Mutaxasislik qisqacha nomini kiriting";
+            guna2TextBox3.PlaceholderText = "Mutaxassislik qisqacha nomini kiriting";
             guna2TextBox3.SelectedText = "";
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2TextBox3.Size = new Size(322, 39);
@@ -304,11 +260,11 @@ namespace univer_management.Desktop.UserControls2
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.ForeColor = Color.Red;
-            guna2CheckBox1.Location = new Point(657, 354);
+            guna2CheckBox1.Location = new Point(660, 354);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(243, 24);
+            guna2CheckBox1.Size = new Size(249, 24);
             guna2CheckBox1.TabIndex = 8;
-            guna2CheckBox1.Text = "Mutaxasislik qo'shishga roziman";
+            guna2CheckBox1.Text = "Mutaxassislik qo'shishga roziman";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.UncheckedState.BorderRadius = 0;
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
@@ -353,6 +309,50 @@ namespace univer_management.Desktop.UserControls2
             guna2Button3.TabIndex = 10;
             guna2Button3.Text = "Cancel";
             // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // Name
+            // 
+            Name.DividerWidth = 1;
+            Name.FillWeight = 20F;
+            Name.HeaderText = "Mutaxassislik nomi";
+            Name.MinimumWidth = 6;
+            Name.Name = "Name";
+            Name.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            // 
             // UC_Mutaxasislik
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -368,6 +368,7 @@ namespace univer_management.Desktop.UserControls2
             Controls.Add(guna2Button1);
             Controls.Add(guna2TextBox1);
             Controls.Add(panel1);
+            Name = "UC_Mutaxasislik";
             Size = new Size(1040, 481);
             Tag = "Mutahasislik";
             Load += UC_Mutaxasislik_Load;

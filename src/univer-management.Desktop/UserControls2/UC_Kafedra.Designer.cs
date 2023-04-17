@@ -46,11 +46,6 @@ namespace univer_management.Desktop.UserControls2
             panel1 = new Panel();
             lblTitle = new Label();
             datagridView_kafedra = new Guna.UI2.WinForms.Guna2DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            kafedra = new DataGridViewTextBoxColumn();
-            muttaxasislik = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -59,6 +54,12 @@ namespace univer_management.Desktop.UserControls2
             kafedratxt_box = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
             mutaxasislikCmb = new Guna.UI2.WinForms.Guna2ComboBox();
+            label2 = new Label();
+            Id = new DataGridViewTextBoxColumn();
+            kafedra = new DataGridViewTextBoxColumn();
+            muttaxasislik = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagridView_kafedra).BeginInit();
             SuspendLayout();
@@ -81,9 +82,9 @@ namespace univer_management.Desktop.UserControls2
             lblTitle.ForeColor = Color.White;
             lblTitle.Location = new Point(377, 23);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(343, 32);
+            lblTitle.Size = new Size(311, 32);
             lblTitle.TabIndex = 2;
-            lblTitle.Text = "Kafedralarni shakllantirish";
+            lblTitle.Text = "Kafedrani shakllantirish";
             // 
             // datagridView_kafedra
             // 
@@ -143,59 +144,6 @@ namespace univer_management.Desktop.UserControls2
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             datagridView_kafedra.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
-            // Id
-            // 
-            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Id.DividerWidth = 1;
-            Id.FillWeight = 8F;
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 52;
-            // 
-            // kafedra
-            // 
-            kafedra.DividerWidth = 1;
-            kafedra.FillWeight = 20F;
-            kafedra.HeaderText = "Kafedra nomi";
-            kafedra.MinimumWidth = 6;
-            kafedra.Name = "kafedra";
-            kafedra.ReadOnly = true;
-            // 
-            // muttaxasislik
-            // 
-            muttaxasislik.DividerWidth = 1;
-            muttaxasislik.FillWeight = 15F;
-            muttaxasislik.HeaderText = "Muttaxasislik nomi";
-            muttaxasislik.MinimumWidth = 6;
-            muttaxasislik.Name = "muttaxasislik";
-            muttaxasislik.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.DividerWidth = 1;
-            Column3.FillWeight = 6F;
-            Column3.HeaderText = "Update";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            // 
-            // Column4
-            // 
-            Column4.DividerWidth = 1;
-            Column4.FillWeight = 6F;
-            Column4.HeaderText = "Delete";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            // 
             // guna2TextBox1
             // 
             guna2TextBox1.Anchor = AnchorStyles.Top;
@@ -218,7 +166,7 @@ namespace univer_management.Desktop.UserControls2
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
-            guna2TextBox1.PlaceholderText = "Enter keyword";
+            guna2TextBox1.PlaceholderText = "Kafedrani qidirish";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2TextBox1.Size = new Size(304, 39);
@@ -333,9 +281,9 @@ namespace univer_management.Desktop.UserControls2
             label1.Location = new Point(732, 199);
             label1.Margin = new Padding(3);
             label1.Name = "label1";
-            label1.Size = new Size(221, 32);
+            label1.Size = new Size(225, 32);
             label1.TabIndex = 11;
-            label1.Text = "Kafedra yaratish";
+            label1.Text = "Kafedra qo'shish";
             // 
             // mutaxasislikCmb
             // 
@@ -357,11 +305,75 @@ namespace univer_management.Desktop.UserControls2
             mutaxasislikCmb.TabIndex = 17;
             mutaxasislikCmb.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(684, 290);
+            label2.Name = "label2";
+            label2.Size = new Size(158, 15);
+            label2.TabIndex = 18;
+            label2.Text = "Mutaxassislik nomini kiriting";
+            // 
+            // Id
+            // 
+            Id.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Id.DividerWidth = 1;
+            Id.FillWeight = 8F;
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 52;
+            // 
+            // kafedra
+            // 
+            kafedra.DividerWidth = 1;
+            kafedra.FillWeight = 20F;
+            kafedra.HeaderText = "Kafedra nomi";
+            kafedra.MinimumWidth = 6;
+            kafedra.Name = "kafedra";
+            kafedra.ReadOnly = true;
+            // 
+            // muttaxasislik
+            // 
+            muttaxasislik.DividerWidth = 1;
+            muttaxasislik.FillWeight = 15F;
+            muttaxasislik.HeaderText = "Mutaxassislik nomi";
+            muttaxasislik.MinimumWidth = 6;
+            muttaxasislik.Name = "muttaxasislik";
+            muttaxasislik.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.DividerWidth = 1;
+            Column3.FillWeight = 6F;
+            Column3.HeaderText = "Update";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Resizable = DataGridViewTriState.True;
+            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            Column4.DividerWidth = 1;
+            Column4.FillWeight = 6F;
+            Column4.HeaderText = "Delete";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            // 
             // UC_Kafedra
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(label2);
             Controls.Add(mutaxasislikCmb);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button2);
@@ -396,6 +408,7 @@ namespace univer_management.Desktop.UserControls2
         private Guna.UI2.WinForms.Guna2TextBox kafedratxt_box;
         private Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox mutaxasislikCmb;
+        private Label label2;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn kafedra;
         private DataGridViewTextBoxColumn muttaxasislik;

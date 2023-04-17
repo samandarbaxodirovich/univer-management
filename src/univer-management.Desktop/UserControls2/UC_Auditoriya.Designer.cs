@@ -90,9 +90,9 @@
             lblTitle.ForeColor = Color.White;
             lblTitle.Location = new Point(366, 22);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(339, 32);
+            lblTitle.Size = new Size(316, 32);
             lblTitle.TabIndex = 2;
-            lblTitle.Text = "Auditoriyani shakllantirish";
+            lblTitle.Text = "Auditoriya shakllantirish";
             // 
             // DataGridVIew_Auditor
             // 
@@ -169,7 +169,7 @@
             // 
             Name.DividerWidth = 1;
             Name.FillWeight = 7F;
-            Name.HeaderText = "Audi Raqami";
+            Name.HeaderText = "Auditoriya Raqami";
             Name.MinimumWidth = 6;
             Name.Name = "Name";
             Name.ReadOnly = true;
@@ -178,7 +178,7 @@
             // 
             Column2.DividerWidth = 1;
             Column2.FillWeight = 8F;
-            Column2.HeaderText = "Auditoriya tipi";
+            Column2.HeaderText = "Auditoriya turi";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
             Column2.ReadOnly = true;
@@ -394,9 +394,9 @@
             label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(700, 217);
             label2.Name = "label2";
-            label2.Size = new Size(88, 15);
+            label2.Size = new Size(133, 15);
             label2.TabIndex = 20;
-            label2.Text = "Auditoriya type";
+            label2.Text = "Auditoriya turini kiriting";
             // 
             // guna2Button1
             // 
@@ -439,7 +439,7 @@
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderForeColor = Color.Black;
-            guna2TextBox1.PlaceholderText = "Enter keyword";
+            guna2TextBox1.PlaceholderText = "Qidirish so'zini kiriting";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2TextBox1.Size = new Size(332, 39);
@@ -463,6 +463,7 @@
             Controls.Add(label1);
             Controls.Add(DataGridVIew_Auditor);
             Controls.Add(panel1);
+            Name = "UC_Auditoriya";
             Size = new Size(1040, 481);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -483,6 +484,10 @@
         private Label label1;
         private Guna.UI2.WinForms.Guna2TextBox joylarSoni;
         private Guna.UI2.WinForms.Guna2TextBox auditoriyaBino;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Label label2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Column2;
@@ -490,9 +495,5 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewButtonColumn Column3;
         private DataGridViewButtonColumn Column4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
