@@ -12,5 +12,8 @@ namespace univer_management.Service.Interfaces
     {
         public Task<(bool, string)> CreateAsync(Fan entity, string kafedraName);
         public IEnumerable<FanViewModel> GetAll();
+        public IEnumerable<Fan> GetByKeyword(string keyword);
+        public Task<(bool, string)> DeleteAsync(long id);
+        public Task<Fan> UpdateAsync(string name, long id);
     }
 }

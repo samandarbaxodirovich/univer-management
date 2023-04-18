@@ -25,10 +25,28 @@ namespace univer_management.Service.Services
             return (false, "Nimadir xato ketdi, iltimos internet aloqasini tekshiring");
         }
 
+        public async Task<(bool, string)> DeleteAsync(long id)
+        {
+            if (await _work.Fanlar.FirstOrDefaultAsync(x => x.Id == id) == null)
+                return (false, "Bu nomdagi Fan mavjud emas");
+            await Task.Run(() => { _work.Fanlar.Delete(id); });
+            if (await _work.SaveChangesAsync() != 0) return (true, "Fan muvaffaqiyatli o'chirildi");
+            else return (false, "Fan xato ketdi,internet aloqasini tekshiring");
+        }
+
         public IEnumerable<FanViewModel> GetAll()
         {
             return _work.Fanlar.GetAll().Select(x => (FanViewModel)x).ToList();
         }
-        
+
+        public IEnumerable<Fan> GetByKeyword(string keyword)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Fan> UpdateAsync(string name, long id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

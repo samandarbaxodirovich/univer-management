@@ -23,9 +23,13 @@ namespace univer_management.Service.Services
             return (false, "Nimadir xato ketdi,internet bilan aloqani tekshiring");
         }
 
-        public Task<(bool, string)> DeleteAsync(long id)
+        public async Task<(bool, string)> DeleteAsync(long id)
         {
-            throw new NotImplementedException();
+            if (await _work.Mashgulotlar.FirstOrDefaultAsync(x => x.Id == id) == null)
+                return (false, "Bu nomdagi Mashg'ulot mavjud emas");
+            await Task.Run(() => { _work.Mashgulotlar.Delete(id); });
+            if (await _work.SaveChangesAsync() != 0) return (true, "Mashg'ulot muvaffaqiyatli o'chirildi");
+            else return (false, "Mashg'ulot xato ketdi,internet aloqasini tekshiring");
         }
 
         public IEnumerable<Domain.Entities.Mashgulot> GetAll()
