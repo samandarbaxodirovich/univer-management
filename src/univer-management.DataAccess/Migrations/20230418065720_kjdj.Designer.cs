@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230418065720_kjdj")]
+    partial class kjdj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,42 +68,6 @@ namespace univer_management.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Auditoriya_Tiplari");
-                });
-
-            modelBuilder.Entity("univer_management.Domain.Entities.DarsJadval", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("Chorshanba")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Dushanba")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Juma")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("paraRaqami")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("payshanba")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("sehanba")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DarsJadvalllari");
                 });
 
             modelBuilder.Entity("univer_management.Domain.Entities.Fan", b =>

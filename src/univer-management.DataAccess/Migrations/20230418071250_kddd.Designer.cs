@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230418071250_kddd")]
+    partial class kddd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,26 +78,26 @@ namespace univer_management.DataAccess.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("Chorshanba")
+                    b.Property<string>("Beshinchipara")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Dushanba")
+                    b.Property<string>("IkkinchiPara")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Juma")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("paraRaqami")
+                    b.Property<int>("KunRaqami")
                         .HasColumnType("integer");
 
-                    b.Property<string>("payshanba")
+                    b.Property<string>("Tortinchipara")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("sehanba")
+                    b.Property<string>("birinchiPara")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("uchinchiPara")
                         .IsRequired()
                         .HasColumnType("text");
 

@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.DataAccess.DbContexts;
+using univer_management.DataAccess.Repositories.Common;
+using univer_management.DataAccess.Repositories.Main;
+using univer_management.Domain.Entities;
 
 namespace univer_management.Desktop
 {
@@ -15,8 +19,10 @@ namespace univer_management.Desktop
         public Dars_RejaYaratishForm()
         {
             InitializeComponent();
+            SetValues();
         }
-
+        UnitOfWork _work = SingeltonUnitOfWork.Instance;
+        
         private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -54,6 +60,110 @@ namespace univer_management.Desktop
                 MessageBox.Show("5 Parani qo'shishga rozimi siz", "Ogohlantirish", MessageBoxButtons.OKCancel);
                 this.Close();
             }
+        }
+
+        private void Dars_RejaYaratishForm_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void SetValues()
+        {
+            ComboFill(); ComboFill1(); ComboFill2(); ComboFill3(); ComboFill4();
+        }
+        private void ComboFill()
+        {
+            using (var db = new AppDbContext())
+            {
+                var list = _work.Fanlar.GetAll().ToList();
+                guna2ComboBox2.DataSource = list;
+                guna2ComboBox2.DisplayMember = "Name";
+                guna2ComboBox2.ValueMember = "Id";
+            }
+        }
+        private void ComboFill1()
+        {
+            using (var db = new AppDbContext())
+            {
+                var list = _work.Fanlar.GetAll().ToList();
+                guna2ComboBox1.DataSource = list;
+                guna2ComboBox1.DisplayMember = "Name";
+                guna2ComboBox1.ValueMember = "Id";
+            }
+        }
+        private void ComboFill2()
+        {
+            using (var db = new AppDbContext())
+            {
+                var list = _work.Fanlar.GetAll().ToList();
+                guna2ComboBox4.DataSource = list;
+                guna2ComboBox4.DisplayMember = "Name";
+                guna2ComboBox4.ValueMember = "Id";
+            }
+        }
+        private void ComboFill3()
+        {
+            using (var db = new AppDbContext())
+            {
+                var list = _work.Fanlar.GetAll().ToList();
+                guna2ComboBox5.DataSource = list;
+                guna2ComboBox5.DisplayMember = "Name";
+                guna2ComboBox5.ValueMember = "Id";
+            }
+        }
+        private void ComboFill4()
+        {
+            using (var db = new AppDbContext())
+            {
+                var list = _work.Fanlar.GetAll().ToList();
+                guna2ComboBox3.DataSource = list;
+                guna2ComboBox3.DisplayMember = "Name";
+                guna2ComboBox3.ValueMember = "Id";
+            }
+        }
+
+        private void guna2ComboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void DarsRejabtn_Click_1(object sender, EventArgs e)
+        {
+            var res = new DarsJadval()
+            {
+                paraRaqami = int.Parse(comboBox1.Text),
+                Dushanba = guna2ComboBox5.Text,
+                sehanba = guna2ComboBox4.Text,
+                Chorshanba = guna2ComboBox2.Text,
+                payshanba = guna2ComboBox3.Text,
+                Juma = guna2ComboBox1.Text,
+            };
+            _work.DarsJadvallari.Add(res);
+            if (await _work.SaveChangesAsync() != 0)
+            {
+                MessageBox.Show("Dars jadvali muvaffaqqiyatli saqlandi");
+                this.Close();
+            }
+            else MessageBox.Show("Dars jadvali saqlashda xatolik");
         }
     }
 }
