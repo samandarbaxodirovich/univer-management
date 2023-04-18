@@ -32,9 +32,13 @@ namespace univer_management.Service.Services
             }
         }
 
-        public Task<(bool, string)> DeleteAsync(long id)
+        public async Task<(bool, string)> DeleteAsync(long id)
         {
-            throw new NotImplementedException();
+            if (await _work.Oqituvchilar.FirstOrDefaultAsync(x => x.Id == id) == null)
+                return (false, "Bu nomdagi O'qituvchi mavjud emas");
+            await Task.Run(() => { _work.Oqituvchilar.Delete(id); });
+            if (await _work.SaveChangesAsync() != 0) return (true, "O'qituvchi muvaffaqiyatli o'chirildi");
+            else return (false, "Nimadir xato ketdi,internet aloqasini tekshiring");
         }
 
         public IEnumerable<OqituvchiViewModel> GetAllTeachers()

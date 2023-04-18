@@ -40,10 +40,14 @@ namespace univer_management.Service.Services
 			}
 		}
 
-		public Task<(bool, string)> DeleteAsync(long id)
+		public async Task<(bool, string)> DeleteAsync(long id)
 		{
-			throw new NotImplementedException();
-		}
+            if (await _work.Guruxlar.FirstOrDefaultAsync(x => x.Id == id) == null)
+                return (false, "Bu nomdagi Guruh mavjud emas");
+            await Task.Run(() => { _work.Guruxlar.Delete(id); });
+            if (await _work.SaveChangesAsync() != 0) return (true, "Guruh muvaffaqiyatli o'chirildi");
+            else return (false, "Guruh xato ketdi,internet aloqasini tekshiring");
+        }
 
 		public async Task<IEnumerable<Gurux>> GetAll()
 		{

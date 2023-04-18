@@ -65,6 +65,7 @@ namespace univer_management.Desktop
             {
                 MessageBox.Show("Iltimos barcha maydonlarni toldiring");
                 return;
+
             }
 
 
@@ -91,6 +92,7 @@ namespace univer_management.Desktop
             {
                 MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            this.Close();
         }
     }
 }
