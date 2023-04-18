@@ -52,25 +52,13 @@ namespace univer_management.Service.Services
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
                         MashgulotId = 3,
-                        MashgulotLength = dto.Labaratoriya,
+                        MashgulotLength = dto.Imtihon,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
                         MashgulotId = 4,
-                        MashgulotLength = dto.Zachot,
-                        OquvRejaId = oquvRejaId,
-                    });
-                    _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
-                    {
-                        MashgulotId = 5,
-                        MashgulotLength = dto.DefZachot,
-                        OquvRejaId = oquvRejaId,
-                    });
-                    _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
-                    {
-                        MashgulotId = 6,
-                        MashgulotLength = dto.Imtihon,
+                        MashgulotLength = dto.MustaqilTalim,
                         OquvRejaId = oquvRejaId,
                     });
                     if (await _work.SaveChangesAsync() != 0)
@@ -98,7 +86,7 @@ namespace univer_management.Service.Services
 
         public async Task<Oquv_Reja> CurrentGet(OquvRejaFanCreateDto dto)
         {
-            return await _work.Oquvrejalar.FirstOrDefaultAsync(x=>x.FanId == dto.Fan&&x.MutaxasislikId == dto.Mutaxasislik&&x.Semestr == x.Semestr);
+            return await _work.Oquvrejalar.FirstOrDefaultAsync(x=>x.FanId == dto.Fan&&x.MutaxasislikId == dto.Mutaxasislik&&x.Semestr == dto.Semestr);
         }
     }
 }

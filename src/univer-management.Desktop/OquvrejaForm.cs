@@ -36,7 +36,7 @@ namespace univer_management.Desktop
         {
             List<string> list = new List<string>()
             {
-                guna2TextBox1.Text,guna2TextBox6.Text,guna2TextBox3.Text,guna2TextBox5.Text,guna2TextBox4.Text ,guna2TextBox2.Text
+                guna2TextBox1.Text,guna2TextBox5.Text,guna2TextBox4.Text ,guna2TextBox2.Text
             };
             var resultAll = 0.0;
             foreach (string s in list)
@@ -73,17 +73,6 @@ namespace univer_management.Desktop
             SetTotal();
         }
 
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
-        {
-            SetTotal();
-
-        }
-
-        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
-        {
-            SetTotal();
-        }
-
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -110,25 +99,13 @@ namespace univer_management.Desktop
                 catch { }
                 try
                 {
-                    dto.Labaratoriya = double.Parse(guna2TextBox4.Text);
+                    dto.Imtihon = double.Parse(guna2TextBox4.Text);
 
                 }
                 catch { }
                 try
                 {
-                    dto.Imtihon = double.Parse(guna2TextBox6.Text);
-
-                }
-                catch { }
-                try
-                {
-                    dto.DefZachot = double.Parse(guna2TextBox3.Text);
-
-                }
-                catch { }
-                try
-                {
-                    dto.Zachot = double.Parse(guna2TextBox5.Text);
+                    dto.MustaqilTalim = double.Parse(guna2TextBox5.Text);
                 }
                 catch { }
                 try
@@ -148,8 +125,10 @@ namespace univer_management.Desktop
             }
             else
                 MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
-
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
