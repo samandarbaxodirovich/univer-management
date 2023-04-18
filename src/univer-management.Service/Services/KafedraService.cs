@@ -59,9 +59,20 @@ namespace univer_management.Service.Services
 			throw new NotImplementedException();
 		}
 
-		public Task<Kafedra> UpdateAsync(string name, long id)
-		{
-			throw new NotImplementedException();
-		}
-	}
+        public async Task<(string, bool)> UpdateAsync(Kafedra entity, long id)
+        {
+            var res = await _work.Kafedralar.FindByIdAsync(id);
+            if (res != null)
+            {
+                res.MutaxasislikId = entity.MutaxasislikId;
+                res.Name = entity.Name;
+                if (await _work.SaveChangesAsync() != 0)
+                {
+                    return ("Kafedra muvaffaqiyatli o'zgartirildi", true);
+                }
+                return ("Nimadir xato ketti internet aloqasini tekshiring", false);
+            }
+            return ("Bunaqa kafedra topilmadi", false);
+        }
+    }
 }
