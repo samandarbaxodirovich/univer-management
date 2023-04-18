@@ -63,7 +63,7 @@ namespace univer_management.Desktop.UserControls2
 
         private async Task ActionControl(byte action, long id)
         {
-            if (action == 3)
+            if (action == 4)
             {
                 await Task.Run(async () =>
                 {
