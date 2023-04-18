@@ -131,6 +131,7 @@
             Controls.Add(guna2TextBox1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "UpdateKafedra";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "UpdateKafedra";
             Load += UpdateKafedra_Load;
             ResumeLayout(false);

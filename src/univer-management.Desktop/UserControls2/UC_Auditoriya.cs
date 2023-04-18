@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop.Updates;
 using univer_management.Service.Dtos.CreateDtos;
 using univer_management.Service.Services;
 
@@ -76,14 +77,17 @@ namespace univer_management.Desktop.UserControls2
                 if (DataGridVIew_Auditor.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
-                //if (actionId == 5)
-                //{
-                //    UpdateForm update = new UpdateForm();
-                //    update.Name = selectedRow.Cells[1].Value.ToString();
-                //    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                //    update.Tag = this.Tag.ToString();
-                //    update.ShowDialog();
-                //}
+                if (actionId == 5)
+                {
+                    UpdateAuditoriya update = new UpdateAuditoriya();
+                    update.Number = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Auditoriya_Tipiw = selectedRow.Cells[2].Value.ToString();
+                    update.Sigimi = selectedRow.Cells[3].Value.ToString();
+                    update.Korpus = selectedRow.Cells[4].Value.ToString();
+                    update.ShowDialog();
+                    SetValues();
+                }
 
                 if (actionId == 6)
                 {
