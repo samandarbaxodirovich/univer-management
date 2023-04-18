@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using univer_management.DataAccess.DbContexts;
+using univer_management.Desktop.Updates;
 using univer_management.Domain.Entities;
 using univer_management.Service.Services;
 
@@ -109,7 +110,17 @@ namespace univer_management.Desktop.UserControls2
                 if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 5)
+                if (actionId == 4)
+                {
+                    UpdateOqituvchi update = new UpdateOqituvchi();
+                    update.FullName = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Level = selectedRow.Cells[2].Value.ToString();
+                    update.Kafedra = selectedRow.Cells[3].Value.ToString();
+                    update.ShowDialog();
+                    SetValues();
+                }
+                else if (actionId == 5)
                 {
                     DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     if (dialogResult == DialogResult.Cancel)
