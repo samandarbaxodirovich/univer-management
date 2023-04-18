@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230418071602_kdddsxs")]
+    partial class kdddsxs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,6 +87,10 @@ namespace univer_management.DataAccess.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Juma")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Shanba")
                         .IsRequired()
                         .HasColumnType("text");
 

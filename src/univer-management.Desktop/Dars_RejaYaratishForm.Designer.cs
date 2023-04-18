@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -59,7 +59,7 @@
             // 
             this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox2.BorderRadius = 15;
-            this.guna2ComboBox2.CustomizableEdges = customizableEdges25;
+            this.guna2ComboBox2.CustomizableEdges = customizableEdges1;
             this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -69,15 +69,16 @@
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.Location = new System.Drawing.Point(28, 235);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(322, 36);
             this.guna2ComboBox2.TabIndex = 7;
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
             // guna2ComboBox3
             // 
             this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox3.BorderRadius = 15;
-            this.guna2ComboBox3.CustomizableEdges = customizableEdges27;
+            this.guna2ComboBox3.CustomizableEdges = customizableEdges3;
             this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -87,15 +88,16 @@
             this.guna2ComboBox3.ItemHeight = 30;
             this.guna2ComboBox3.Location = new System.Drawing.Point(28, 297);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.guna2ComboBox3.Size = new System.Drawing.Size(322, 36);
             this.guna2ComboBox3.TabIndex = 8;
+            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged_1);
             // 
             // guna2ComboBox4
             // 
             this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox4.BorderRadius = 15;
-            this.guna2ComboBox4.CustomizableEdges = customizableEdges29;
+            this.guna2ComboBox4.CustomizableEdges = customizableEdges5;
             this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -105,15 +107,16 @@
             this.guna2ComboBox4.ItemHeight = 30;
             this.guna2ComboBox4.Location = new System.Drawing.Point(28, 173);
             this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            this.guna2ComboBox4.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.guna2ComboBox4.Size = new System.Drawing.Size(322, 36);
             this.guna2ComboBox4.TabIndex = 9;
+            this.guna2ComboBox4.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox4_SelectedIndexChanged);
             // 
             // guna2ComboBox5
             // 
             this.guna2ComboBox5.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox5.BorderRadius = 15;
-            this.guna2ComboBox5.CustomizableEdges = customizableEdges31;
+            this.guna2ComboBox5.CustomizableEdges = customizableEdges7;
             this.guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -123,9 +126,10 @@
             this.guna2ComboBox5.ItemHeight = 30;
             this.guna2ComboBox5.Location = new System.Drawing.Point(28, 112);
             this.guna2ComboBox5.Name = "guna2ComboBox5";
-            this.guna2ComboBox5.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            this.guna2ComboBox5.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.guna2ComboBox5.Size = new System.Drawing.Size(322, 36);
             this.guna2ComboBox5.TabIndex = 10;
+            this.guna2ComboBox5.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox5_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -190,7 +194,7 @@
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox1.BorderRadius = 15;
-            this.guna2ComboBox1.CustomizableEdges = customizableEdges33;
+            this.guna2ComboBox1.CustomizableEdges = customizableEdges9;
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -200,9 +204,10 @@
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.Location = new System.Drawing.Point(28, 359);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            this.guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.guna2ComboBox1.Size = new System.Drawing.Size(322, 36);
             this.guna2ComboBox1.TabIndex = 17;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -217,7 +222,7 @@
             // 
             this.DarsRejabtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DarsRejabtn.BorderRadius = 5;
-            this.DarsRejabtn.CustomizableEdges = customizableEdges35;
+            this.DarsRejabtn.CustomizableEdges = customizableEdges11;
             this.DarsRejabtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.DarsRejabtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.DarsRejabtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -225,18 +230,19 @@
             this.DarsRejabtn.FillColor = System.Drawing.Color.Blue;
             this.DarsRejabtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DarsRejabtn.ForeColor = System.Drawing.Color.White;
-            this.DarsRejabtn.Location = new System.Drawing.Point(79, 414);
+            this.DarsRejabtn.Location = new System.Drawing.Point(74, 424);
             this.DarsRejabtn.Name = "DarsRejabtn";
-            this.DarsRejabtn.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            this.DarsRejabtn.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.DarsRejabtn.Size = new System.Drawing.Size(208, 44);
             this.DarsRejabtn.TabIndex = 19;
             this.DarsRejabtn.Text = "Create";
+            this.DarsRejabtn.Click += new System.EventHandler(this.DarsRejabtn_Click_1);
             // 
             // Dars_RejaYaratishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 474);
+            this.ClientSize = new System.Drawing.Size(383, 495);
             this.Controls.Add(this.DarsRejabtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2ComboBox1);
@@ -254,6 +260,7 @@
             this.Name = "Dars_RejaYaratishForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dars_RejaYaratishForm";
+            this.Load += new System.EventHandler(this.Dars_RejaYaratishForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

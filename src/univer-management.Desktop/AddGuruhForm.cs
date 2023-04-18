@@ -25,11 +25,7 @@ namespace univer_management.Desktop
             InitializeComponent();
         }
 
-        private async void AddGuruhForm_Load(object sender, EventArgs e)
-        {
-            ComboBoxFill();
-            ComboBoxFill2();
-        }
+       
 
 
         private async void ComboBoxFill()
@@ -58,7 +54,15 @@ namespace univer_management.Desktop
 
 
 
-        private async void guna2Button2_Click(object sender, EventArgs e)
+       
+
+        private void AddGuruhForm_Load_1(object sender, EventArgs e)
+        {
+            ComboBoxFill();
+            ComboBoxFill2();
+        }
+
+        private async void guna2Button2_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(nameTb.Text)
                && string.IsNullOrEmpty(semestrTb.Text) && string.IsNullOrEmpty(numberofSTb.Text))

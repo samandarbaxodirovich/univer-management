@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using univer_management.DataAccess.DbContexts;
@@ -11,9 +12,10 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230418070255_k")]
+    partial class k
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,14 +90,15 @@ namespace univer_management.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("paraRaqami")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("payshanba")
+                    b.Property<string>("Payshanba")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("sehanba")
+                    b.Property<string>("Seshanba")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Shanba")
                         .IsRequired()
                         .HasColumnType("text");
 
