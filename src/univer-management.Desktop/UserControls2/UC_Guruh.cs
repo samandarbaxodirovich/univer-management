@@ -21,7 +21,8 @@ namespace univer_management.Desktop.UserControls2
             Instance = this;
             _service = new GuruxService();
             InitializeComponent();
-         
+
+
         }
 
         private void guna2Button2_Click_1(object sender, EventArgs e)

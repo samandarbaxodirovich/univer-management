@@ -24,6 +24,7 @@ namespace univer_management.DataAccess.DbContexts
         public DbSet<Oquv_Reja> Oquv_Rejalar { get; set; } = default!;
         public DbSet<Oquv_Reja_Mashgulot> Oquv_Reja_Mashgulot { get; set; } = default!;
         public DbSet<Yuklama> Yuklamalar { get; set; } = default!;
+        public DbSet<DarsJadval> DarsJadvalllari { get; set; } = default!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host= trumpet.db.elephantsql.com; Port=5432; Database=cuhnoace; User Id = cuhnoace; Password= fDxvJyeMTbDIurb65qMXBXalfaXTiZJY;");

@@ -23,6 +23,7 @@ namespace univer_management.DataAccess.Interfaces.Common
         public IOquvRejaRepository Oquvrejalar { get; }
         public IOquvRejaMashgulotRepository OquvRejaMashgulotlar { get; }
         public IYuklamaRepository Yuklamalar { get; }
+        public IDarsJadvalRepository DarsJadvallari { get; }
 
         public Task<int> SaveChangesAsync();
     }

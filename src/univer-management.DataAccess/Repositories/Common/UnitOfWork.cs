@@ -40,6 +40,7 @@ namespace univer_management.DataAccess.Repositories.Common
         public IOquvRejaMashgulotRepository OquvRejaMashgulotlar { get; }
 
         public IYuklamaRepository Yuklamalar { get; }
+        public IDarsJadvalRepository DarsJadvallari { get; }
 
         public UnitOfWork(AppDbContext appDbContext)
         {
@@ -58,6 +59,7 @@ namespace univer_management.DataAccess.Repositories.Common
             Oqituvchilar = new OqituvchiRepository(appDbContext);
             OquvRejaMashgulotlar = new OquvRejaMashgulotRepository(appDbContext);
             Yuklamalar = new YuklamaRepository(appDbContext);
+            DarsJadvallari = new DarsJadvalRepository(appDbContext);
         }
         public async Task<int> SaveChangesAsync()
         {
