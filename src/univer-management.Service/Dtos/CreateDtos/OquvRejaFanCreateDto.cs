@@ -13,8 +13,7 @@ namespace univer_management.Service.Dtos.CreateDtos
         public double Lektsiya { get; set; } = 0;
         public double Seminar { get; set; } = 0;
         public double Labaratoriya { get; set; } = 0;
-        public double Zachot { get; set; } = 0;
-        public double DefZachot { get; set; } = 0;
+        public double MustaqilTalim { get; set; } = 0;
         public double Imtihon { get; set; } = 0;
         public int HaftalarSoni { get; set; }
         public double UmumiyDarsSoati { get; set; }

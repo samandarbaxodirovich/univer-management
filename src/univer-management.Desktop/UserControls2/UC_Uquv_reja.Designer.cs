@@ -42,22 +42,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.datagrid_Oquv_reja = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Oquv_reja)).BeginInit();
             this.SuspendLayout();
@@ -110,10 +108,8 @@
             this.Column1,
             this.Column2,
             this.Column5,
-            this.Column6,
             this.Column8,
             this.Column7,
-            this.Column9,
             this.Column3,
             this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -155,104 +151,6 @@
             this.datagrid_Oquv_reja.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagrid_Oquv_reja.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.datagrid_Oquv_reja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Oquv_reja_CellContentClick);
-            // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Id.DividerWidth = 1;
-            this.Id.FillWeight = 8F;
-            this.Id.HeaderText = "ID";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 52;
-            // 
-            // Column1
-            // 
-            this.Column1.DividerWidth = 1;
-            this.Column1.FillWeight = 12F;
-            this.Column1.HeaderText = "Fan nomi";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DividerWidth = 1;
-            this.Column2.FillWeight = 8F;
-            this.Column2.HeaderText = "Lektsiya";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DividerWidth = 1;
-            this.Column5.FillWeight = 8F;
-            this.Column5.HeaderText = "Seminar";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DividerWidth = 1;
-            this.Column6.FillWeight = 8F;
-            this.Column6.HeaderText = "Labaratoriya";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DividerWidth = 1;
-            this.Column8.FillWeight = 8F;
-            this.Column8.HeaderText = "Zachot";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DividerWidth = 1;
-            this.Column7.FillWeight = 8F;
-            this.Column7.HeaderText = "Def.Zachot";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.DividerWidth = 1;
-            this.Column9.FillWeight = 8F;
-            this.Column9.HeaderText = "Imtihon";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DividerWidth = 1;
-            this.Column3.FillWeight = 6F;
-            this.Column3.HeaderText = "Update";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column3.Text = "✏️";
-            this.Column3.UseColumnTextForButtonValue = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DividerWidth = 1;
-            this.Column4.FillWeight = 6F;
-            this.Column4.HeaderText = "Delete";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Text = "X";
-            this.Column4.UseColumnTextForButtonValue = true;
             // 
             // guna2Button1
             // 
@@ -363,6 +261,90 @@
             this.guna2Button2.Text = "O\'quv reja qo\'shish";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_2);
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Id.DividerWidth = 1;
+            this.Id.FillWeight = 8F;
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 52;
+            // 
+            // Column1
+            // 
+            this.Column1.DividerWidth = 1;
+            this.Column1.FillWeight = 12F;
+            this.Column1.HeaderText = "Fan nomi";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DividerWidth = 1;
+            this.Column2.FillWeight = 8F;
+            this.Column2.HeaderText = "Ma\'ruza";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DividerWidth = 1;
+            this.Column5.FillWeight = 8F;
+            this.Column5.HeaderText = "Amaliy";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column8.DividerWidth = 12;
+            this.Column8.FillWeight = 8F;
+            this.Column8.HeaderText = "Oraliq imtihon";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 144;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column7.DividerWidth = 1;
+            this.Column7.FillWeight = 8F;
+            this.Column7.HeaderText = "Mustaqil ta\'lim";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 135;
+            // 
+            // Column3
+            // 
+            this.Column3.DividerWidth = 1;
+            this.Column3.FillWeight = 6F;
+            this.Column3.HeaderText = "Update";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column3.Text = "✏️";
+            this.Column3.UseColumnTextForButtonValue = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DividerWidth = 1;
+            this.Column4.FillWeight = 6F;
+            this.Column4.HeaderText = "Delete";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Text = "X";
+            this.Column4.UseColumnTextForButtonValue = true;
+            // 
             // UC_Uquv_reja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -391,21 +373,19 @@
         private Panel panel1;
         private Label lblTitle;
         private Guna.UI2.WinForms.Guna2DataGridView datagrid_Oquv_reja;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column8;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column9;
-        private DataGridViewButtonColumn Column3;
-        private DataGridViewButtonColumn Column4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Label label1;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewButtonColumn Column3;
+        private DataGridViewButtonColumn Column4;
     }
 }

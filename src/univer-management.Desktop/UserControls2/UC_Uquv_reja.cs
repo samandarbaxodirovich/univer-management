@@ -44,6 +44,7 @@ namespace FinalProject.UserControls2
                 .FirstOrDefault(x=>x.Name == guna2ComboBox1.SelectedItem.ToString())
                 !.Id,int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
             oquvrejaForm.ShowDialog();
+            SetTable();
         }
 
         private void datagrid_Oquv_reja_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -56,11 +57,12 @@ namespace FinalProject.UserControls2
         }
         private void SetTable()
         {
+            datagrid_Oquv_reja.Rows.Clear();
             var oquvRejalar = oquvRejaService.GetAll(mService.GetByKeyword(guna2ComboBox1.SelectedItem.ToString()).First().Id
                 , int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
             foreach (var item in oquvRejalar)
             {
-                datagrid_Oquv_reja.Rows.Add(item.Id, item.FanName, item.Lektsiya, item.Seminar, item.Labaratoriya, item.Zachot, item.DefZachot, item.Imtihon);
+                datagrid_Oquv_reja.Rows.Add(item.Id, item.FanName, item.Lektsiya, item.Seminar, item.OraliqImtihon, item.MustaqilTalim);
             }
         }
 
