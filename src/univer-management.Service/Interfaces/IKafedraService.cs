@@ -14,6 +14,6 @@ namespace univer_management.Service.Interfaces
 		public IEnumerable<Kafedra> GetByKeyword(string keyword);
 		public Task<(bool, string)> CreateAsync(Kafedra entity);
 		public Task<(bool, string)> DeleteAsync(long id);
-		public Task<Kafedra> UpdateAsync(string name, long id);
-	}
+        public Task<(string, bool)> UpdateAsync(Kafedra entity, long id);
+    }
 }

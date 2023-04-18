@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using univer_management.DataAccess.DbContexts;
+using univer_management.Desktop.Updates;
 using univer_management.Domain.Entities;
 using univer_management.Service.Services;
 
@@ -117,11 +118,12 @@ namespace univer_management.Desktop.UserControls2
                     actionId = byte.Parse(e.ColumnIndex.ToString());
                 if (actionId == 3)
                 {
-                    UpdateForm update = new UpdateForm();
-                    update.Name = selectedRow.Cells[1].Value.ToString();
-                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                    update.Tag = this.Tag.ToString();
-                    update.ShowDialog();
+                    UpdateKafedra updateKafedra = new UpdateKafedra();
+                    updateKafedra.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    updateKafedra.Name = selectedRow.Cells[1].Value.ToString();
+                    updateKafedra.Mutaxassilik = selectedRow.Cells[2].Value.ToString();
+                    updateKafedra.ShowDialog();
+                    SetValues();
                 }
 
                 else if (actionId == 4)
