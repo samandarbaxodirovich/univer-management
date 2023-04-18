@@ -17,6 +17,6 @@ namespace univer_management.Service.Interfaces
         public IEnumerable<Oqituvchi> GetByKeyword(string keyword);
         public Task<(bool, string)> CreateAsync(Oqituvchi entity);
         public Task<(bool, string)> DeleteAsync(long id);
-        public Task<Oqituvchi> UpdateAsync(string name, long id);
+        public Task<(string, bool)> UpdateAsync(Oqituvchi entity, long id);
     }
 }

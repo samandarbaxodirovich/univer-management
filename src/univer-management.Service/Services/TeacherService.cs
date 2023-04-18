@@ -58,9 +58,21 @@ namespace univer_management.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<Oqituvchi> UpdateAsync(string name, long id)
+        public async Task<(string, bool)> UpdateAsync(Oqituvchi entity, long id)
         {
-            throw new NotImplementedException();
+            var res = await _work.Oqituvchilar.FindByIdAsync(id);
+            if (res != null)
+            {
+                res.KafedraId = entity.KafedraId;
+                res.FullName = entity.FullName;
+                res.Level = entity.Level;
+                if (await _work.SaveChangesAsync() != 0)
+                {
+                    return ("O'qituvchi muvaffaqiyatli o'zgartirildi", true);
+                }
+                return ("O'qituvchi xato ketti internet aloqasini tekshiring", false);
+            }
+            return ("O'qituvchi kafedra topilmadi", false);
         }
     }
 }
