@@ -148,6 +148,7 @@
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.Height = 29;
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            DataGridVIew_Oqituvchi.CellContentClick += DataGridVIew_Oqituvchi_CellContentClick_1;
             // 
             // Id
             // 

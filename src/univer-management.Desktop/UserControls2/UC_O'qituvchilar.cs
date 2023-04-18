@@ -33,11 +33,19 @@ namespace univer_management.Desktop.UserControls2
                 kafedraId.ValueMember = "Id";
             }
         }
-
-
-
-        private void DataGridVIew_Oqituvchi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private async Task ActionControl(byte action, long id)
         {
+            if (action == 5)
+            {
+                await Task.Run(async () =>
+                {
+                    {
+                        var result = await _service.DeleteAsync(id);
+                        if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                });
+            };
 
         }
 
@@ -89,6 +97,32 @@ namespace univer_management.Desktop.UserControls2
                 DataGridVIew_Oqituvchi.Rows.Add(item.Id, item.FullName, item.Level, item.Kafedra);
             }
 
+        }
+
+        private async void DataGridVIew_Oqituvchi_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (DataGridVIew_Oqituvchi.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DataGridVIew_Oqituvchi.SelectedRows[0];
+                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+                byte actionId = 10;
+                if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+                    actionId = byte.Parse(e.ColumnIndex.ToString());
+                if (actionId == 5)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
+                }
+            }
         }
     }
 }
