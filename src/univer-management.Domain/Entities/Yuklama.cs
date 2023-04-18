@@ -21,6 +21,7 @@ namespace univer_management.Domain.Entities
         public long AuditoriyaId { get; set; }
         public virtual Auditoriya Auditoriya { get; set; } = default!;
         public double HaftasigaDars { get; set; }
+        public int Hafta { get; set; }  
         public long MashgulotId { get; set; }
         public virtual Mashgulot Mashgulot { get; set; } = default!;
     }
