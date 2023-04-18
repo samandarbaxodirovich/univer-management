@@ -79,7 +79,12 @@ namespace univer_management.Service.Services
         {
             var trainings = _work.Oquvrejalar.GetAll().Where(x=>x.MutaxasislikId == mutaxasislikId&&x.Semestr == semestr).ToList();
             return trainings.Select(x => (OquvRejaViewModel)x).ToList();
-        } 
+        }
+        public IEnumerable<Oquv_Reja> GetAllR()
+        {
+            return _work.Oquvrejalar.GetAll().ToList();
+
+        }
 
 
 
