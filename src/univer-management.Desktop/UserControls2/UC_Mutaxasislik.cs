@@ -159,6 +159,7 @@ namespace univer_management.Desktop.UserControls2
                     update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
                     update.Tag = this.Tag.ToString()!;
                     update.ShowDialog();
+                    SetValues();
                 }
 
                 else if (actionId == 3)

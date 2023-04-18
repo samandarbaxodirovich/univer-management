@@ -35,6 +35,7 @@ namespace univer_management.Desktop
             if (Tag == "Mutahasislik" && !string.IsNullOrEmpty(guna2TextBox2.Text))
             {
                 Mutahasislik();
+                this.Close();
             }
         }
 
