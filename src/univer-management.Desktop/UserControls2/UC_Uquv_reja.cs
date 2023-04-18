@@ -40,11 +40,17 @@ namespace FinalProject.UserControls2
 
         private void guna2Button2_Click_2(object sender, EventArgs e)
         {
+            if(guna2ComboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Iltimos semestr raqamini kiriting");
+                return;
+            }
             OquvrejaForm oquvrejaForm = new OquvrejaForm(mService.GetAll()
-                .FirstOrDefault(x=>x.Name == guna2ComboBox1.SelectedItem.ToString())
-                !.Id,int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
+                .FirstOrDefault(x => x.Name == guna2ComboBox1.SelectedItem.ToString())
+                !.Id, int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
             oquvrejaForm.ShowDialog();
             SetTable();
+
         }
 
         private void datagrid_Oquv_reja_CellContentClick(object sender, DataGridViewCellEventArgs e)
