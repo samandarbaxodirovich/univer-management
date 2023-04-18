@@ -13,7 +13,7 @@ namespace univer_management.Service.ViewModels
     {
         public long Id { get; set; }
         public string FullName { get; set; } = string.Empty;
-        public double Level { get; set; }
+        public string Level { get; set; }
         public string Kafedra { get; set; } = string.Empty;
         public static implicit operator OqituvchiViewModel(Oqituvchi model)
         {
