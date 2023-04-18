@@ -41,7 +41,7 @@ namespace univer_management.Desktop.Updates
             var result = await service.UpdateAsync(new Oqituvchi()
             {
                 FullName = auditoriyaRaqami11.Text,
-                Level = Convert.ToDouble(oqituvchi.Text),
+                Level = oqituvchi.Text,
                 KafedraId = mut
             },kaf!.Id);
             if (result.Item2 != null)

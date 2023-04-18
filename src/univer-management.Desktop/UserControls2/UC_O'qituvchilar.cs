@@ -64,7 +64,7 @@ namespace univer_management.Desktop.UserControls2
                 Oqituvchi oqituvchi = new Oqituvchi()
                 {
                     FullName = gunatextBox.Text,
-                    Level = Convert.ToDouble(gunatextbox2.Text),
+                    Level = gunatextbox2.Text,
                     KafedraId = obj.Id
                 };
 
@@ -102,6 +102,86 @@ namespace univer_management.Desktop.UserControls2
 
         private async void DataGridVIew_Oqituvchi_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            if (DataGridVIew_Oqituvchi.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DataGridVIew_Oqituvchi.SelectedRows[0];
+                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+                byte actionId = 10;
+                if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+                    actionId = byte.Parse(e.ColumnIndex.ToString());
+                if (actionId == 4)
+                {
+                    UpdateOqituvchi update = new UpdateOqituvchi();
+                    update.FullName = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Level = selectedRow.Cells[2].Value.ToString();
+                    update.Kafedra = selectedRow.Cells[3].Value.ToString();
+                    update.ShowDialog();
+                    SetValues();
+                }
+                else if (actionId == 5)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} kafedrani o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
+                }
+            }
+        }
+
+        private void kafedraId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_O_qituvchilar_Load_1(object sender, EventArgs e)
+        {
+            ComboBoxFill();
+
+        }
+
+        private async void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            if (guna2CheckBox11.Checked)
+            {
+                Kafedra obj = kafedraId.SelectedItem as Kafedra;
+
+                Oqituvchi oqituvchi = new Oqituvchi()
+                {
+                    FullName = gunatextBox.Text,
+                    Level = gunatextbox2.Text,
+                    KafedraId = obj.Id
+                };
+
+                var result = await _service.CreateAsync(oqituvchi);
+
+                if (result.Item1)
+                {
+                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    gunatextBox.Clear();
+                    gunatextbox2.Clear();
+                    kafedraId.Text = "kafedra tanlang";
+                }
+                else
+                {
+                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                SetValues();
+            }
+            else MessageBox.Show($"Siz avvalo O'qituvchi qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private async void DataGridVIew_Oqituvchi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
             if (DataGridVIew_Oqituvchi.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = DataGridVIew_Oqituvchi.SelectedRows[0];

@@ -157,6 +157,7 @@
             this.DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.Height = 29;
             this.DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridVIew_Oqituvchi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridVIew_Oqituvchi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVIew_Oqituvchi_CellContentClick);
             // 
             // Id
             // 
@@ -257,6 +258,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(124, 39);
             this.guna2Button2.TabIndex = 23;
             this.guna2Button2.Text = "Create";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
             // 
             // guna2CheckBox11
             // 
@@ -357,6 +359,7 @@
             this.kafedraId.Size = new System.Drawing.Size(283, 36);
             this.kafedraId.TabIndex = 25;
             this.kafedraId.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.kafedraId.SelectedIndexChanged += new System.EventHandler(this.kafedraId_SelectedIndexChanged);
             // 
             // guna2TextBox1
             // 
@@ -433,6 +436,7 @@
             this.Controls.Add(this.DataGridVIew_Oqituvchi);
             this.Controls.Add(this.panel1);
             this.Size = new System.Drawing.Size(1040, 481);
+            this.Load += new System.EventHandler(this.UC_O_qituvchilar_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).EndInit();
