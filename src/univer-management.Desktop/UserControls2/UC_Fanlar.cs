@@ -101,5 +101,10 @@ namespace univer_management.Desktop.UserControls2
                 }
             }
         }
-    }
+
+		private void checkBox1_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
