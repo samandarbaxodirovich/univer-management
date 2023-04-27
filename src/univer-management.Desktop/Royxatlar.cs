@@ -75,5 +75,10 @@ namespace univer_management.Desktop
             UC_Mashg_ulotlar uC_Mashg_ = new UC_Mashg_ulotlar();
             addUserControl(uC_Mashg_);
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
