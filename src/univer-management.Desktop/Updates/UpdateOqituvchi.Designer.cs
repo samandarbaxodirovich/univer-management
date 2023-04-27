@@ -28,160 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            label2 = new Label();
-            guna2Combo = new Guna.UI2.WinForms.Guna2ComboBox();
-            oqituvchi = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2But = new Guna.UI2.WinForms.Guna2Button();
-            auditoriyaRaqami11 = new Guna.UI2.WinForms.Guna2TextBox();
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(35, 177);
-            label2.Name = "label2";
-            label2.Size = new Size(97, 15);
-            label2.TabIndex = 33;
-            label2.Text = "Kafedrani kiriting";
-            // 
-            // guna2Combo
-            // 
-            guna2Combo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Combo.BackColor = Color.Transparent;
-            guna2Combo.BorderRadius = 20;
-            guna2Combo.CustomizableEdges = customizableEdges1;
-            guna2Combo.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2Combo.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2Combo.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2Combo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2Combo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Combo.ForeColor = Color.Black;
-            guna2Combo.ItemHeight = 30;
-            guna2Combo.Location = new Point(24, 195);
-            guna2Combo.Name = "guna2Combo";
-            guna2Combo.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Combo.Size = new Size(282, 36);
-            guna2Combo.TabIndex = 32;
-            // 
-            // oqituvchi
-            // 
-            oqituvchi.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            oqituvchi.BorderRadius = 20;
-            oqituvchi.CustomizableEdges = customizableEdges3;
-            oqituvchi.DefaultText = "";
-            oqituvchi.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            oqituvchi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            oqituvchi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            oqituvchi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            oqituvchi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            oqituvchi.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            oqituvchi.ForeColor = Color.Black;
-            oqituvchi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            oqituvchi.Location = new Point(23, 135);
-            oqituvchi.Name = "oqituvchi";
-            oqituvchi.PasswordChar = '\0';
-            oqituvchi.PlaceholderForeColor = Color.Gray;
-            oqituvchi.PlaceholderText = "O'qituvchi darjasi(raqam)";
-            oqituvchi.SelectedText = "";
-            oqituvchi.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            oqituvchi.Size = new Size(283, 39);
-            oqituvchi.TabIndex = 31;
-            // 
-            // guna2But
-            // 
-            guna2But.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2But.BorderRadius = 20;
-            guna2But.CustomizableEdges = customizableEdges5;
-            guna2But.DisabledState.BorderColor = Color.DarkGray;
-            guna2But.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2But.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2But.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2But.FillColor = Color.FromArgb(0, 0, 192);
-            guna2But.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2But.ForeColor = Color.White;
-            guna2But.Location = new Point(35, 259);
-            guna2But.Name = "guna2But";
-            guna2But.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2But.Size = new Size(251, 39);
-            guna2But.TabIndex = 30;
-            guna2But.Text = "Create";
-            guna2But.Click += guna2But_Click;
-            // 
-            // auditoriyaRaqami11
-            // 
-            auditoriyaRaqami11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            auditoriyaRaqami11.BorderRadius = 20;
-            auditoriyaRaqami11.CustomizableEdges = customizableEdges7;
-            auditoriyaRaqami11.DefaultText = "";
-            auditoriyaRaqami11.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            auditoriyaRaqami11.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            auditoriyaRaqami11.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaRaqami11.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaRaqami11.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaRaqami11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            auditoriyaRaqami11.ForeColor = Color.Black;
-            auditoriyaRaqami11.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaRaqami11.Location = new Point(23, 92);
-            auditoriyaRaqami11.Name = "auditoriyaRaqami11";
-            auditoriyaRaqami11.PasswordChar = '\0';
-            auditoriyaRaqami11.PlaceholderForeColor = Color.Gray;
-            auditoriyaRaqami11.PlaceholderText = "O'qituvchi nomi";
-            auditoriyaRaqami11.SelectedText = "";
-            auditoriyaRaqami11.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            auditoriyaRaqami11.Size = new Size(283, 37);
-            auditoriyaRaqami11.TabIndex = 29;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.DeepSkyBlue;
-            label1.Location = new Point(35, 47);
-            label1.Margin = new Padding(3);
-            label1.Name = "label1";
-            label1.Size = new Size(251, 29);
-            label1.TabIndex = 28;
-            label1.Text = "O'qituvchinio'zgartirish";
-            // 
-            // UpdateOqituvchi
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(346, 335);
-            Controls.Add(label2);
-            Controls.Add(guna2Combo);
-            Controls.Add(oqituvchi);
-            Controls.Add(guna2But);
-            Controls.Add(auditoriyaRaqami11);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Name = "UpdateOqituvchi";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "UpdateOqituvchi";
-            Load += UpdateOqituvchi_Load;
-            ResumeLayout(false);
-            PerformLayout();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.SuspendLayout();
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label2.Location = new System.Drawing.Point(35, 189);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(97, 15);
+			this.label2.TabIndex = 33;
+			this.label2.Text = "Kafedrani kiriting";
+			// 
+			// label1
+			// 
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+			this.label1.Location = new System.Drawing.Point(35, 47);
+			this.label1.Margin = new System.Windows.Forms.Padding(3);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(251, 29);
+			this.label1.TabIndex = 28;
+			this.label1.Text = "O\'qituvchinio\'zgartirish";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(32, 207);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(283, 31);
+			this.comboBox1.TabIndex = 34;
+			// 
+			// textBox2
+			// 
+			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox2.Location = new System.Drawing.Point(32, 144);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.PlaceholderText = "O\'qituvchi darjasi(raqam)";
+			this.textBox2.Size = new System.Drawing.Size(283, 30);
+			this.textBox2.TabIndex = 35;
+			// 
+			// textBox1
+			// 
+			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox1.Location = new System.Drawing.Point(32, 92);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.PlaceholderText = "O\'qituvchi";
+			this.textBox1.Size = new System.Drawing.Size(283, 30);
+			this.textBox1.TabIndex = 36;
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.Blue;
+			this.button1.ForeColor = System.Drawing.Color.White;
+			this.button1.Location = new System.Drawing.Point(32, 261);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(283, 38);
+			this.button1.TabIndex = 37;
+			this.button1.Text = "Create";
+			this.button1.UseVisualStyleBackColor = false;
+			// 
+			// UpdateOqituvchi
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(346, 335);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+			this.Name = "UpdateOqituvchi";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "UpdateOqituvchi";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
         }
 
         #endregion
 
         private Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2Combo;
-        private Guna.UI2.WinForms.Guna2TextBox oqituvchi;
-        private Guna.UI2.WinForms.Guna2Button guna2But;
-        private Guna.UI2.WinForms.Guna2TextBox auditoriyaRaqami11;
         private Label label1;
-    }
+		private ComboBox comboBox1;
+		private TextBox textBox2;
+		private TextBox textBox1;
+		private Button button1;
+	}
 }
