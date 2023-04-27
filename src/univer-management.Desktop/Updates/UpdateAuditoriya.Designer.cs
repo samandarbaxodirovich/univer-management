@@ -28,189 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            label2 = new Label();
-            guna2ComboBox11 = new Guna.UI2.WinForms.Guna2ComboBox();
-            auditoriyaBino1 = new Guna.UI2.WinForms.Guna2TextBox();
-            joylarSoni1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Button21 = new Guna.UI2.WinForms.Guna2Button();
-            auditoriyaRaqami1 = new Guna.UI2.WinForms.Guna2TextBox();
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 7F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(36, 114);
-            label2.Name = "label2";
-            label2.Size = new Size(133, 15);
-            label2.TabIndex = 27;
-            label2.Text = "Auditoriya turini kiriting";
-            // 
-            // guna2ComboBox11
-            // 
-            guna2ComboBox11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2ComboBox11.BackColor = Color.Transparent;
-            guna2ComboBox11.BorderRadius = 20;
-            guna2ComboBox11.CustomizableEdges = customizableEdges1;
-            guna2ComboBox11.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox11.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox11.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox11.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox11.ForeColor = Color.Black;
-            guna2ComboBox11.ItemHeight = 30;
-            guna2ComboBox11.Location = new Point(25, 130);
-            guna2ComboBox11.Name = "guna2ComboBox11";
-            guna2ComboBox11.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ComboBox11.Size = new Size(282, 36);
-            guna2ComboBox11.TabIndex = 26;
-            // 
-            // auditoriyaBino1
-            // 
-            auditoriyaBino1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            auditoriyaBino1.BorderRadius = 20;
-            auditoriyaBino1.CustomizableEdges = customizableEdges3;
-            auditoriyaBino1.DefaultText = "";
-            auditoriyaBino1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            auditoriyaBino1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            auditoriyaBino1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaBino1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaBino1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaBino1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            auditoriyaBino1.ForeColor = Color.Black;
-            auditoriyaBino1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaBino1.Location = new Point(25, 225);
-            auditoriyaBino1.Name = "auditoriyaBino1";
-            auditoriyaBino1.PasswordChar = '\0';
-            auditoriyaBino1.PlaceholderForeColor = Color.Gray;
-            auditoriyaBino1.PlaceholderText = "Binoni raqami";
-            auditoriyaBino1.SelectedText = "";
-            auditoriyaBino1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            auditoriyaBino1.Size = new Size(283, 39);
-            auditoriyaBino1.TabIndex = 25;
-            // 
-            // joylarSoni1
-            // 
-            joylarSoni1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            joylarSoni1.BorderRadius = 20;
-            joylarSoni1.CustomizableEdges = customizableEdges5;
-            joylarSoni1.DefaultText = "";
-            joylarSoni1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            joylarSoni1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            joylarSoni1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            joylarSoni1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            joylarSoni1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            joylarSoni1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            joylarSoni1.ForeColor = Color.Black;
-            joylarSoni1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            joylarSoni1.Location = new Point(24, 174);
-            joylarSoni1.Name = "joylarSoni1";
-            joylarSoni1.PasswordChar = '\0';
-            joylarSoni1.PlaceholderForeColor = Color.Gray;
-            joylarSoni1.PlaceholderText = "Joylar soni";
-            joylarSoni1.SelectedText = "";
-            joylarSoni1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            joylarSoni1.Size = new Size(283, 39);
-            joylarSoni1.TabIndex = 24;
-            // 
-            // guna2Button21
-            // 
-            guna2Button21.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Button21.BorderRadius = 20;
-            guna2Button21.CustomizableEdges = customizableEdges7;
-            guna2Button21.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button21.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button21.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button21.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button21.FillColor = Color.FromArgb(0, 0, 192);
-            guna2Button21.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button21.ForeColor = Color.White;
-            guna2Button21.Location = new Point(36, 297);
-            guna2Button21.Name = "guna2Button21";
-            guna2Button21.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button21.Size = new Size(251, 39);
-            guna2Button21.TabIndex = 23;
-            guna2Button21.Text = "Create";
-            guna2Button21.Click += guna2Button2_Click;
-            // 
-            // auditoriyaRaqami1
-            // 
-            auditoriyaRaqami1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            auditoriyaRaqami1.BorderRadius = 20;
-            auditoriyaRaqami1.CustomizableEdges = customizableEdges9;
-            auditoriyaRaqami1.DefaultText = "";
-            auditoriyaRaqami1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            auditoriyaRaqami1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            auditoriyaRaqami1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaRaqami1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            auditoriyaRaqami1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaRaqami1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            auditoriyaRaqami1.ForeColor = Color.Black;
-            auditoriyaRaqami1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            auditoriyaRaqami1.Location = new Point(24, 75);
-            auditoriyaRaqami1.Name = "auditoriyaRaqami1";
-            auditoriyaRaqami1.PasswordChar = '\0';
-            auditoriyaRaqami1.PlaceholderForeColor = Color.Gray;
-            auditoriyaRaqami1.PlaceholderText = "Auditoriya raqami";
-            auditoriyaRaqami1.SelectedText = "";
-            auditoriyaRaqami1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            auditoriyaRaqami1.Size = new Size(283, 37);
-            auditoriyaRaqami1.TabIndex = 22;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.DeepSkyBlue;
-            label1.Location = new Point(36, 30);
-            label1.Margin = new Padding(3);
-            label1.Name = "label1";
-            label1.Size = new Size(259, 29);
-            label1.TabIndex = 21;
-            label1.Text = "Auditoriyani o'zgartirish";
-            // 
-            // UpdateAuditoriya
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(349, 375);
-            Controls.Add(label2);
-            Controls.Add(guna2ComboBox11);
-            Controls.Add(auditoriyaBino1);
-            Controls.Add(joylarSoni1);
-            Controls.Add(guna2Button21);
-            Controls.Add(auditoriyaRaqami1);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Name = "UpdateAuditoriya";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "UpdateAuditoriya";
-            Load += UpdateAuditoriya_Load;
-            ResumeLayout(false);
-            PerformLayout();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.SuspendLayout();
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label2.Location = new System.Drawing.Point(36, 114);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(133, 15);
+			this.label2.TabIndex = 27;
+			this.label2.Text = "Auditoriya turini kiriting";
+			// 
+			// label1
+			// 
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+			this.label1.Location = new System.Drawing.Point(36, 30);
+			this.label1.Margin = new System.Windows.Forms.Padding(3);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(259, 29);
+			this.label1.TabIndex = 21;
+			this.label1.Text = "Auditoriyani o\'zgartirish";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(35, 132);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(283, 31);
+			this.comboBox1.TabIndex = 28;
+			// 
+			// textBox1
+			// 
+			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox1.Location = new System.Drawing.Point(35, 78);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.PlaceholderText = "Auditoriya raqami";
+			this.textBox1.Size = new System.Drawing.Size(283, 30);
+			this.textBox1.TabIndex = 29;
+			// 
+			// textBox2
+			// 
+			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox2.Location = new System.Drawing.Point(36, 178);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.PlaceholderText = "Joylar soni";
+			this.textBox2.Size = new System.Drawing.Size(283, 30);
+			this.textBox2.TabIndex = 30;
+			// 
+			// textBox3
+			// 
+			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox3.Location = new System.Drawing.Point(36, 225);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.PlaceholderText = "Bino raqami";
+			this.textBox3.Size = new System.Drawing.Size(283, 30);
+			this.textBox3.TabIndex = 31;
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.Blue;
+			this.button1.ForeColor = System.Drawing.Color.White;
+			this.button1.Location = new System.Drawing.Point(36, 292);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(282, 43);
+			this.button1.TabIndex = 32;
+			this.button1.Text = "Create";
+			this.button1.UseVisualStyleBackColor = false;
+			// 
+			// UpdateAuditoriya
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(349, 375);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+			this.Name = "UpdateAuditoriya";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "UpdateAuditoriya";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
         }
 
         #endregion
 
         private Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox11;
-        private Guna.UI2.WinForms.Guna2TextBox auditoriyaBino1;
-        private Guna.UI2.WinForms.Guna2TextBox joylarSoni1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button21;
-        private Guna.UI2.WinForms.Guna2TextBox auditoriyaRaqami1;
         private Label label1;
-    }
+		private ComboBox comboBox1;
+		private TextBox textBox1;
+		private TextBox textBox2;
+		private TextBox textBox3;
+		private Button button1;
+	}
 }
