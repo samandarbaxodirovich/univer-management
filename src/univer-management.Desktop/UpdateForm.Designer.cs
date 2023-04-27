@@ -28,93 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Button2.BorderRadius = 20;
-            guna2Button2.CustomizableEdges = customizableEdges1;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(99, 150);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(277, 39);
-            guna2Button2.TabIndex = 13;
-            guna2Button2.Text = "Update";
-            guna2Button2.Click += guna2Button2_Click;
-            // 
-            // guna2TextBox2
-            // 
-            guna2TextBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2TextBox2.BorderRadius = 5;
-            guna2TextBox2.CustomizableEdges = customizableEdges3;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox2.ForeColor = Color.Black;
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(64, 79);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderForeColor = Color.Gray;
-            guna2TextBox2.PlaceholderText = "Mutaxassislikni kiriting";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(322, 39);
-            guna2TextBox2.TabIndex = 11;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(52, 22);
-            label1.Margin = new Padding(3);
-            label1.Name = "label1";
-            label1.Size = new Size(351, 32);
-            label1.TabIndex = 10;
-            label1.Text = "Mutaxassislikni o'zgartirish";
-            // 
-            // UpdateForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(454, 226);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Name = "UpdateForm";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "UpdateForm";
-            Load += UpdateForm_Load_1;
-            ResumeLayout(false);
-            PerformLayout();
+			this.label1 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.Location = new System.Drawing.Point(52, 22);
+			this.label1.Margin = new System.Windows.Forms.Padding(3);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(351, 32);
+			this.label1.TabIndex = 10;
+			this.label1.Text = "Mutaxassislikni o\'zgartirish";
+			// 
+			// textBox1
+			// 
+			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.textBox1.Location = new System.Drawing.Point(61, 83);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.PlaceholderText = "Mutaxassislikni kiriting";
+			this.textBox1.Size = new System.Drawing.Size(322, 30);
+			this.textBox1.TabIndex = 11;
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.Blue;
+			this.button1.ForeColor = System.Drawing.Color.White;
+			this.button1.Location = new System.Drawing.Point(61, 149);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(322, 40);
+			this.button1.TabIndex = 12;
+			this.button1.Text = "Update";
+			this.button1.UseVisualStyleBackColor = false;
+			// 
+			// UpdateForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.ClientSize = new System.Drawing.Size(454, 226);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+			this.Name = "UpdateForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "UpdateForm";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Label label1;
-    }
+		private TextBox textBox1;
+		private Button button1;
+	}
 }

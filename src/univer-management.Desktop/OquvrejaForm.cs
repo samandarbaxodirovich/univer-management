@@ -73,16 +73,12 @@ namespace univer_management.Desktop
             SetTotal();
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private async void Oquvrejabtn_Click(object sender, EventArgs e)
         {
             OquvRejaFanCreateDto dto = new();
             {
-                dto.Fan = fanService.GetAll().FirstOrDefault(x => x.Name == guna2ComboBox1.Text)!.Id;
+                dto.Fan = fanService.GetAll().FirstOrDefault(x => x.Name == comboBox1.Text)!.Id;
                 dto.Semestr = semest;
                 try
                 {
@@ -131,5 +127,10 @@ namespace univer_management.Desktop
         {
 
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

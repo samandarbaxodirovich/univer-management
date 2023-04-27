@@ -28,107 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            panelContainer2 = new Panel();
-            panel1.SuspendLayout();
-            SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(guna2Button2);
-            panel1.Controls.Add(guna2Button1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1057, 44);
-            panel1.TabIndex = 0;
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.BackColor = Color.FromArgb(41, 128, 185);
-            guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button2.CheckedState.CustomBorderColor = Color.FromArgb(41, 128, 185);
-            guna2Button2.CheckedState.FillColor = Color.White;
-            guna2Button2.CustomBorderColor = Color.White;
-            guna2Button2.CustomBorderThickness = new Padding(0, 0, 0, 3);
-            guna2Button2.CustomizableEdges = customizableEdges1;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.White;
-            guna2Button2.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.FromArgb(41, 128, 185);
-            guna2Button2.HoverState.CustomBorderColor = Color.FromArgb(192, 0, 0);
-            guna2Button2.Location = new Point(186, 5);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button2.Size = new Size(179, 38);
-            guna2Button2.TabIndex = 2;
-            guna2Button2.Text = "Yuklama";
-            guna2Button2.Click += guna2Button2_Click;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BackColor = Color.White;
-            guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button1.Checked = true;
-            guna2Button1.CheckedState.CustomBorderColor = Color.FromArgb(41, 128, 185);
-            guna2Button1.CheckedState.FillColor = Color.White;
-            guna2Button1.CustomBorderThickness = new Padding(0, 0, 0, 3);
-            guna2Button1.CustomizableEdges = customizableEdges3;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.White;
-            guna2Button1.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.FromArgb(41, 128, 185);
-            guna2Button1.HoverState.CustomBorderColor = Color.FromArgb(192, 0, 0);
-            guna2Button1.Location = new Point(4, 5);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button1.Size = new Size(179, 38);
-            guna2Button1.TabIndex = 1;
-            guna2Button1.Text = "O'quv reja";
-            guna2Button1.Click += guna2Button1_Click;
-            // 
-            // panelContainer2
-            // 
-            panelContainer2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelContainer2.Location = new Point(0, 44);
-            panelContainer2.Name = "panelContainer2";
-            panelContainer2.Size = new Size(1060, 500);
-            panelContainer2.TabIndex = 1;
-            panelContainer2.Paint += panelContainer2_Paint;
-            // 
-            // Yuklamalar
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1061, 544);
-            Controls.Add(panelContainer2);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Yuklamalar";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Yuklamalar";
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panelContainer2 = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.panel1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.White;
+			this.panel1.Controls.Add(this.button2);
+			this.panel1.Controls.Add(this.button1);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1061, 44);
+			this.panel1.TabIndex = 0;
+			// 
+			// panelContainer2
+			// 
+			this.panelContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelContainer2.Location = new System.Drawing.Point(0, 44);
+			this.panelContainer2.Name = "panelContainer2";
+			this.panelContainer2.Size = new System.Drawing.Size(1061, 500);
+			this.panelContainer2.TabIndex = 1;
+			// 
+			// button1
+			// 
+			this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.button1.Location = new System.Drawing.Point(0, 0);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(184, 44);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "O\'quv reja";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.button2.Location = new System.Drawing.Point(184, 0);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(184, 44);
+			this.button2.TabIndex = 5;
+			this.button2.Text = "Yuklama";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// Yuklamalar
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(1061, 544);
+			this.Controls.Add(this.panelContainer2);
+			this.Controls.Add(this.panel1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "Yuklamalar";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Yuklamalar";
+			this.panel1.ResumeLayout(false);
+			this.ResumeLayout(false);
+
         }
 
         #endregion
 
         private Panel panel1;
         private Panel panelContainer2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-    }
+		private Button button2;
+		private Button button1;
+	}
 }
