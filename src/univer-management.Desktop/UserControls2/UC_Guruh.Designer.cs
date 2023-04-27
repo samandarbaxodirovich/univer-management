@@ -100,7 +100,7 @@
 			this.button1.ForeColor = System.Drawing.Color.White;
 			this.button1.Location = new System.Drawing.Point(815, 128);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(196, 31);
+			this.button1.Size = new System.Drawing.Size(196, 43);
 			this.button1.TabIndex = 56;
 			this.button1.Text = "Guruh qo\'shish";
 			this.button1.UseVisualStyleBackColor = false;
