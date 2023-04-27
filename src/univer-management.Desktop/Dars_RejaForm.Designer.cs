@@ -28,106 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panelContainer11 = new Panel();
-            panel1 = new Panel();
-            guna2Button33 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
-            // 
-            // panelContainer11
-            // 
-            panelContainer11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelContainer11.Location = new Point(0, 43);
-            panelContainer11.Name = "panelContainer11";
-            panelContainer11.Size = new Size(1060, 500);
-            panelContainer11.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(guna2Button33);
-            panel1.Controls.Add(guna2Button11);
-            panel1.Location = new Point(0, 1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1060, 44);
-            panel1.TabIndex = 1;
-            // 
-            // guna2Button33
-            // 
-            guna2Button33.BackColor = Color.FromArgb(41, 128, 185);
-            guna2Button33.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button33.CheckedState.CustomBorderColor = Color.FromArgb(41, 128, 185);
-            guna2Button33.CheckedState.FillColor = Color.White;
-            guna2Button33.CustomBorderColor = Color.White;
-            guna2Button33.CustomBorderThickness = new Padding(0, 0, 0, 3);
-            guna2Button33.CustomizableEdges = customizableEdges1;
-            guna2Button33.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button33.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button33.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button33.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button33.FillColor = Color.White;
-            guna2Button33.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button33.ForeColor = Color.FromArgb(41, 128, 185);
-            guna2Button33.HoverState.CustomBorderColor = Color.FromArgb(192, 0, 0);
-            guna2Button33.Location = new Point(190, 4);
-            guna2Button33.Name = "guna2Button33";
-            guna2Button33.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button33.Size = new Size(207, 38);
-            guna2Button33.TabIndex = 1;
-            guna2Button33.Text = "O'qituvchi dars rejasi";
-            guna2Button33.Click += guna2Button33_Click;
-            // 
-            // guna2Button11
-            // 
-            guna2Button11.BackColor = Color.White;
-            guna2Button11.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button11.Checked = true;
-            guna2Button11.CheckedState.CustomBorderColor = Color.FromArgb(41, 128, 185);
-            guna2Button11.CheckedState.FillColor = Color.White;
-            guna2Button11.CustomBorderThickness = new Padding(0, 0, 0, 3);
-            guna2Button11.CustomizableEdges = customizableEdges3;
-            guna2Button11.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button11.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button11.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button11.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button11.FillColor = Color.White;
-            guna2Button11.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button11.ForeColor = Color.FromArgb(41, 128, 185);
-            guna2Button11.HoverState.CustomBorderColor = Color.FromArgb(192, 0, 0);
-            guna2Button11.Location = new Point(3, 5);
-            guna2Button11.Name = "guna2Button11";
-            guna2Button11.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button11.Size = new Size(180, 38);
-            guna2Button11.TabIndex = 1;
-            guna2Button11.Text = "Dars reja";
-            guna2Button11.Click += guna2Button11_Click;
-            // 
-            // Dars_RejaForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(1061, 544);
-            Controls.Add(panel1);
-            Controls.Add(panelContainer11);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Dars_RejaForm";
-            Text = "Dars_RejaForm";
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
+			this.panelContainer11 = new System.Windows.Forms.Panel();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.panel1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// panelContainer11
+			// 
+			this.panelContainer11.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.panelContainer11.Location = new System.Drawing.Point(0, 44);
+			this.panelContainer11.Name = "panelContainer11";
+			this.panelContainer11.Size = new System.Drawing.Size(1061, 500);
+			this.panelContainer11.TabIndex = 2;
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.White;
+			this.panel1.Controls.Add(this.button2);
+			this.panel1.Controls.Add(this.button1);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1061, 44);
+			this.panel1.TabIndex = 1;
+			// 
+			// button1
+			// 
+			this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.button1.Location = new System.Drawing.Point(0, 0);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(211, 44);
+			this.button1.TabIndex = 0;
+			this.button1.Text = "Dars reja";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.button2.Location = new System.Drawing.Point(211, 0);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(211, 44);
+			this.button2.TabIndex = 1;
+			this.button2.Text = "O\'qituvchi dars rejasi";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// Dars_RejaForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.ClientSize = new System.Drawing.Size(1061, 544);
+			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.panelContainer11);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "Dars_RejaForm";
+			this.Text = "Dars_RejaForm";
+			this.panel1.ResumeLayout(false);
+			this.ResumeLayout(false);
+
         }
 
         #endregion
 
         private Panel panelContainer11;
         private Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button33;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
-    }
+		private Button button2;
+		private Button button1;
+	}
 }
