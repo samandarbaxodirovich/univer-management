@@ -31,19 +31,19 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_O_qituvchilar));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblTitle = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.DataGridVIew_Oqituvchi = new System.Windows.Forms.DataGridView();
+			this.kafedraId = new System.Windows.Forms.ComboBox();
+			this.gunatextBox = new System.Windows.Forms.TextBox();
+			this.gunatextbox2 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.guna2Button2 = new System.Windows.Forms.CheckBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.guna2Button3 = new System.Windows.Forms.Button();
+			this.guna2Button1 = new System.Windows.Forms.Button();
+			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -69,44 +69,45 @@
 			this.lblTitle.TabIndex = 2;
 			this.lblTitle.Text = "O\'qituvchilar malumotini shakillantirish";
 			// 
-			// dataGridView1
+			// DataGridVIew_Oqituvchi
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(34, 179);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
-			this.dataGridView1.TabIndex = 58;
+			this.DataGridVIew_Oqituvchi.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.DataGridVIew_Oqituvchi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.DataGridVIew_Oqituvchi.Location = new System.Drawing.Point(34, 179);
+			this.DataGridVIew_Oqituvchi.Name = "DataGridVIew_Oqituvchi";
+			this.DataGridVIew_Oqituvchi.RowHeadersVisible = false;
+			this.DataGridVIew_Oqituvchi.RowHeadersWidth = 51;
+			this.DataGridVIew_Oqituvchi.RowTemplate.Height = 29;
+			this.DataGridVIew_Oqituvchi.Size = new System.Drawing.Size(638, 266);
+			this.DataGridVIew_Oqituvchi.TabIndex = 58;
+			this.DataGridVIew_Oqituvchi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
-			// comboBox1
+			// kafedraId
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(710, 308);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 50;
+			this.kafedraId.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.kafedraId.FormattingEnabled = true;
+			this.kafedraId.Location = new System.Drawing.Point(710, 308);
+			this.kafedraId.Name = "kafedraId";
+			this.kafedraId.Size = new System.Drawing.Size(283, 31);
+			this.kafedraId.TabIndex = 50;
 			// 
-			// textBox2
+			// gunatextBox
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(710, 198);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PlaceholderText = "To\'liq ism sharifini kiriting";
-			this.textBox2.Size = new System.Drawing.Size(283, 30);
-			this.textBox2.TabIndex = 51;
+			this.gunatextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.gunatextBox.Location = new System.Drawing.Point(710, 198);
+			this.gunatextBox.Name = "gunatextBox";
+			this.gunatextBox.PlaceholderText = "To\'liq ism sharifini kiriting";
+			this.gunatextBox.Size = new System.Drawing.Size(283, 30);
+			this.gunatextBox.TabIndex = 51;
 			// 
-			// textBox3
+			// gunatextbox2
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox3.Location = new System.Drawing.Point(710, 250);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.PlaceholderText = "O\'qituvchi darajasi (raqam)";
-			this.textBox3.Size = new System.Drawing.Size(283, 30);
-			this.textBox3.TabIndex = 53;
+			this.gunatextbox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.gunatextbox2.Location = new System.Drawing.Point(710, 250);
+			this.gunatextbox2.Name = "gunatextbox2";
+			this.gunatextbox2.PlaceholderText = "O\'qituvchi darajasi (raqam)";
+			this.gunatextbox2.Size = new System.Drawing.Size(283, 30);
+			this.gunatextbox2.TabIndex = 53;
 			// 
 			// label2
 			// 
@@ -119,16 +120,16 @@
 			this.label2.TabIndex = 54;
 			this.label2.Text = "Kafedrani tanlang";
 			// 
-			// checkBox1
+			// guna2Button2
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.ForeColor = System.Drawing.Color.Tomato;
-			this.checkBox1.Location = new System.Drawing.Point(706, 382);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(230, 24);
-			this.checkBox1.TabIndex = 55;
-			this.checkBox1.Text = "Oqituvchi qo\'shishga rozi man";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.guna2Button2.AutoSize = true;
+			this.guna2Button2.ForeColor = System.Drawing.Color.Tomato;
+			this.guna2Button2.Location = new System.Drawing.Point(706, 382);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(230, 24);
+			this.guna2Button2.TabIndex = 55;
+			this.guna2Button2.Text = "Oqituvchi qo\'shishga rozi man";
+			this.guna2Button2.UseVisualStyleBackColor = true;
 			// 
 			// button1
 			// 
@@ -140,37 +141,38 @@
 			this.button1.TabIndex = 56;
 			this.button1.Text = "create";
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// button2
+			// guna2Button3
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(860, 416);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(129, 29);
-			this.button2.TabIndex = 57;
-			this.button2.Text = "cancel";
-			this.button2.UseVisualStyleBackColor = false;
+			this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.guna2Button3.ForeColor = System.Drawing.Color.White;
+			this.guna2Button3.Location = new System.Drawing.Point(860, 416);
+			this.guna2Button3.Name = "guna2Button3";
+			this.guna2Button3.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button3.TabIndex = 57;
+			this.guna2Button3.Text = "cancel";
+			this.guna2Button3.UseVisualStyleBackColor = false;
 			// 
-			// button3
+			// guna2Button1
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Control;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-			this.button3.Location = new System.Drawing.Point(334, 129);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(43, 32);
-			this.button3.TabIndex = 60;
-			this.button3.UseVisualStyleBackColor = false;
+			this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+			this.guna2Button1.Location = new System.Drawing.Point(334, 129);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(43, 32);
+			this.guna2Button1.TabIndex = 60;
+			this.guna2Button1.UseVisualStyleBackColor = false;
 			// 
-			// textBox4
+			// guna2TextBox1
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox4.Location = new System.Drawing.Point(34, 130);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.PlaceholderText = "Qidirish uchun so\'z kiriting";
-			this.textBox4.Size = new System.Drawing.Size(283, 30);
-			this.textBox4.TabIndex = 59;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox1.Location = new System.Drawing.Point(34, 130);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.PlaceholderText = "Qidirish uchun so\'z kiriting";
+			this.guna2TextBox1.Size = new System.Drawing.Size(283, 30);
+			this.guna2TextBox1.TabIndex = 59;
 			// 
 			// label1
 			// 
@@ -191,23 +193,23 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.guna2TextBox1);
+			this.Controls.Add(this.DataGridVIew_Oqituvchi);
+			this.Controls.Add(this.guna2Button3);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.guna2Button2);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.gunatextbox2);
+			this.Controls.Add(this.gunatextBox);
+			this.Controls.Add(this.kafedraId);
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_O_qituvchilar";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.Load += new System.EventHandler(this.UC_O_qituvchilar_Load_1);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -217,16 +219,16 @@
 
         private Panel panel1;
         private Label lblTitle;
-		private DataGridView dataGridView1;
-		private ComboBox comboBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
+		private DataGridView DataGridVIew_Oqituvchi;
+		private ComboBox kafedraId;
+		private TextBox gunatextBox;
+		private TextBox gunatextbox2;
 		private Label label2;
-		private CheckBox checkBox1;
+		private CheckBox guna2Button2;
 		private Button button1;
-		private Button button2;
-		private Button button3;
-		private TextBox textBox4;
+		private Button guna2Button3;
+		private Button guna2Button1;
+		private TextBox guna2TextBox1;
 		private Label label1;
 	}
 }
