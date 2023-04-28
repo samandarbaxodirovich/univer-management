@@ -30,14 +30,14 @@
         {
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblTitle = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.DataGridViewDars = new System.Windows.Forms.DataGridView();
+			this.guna2Button1 = new System.Windows.Forms.Button();
+			this.guna2Button5 = new System.Windows.Forms.Button();
+			this.guna2Button2 = new System.Windows.Forms.Button();
+			this.guna2Button3 = new System.Windows.Forms.Button();
+			this.guna2Button4 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridViewDars)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -63,91 +63,97 @@
 			this.lblTitle.TabIndex = 2;
 			this.lblTitle.Text = "Dars Rejasi";
 			// 
-			// dataGridView1
+			// DataGridViewDars
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(249, 123);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(755, 324);
-			this.dataGridView1.TabIndex = 59;
+			this.DataGridViewDars.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.DataGridViewDars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.DataGridViewDars.Location = new System.Drawing.Point(249, 123);
+			this.DataGridViewDars.Name = "DataGridViewDars";
+			this.DataGridViewDars.RowHeadersVisible = false;
+			this.DataGridViewDars.RowHeadersWidth = 51;
+			this.DataGridViewDars.RowTemplate.Height = 29;
+			this.DataGridViewDars.Size = new System.Drawing.Size(755, 324);
+			this.DataGridViewDars.TabIndex = 59;
+			this.DataGridViewDars.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridViewDars_CellMouseClick_1);
 			// 
-			// button1
+			// guna2Button1
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(21, 123);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(205, 45);
-			this.button1.TabIndex = 60;
-			this.button1.Text = "1 Dars";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button1.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Location = new System.Drawing.Point(21, 123);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(205, 45);
+			this.guna2Button1.TabIndex = 60;
+			this.guna2Button1.Text = "1 Dars";
+			this.guna2Button1.UseVisualStyleBackColor = false;
+			this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_2);
 			// 
-			// button2
+			// guna2Button5
 			// 
-			this.button2.BackColor = System.Drawing.Color.Blue;
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(21, 328);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(205, 45);
-			this.button2.TabIndex = 61;
-			this.button2.Text = "5 Dars";
-			this.button2.UseVisualStyleBackColor = false;
+			this.guna2Button5.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button5.ForeColor = System.Drawing.Color.White;
+			this.guna2Button5.Location = new System.Drawing.Point(21, 328);
+			this.guna2Button5.Name = "guna2Button5";
+			this.guna2Button5.Size = new System.Drawing.Size(205, 45);
+			this.guna2Button5.TabIndex = 61;
+			this.guna2Button5.Text = "5 Dars";
+			this.guna2Button5.UseVisualStyleBackColor = false;
+			this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
 			// 
-			// button3
+			// guna2Button2
 			// 
-			this.button3.BackColor = System.Drawing.Color.Blue;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Location = new System.Drawing.Point(21, 277);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(205, 45);
-			this.button3.TabIndex = 62;
-			this.button3.Text = "4 Dars";
-			this.button3.UseVisualStyleBackColor = false;
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(21, 277);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(205, 45);
+			this.guna2Button2.TabIndex = 62;
+			this.guna2Button2.Text = "4 Dars";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
 			// 
-			// button4
+			// guna2Button3
 			// 
-			this.button4.BackColor = System.Drawing.Color.Blue;
-			this.button4.ForeColor = System.Drawing.Color.White;
-			this.button4.Location = new System.Drawing.Point(21, 226);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(205, 45);
-			this.button4.TabIndex = 63;
-			this.button4.Text = "3 Dars";
-			this.button4.UseVisualStyleBackColor = false;
+			this.guna2Button3.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button3.ForeColor = System.Drawing.Color.White;
+			this.guna2Button3.Location = new System.Drawing.Point(21, 226);
+			this.guna2Button3.Name = "guna2Button3";
+			this.guna2Button3.Size = new System.Drawing.Size(205, 45);
+			this.guna2Button3.TabIndex = 63;
+			this.guna2Button3.Text = "3 Dars";
+			this.guna2Button3.UseVisualStyleBackColor = false;
+			this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
 			// 
-			// button5
+			// guna2Button4
 			// 
-			this.button5.BackColor = System.Drawing.Color.Blue;
-			this.button5.ForeColor = System.Drawing.Color.White;
-			this.button5.Location = new System.Drawing.Point(21, 174);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(205, 45);
-			this.button5.TabIndex = 64;
-			this.button5.Text = "2 Dars";
-			this.button5.UseVisualStyleBackColor = false;
+			this.guna2Button4.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button4.ForeColor = System.Drawing.Color.White;
+			this.guna2Button4.Location = new System.Drawing.Point(21, 174);
+			this.guna2Button4.Name = "guna2Button4";
+			this.guna2Button4.Size = new System.Drawing.Size(205, 45);
+			this.guna2Button4.TabIndex = 64;
+			this.guna2Button4.Text = "2 Dars";
+			this.guna2Button4.UseVisualStyleBackColor = false;
+			this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
 			// 
 			// UC_Dars_Reja
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.guna2Button4);
+			this.Controls.Add(this.guna2Button3);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2Button5);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.DataGridViewDars);
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Dars_Reja";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.Load += new System.EventHandler(this.UC_Dars_Reja_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridViewDars)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -156,11 +162,11 @@
 
         private Panel panel1;
         private Label lblTitle;
-		private DataGridView dataGridView1;
-		private Button button1;
-		private Button button2;
-		private Button button3;
-		private Button button4;
-		private Button button5;
+		private DataGridView DataGridViewDars;
+		private Button guna2Button1;
+		private Button guna2Button5;
+		private Button guna2Button2;
+		private Button guna2Button3;
+		private Button guna2Button4;
 	}
 }
