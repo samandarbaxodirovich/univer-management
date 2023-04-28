@@ -33,7 +33,7 @@ namespace FinalProject.UserControls2
 
         private void SetValues()
         {
-            YuklamaGuruhR.DataSource = work.Guruxlar.GetAll().Select(x=>x.Name).ToList();
+            YuklamaGuruhR.DataSource = work.Guruxlar.GetAll().Select(x => x.Name).ToList();
             guna2DataGridView1.Rows.Clear();
             var result = service.GetAll().ToList();
             foreach (var item in result)
@@ -51,21 +51,21 @@ namespace FinalProject.UserControls2
         }
 
 
-		private void guna2Button2_Click_2(object sender, EventArgs e)
-		{
-			YuklamaForm yuklamaForm = new YuklamaForm();
-			yuklamaForm.ShowDialog();
-			yuklamaForm.SetValues();
-		}
+        private void guna2Button2_Click_2(object sender, EventArgs e)
+        {
+            YuklamaForm yuklamaForm = new YuklamaForm();
+            yuklamaForm.ShowDialog();
+            yuklamaForm.SetValues();
+        }
 
-		private void guna2Button1_Click_1(object sender, EventArgs e)
-		{
-			guna2DataGridView1.Rows.Clear();
-			var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
-			foreach (var item in result)
-			{
-				guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
-			}
-		}
-	}
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            guna2DataGridView1.Rows.Clear();
+            var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
+            foreach (var item in result)
+            {
+                guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
+            }
+        }
+    }
 }

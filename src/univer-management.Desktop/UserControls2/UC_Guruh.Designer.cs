@@ -28,196 +28,191 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Guruh));
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.lblTitle = new System.Windows.Forms.Label();
-			this.guna2Button1 = new System.Windows.Forms.Button();
-			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
-			this.datagridview1 = new System.Windows.Forms.DataGridView();
-			this.guna2Button2 = new System.Windows.Forms.Button();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.datagridview1)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// panel1
-			// 
-			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-			this.panel1.Controls.Add(this.lblTitle);
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1053, 80);
-			this.panel1.TabIndex = 4;
-			// 
-			// lblTitle
-			// 
-			this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblTitle.AutoSize = true;
-			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.lblTitle.ForeColor = System.Drawing.Color.White;
-			this.lblTitle.Location = new System.Drawing.Point(330, 23);
-			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(418, 32);
-			this.lblTitle.TabIndex = 2;
-			this.lblTitle.Text = "Guruhlar ro\'yxatini shakllantirish";
-			// 
-			// guna2Button1
-			// 
-			this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
-			this.guna2Button1.ForeColor = System.Drawing.Color.White;
-			this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-			this.guna2Button1.Location = new System.Drawing.Point(330, 127);
-			this.guna2Button1.Name = "guna2Button1";
-			this.guna2Button1.Size = new System.Drawing.Size(43, 32);
-			this.guna2Button1.TabIndex = 60;
-			this.guna2Button1.UseVisualStyleBackColor = false;
-			// 
-			// guna2TextBox1
-			// 
-			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.guna2TextBox1.Location = new System.Drawing.Point(30, 128);
-			this.guna2TextBox1.Name = "guna2TextBox1";
-			this.guna2TextBox1.PlaceholderText = "Qidirish uchun so\'z kiriting";
-			this.guna2TextBox1.Size = new System.Drawing.Size(283, 30);
-			this.guna2TextBox1.TabIndex = 59;
-			// 
-			// datagridview1
-			// 
-			this.datagridview1.AllowUserToAddRows = false;
-			this.datagridview1.AllowUserToDeleteRows = false;
-			this.datagridview1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.datagridview1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.datagridview1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-			this.datagridview1.Location = new System.Drawing.Point(30, 177);
-			this.datagridview1.Name = "datagridview1";
-			this.datagridview1.ReadOnly = true;
-			this.datagridview1.RowHeadersVisible = false;
-			this.datagridview1.RowHeadersWidth = 51;
-			this.datagridview1.RowTemplate.Height = 29;
-			this.datagridview1.Size = new System.Drawing.Size(981, 266);
-			this.datagridview1.TabIndex = 58;
-			this.datagridview1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview1_CellContentClick_1);
-			// 
-			// guna2Button2
-			// 
-			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
-			this.guna2Button2.ForeColor = System.Drawing.Color.White;
-			this.guna2Button2.Location = new System.Drawing.Point(815, 128);
-			this.guna2Button2.Name = "guna2Button2";
-			this.guna2Button2.Size = new System.Drawing.Size(196, 43);
-			this.guna2Button2.TabIndex = 56;
-			this.guna2Button2.Text = "Guruh qo\'shish";
-			this.guna2Button2.UseVisualStyleBackColor = false;
-			this.guna2Button2.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// Column1
-			// 
-			this.Column1.HeaderText = "ID";
-			this.Column1.MinimumWidth = 6;
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 125;
-			// 
-			// Column2
-			// 
-			this.Column2.HeaderText = "Guruh nomi";
-			this.Column2.MinimumWidth = 6;
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
-			this.Column2.Width = 125;
-			// 
-			// Column3
-			// 
-			this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Column3.HeaderText = "Talabalar soni";
-			this.Column3.MinimumWidth = 6;
-			this.Column3.Name = "Column3";
-			this.Column3.ReadOnly = true;
-			// 
-			// Column4
-			// 
-			this.Column4.HeaderText = "Mutaxassisli";
-			this.Column4.MinimumWidth = 6;
-			this.Column4.Name = "Column4";
-			this.Column4.ReadOnly = true;
-			this.Column4.Width = 125;
-			// 
-			// Column5
-			// 
-			this.Column5.HeaderText = "Auditoriya";
-			this.Column5.MinimumWidth = 6;
-			this.Column5.Name = "Column5";
-			this.Column5.ReadOnly = true;
-			this.Column5.Width = 125;
-			// 
-			// Column6
-			// 
-			this.Column6.HeaderText = "Update";
-			this.Column6.MinimumWidth = 6;
-			this.Column6.Name = "Column6";
-			this.Column6.ReadOnly = true;
-			this.Column6.Text = "✏️";
-			this.Column6.UseColumnTextForButtonValue = true;
-			// 
-			// Column7
-			// 
-			this.Column7.HeaderText = "Delete";
-			this.Column7.MinimumWidth = 6;
-			this.Column7.Name = "Column7";
-			this.Column7.ReadOnly = true;
-			this.Column7.Text = "X";
-			this.Column7.UseColumnTextForButtonValue = true;
-			// 
-			// UC_Guruh
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.Controls.Add(this.guna2Button1);
-			this.Controls.Add(this.guna2TextBox1);
-			this.Controls.Add(this.datagridview1);
-			this.Controls.Add(this.guna2Button2);
-			this.Controls.Add(this.panel1);
-			this.Name = "UC_Guruh";
-			this.Size = new System.Drawing.Size(1040, 481);
-			this.Load += new System.EventHandler(this.UC_Guruh_Load_1);
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.datagridview1)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Guruh));
+            panel1 = new Panel();
+            lblTitle = new Label();
+            guna2Button1 = new Button();
+            guna2TextBox1 = new TextBox();
+            datagridview1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewButtonColumn();
+            Column7 = new DataGridViewButtonColumn();
+            guna2Button2 = new Button();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)datagridview1).BeginInit();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(41, 128, 185);
+            panel1.Controls.Add(lblTitle);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1053, 80);
+            panel1.TabIndex = 4;
+            // 
+            // lblTitle
+            // 
+            lblTitle.Anchor = AnchorStyles.None;
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(330, 23);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(418, 32);
+            lblTitle.TabIndex = 2;
+            lblTitle.Text = "Guruhlar ro'yxatini shakllantirish";
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BackColor = SystemColors.Control;
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
+            guna2Button1.Location = new Point(330, 127);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.Size = new Size(43, 32);
+            guna2Button1.TabIndex = 60;
+            guna2Button1.UseVisualStyleBackColor = false;
+            // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.Location = new Point(30, 128);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PlaceholderText = "Qidirish uchun so'z kiriting";
+            guna2TextBox1.Size = new Size(283, 30);
+            guna2TextBox1.TabIndex = 59;
+            // 
+            // datagridview1
+            // 
+            datagridview1.AllowUserToAddRows = false;
+            datagridview1.AllowUserToDeleteRows = false;
+            datagridview1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            datagridview1.BackgroundColor = SystemColors.Control;
+            datagridview1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            datagridview1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            datagridview1.Location = new Point(30, 177);
+            datagridview1.Name = "datagridview1";
+            datagridview1.ReadOnly = true;
+            datagridview1.RowHeadersVisible = false;
+            datagridview1.RowHeadersWidth = 51;
+            datagridview1.RowTemplate.Height = 29;
+            datagridview1.Size = new Size(981, 266);
+            datagridview1.TabIndex = 58;
+            datagridview1.CellContentClick += datagridview1_CellContentClick_1;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Guruh nomi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column3.HeaderText = "Talabalar soni";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Mutaxassisli";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Auditoriya";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "O'zgartirish";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            Column6.ReadOnly = true;
+            Column6.Text = "✏️";
+            Column6.UseColumnTextForButtonValue = true;
+            Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "O'chirish";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            Column7.ReadOnly = true;
+            Column7.Text = "X";
+            Column7.UseColumnTextForButtonValue = true;
+            Column7.Width = 125;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2Button2.BackColor = Color.Blue;
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(815, 128);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.Size = new Size(196, 43);
+            guna2Button2.TabIndex = 56;
+            guna2Button2.Text = "Guruh qo'shish";
+            guna2Button2.UseVisualStyleBackColor = false;
+            guna2Button2.Click += button1_Click;
+            // 
+            // UC_Guruh
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(guna2Button1);
+            Controls.Add(guna2TextBox1);
+            Controls.Add(datagridview1);
+            Controls.Add(guna2Button2);
+            Controls.Add(panel1);
+            Name = "UC_Guruh";
+            Size = new Size(1040, 481);
+            Load += UC_Guruh_Load_1;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)datagridview1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Panel panel1;
         private Label lblTitle;
-		private Button guna2Button1;
-		private TextBox guna2TextBox1;
-		private DataGridView datagridview1;
-		private Button guna2Button2;
-		private DataGridViewTextBoxColumn Column1;
-		private DataGridViewTextBoxColumn Column2;
-		private DataGridViewTextBoxColumn Column3;
-		private DataGridViewTextBoxColumn Column4;
-		private DataGridViewTextBoxColumn Column5;
-		private DataGridViewButtonColumn Column6;
-		private DataGridViewButtonColumn Column7;
-	}
+        private Button guna2Button1;
+        private TextBox guna2TextBox1;
+        private DataGridView datagridview1;
+        private Button guna2Button2;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewButtonColumn Column6;
+        private DataGridViewButtonColumn Column7;
+    }
 }

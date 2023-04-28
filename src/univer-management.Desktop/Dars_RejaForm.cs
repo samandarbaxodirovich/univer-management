@@ -35,16 +35,16 @@ namespace univer_management.Desktop
 
 
 
-		private void guna2Button11_Click_1(object sender, EventArgs e)
-		{
-			UC_Dars_Reja dars_Reja = new UC_Dars_Reja(); addUserControl(dars_Reja);
+        private void guna2Button11_Click_1(object sender, EventArgs e)
+        {
+            UC_Dars_Reja dars_Reja = new UC_Dars_Reja(); addUserControl(dars_Reja);
 
-		}
+        }
 
-		private void guna2Button33_Click_1(object sender, EventArgs e)
-		{
-			UC_Oqituvchi_dars_reja dars_Reja1 = new UC_Oqituvchi_dars_reja();
-			addUserControl(dars_Reja1);
-		}
-	}
+        private void guna2Button33_Click_1(object sender, EventArgs e)
+        {
+            UC_Oqituvchi_dars_reja dars_Reja1 = new UC_Oqituvchi_dars_reja();
+            addUserControl(dars_Reja1);
+        }
+    }
 }

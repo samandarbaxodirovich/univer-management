@@ -21,7 +21,7 @@ namespace FinalProject.UserControls2
         }
 
         MutaxasislikService mService = new();
-        OquvRejaService oquvRejaService= new();
+        OquvRejaService oquvRejaService = new();
 
 
 
@@ -30,7 +30,7 @@ namespace FinalProject.UserControls2
 
         private void SetValues()
         {
-            guna2ComboBox1.DataSource = mService.GetAll().Select(x=>x.Name).ToList();
+            guna2ComboBox1.DataSource = mService.GetAll().Select(x => x.Name).ToList();
         }
 
 
@@ -51,31 +51,31 @@ namespace FinalProject.UserControls2
 
 
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			if (guna2ComboBox2.SelectedItem == null)
-			{
-				MessageBox.Show("Iltimos semestr raqamini kiriting");
-				return;
-			}
-			OquvrejaForm oquvrejaForm = new OquvrejaForm(mService.GetAll()
-				.FirstOrDefault(x => x.Name == guna2ComboBox1.SelectedItem.ToString())
-				!.Id, int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
-			oquvrejaForm.ShowDialog();
-			SetTable();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (guna2ComboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Iltimos semestr raqamini kiriting");
+                return;
+            }
+            OquvrejaForm oquvrejaForm = new OquvrejaForm(mService.GetAll()
+                .FirstOrDefault(x => x.Name == guna2ComboBox1.SelectedItem.ToString())
+                !.Id, int.Parse(guna2ComboBox2.SelectedItem.ToString()!));
+            oquvrejaForm.ShowDialog();
+            SetTable();
 
-		}
+        }
 
 
         //update delete yozilmagan ekan
-		private void datagrid_Oquv_reja_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-		{
+        private void datagrid_Oquv_reja_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
 
-		}
+        }
 
-		private void guna2Button1_Click_1(object sender, EventArgs e)
-		{
-			SetTable();
-		}
-	}
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            SetTable();
+        }
+    }
 }
