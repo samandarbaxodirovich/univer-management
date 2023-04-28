@@ -102,6 +102,7 @@
             datagridview1.RowHeadersVisible = false;
             datagridview1.RowHeadersWidth = 51;
             datagridview1.RowTemplate.Height = 29;
+            datagridview1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             datagridview1.Size = new Size(981, 266);
             datagridview1.TabIndex = 58;
             datagridview1.CellContentClick += datagridview1_CellContentClick_1;

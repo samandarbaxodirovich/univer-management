@@ -35,6 +35,12 @@
             guna2Button1 = new Button();
             guna2TextBox1 = new TextBox();
             guna2DataGridView1 = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            name = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             guna2Button3 = new Button();
             guna2Button2 = new Button();
             guna2CheckBox1 = new CheckBox();
@@ -43,12 +49,6 @@
             guna2ComboBox2 = new ComboBox();
             label3 = new Label();
             guna2ComboBox1 = new ComboBox();
-            Id = new DataGridViewTextBoxColumn();
-            name = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -122,9 +122,62 @@
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
             guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             guna2DataGridView1.Size = new Size(638, 266);
             guna2DataGridView1.TabIndex = 58;
             guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick_1;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "ID";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 50;
+            // 
+            // name
+            // 
+            name.HeaderText = "Fan ";
+            name.MinimumWidth = 6;
+            name.Name = "name";
+            name.ReadOnly = true;
+            name.Width = 125;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Fan qiyinchiligi";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 140;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = "Kafedra nomi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "O'zgartirish";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            Column3.Width = 80;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "O'chirish";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            Column4.Width = 80;
             // 
             // guna2Button3
             // 
@@ -214,58 +267,6 @@
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.Size = new Size(283, 31);
             guna2ComboBox1.TabIndex = 61;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "ID";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 50;
-            // 
-            // name
-            // 
-            name.HeaderText = "Fan ";
-            name.MinimumWidth = 6;
-            name.Name = "name";
-            name.ReadOnly = true;
-            name.Width = 125;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Fan qiyinchiligi";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 140;
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = "Kafedra nomi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "O'zgartirish";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            Column3.Width = 80;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "O'chirish";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            Column4.Width = 80;
             // 
             // UC_Fanlar
             // 

@@ -34,10 +34,6 @@
             label1 = new Label();
             label2 = new Label();
             datagrid_Oquv_reja = new DataGridView();
-            guna2ComboBox1 = new ComboBox();
-            guna2ComboBox2 = new ComboBox();
-            guna2Button1 = new Button();
-            guna2Button2 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -46,6 +42,10 @@
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewButtonColumn();
             Column8 = new DataGridViewButtonColumn();
+            guna2ComboBox1 = new ComboBox();
+            guna2ComboBox2 = new ComboBox();
+            guna2Button1 = new Button();
+            guna2Button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagrid_Oquv_reja).BeginInit();
             SuspendLayout();
@@ -104,52 +104,10 @@
             datagrid_Oquv_reja.RowHeadersVisible = false;
             datagrid_Oquv_reja.RowHeadersWidth = 51;
             datagrid_Oquv_reja.RowTemplate.Height = 29;
+            datagrid_Oquv_reja.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             datagrid_Oquv_reja.Size = new Size(973, 266);
             datagrid_Oquv_reja.TabIndex = 59;
             datagrid_Oquv_reja.CellContentClick += datagrid_Oquv_reja_CellContentClick_1;
-            // 
-            // guna2ComboBox1
-            // 
-            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox1.FormattingEnabled = true;
-            guna2ComboBox1.Location = new Point(28, 136);
-            guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.Size = new Size(283, 31);
-            guna2ComboBox1.TabIndex = 60;
-            // 
-            // guna2ComboBox2
-            // 
-            guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2ComboBox2.FormattingEnabled = true;
-            guna2ComboBox2.Location = new Point(335, 136);
-            guna2ComboBox2.Name = "guna2ComboBox2";
-            guna2ComboBox2.Size = new Size(283, 31);
-            guna2ComboBox2.TabIndex = 61;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BackColor = SystemColors.Control;
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
-            guna2Button1.Location = new Point(642, 135);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.Size = new Size(43, 32);
-            guna2Button1.TabIndex = 62;
-            guna2Button1.UseVisualStyleBackColor = false;
-            guna2Button1.Click += guna2Button1_Click_1;
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Button2.BackColor = Color.Blue;
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(805, 136);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.Size = new Size(196, 32);
-            guna2Button2.TabIndex = 63;
-            guna2Button2.Text = "O'quv reja qo'shish";
-            guna2Button2.UseVisualStyleBackColor = false;
-            guna2Button2.Click += button1_Click;
             // 
             // Column1
             // 
@@ -218,6 +176,49 @@
             Column8.Text = "X";
             Column8.UseColumnTextForButtonValue = true;
             Column8.Width = 80;
+            // 
+            // guna2ComboBox1
+            // 
+            guna2ComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2ComboBox1.FormattingEnabled = true;
+            guna2ComboBox1.Location = new Point(28, 136);
+            guna2ComboBox1.Name = "guna2ComboBox1";
+            guna2ComboBox1.Size = new Size(283, 31);
+            guna2ComboBox1.TabIndex = 60;
+            // 
+            // guna2ComboBox2
+            // 
+            guna2ComboBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2ComboBox2.FormattingEnabled = true;
+            guna2ComboBox2.Location = new Point(335, 136);
+            guna2ComboBox2.Name = "guna2ComboBox2";
+            guna2ComboBox2.Size = new Size(283, 31);
+            guna2ComboBox2.TabIndex = 61;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BackColor = SystemColors.Control;
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
+            guna2Button1.Location = new Point(642, 135);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.Size = new Size(43, 32);
+            guna2Button1.TabIndex = 62;
+            guna2Button1.UseVisualStyleBackColor = false;
+            guna2Button1.Click += guna2Button1_Click_1;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2Button2.BackColor = Color.Blue;
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(805, 136);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.Size = new Size(196, 32);
+            guna2Button2.TabIndex = 63;
+            guna2Button2.Text = "O'quv reja qo'shish";
+            guna2Button2.UseVisualStyleBackColor = false;
+            guna2Button2.Click += button1_Click;
             // 
             // UC_Uquv_reja
             // 

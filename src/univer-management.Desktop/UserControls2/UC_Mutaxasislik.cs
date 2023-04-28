@@ -25,10 +25,10 @@ namespace univer_management.Desktop.UserControls2
 
         private void SetValues()
         {
-            dataGridView1.Rows.Clear();
+            dataGridView11.Rows.Clear();
             var targets = service.GetAll();
             foreach (var item in targets)
-                dataGridView1.Rows.Add(item.Id, item.Name);
+                dataGridView11.Rows.Add(item.Id, item.Name);
         }
 
 
@@ -72,20 +72,20 @@ namespace univer_management.Desktop.UserControls2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            dataGridView11.Rows.Clear();
             var targets = service.GetByKeyword(textBox2.Text);
             foreach (var item in targets)
-                dataGridView1.Rows.Add(item.Id, item.Name);
+                dataGridView11.Rows.Add(item.Id, item.Name);
         }
 
         private async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView11.SelectedRows.Count > 0)
             {
-                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                DataGridViewRow selectedRow = dataGridView11.SelectedRows[0];
                 var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
                 byte actionId = 10;
-                if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                if (dataGridView11.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
                 if (actionId == 2)

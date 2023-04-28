@@ -32,6 +32,12 @@
             panel1 = new Panel();
             lblTitle = new Label();
             DataGridVIew_Oqituvchi = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewButtonColumn();
+            Column6 = new DataGridViewButtonColumn();
             kafedraId = new ComboBox();
             gunatextBox = new TextBox();
             gunatextbox2 = new TextBox();
@@ -42,12 +48,6 @@
             guna2Button1 = new Button();
             guna2TextBox1 = new TextBox();
             label1 = new Label();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewButtonColumn();
-            Column6 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Oqituvchi).BeginInit();
             SuspendLayout();
@@ -88,9 +88,62 @@
             DataGridVIew_Oqituvchi.RowHeadersVisible = false;
             DataGridVIew_Oqituvchi.RowHeadersWidth = 51;
             DataGridVIew_Oqituvchi.RowTemplate.Height = 29;
+            DataGridVIew_Oqituvchi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGridVIew_Oqituvchi.Size = new Size(638, 266);
             DataGridVIew_Oqituvchi.TabIndex = 58;
             DataGridVIew_Oqituvchi.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Id";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = "Full Name";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "O'qituvchi darajasi";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Width = 170;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Kafedra";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "O'zgartirish";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            Column5.Text = "✏️";
+            Column5.UseColumnTextForButtonValue = true;
+            Column5.Width = 80;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "O'chirish";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            Column6.ReadOnly = true;
+            Column6.Text = "X";
+            Column6.UseColumnTextForButtonValue = true;
+            Column6.Width = 80;
             // 
             // kafedraId
             // 
@@ -202,58 +255,6 @@
             label1.Size = new Size(211, 29);
             label1.TabIndex = 61;
             label1.Text = "O'qituvchi qo'shish";
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Id";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = "Full Name";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "O'qituvchi darajasi";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Width = 170;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Kafedra";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "O'zgartirish";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.ReadOnly = true;
-            Column5.Text = "✏️";
-            Column5.UseColumnTextForButtonValue = true;
-            Column5.Width = 80;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "O'chirish";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.ReadOnly = true;
-            Column6.Text = "X";
-            Column6.UseColumnTextForButtonValue = true;
-            Column6.Width = 80;
             // 
             // UC_O_qituvchilar
             // 

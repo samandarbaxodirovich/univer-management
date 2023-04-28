@@ -35,17 +35,17 @@
             guna2Button1 = new Button();
             guna2TextBox1 = new TextBox();
             datagridView_kafedra = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewButtonColumn();
+            Column5 = new DataGridViewButtonColumn();
             guna2Button3 = new Button();
             guna2Button2 = new Button();
             guna2CheckBox1 = new CheckBox();
             label2 = new Label();
             kafedratxt_box = new TextBox();
             mutaxasislikCmb = new ComboBox();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewButtonColumn();
-            Column5 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)datagridView_kafedra).BeginInit();
             SuspendLayout();
@@ -119,9 +119,54 @@
             datagridView_kafedra.RowHeadersVisible = false;
             datagridView_kafedra.RowHeadersWidth = 51;
             datagridView_kafedra.RowTemplate.Height = 29;
+            datagridView_kafedra.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             datagridView_kafedra.Size = new Size(638, 266);
             datagridView_kafedra.TabIndex = 58;
             datagridView_kafedra.CellContentClick += datagridView_kafedra_CellContentClick_1;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Kafedra nomi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            Column3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column3.HeaderText = "Mutaxasislik nomi";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "O'zgartirish";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "✏️";
+            Column4.UseColumnTextForButtonValue = true;
+            Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "O'chirish";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            Column5.Text = "X";
+            Column5.UseColumnTextForButtonValue = true;
+            Column5.Width = 125;
             // 
             // guna2Button3
             // 
@@ -190,50 +235,6 @@
             mutaxasislikCmb.Name = "mutaxasislikCmb";
             mutaxasislikCmb.Size = new Size(283, 31);
             mutaxasislikCmb.TabIndex = 50;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Kafedra nomi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            Column3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column3.HeaderText = "Mutaxasislik nomi";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "O'zgartirish";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "✏️";
-            Column4.UseColumnTextForButtonValue = true;
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "O'chirish";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.ReadOnly = true;
-            Column5.Text = "X";
-            Column5.UseColumnTextForButtonValue = true;
-            Column5.Width = 125;
             // 
             // UC_Kafedra
             // 

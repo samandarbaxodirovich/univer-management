@@ -41,8 +41,6 @@
             guna2Button2 = new Button();
             guna2Button3 = new Button();
             DataGridVIew_Auditor = new DataGridView();
-            guna2TextBox1 = new TextBox();
-            guna2Button1 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -50,6 +48,8 @@
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewButtonColumn();
             Column7 = new DataGridViewButtonColumn();
+            guna2TextBox1 = new TextBox();
+            guna2Button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Auditor).BeginInit();
             SuspendLayout();
@@ -191,30 +191,10 @@
             DataGridVIew_Auditor.RowHeadersVisible = false;
             DataGridVIew_Auditor.RowHeadersWidth = 51;
             DataGridVIew_Auditor.RowTemplate.Height = 29;
+            DataGridVIew_Auditor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGridVIew_Auditor.Size = new Size(638, 266);
             DataGridVIew_Auditor.TabIndex = 46;
             DataGridVIew_Auditor.CellContentClick += DataGridVIew_Auditor_CellContentClick_1;
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.Location = new Point(28, 135);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Qidirish uchun so'z kiriting";
-            guna2TextBox1.Size = new Size(283, 30);
-            guna2TextBox1.TabIndex = 47;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BackColor = SystemColors.Control;
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
-            guna2Button1.Location = new Point(328, 134);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.Size = new Size(43, 32);
-            guna2Button1.TabIndex = 48;
-            guna2Button1.UseVisualStyleBackColor = false;
-            guna2Button1.Click += guna2Button1_Click_1;
             // 
             // Column1
             // 
@@ -275,6 +255,27 @@
             Column7.Text = "X";
             Column7.ToolTipText = "X";
             Column7.Width = 80;
+            // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.Location = new Point(28, 135);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PlaceholderText = "Qidirish uchun so'z kiriting";
+            guna2TextBox1.Size = new Size(283, 30);
+            guna2TextBox1.TabIndex = 47;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BackColor = SystemColors.Control;
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
+            guna2Button1.Location = new Point(328, 134);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.Size = new Size(43, 32);
+            guna2Button1.TabIndex = 48;
+            guna2Button1.UseVisualStyleBackColor = false;
+            guna2Button1.Click += guna2Button1_Click_1;
             // 
             // UC_Auditoriya
             // 

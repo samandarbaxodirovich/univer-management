@@ -34,11 +34,11 @@
             label1 = new Label();
             button3 = new Button();
             textBox4 = new TextBox();
-            dataGridView1 = new DataGridView();
+            dataGridView11 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             Mutaxassisliknomi = new DataGridViewTextBoxColumn();
             Update = new DataGridViewButtonColumn();
-            Delete = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             button2 = new Button();
             button1 = new Button();
             checkBox1 = new CheckBox();
@@ -46,7 +46,7 @@
             textBox2 = new TextBox();
             ID = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -105,22 +105,24 @@
             textBox4.Size = new Size(283, 30);
             textBox4.TabIndex = 70;
             // 
-            // dataGridView1
+            // dataGridView11
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.BackgroundColor = SystemColors.Control;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, Mutaxassisliknomi, Update, Delete });
-            dataGridView1.Location = new Point(31, 184);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(638, 266);
-            dataGridView1.TabIndex = 69;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView11.AllowUserToAddRows = false;
+            dataGridView11.AllowUserToDeleteRows = false;
+            dataGridView11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView11.BackgroundColor = SystemColors.Control;
+            dataGridView11.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView11.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, Mutaxassisliknomi, Update, Column4 });
+            dataGridView11.Location = new Point(31, 184);
+            dataGridView11.Name = "dataGridView11";
+            dataGridView11.ReadOnly = true;
+            dataGridView11.RowHeadersVisible = false;
+            dataGridView11.RowHeadersWidth = 51;
+            dataGridView11.RowTemplate.Height = 29;
+            dataGridView11.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView11.Size = new Size(638, 266);
+            dataGridView11.TabIndex = 69;
+            dataGridView11.CellContentClick += dataGridView1_CellContentClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -144,19 +146,20 @@
             Update.MinimumWidth = 6;
             Update.Name = "Update";
             Update.ReadOnly = true;
+            Update.SortMode = DataGridViewColumnSortMode.Automatic;
             Update.Text = "✏️";
             Update.UseColumnTextForButtonValue = true;
             Update.Width = 125;
             // 
-            // Delete
+            // Column4
             // 
-            Delete.HeaderText = "O'chirish";
-            Delete.MinimumWidth = 6;
-            Delete.Name = "Delete";
-            Delete.ReadOnly = true;
-            Delete.Text = "X";
-            Delete.UseColumnTextForButtonValue = true;
-            Delete.Width = 125;
+            Column4.HeaderText = "O'chirish";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            Column4.Width = 125;
             // 
             // button2
             // 
@@ -229,7 +232,7 @@
             BackColor = Color.White;
             Controls.Add(button3);
             Controls.Add(textBox4);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridView11);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(checkBox1);
@@ -242,7 +245,7 @@
             Tag = "Mutahasislik";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView11).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,7 +257,7 @@
         private Label label1;
         private Button button3;
         private TextBox textBox4;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridView11;
         private Button button2;
         private Button button1;
         private CheckBox checkBox1;
@@ -264,6 +267,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn Mutaxassisliknomi;
         private DataGridViewButtonColumn Update;
-        private DataGridViewButtonColumn Delete;
+        private DataGridViewButtonColumn Column4;
     }
 }

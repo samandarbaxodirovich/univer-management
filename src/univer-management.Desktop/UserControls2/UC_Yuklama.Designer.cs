@@ -35,7 +35,6 @@
             guna2Button2 = new Button();
             YuklamaGuruhR = new ComboBox();
             guna2DataGridView1 = new DataGridView();
-            guna2Button1 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             Column8 = new DataGridViewTextBoxColumn();
             Column9 = new DataGridViewButtonColumn();
             Column10 = new DataGridViewButtonColumn();
+            guna2Button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -117,20 +117,9 @@
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
             guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             guna2DataGridView1.Size = new Size(1010, 266);
             guna2DataGridView1.TabIndex = 64;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BackColor = SystemColors.Control;
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
-            guna2Button1.Location = new Point(332, 136);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.Size = new Size(43, 32);
-            guna2Button1.TabIndex = 69;
-            guna2Button1.UseVisualStyleBackColor = false;
-            guna2Button1.Click += guna2Button1_Click_1;
             // 
             // Column1
             // 
@@ -215,6 +204,18 @@
             Column10.Text = "X";
             Column10.UseColumnTextForButtonValue = true;
             Column10.Width = 70;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BackColor = SystemColors.Control;
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
+            guna2Button1.Location = new Point(332, 136);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.Size = new Size(43, 32);
+            guna2Button1.TabIndex = 69;
+            guna2Button1.UseVisualStyleBackColor = false;
+            guna2Button1.Click += guna2Button1_Click_1;
             // 
             // UC_Yuklama
             // 

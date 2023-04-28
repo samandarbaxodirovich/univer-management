@@ -34,15 +34,15 @@
             button3 = new Button();
             textBox4 = new TextBox();
             DataGridVIew_Oqituvchi = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewButtonColumn();
+            Column4 = new DataGridViewButtonColumn();
             guna2Button3 = new Button();
             guna2Button2 = new Button();
             guna2CheckBox1 = new CheckBox();
             gunatextBox = new TextBox();
             label1 = new Label();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewButtonColumn();
-            Column4 = new DataGridViewButtonColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Oqituvchi).BeginInit();
             SuspendLayout();
@@ -105,9 +105,46 @@
             DataGridVIew_Oqituvchi.RowHeadersVisible = false;
             DataGridVIew_Oqituvchi.RowHeadersWidth = 51;
             DataGridVIew_Oqituvchi.RowTemplate.Height = 29;
+            DataGridVIew_Oqituvchi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGridVIew_Oqituvchi.Size = new Size(638, 266);
             DataGridVIew_Oqituvchi.TabIndex = 58;
             DataGridVIew_Oqituvchi.CellContentClick += DataGridVIew_Oqituvchi_CellContentClick_1;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = "Mashg'ulot nomi";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "O'zgartirish";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Text = "✏️";
+            Column3.UseColumnTextForButtonValue = true;
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "O'chirish";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Text = "X";
+            Column4.UseColumnTextForButtonValue = true;
+            Column4.Width = 125;
             // 
             // guna2Button3
             // 
@@ -168,42 +205,6 @@
             label1.Size = new Size(203, 29);
             label1.TabIndex = 61;
             label1.Text = "Mashg'ulot kiritish";
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = "Mashg'ulot nomi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "O'zgartirish";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Text = "✏️";
-            Column3.UseColumnTextForButtonValue = true;
-            Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "O'chirish";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Text = "X";
-            Column4.UseColumnTextForButtonValue = true;
-            Column4.Width = 125;
             // 
             // UC_Mashg_ulotlar
             // 
