@@ -33,14 +33,18 @@
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.button3 = new System.Windows.Forms.Button();
 			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.DataGridVIew_Oqituvchi = new System.Windows.Forms.DataGridView();
+			this.guna2Button3 = new System.Windows.Forms.Button();
+			this.guna2Button2 = new System.Windows.Forms.Button();
+			this.guna2CheckBox1 = new System.Windows.Forms.CheckBox();
+			this.gunatextBox = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -76,6 +80,7 @@
 			this.button3.Size = new System.Drawing.Size(43, 32);
 			this.button3.TabIndex = 60;
 			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// textBox4
 			// 
@@ -85,60 +90,71 @@
 			this.textBox4.PlaceholderText = "Qidirish uchun so\'z kiriting";
 			this.textBox4.Size = new System.Drawing.Size(283, 30);
 			this.textBox4.TabIndex = 59;
+			this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
 			// 
-			// dataGridView1
+			// DataGridVIew_Oqituvchi
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(35, 167);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
-			this.dataGridView1.TabIndex = 58;
+			this.DataGridVIew_Oqituvchi.AllowUserToAddRows = false;
+			this.DataGridVIew_Oqituvchi.AllowUserToDeleteRows = false;
+			this.DataGridVIew_Oqituvchi.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.DataGridVIew_Oqituvchi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.DataGridVIew_Oqituvchi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+			this.DataGridVIew_Oqituvchi.Location = new System.Drawing.Point(35, 167);
+			this.DataGridVIew_Oqituvchi.Name = "DataGridVIew_Oqituvchi";
+			this.DataGridVIew_Oqituvchi.ReadOnly = true;
+			this.DataGridVIew_Oqituvchi.RowHeadersVisible = false;
+			this.DataGridVIew_Oqituvchi.RowHeadersWidth = 51;
+			this.DataGridVIew_Oqituvchi.RowTemplate.Height = 29;
+			this.DataGridVIew_Oqituvchi.Size = new System.Drawing.Size(638, 266);
+			this.DataGridVIew_Oqituvchi.TabIndex = 58;
+			this.DataGridVIew_Oqituvchi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVIew_Oqituvchi_CellContentClick_1);
 			// 
-			// button2
+			// guna2Button3
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(861, 404);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(129, 29);
-			this.button2.TabIndex = 57;
-			this.button2.Text = "cancel";
-			this.button2.UseVisualStyleBackColor = false;
+			this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.guna2Button3.ForeColor = System.Drawing.Color.White;
+			this.guna2Button3.Location = new System.Drawing.Point(861, 404);
+			this.guna2Button3.Name = "guna2Button3";
+			this.guna2Button3.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button3.TabIndex = 57;
+			this.guna2Button3.Text = "cancel";
+			this.guna2Button3.UseVisualStyleBackColor = false;
 			// 
-			// button1
+			// guna2Button2
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(711, 404);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(129, 29);
-			this.button1.TabIndex = 56;
-			this.button1.Text = "create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(711, 404);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button2.TabIndex = 56;
+			this.guna2Button2.Text = "create";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
 			// 
-			// checkBox1
+			// guna2CheckBox1
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.ForeColor = System.Drawing.Color.Tomato;
-			this.checkBox1.Location = new System.Drawing.Point(711, 254);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(236, 24);
-			this.checkBox1.TabIndex = 55;
-			this.checkBox1.Text = "Mashg\'ulotqo\'shishga rozi man";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.guna2CheckBox1.AutoSize = true;
+			this.guna2CheckBox1.ForeColor = System.Drawing.Color.Tomato;
+			this.guna2CheckBox1.Location = new System.Drawing.Point(711, 254);
+			this.guna2CheckBox1.Name = "guna2CheckBox1";
+			this.guna2CheckBox1.Size = new System.Drawing.Size(236, 24);
+			this.guna2CheckBox1.TabIndex = 55;
+			this.guna2CheckBox1.Text = "Mashg\'ulotqo\'shishga rozi man";
+			this.guna2CheckBox1.UseVisualStyleBackColor = true;
 			// 
-			// textBox3
+			// gunatextBox
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox3.Location = new System.Drawing.Point(711, 218);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.PlaceholderText = "Mashg\'ulotni kiriting";
-			this.textBox3.Size = new System.Drawing.Size(283, 30);
-			this.textBox3.TabIndex = 53;
+			this.gunatextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.gunatextBox.Location = new System.Drawing.Point(711, 218);
+			this.gunatextBox.Name = "gunatextBox";
+			this.gunatextBox.PlaceholderText = "Mashg\'ulotni kiriting";
+			this.gunatextBox.Size = new System.Drawing.Size(283, 30);
+			this.gunatextBox.TabIndex = 53;
 			// 
 			// label1
 			// 
@@ -153,6 +169,41 @@
 			this.label1.TabIndex = 61;
 			this.label1.Text = "Mashg\'ulot kiritish";
 			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "ID";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "Mashg\'ulot nomi";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Update";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Text = "✏️";
+			this.Column3.UseColumnTextForButtonValue = true;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Delete";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Text = "X";
+			this.Column4.UseColumnTextForButtonValue = true;
+			this.Column4.Width = 125;
+			// 
 			// UC_Mashg_ulotlar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -160,17 +211,17 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.checkBox1);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.DataGridVIew_Oqituvchi);
+			this.Controls.Add(this.guna2Button3);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2CheckBox1);
+			this.Controls.Add(this.gunatextBox);
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Mashg_ulotlar";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -182,11 +233,15 @@
         private Label lblTitle;
 		private Button button3;
 		private TextBox textBox4;
-		private DataGridView dataGridView1;
-		private Button button2;
-		private Button button1;
-		private CheckBox checkBox1;
-		private TextBox textBox3;
+		private DataGridView DataGridVIew_Oqituvchi;
+		private Button guna2Button3;
+		private Button guna2Button2;
+		private CheckBox guna2CheckBox1;
+		private TextBox gunatextBox;
 		private Label label1;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewButtonColumn Column3;
+		private DataGridViewButtonColumn Column4;
 	}
 }
