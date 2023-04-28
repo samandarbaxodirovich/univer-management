@@ -120,13 +120,13 @@
             this.Column8,
             this.Column9,
             this.Column10});
-			this.guna2DataGridView1.Location = new System.Drawing.Point(33, 185);
+			this.guna2DataGridView1.Location = new System.Drawing.Point(22, 185);
 			this.guna2DataGridView1.Name = "guna2DataGridView1";
 			this.guna2DataGridView1.ReadOnly = true;
 			this.guna2DataGridView1.RowHeadersVisible = false;
 			this.guna2DataGridView1.RowHeadersWidth = 51;
 			this.guna2DataGridView1.RowTemplate.Height = 29;
-			this.guna2DataGridView1.Size = new System.Drawing.Size(973, 266);
+			this.guna2DataGridView1.Size = new System.Drawing.Size(1010, 266);
 			this.guna2DataGridView1.TabIndex = 64;
 			// 
 			// guna2Button1
@@ -177,6 +177,7 @@
 			this.Column5.MinimumWidth = 6;
 			this.Column5.Name = "Column5";
 			this.Column5.ReadOnly = true;
+			this.Column5.Width = 125;
 			// 
 			// Column6
 			// 
