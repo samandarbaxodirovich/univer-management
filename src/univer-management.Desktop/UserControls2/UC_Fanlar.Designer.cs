@@ -35,6 +35,12 @@
 			this.guna2Button1 = new System.Windows.Forms.Button();
 			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
 			this.guna2DataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.guna2Button3 = new System.Windows.Forms.Button();
 			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.guna2CheckBox1 = new System.Windows.Forms.CheckBox();
@@ -109,6 +115,13 @@
 			this.guna2DataGridView1.AllowUserToDeleteRows = false;
 			this.guna2DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.name,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
 			this.guna2DataGridView1.Location = new System.Drawing.Point(43, 181);
 			this.guna2DataGridView1.Name = "guna2DataGridView1";
 			this.guna2DataGridView1.ReadOnly = true;
@@ -117,6 +130,59 @@
 			this.guna2DataGridView1.RowTemplate.Height = 29;
 			this.guna2DataGridView1.Size = new System.Drawing.Size(638, 266);
 			this.guna2DataGridView1.TabIndex = 58;
+			this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick_1);
+			// 
+			// Id
+			// 
+			this.Id.HeaderText = "ID";
+			this.Id.MinimumWidth = 6;
+			this.Id.Name = "Id";
+			this.Id.ReadOnly = true;
+			this.Id.Width = 50;
+			// 
+			// name
+			// 
+			this.name.HeaderText = "Fan ";
+			this.name.MinimumWidth = 6;
+			this.name.Name = "name";
+			this.name.ReadOnly = true;
+			this.name.Width = 125;
+			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "Fan qiyinchiligi";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 140;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "Kafedra nomi";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Update";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Text = "✏️";
+			this.Column3.UseColumnTextForButtonValue = true;
+			this.Column3.Width = 80;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Delete";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Text = "X";
+			this.Column4.UseColumnTextForButtonValue = true;
+			this.Column4.Width = 80;
 			// 
 			// guna2Button3
 			// 
@@ -139,6 +205,7 @@
 			this.guna2Button2.TabIndex = 56;
 			this.guna2Button2.Text = "create";
 			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
 			// 
 			// guna2CheckBox1
 			// 
@@ -150,7 +217,6 @@
 			this.guna2CheckBox1.TabIndex = 55;
 			this.guna2CheckBox1.Text = "Fan qo\'shishga roziman";
 			this.guna2CheckBox1.UseVisualStyleBackColor = true;
-			this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
 			// 
 			// label1
 			// 
@@ -245,5 +311,11 @@
 		private ComboBox guna2ComboBox2;
 		private Label label3;
 		private ComboBox guna2ComboBox1;
+		private DataGridViewTextBoxColumn Id;
+		private DataGridViewTextBoxColumn name;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewButtonColumn Column3;
+		private DataGridViewButtonColumn Column4;
 	}
 }
