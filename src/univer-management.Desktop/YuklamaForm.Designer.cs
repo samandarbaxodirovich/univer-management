@@ -35,14 +35,14 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
-			this.comboBox6 = new System.Windows.Forms.ComboBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2ComboBox6 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox4 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox5 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox2 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox1 = new System.Windows.Forms.ComboBox();
+			this.YukDarstxt = new System.Windows.Forms.TextBox();
+			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
+			this.Yuxlamabtn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -115,91 +115,97 @@
 			this.label7.TabIndex = 16;
 			this.label7.Text = "Auditoriya raqami";
 			// 
-			// comboBox1
+			// guna2ComboBox6
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(37, 55);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(329, 31);
-			this.comboBox1.TabIndex = 17;
+			this.guna2ComboBox6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox6.FormattingEnabled = true;
+			this.guna2ComboBox6.Location = new System.Drawing.Point(37, 55);
+			this.guna2ComboBox6.Name = "guna2ComboBox6";
+			this.guna2ComboBox6.Size = new System.Drawing.Size(329, 31);
+			this.guna2ComboBox6.TabIndex = 17;
+			this.guna2ComboBox6.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox6_SelectedIndexChanged_1);
 			// 
-			// comboBox2
+			// guna2ComboBox4
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(36, 229);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(329, 31);
-			this.comboBox2.TabIndex = 18;
+			this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox4.FormattingEnabled = true;
+			this.guna2ComboBox4.Location = new System.Drawing.Point(36, 229);
+			this.guna2ComboBox4.Name = "guna2ComboBox4";
+			this.guna2ComboBox4.Size = new System.Drawing.Size(329, 31);
+			this.guna2ComboBox4.TabIndex = 18;
+			this.guna2ComboBox4.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox4_SelectedIndexChanged);
 			// 
-			// comboBox3
+			// guna2ComboBox5
 			// 
-			this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(36, 286);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(329, 31);
-			this.comboBox3.TabIndex = 19;
+			this.guna2ComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox5.FormattingEnabled = true;
+			this.guna2ComboBox5.Location = new System.Drawing.Point(36, 286);
+			this.guna2ComboBox5.Name = "guna2ComboBox5";
+			this.guna2ComboBox5.Size = new System.Drawing.Size(329, 31);
+			this.guna2ComboBox5.TabIndex = 19;
+			this.guna2ComboBox5.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox5_SelectedIndexChanged);
 			// 
-			// comboBox5
+			// guna2ComboBox2
 			// 
-			this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(36, 172);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(329, 31);
-			this.comboBox5.TabIndex = 21;
+			this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox2.FormattingEnabled = true;
+			this.guna2ComboBox2.Location = new System.Drawing.Point(36, 172);
+			this.guna2ComboBox2.Name = "guna2ComboBox2";
+			this.guna2ComboBox2.Size = new System.Drawing.Size(329, 31);
+			this.guna2ComboBox2.TabIndex = 21;
+			this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
 			// 
-			// comboBox6
+			// guna2ComboBox1
 			// 
-			this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox6.FormattingEnabled = true;
-			this.comboBox6.Location = new System.Drawing.Point(36, 112);
-			this.comboBox6.Name = "comboBox6";
-			this.comboBox6.Size = new System.Drawing.Size(329, 31);
-			this.comboBox6.TabIndex = 22;
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox1.FormattingEnabled = true;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(36, 112);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(329, 31);
+			this.guna2ComboBox1.TabIndex = 22;
+			this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
 			// 
-			// textBox1
+			// YukDarstxt
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(37, 349);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(329, 30);
-			this.textBox1.TabIndex = 23;
+			this.YukDarstxt.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.YukDarstxt.Location = new System.Drawing.Point(37, 349);
+			this.YukDarstxt.Name = "YukDarstxt";
+			this.YukDarstxt.Size = new System.Drawing.Size(329, 30);
+			this.YukDarstxt.TabIndex = 23;
 			// 
-			// textBox2
+			// guna2TextBox1
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(36, 404);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(329, 30);
-			this.textBox2.TabIndex = 24;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox1.Location = new System.Drawing.Point(36, 404);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.Size = new System.Drawing.Size(329, 30);
+			this.guna2TextBox1.TabIndex = 24;
 			// 
-			// button1
+			// Yuxlamabtn
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(37, 464);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(328, 47);
-			this.button1.TabIndex = 25;
-			this.button1.Text = "Create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.Yuxlamabtn.BackColor = System.Drawing.Color.Blue;
+			this.Yuxlamabtn.ForeColor = System.Drawing.Color.White;
+			this.Yuxlamabtn.Location = new System.Drawing.Point(37, 464);
+			this.Yuxlamabtn.Name = "Yuxlamabtn";
+			this.Yuxlamabtn.Size = new System.Drawing.Size(328, 47);
+			this.Yuxlamabtn.TabIndex = 25;
+			this.Yuxlamabtn.Text = "Create";
+			this.Yuxlamabtn.UseVisualStyleBackColor = false;
+			this.Yuxlamabtn.Click += new System.EventHandler(this.Yuxlamabtn_Click_3);
 			// 
 			// YuklamaForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(404, 533);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox6);
-			this.Controls.Add(this.comboBox5);
-			this.Controls.Add(this.comboBox3);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.Yuxlamabtn);
+			this.Controls.Add(this.guna2TextBox1);
+			this.Controls.Add(this.YukDarstxt);
+			this.Controls.Add(this.guna2ComboBox1);
+			this.Controls.Add(this.guna2ComboBox2);
+			this.Controls.Add(this.guna2ComboBox5);
+			this.Controls.Add(this.guna2ComboBox4);
+			this.Controls.Add(this.guna2ComboBox6);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
@@ -225,13 +231,13 @@
         private Label label5;
         private Label label6;
         private Label label7;
-		private ComboBox comboBox1;
-		private ComboBox comboBox2;
-		private ComboBox comboBox3;
-		private ComboBox comboBox5;
-		private ComboBox comboBox6;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private Button button1;
+		private ComboBox guna2ComboBox6;
+		private ComboBox guna2ComboBox4;
+		private ComboBox guna2ComboBox5;
+		private ComboBox guna2ComboBox2;
+		private ComboBox guna2ComboBox1;
+		private TextBox YukDarstxt;
+		private TextBox guna2TextBox1;
+		private Button Yuxlamabtn;
 	}
 }

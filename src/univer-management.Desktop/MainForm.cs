@@ -66,7 +66,7 @@ namespace FinalProject
 
 
 
-]
+
 
 		private void btnRoyxat_Click(object sender, EventArgs e)
 		{

@@ -29,22 +29,50 @@
         private void InitializeComponent()
         {
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.guna2Button2 = new System.Windows.Forms.Button();
+			this.guna2Button1 = new System.Windows.Forms.Button();
 			this.panelContainer2 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Controls.Add(this.button2);
-			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.guna2Button2);
+			this.panel1.Controls.Add(this.guna2Button1);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1061, 44);
 			this.panel1.TabIndex = 0;
+			// 
+			// guna2Button2
+			// 
+			this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.guna2Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.guna2Button2.Location = new System.Drawing.Point(184, 0);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(184, 44);
+			this.guna2Button2.TabIndex = 5;
+			this.guna2Button2.Text = "Yuklama";
+			this.guna2Button2.UseVisualStyleBackColor = true;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
+			// 
+			// guna2Button1
+			// 
+			this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.guna2Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(184, 44);
+			this.guna2Button1.TabIndex = 4;
+			this.guna2Button1.Text = "O\'quv reja";
+			this.guna2Button1.UseVisualStyleBackColor = true;
+			this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
 			// 
 			// panelContainer2
 			// 
@@ -53,32 +81,6 @@
 			this.panelContainer2.Name = "panelContainer2";
 			this.panelContainer2.Size = new System.Drawing.Size(1061, 500);
 			this.panelContainer2.TabIndex = 1;
-			// 
-			// button1
-			// 
-			this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-			this.button1.Location = new System.Drawing.Point(0, 0);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(184, 44);
-			this.button1.TabIndex = 4;
-			this.button1.Text = "O\'quv reja";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-			this.button2.Location = new System.Drawing.Point(184, 0);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(184, 44);
-			this.button2.TabIndex = 5;
-			this.button2.Text = "Yuklama";
-			this.button2.UseVisualStyleBackColor = true;
 			// 
 			// Yuklamalar
 			// 
@@ -100,7 +102,7 @@
 
         private Panel panel1;
         private Panel panelContainer2;
-		private Button button2;
-		private Button button1;
+		private Button guna2Button2;
+		private Button guna2Button1;
 	}
 }

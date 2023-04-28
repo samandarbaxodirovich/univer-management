@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2TextBox2 = new System.Windows.Forms.TextBox();
+			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -46,25 +46,26 @@
 			this.label1.TabIndex = 10;
 			this.label1.Text = "Mutaxassislikni o\'zgartirish";
 			// 
-			// textBox1
+			// guna2TextBox2
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(61, 83);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "Mutaxassislikni kiriting";
-			this.textBox1.Size = new System.Drawing.Size(322, 30);
-			this.textBox1.TabIndex = 11;
+			this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox2.Location = new System.Drawing.Point(61, 83);
+			this.guna2TextBox2.Name = "guna2TextBox2";
+			this.guna2TextBox2.PlaceholderText = "Mutaxassislikni kiriting";
+			this.guna2TextBox2.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox2.TabIndex = 11;
 			// 
-			// button1
+			// guna2Button2
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(61, 149);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(322, 40);
-			this.button1.TabIndex = 12;
-			this.button1.Text = "Update";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(61, 149);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(322, 40);
+			this.guna2Button2.TabIndex = 12;
+			this.guna2Button2.Text = "Update";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
 			// 
 			// UpdateForm
 			// 
@@ -72,13 +73,14 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(454, 226);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2TextBox2);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 			this.Name = "UpdateForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "UpdateForm";
+			this.Load += new System.EventHandler(this.UpdateForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -86,7 +88,7 @@
 
         #endregion
         private Label label1;
-		private TextBox textBox1;
-		private Button button1;
+		private TextBox guna2TextBox2;
+		private Button guna2Button2;
 	}
 }
