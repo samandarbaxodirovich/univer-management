@@ -41,6 +41,13 @@
 			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.guna2Button3 = new System.Windows.Forms.Button();
 			this.DataGridVIew_Auditor = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
 			this.guna2Button1 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
@@ -72,7 +79,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -121,7 +127,6 @@
 			// 
 			// label2
 			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label2.Location = new System.Drawing.Point(700, 231);
@@ -166,16 +171,83 @@
 			// 
 			// DataGridVIew_Auditor
 			// 
+			this.DataGridVIew_Auditor.AllowUserToAddRows = false;
+			this.DataGridVIew_Auditor.AllowUserToDeleteRows = false;
 			this.DataGridVIew_Auditor.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.DataGridVIew_Auditor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.DataGridVIew_Auditor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7});
 			this.DataGridVIew_Auditor.Location = new System.Drawing.Point(28, 184);
 			this.DataGridVIew_Auditor.Name = "DataGridVIew_Auditor";
+			this.DataGridVIew_Auditor.ReadOnly = true;
 			this.DataGridVIew_Auditor.RowHeadersVisible = false;
 			this.DataGridVIew_Auditor.RowHeadersWidth = 51;
 			this.DataGridVIew_Auditor.RowTemplate.Height = 29;
 			this.DataGridVIew_Auditor.Size = new System.Drawing.Size(638, 266);
 			this.DataGridVIew_Auditor.TabIndex = 46;
 			this.DataGridVIew_Auditor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridVIew_Auditor_CellContentClick_1);
+			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "ID";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 30;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "Auditoruya";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Auditoriya turi";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Width = 140;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Sig\'imi";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Width = 125;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Korpus";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Width = 125;
+			// 
+			// Column6
+			// 
+			this.Column6.HeaderText = "Update";
+			this.Column6.MinimumWidth = 6;
+			this.Column6.Name = "Column6";
+			this.Column6.ReadOnly = true;
+			this.Column6.Width = 80;
+			// 
+			// Column7
+			// 
+			this.Column7.HeaderText = "Delete";
+			this.Column7.MinimumWidth = 6;
+			this.Column7.Name = "Column7";
+			this.Column7.ReadOnly = true;
+			this.Column7.Width = 80;
 			// 
 			// guna2TextBox1
 			// 
@@ -242,5 +314,12 @@
 		private DataGridView DataGridVIew_Auditor;
 		private TextBox guna2TextBox1;
 		private Button guna2Button1;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewTextBoxColumn Column3;
+		private DataGridViewTextBoxColumn Column4;
+		private DataGridViewTextBoxColumn Column5;
+		private DataGridViewButtonColumn Column6;
+		private DataGridViewButtonColumn Column7;
 	}
 }

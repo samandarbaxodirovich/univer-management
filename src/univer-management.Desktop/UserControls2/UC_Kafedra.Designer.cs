@@ -35,17 +35,17 @@
 			this.guna2Button1 = new System.Windows.Forms.Button();
 			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
 			this.datagridView_kafedra = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.guna2Button3 = new System.Windows.Forms.Button();
 			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.guna2CheckBox1 = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.kafedratxt_box = new System.Windows.Forms.TextBox();
 			this.mutaxasislikCmb = new System.Windows.Forms.ComboBox();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.datagridView_kafedra)).BeginInit();
 			this.SuspendLayout();
@@ -128,6 +128,50 @@
 			this.datagridView_kafedra.TabIndex = 58;
 			this.datagridView_kafedra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridView_kafedra_CellContentClick_1);
 			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "ID";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
+			// 
+			// Column2
+			// 
+			this.Column2.HeaderText = "Kafedra nomi";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			this.Column2.Width = 200;
+			// 
+			// Column3
+			// 
+			this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column3.HeaderText = "Mutaxasislik nomi";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Update";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Text = "✏️";
+			this.Column4.UseColumnTextForButtonValue = true;
+			this.Column4.Width = 125;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Delete";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Text = "X";
+			this.Column5.UseColumnTextForButtonValue = true;
+			this.Column5.Width = 125;
+			// 
 			// guna2Button3
 			// 
 			this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -164,7 +208,6 @@
 			// 
 			// label2
 			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label2.Location = new System.Drawing.Point(714, 253);
@@ -190,48 +233,6 @@
 			this.mutaxasislikCmb.Name = "mutaxasislikCmb";
 			this.mutaxasislikCmb.Size = new System.Drawing.Size(283, 31);
 			this.mutaxasislikCmb.TabIndex = 50;
-			// 
-			// Column1
-			// 
-			this.Column1.HeaderText = "ID";
-			this.Column1.MinimumWidth = 6;
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 50;
-			// 
-			// Column2
-			// 
-			this.Column2.HeaderText = "Kafedra nomi";
-			this.Column2.MinimumWidth = 6;
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
-			this.Column2.Width = 200;
-			// 
-			// Column3
-			// 
-			this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Column3.HeaderText = "Mutaxasislik nomi";
-			this.Column3.MinimumWidth = 6;
-			this.Column3.Name = "Column3";
-			this.Column3.ReadOnly = true;
-			// 
-			// Column4
-			// 
-			this.Column4.HeaderText = "Update";
-			this.Column4.MinimumWidth = 6;
-			this.Column4.Name = "Column4";
-			this.Column4.ReadOnly = true;
-			this.Column4.Text = "✏️";
-			this.Column4.UseColumnTextForButtonValue = true;
-			// 
-			// Column5
-			// 
-			this.Column5.HeaderText = "Delete";
-			this.Column5.MinimumWidth = 6;
-			this.Column5.Name = "Column5";
-			this.Column5.ReadOnly = true;
-			this.Column5.Text = "X";
-			this.Column5.UseColumnTextForButtonValue = true;
 			// 
 			// UC_Kafedra
 			// 
