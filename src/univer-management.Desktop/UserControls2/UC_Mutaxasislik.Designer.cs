@@ -1,4 +1,4 @@
-namespace univer_management.Desktop.UserControls2
+﻿namespace univer_management.Desktop.UserControls2
 {
     partial class UC_Mutaxasislik
     {
@@ -40,6 +40,11 @@ namespace univer_management.Desktop.UserControls2
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Mutaxassisliknomi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
@@ -90,6 +95,7 @@ namespace univer_management.Desktop.UserControls2
 			this.button3.Size = new System.Drawing.Size(43, 32);
 			this.button3.TabIndex = 71;
 			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// textBox4
 			// 
@@ -102,15 +108,24 @@ namespace univer_management.Desktop.UserControls2
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.Mutaxassisliknomi,
+            this.Update,
+            this.Delete});
 			this.dataGridView1.Location = new System.Drawing.Point(31, 184);
 			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowHeadersVisible = false;
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 29;
 			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
 			this.dataGridView1.TabIndex = 69;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
 			// button2
 			// 
@@ -133,6 +148,7 @@ namespace univer_management.Desktop.UserControls2
 			this.button1.TabIndex = 67;
 			this.button1.Text = "create";
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// checkBox1
 			// 
@@ -163,6 +179,47 @@ namespace univer_management.Desktop.UserControls2
 			this.textBox2.Size = new System.Drawing.Size(283, 30);
 			this.textBox2.TabIndex = 63;
 			// 
+			// ID
+			// 
+			this.ID.HeaderText = "ID";
+			this.ID.MinimumWidth = 6;
+			this.ID.Name = "ID";
+			this.ID.Width = 125;
+			// 
+			// dataGridViewTextBoxColumn1
+			// 
+			this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+			this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+			this.dataGridViewTextBoxColumn1.ReadOnly = true;
+			this.dataGridViewTextBoxColumn1.Width = 50;
+			// 
+			// Mutaxassisliknomi
+			// 
+			this.Mutaxassisliknomi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Mutaxassisliknomi.HeaderText = "Mutaxassislik nomiv";
+			this.Mutaxassisliknomi.MinimumWidth = 6;
+			this.Mutaxassisliknomi.Name = "Mutaxassisliknomi";
+			this.Mutaxassisliknomi.ReadOnly = true;
+			// 
+			// Update
+			// 
+			this.Update.HeaderText = "Update";
+			this.Update.MinimumWidth = 6;
+			this.Update.Name = "Update";
+			this.Update.ReadOnly = true;
+			this.Update.Text = "✏️";
+			this.Update.UseColumnTextForButtonValue = true;
+			// 
+			// Delete
+			// 
+			this.Delete.HeaderText = "Delete";
+			this.Delete.MinimumWidth = 6;
+			this.Delete.Name = "Delete";
+			this.Delete.ReadOnly = true;
+			this.Delete.Text = "X";
+			this.Delete.UseColumnTextForButtonValue = true;
+			// 
 			// UC_Mutaxasislik
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -181,7 +238,6 @@ namespace univer_management.Desktop.UserControls2
 			this.Name = "UC_Mutaxasislik";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.Tag = "Mutahasislik";
-			this.Load += new System.EventHandler(this.UC_Mutaxasislik_Load_1);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -203,5 +259,10 @@ namespace univer_management.Desktop.UserControls2
 		private CheckBox checkBox1;
 		private TextBox textBox3;
 		private TextBox textBox2;
+		private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+		private DataGridViewTextBoxColumn Mutaxassisliknomi;
+		private DataGridViewButtonColumn Update;
+		private DataGridViewButtonColumn Delete;
+		private DataGridViewTextBoxColumn ID;
 	}
 }

@@ -25,19 +25,7 @@ namespace univer_management.Desktop
         public long Id { get; set; }
         public string Tag { get; set; }
 
-        private void UpdateForm_Load_1(object sender, EventArgs e)
-        {
-            guna2TextBox2.Text = Name;
-        }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            if (Tag == "Mutahasislik" && !string.IsNullOrEmpty(guna2TextBox2.Text))
-            {
-                Mutahasislik();
-                this.Close();
-            }
-        }
 
 
         private void Mutahasislik()
@@ -59,9 +47,20 @@ namespace univer_management.Desktop
             {
                 this.Close();
             }
-
         }
 
+		private void guna2Button2_Click_1(object sender, EventArgs e)
+		{
+			if (Tag == "Mutahasislik" && !string.IsNullOrEmpty(guna2TextBox2.Text))
+			{
+				Mutahasislik();
+				this.Close();
+			}
+		}
 
-    }
+		private void UpdateForm_Load(object sender, EventArgs e)
+		{
+			guna2TextBox2.Text = Name;
+		}
+	}
 }

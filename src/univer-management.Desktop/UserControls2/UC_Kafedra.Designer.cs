@@ -1,4 +1,4 @@
-namespace univer_management.Desktop.UserControls2
+﻿namespace univer_management.Desktop.UserControls2
 {
     partial class UC_Kafedra
     {
@@ -32,17 +32,22 @@ namespace univer_management.Desktop.UserControls2
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.guna2Button1 = new System.Windows.Forms.Button();
+			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
+			this.datagridView_kafedra = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.guna2Button3 = new System.Windows.Forms.Button();
+			this.guna2Button2 = new System.Windows.Forms.Button();
+			this.guna2CheckBox1 = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.kafedratxt_box = new System.Windows.Forms.TextBox();
+			this.mutaxasislikCmb = new System.Windows.Forms.ComboBox();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.datagridView_kafedra)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -81,74 +86,128 @@ namespace univer_management.Desktop.UserControls2
 			this.label1.TabIndex = 11;
 			this.label1.Text = "Kafedra qo\'shish";
 			// 
-			// button3
+			// guna2Button1
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Control;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-			this.button3.Location = new System.Drawing.Point(338, 117);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(43, 32);
-			this.button3.TabIndex = 60;
-			this.button3.UseVisualStyleBackColor = false;
+			this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+			this.guna2Button1.Location = new System.Drawing.Point(338, 117);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(43, 32);
+			this.guna2Button1.TabIndex = 60;
+			this.guna2Button1.UseVisualStyleBackColor = false;
 			// 
-			// textBox4
+			// guna2TextBox1
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox4.Location = new System.Drawing.Point(38, 118);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.PlaceholderText = "Qidirish uchun so\'z kiriting";
-			this.textBox4.Size = new System.Drawing.Size(283, 30);
-			this.textBox4.TabIndex = 59;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox1.Location = new System.Drawing.Point(38, 118);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.PlaceholderText = "Qidirish uchun so\'z kiriting";
+			this.guna2TextBox1.Size = new System.Drawing.Size(283, 30);
+			this.guna2TextBox1.TabIndex = 59;
 			// 
-			// dataGridView1
+			// datagridView_kafedra
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(38, 167);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
-			this.dataGridView1.TabIndex = 58;
+			this.datagridView_kafedra.AllowUserToAddRows = false;
+			this.datagridView_kafedra.AllowUserToDeleteRows = false;
+			this.datagridView_kafedra.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.datagridView_kafedra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.datagridView_kafedra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+			this.datagridView_kafedra.Location = new System.Drawing.Point(38, 167);
+			this.datagridView_kafedra.Name = "datagridView_kafedra";
+			this.datagridView_kafedra.ReadOnly = true;
+			this.datagridView_kafedra.RowHeadersVisible = false;
+			this.datagridView_kafedra.RowHeadersWidth = 51;
+			this.datagridView_kafedra.RowTemplate.Height = 29;
+			this.datagridView_kafedra.Size = new System.Drawing.Size(638, 266);
+			this.datagridView_kafedra.TabIndex = 58;
+			this.datagridView_kafedra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridView_kafedra_CellContentClick_1);
 			// 
-			// button2
+			// Column1
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(864, 404);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(129, 29);
-			this.button2.TabIndex = 57;
-			this.button2.Text = "cancel";
-			this.button2.UseVisualStyleBackColor = false;
+			this.Column1.HeaderText = "ID";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
 			// 
-			// button1
+			// Column2
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(714, 404);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(129, 29);
-			this.button1.TabIndex = 56;
-			this.button1.Text = "create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.Column2.HeaderText = "Kafedra nomi";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			this.Column2.Width = 200;
 			// 
-			// checkBox1
+			// Column3
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.ForeColor = System.Drawing.Color.Tomato;
-			this.checkBox1.Location = new System.Drawing.Point(714, 326);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(219, 24);
-			this.checkBox1.TabIndex = 55;
-			this.checkBox1.Text = "Kafedra qo\'shishga rozi man";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column3.HeaderText = "Mutaxasislik nomi";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Update";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Text = "✏️";
+			this.Column4.UseColumnTextForButtonValue = true;
+			this.Column4.Width = 125;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Delete";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Text = "X";
+			this.Column5.UseColumnTextForButtonValue = true;
+			this.Column5.Width = 125;
+			// 
+			// guna2Button3
+			// 
+			this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.guna2Button3.ForeColor = System.Drawing.Color.White;
+			this.guna2Button3.Location = new System.Drawing.Point(864, 404);
+			this.guna2Button3.Name = "guna2Button3";
+			this.guna2Button3.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button3.TabIndex = 57;
+			this.guna2Button3.Text = "cancel";
+			this.guna2Button3.UseVisualStyleBackColor = false;
+			// 
+			// guna2Button2
+			// 
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(714, 404);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button2.TabIndex = 56;
+			this.guna2Button2.Text = "create";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+			// 
+			// guna2CheckBox1
+			// 
+			this.guna2CheckBox1.AutoSize = true;
+			this.guna2CheckBox1.ForeColor = System.Drawing.Color.Tomato;
+			this.guna2CheckBox1.Location = new System.Drawing.Point(714, 326);
+			this.guna2CheckBox1.Name = "guna2CheckBox1";
+			this.guna2CheckBox1.Size = new System.Drawing.Size(219, 24);
+			this.guna2CheckBox1.TabIndex = 55;
+			this.guna2CheckBox1.Text = "Kafedra qo\'shishga rozi man";
+			this.guna2CheckBox1.UseVisualStyleBackColor = true;
 			// 
 			// label2
 			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.label2.Location = new System.Drawing.Point(714, 253);
@@ -157,46 +216,47 @@ namespace univer_management.Desktop.UserControls2
 			this.label2.TabIndex = 54;
 			this.label2.Text = "Mutaxassislik nomini kiriting";
 			// 
-			// textBox1
+			// kafedratxt_box
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(714, 206);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "Kafedra nomini kiriting";
-			this.textBox1.Size = new System.Drawing.Size(283, 30);
-			this.textBox1.TabIndex = 52;
+			this.kafedratxt_box.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.kafedratxt_box.Location = new System.Drawing.Point(714, 206);
+			this.kafedratxt_box.Name = "kafedratxt_box";
+			this.kafedratxt_box.PlaceholderText = "Kafedra nomini kiriting";
+			this.kafedratxt_box.Size = new System.Drawing.Size(283, 30);
+			this.kafedratxt_box.TabIndex = 52;
 			// 
-			// comboBox1
+			// mutaxasislikCmb
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(714, 271);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 50;
+			this.mutaxasislikCmb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.mutaxasislikCmb.FormattingEnabled = true;
+			this.mutaxasislikCmb.Location = new System.Drawing.Point(714, 271);
+			this.mutaxasislikCmb.Name = "mutaxasislikCmb";
+			this.mutaxasislikCmb.Size = new System.Drawing.Size(283, 31);
+			this.mutaxasislikCmb.TabIndex = 50;
 			// 
 			// UC_Kafedra
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.guna2TextBox1);
+			this.Controls.Add(this.datagridView_kafedra);
+			this.Controls.Add(this.guna2Button3);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2CheckBox1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.kafedratxt_box);
+			this.Controls.Add(this.mutaxasislikCmb);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Kafedra";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.Tag = "kafedra";
+			this.Load += new System.EventHandler(this.UC_Kafedra_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.datagridView_kafedra)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -207,14 +267,19 @@ namespace univer_management.Desktop.UserControls2
         private Panel panel1;
         private Label lblTitle;
         private Label label1;
-		private Button button3;
-		private TextBox textBox4;
-		private DataGridView dataGridView1;
-		private Button button2;
-		private Button button1;
-		private CheckBox checkBox1;
+		private Button guna2Button1;
+		private TextBox guna2TextBox1;
+		private DataGridView datagridView_kafedra;
+		private Button guna2Button3;
+		private Button guna2Button2;
+		private CheckBox guna2CheckBox1;
 		private Label label2;
-		private TextBox textBox1;
-		private ComboBox comboBox1;
+		private TextBox kafedratxt_box;
+		private ComboBox mutaxasislikCmb;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewTextBoxColumn Column3;
+		private DataGridViewButtonColumn Column4;
+		private DataGridViewButtonColumn Column5;
 	}
 }

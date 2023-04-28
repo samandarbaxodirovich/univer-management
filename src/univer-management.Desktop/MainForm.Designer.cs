@@ -28,201 +28,202 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            panelMenu = new Panel();
-            btnAlmashtirishlar = new Button();
-            btnDarsJadvali = new Button();
-            btnYuklamalar = new Button();
-            btnRoyxat = new Button();
-            panelLogo = new Panel();
-            label1 = new Label();
-            panelTitleBar = new Panel();
-            btnCloseChildForm = new Button();
-            lblTitle = new Label();
-            panelDesktopPanel = new Panel();
-            panelMenu.SuspendLayout();
-            panelLogo.SuspendLayout();
-            panelTitleBar.SuspendLayout();
-            SuspendLayout();
-            // 
-            // panelMenu
-            // 
-            panelMenu.BackColor = Color.FromArgb(51, 51, 76);
-            panelMenu.Controls.Add(btnAlmashtirishlar);
-            panelMenu.Controls.Add(btnDarsJadvali);
-            panelMenu.Controls.Add(btnYuklamalar);
-            panelMenu.Controls.Add(btnRoyxat);
-            panelMenu.Controls.Add(panelLogo);
-            panelMenu.Dock = DockStyle.Left;
-            panelMenu.Location = new Point(0, 0);
-            panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(263, 953);
-            panelMenu.TabIndex = 0;
-            // 
-            // btnAlmashtirishlar
-            // 
-            btnAlmashtirishlar.Dock = DockStyle.Top;
-            btnAlmashtirishlar.FlatAppearance.BorderSize = 0;
-            btnAlmashtirishlar.FlatStyle = FlatStyle.Flat;
-            btnAlmashtirishlar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAlmashtirishlar.ForeColor = Color.Gainsboro;
-            btnAlmashtirishlar.Image = (Image)resources.GetObject("btnAlmashtirishlar.Image");
-            btnAlmashtirishlar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAlmashtirishlar.Location = new Point(0, 296);
-            btnAlmashtirishlar.Name = "btnAlmashtirishlar";
-            btnAlmashtirishlar.Padding = new Padding(12, 0, 0, 0);
-            btnAlmashtirishlar.Size = new Size(263, 72);
-            btnAlmashtirishlar.TabIndex = 4;
-            btnAlmashtirishlar.Text = "   Almashtirishlar";
-            btnAlmashtirishlar.TextAlign = ContentAlignment.MiddleLeft;
-            btnAlmashtirishlar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnAlmashtirishlar.UseVisualStyleBackColor = true;
-            btnAlmashtirishlar.Click += btnAlmashtirishlar_Click;
-            // 
-            // btnDarsJadvali
-            // 
-            btnDarsJadvali.Dock = DockStyle.Top;
-            btnDarsJadvali.FlatAppearance.BorderSize = 0;
-            btnDarsJadvali.FlatStyle = FlatStyle.Flat;
-            btnDarsJadvali.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDarsJadvali.ForeColor = Color.Gainsboro;
-            btnDarsJadvali.Image = (Image)resources.GetObject("btnDarsJadvali.Image");
-            btnDarsJadvali.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDarsJadvali.Location = new Point(0, 224);
-            btnDarsJadvali.Name = "btnDarsJadvali";
-            btnDarsJadvali.Padding = new Padding(12, 0, 0, 0);
-            btnDarsJadvali.Size = new Size(263, 72);
-            btnDarsJadvali.TabIndex = 3;
-            btnDarsJadvali.Text = "   Dars jadvali";
-            btnDarsJadvali.TextAlign = ContentAlignment.MiddleLeft;
-            btnDarsJadvali.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnDarsJadvali.UseVisualStyleBackColor = true;
-            btnDarsJadvali.Click += btnDarsJadvali_Click;
-            // 
-            // btnYuklamalar
-            // 
-            btnYuklamalar.Dock = DockStyle.Top;
-            btnYuklamalar.FlatAppearance.BorderSize = 0;
-            btnYuklamalar.FlatStyle = FlatStyle.Flat;
-            btnYuklamalar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnYuklamalar.ForeColor = Color.Gainsboro;
-            btnYuklamalar.Image = (Image)resources.GetObject("btnYuklamalar.Image");
-            btnYuklamalar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnYuklamalar.Location = new Point(0, 152);
-            btnYuklamalar.Name = "btnYuklamalar";
-            btnYuklamalar.Padding = new Padding(12, 0, 0, 0);
-            btnYuklamalar.Size = new Size(263, 72);
-            btnYuklamalar.TabIndex = 2;
-            btnYuklamalar.Text = "   Yuklamalar";
-            btnYuklamalar.TextAlign = ContentAlignment.MiddleLeft;
-            btnYuklamalar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnYuklamalar.UseVisualStyleBackColor = true;
-            btnYuklamalar.Click += btnYuklamalar_Click;
-            // 
-            // btnRoyxat
-            // 
-            btnRoyxat.Dock = DockStyle.Top;
-            btnRoyxat.FlatAppearance.BorderSize = 0;
-            btnRoyxat.FlatStyle = FlatStyle.Flat;
-            btnRoyxat.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnRoyxat.ForeColor = Color.Gainsboro;
-            btnRoyxat.Image = (Image)resources.GetObject("btnRoyxat.Image");
-            btnRoyxat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRoyxat.Location = new Point(0, 80);
-            btnRoyxat.Name = "btnRoyxat";
-            btnRoyxat.Padding = new Padding(12, 0, 0, 0);
-            btnRoyxat.Size = new Size(263, 72);
-            btnRoyxat.TabIndex = 1;
-            btnRoyxat.Text = "   Ro'yxatlar";
-            btnRoyxat.TextAlign = ContentAlignment.MiddleLeft;
-            btnRoyxat.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnRoyxat.UseVisualStyleBackColor = true;
-            btnRoyxat.Click += btnRoyxat_Click_1;
-            // 
-            // panelLogo
-            // 
-            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
-            panelLogo.Controls.Add(label1);
-            panelLogo.Dock = DockStyle.Top;
-            panelLogo.Location = new Point(0, 0);
-            panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(263, 80);
-            panelLogo.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.LightGray;
-            label1.Location = new Point(12, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(209, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Scheduling machine";
-            // 
-            // panelTitleBar
-            // 
-            panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
-            panelTitleBar.Controls.Add(btnCloseChildForm);
-            panelTitleBar.Controls.Add(lblTitle);
-            panelTitleBar.Dock = DockStyle.Top;
-            panelTitleBar.Location = new Point(263, 0);
-            panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(769, 80);
-            panelTitleBar.TabIndex = 1;
-            // 
-            // btnCloseChildForm
-            // 
-            btnCloseChildForm.Dock = DockStyle.Left;
-            btnCloseChildForm.FlatAppearance.BorderSize = 0;
-            btnCloseChildForm.FlatStyle = FlatStyle.Flat;
-            btnCloseChildForm.Image = (Image)resources.GetObject("btnCloseChildForm.Image");
-            btnCloseChildForm.Location = new Point(0, 0);
-            btnCloseChildForm.Name = "btnCloseChildForm";
-            btnCloseChildForm.Size = new Size(47, 80);
-            btnCloseChildForm.TabIndex = 1;
-            btnCloseChildForm.UseVisualStyleBackColor = true;
-            btnCloseChildForm.Click += btnCloseChildForm_Click;
-            // 
-            // lblTitle
-            // 
-            lblTitle.Anchor = AnchorStyles.None;
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(351, 29);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(98, 34);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "HOME";
-            // 
-            // panelDesktopPanel
-            // 
-            panelDesktopPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelDesktopPanel.Location = new Point(263, 80);
-            panelDesktopPanel.Name = "panelDesktopPanel";
-            panelDesktopPanel.Size = new Size(769, 873);
-            panelDesktopPanel.TabIndex = 2;
-            panelDesktopPanel.Paint += panelDesktopPanel_Paint;
-            // 
-            // MainForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(1032, 953);
-            Controls.Add(panelDesktopPanel);
-            Controls.Add(panelTitleBar);
-            Controls.Add(panelMenu);
-            Name = "MainForm";
-            StartPosition = FormStartPosition.WindowsDefaultBounds;
-            Text = "  ";
-            panelMenu.ResumeLayout(false);
-            panelLogo.ResumeLayout(false);
-            panelLogo.PerformLayout();
-            panelTitleBar.ResumeLayout(false);
-            panelTitleBar.PerformLayout();
-            ResumeLayout(false);
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+			this.panelMenu = new System.Windows.Forms.Panel();
+			this.btnAlmashtirishlar = new System.Windows.Forms.Button();
+			this.btnDarsJadvali = new System.Windows.Forms.Button();
+			this.btnYuklamalar = new System.Windows.Forms.Button();
+			this.btnRoyxat = new System.Windows.Forms.Button();
+			this.panelLogo = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
+			this.panelTitleBar = new System.Windows.Forms.Panel();
+			this.btnCloseChildForm = new System.Windows.Forms.Button();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this.panelDesktopPanel = new System.Windows.Forms.Panel();
+			this.panelMenu.SuspendLayout();
+			this.panelLogo.SuspendLayout();
+			this.panelTitleBar.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// panelMenu
+			// 
+			this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+			this.panelMenu.Controls.Add(this.btnAlmashtirishlar);
+			this.panelMenu.Controls.Add(this.btnDarsJadvali);
+			this.panelMenu.Controls.Add(this.btnYuklamalar);
+			this.panelMenu.Controls.Add(this.btnRoyxat);
+			this.panelMenu.Controls.Add(this.panelLogo);
+			this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelMenu.Location = new System.Drawing.Point(0, 0);
+			this.panelMenu.Name = "panelMenu";
+			this.panelMenu.Size = new System.Drawing.Size(263, 953);
+			this.panelMenu.TabIndex = 0;
+			// 
+			// btnAlmashtirishlar
+			// 
+			this.btnAlmashtirishlar.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnAlmashtirishlar.FlatAppearance.BorderSize = 0;
+			this.btnAlmashtirishlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAlmashtirishlar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.btnAlmashtirishlar.ForeColor = System.Drawing.Color.Gainsboro;
+			this.btnAlmashtirishlar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlmashtirishlar.Image")));
+			this.btnAlmashtirishlar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnAlmashtirishlar.Location = new System.Drawing.Point(0, 296);
+			this.btnAlmashtirishlar.Name = "btnAlmashtirishlar";
+			this.btnAlmashtirishlar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+			this.btnAlmashtirishlar.Size = new System.Drawing.Size(263, 72);
+			this.btnAlmashtirishlar.TabIndex = 4;
+			this.btnAlmashtirishlar.Text = "   Almashtirishlar";
+			this.btnAlmashtirishlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnAlmashtirishlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnAlmashtirishlar.UseVisualStyleBackColor = true;
+			this.btnAlmashtirishlar.Click += new System.EventHandler(this.btnAlmashtirishlar_Click);
+			// 
+			// btnDarsJadvali
+			// 
+			this.btnDarsJadvali.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnDarsJadvali.FlatAppearance.BorderSize = 0;
+			this.btnDarsJadvali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDarsJadvali.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.btnDarsJadvali.ForeColor = System.Drawing.Color.Gainsboro;
+			this.btnDarsJadvali.Image = ((System.Drawing.Image)(resources.GetObject("btnDarsJadvali.Image")));
+			this.btnDarsJadvali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnDarsJadvali.Location = new System.Drawing.Point(0, 224);
+			this.btnDarsJadvali.Name = "btnDarsJadvali";
+			this.btnDarsJadvali.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+			this.btnDarsJadvali.Size = new System.Drawing.Size(263, 72);
+			this.btnDarsJadvali.TabIndex = 3;
+			this.btnDarsJadvali.Text = "   Dars jadvali";
+			this.btnDarsJadvali.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnDarsJadvali.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnDarsJadvali.UseVisualStyleBackColor = true;
+			this.btnDarsJadvali.Click += new System.EventHandler(this.btnDarsJadvali_Click_1);
+			// 
+			// btnYuklamalar
+			// 
+			this.btnYuklamalar.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnYuklamalar.FlatAppearance.BorderSize = 0;
+			this.btnYuklamalar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnYuklamalar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.btnYuklamalar.ForeColor = System.Drawing.Color.Gainsboro;
+			this.btnYuklamalar.Image = ((System.Drawing.Image)(resources.GetObject("btnYuklamalar.Image")));
+			this.btnYuklamalar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnYuklamalar.Location = new System.Drawing.Point(0, 152);
+			this.btnYuklamalar.Name = "btnYuklamalar";
+			this.btnYuklamalar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+			this.btnYuklamalar.Size = new System.Drawing.Size(263, 72);
+			this.btnYuklamalar.TabIndex = 2;
+			this.btnYuklamalar.Text = "   Yuklamalar";
+			this.btnYuklamalar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnYuklamalar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnYuklamalar.UseVisualStyleBackColor = true;
+			this.btnYuklamalar.Click += new System.EventHandler(this.btnYuklamalar_Click_1);
+			// 
+			// btnRoyxat
+			// 
+			this.btnRoyxat.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnRoyxat.FlatAppearance.BorderSize = 0;
+			this.btnRoyxat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnRoyxat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.btnRoyxat.ForeColor = System.Drawing.Color.Gainsboro;
+			this.btnRoyxat.Image = ((System.Drawing.Image)(resources.GetObject("btnRoyxat.Image")));
+			this.btnRoyxat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnRoyxat.Location = new System.Drawing.Point(0, 80);
+			this.btnRoyxat.Name = "btnRoyxat";
+			this.btnRoyxat.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+			this.btnRoyxat.Size = new System.Drawing.Size(263, 72);
+			this.btnRoyxat.TabIndex = 1;
+			this.btnRoyxat.Text = "   Ro\'yxatlar";
+			this.btnRoyxat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnRoyxat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnRoyxat.UseVisualStyleBackColor = true;
+			this.btnRoyxat.Click += new System.EventHandler(this.btnRoyxat_Click);
+			// 
+			// panelLogo
+			// 
+			this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+			this.panelLogo.Controls.Add(this.label1);
+			this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelLogo.Location = new System.Drawing.Point(0, 0);
+			this.panelLogo.Name = "panelLogo";
+			this.panelLogo.Size = new System.Drawing.Size(263, 80);
+			this.panelLogo.TabIndex = 0;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.label1.ForeColor = System.Drawing.Color.LightGray;
+			this.label1.Location = new System.Drawing.Point(12, 29);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(209, 23);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Scheduling machine";
+			// 
+			// panelTitleBar
+			// 
+			this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+			this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
+			this.panelTitleBar.Controls.Add(this.lblTitle);
+			this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelTitleBar.Location = new System.Drawing.Point(263, 0);
+			this.panelTitleBar.Name = "panelTitleBar";
+			this.panelTitleBar.Size = new System.Drawing.Size(769, 80);
+			this.panelTitleBar.TabIndex = 1;
+			// 
+			// btnCloseChildForm
+			// 
+			this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
+			this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
+			this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCloseChildForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChildForm.Image")));
+			this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
+			this.btnCloseChildForm.Name = "btnCloseChildForm";
+			this.btnCloseChildForm.Size = new System.Drawing.Size(47, 80);
+			this.btnCloseChildForm.TabIndex = 1;
+			this.btnCloseChildForm.UseVisualStyleBackColor = true;
+			// 
+			// lblTitle
+			// 
+			this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.lblTitle.AutoSize = true;
+			this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.lblTitle.ForeColor = System.Drawing.Color.White;
+			this.lblTitle.Location = new System.Drawing.Point(351, 29);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.Size = new System.Drawing.Size(98, 34);
+			this.lblTitle.TabIndex = 0;
+			this.lblTitle.Text = "HOME";
+			// 
+			// panelDesktopPanel
+			// 
+			this.panelDesktopPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panelDesktopPanel.Location = new System.Drawing.Point(263, 80);
+			this.panelDesktopPanel.Name = "panelDesktopPanel";
+			this.panelDesktopPanel.Size = new System.Drawing.Size(769, 873);
+			this.panelDesktopPanel.TabIndex = 2;
+			// 
+			// MainForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
+			this.ClientSize = new System.Drawing.Size(1032, 953);
+			this.Controls.Add(this.panelDesktopPanel);
+			this.Controls.Add(this.panelTitleBar);
+			this.Controls.Add(this.panelMenu);
+			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+			this.Text = "  ";
+			this.panelMenu.ResumeLayout(false);
+			this.panelLogo.ResumeLayout(false);
+			this.panelLogo.PerformLayout();
+			this.panelTitleBar.ResumeLayout(false);
+			this.panelTitleBar.PerformLayout();
+			this.ResumeLayout(false);
+
         }
 
         #endregion

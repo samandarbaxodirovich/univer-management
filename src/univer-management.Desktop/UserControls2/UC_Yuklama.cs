@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,36 +19,18 @@ namespace FinalProject.UserControls2
     {
         YuklamaService service = new();
         UnitOfWork work = SingeltonUnitOfWork.Instance;
+
+
+
         public UC_Yuklama()
         {
             InitializeComponent();
             SetValues();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void datagrid_Yuklama_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void UC_Yuklama_Load(object sender, EventArgs e)
-        {
-
-        }
         private void SetValues()
         {
             YuklamaGuruhR.DataSource = work.Guruxlar.GetAll().Select(x=>x.Name).ToList();
@@ -61,37 +42,30 @@ namespace FinalProject.UserControls2
             }
         }
 
-        private async void guna2Button2_Click_1(object sender, EventArgs e)
-        {
-            YuklamaForm yuklamaForm = new YuklamaForm();
-            yuklamaForm.ShowDialog();
-            yuklamaForm.SetValues();
 
-        }
 
-        private void datagrid_Yuklama_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void UC_Yuklama_Load_1(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            guna2DataGridView1.Rows.Clear();
-            var result = service.GetAll().Where(x=>x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
-            foreach (var item in result)
-            {
-                guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
-            }
-        }
-    }
+
+		private void guna2Button2_Click_2(object sender, EventArgs e)
+		{
+			YuklamaForm yuklamaForm = new YuklamaForm();
+			yuklamaForm.ShowDialog();
+			yuklamaForm.SetValues();
+		}
+
+		private void guna2Button1_Click_1(object sender, EventArgs e)
+		{
+			guna2DataGridView1.Rows.Clear();
+			var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
+			foreach (var item in result)
+			{
+				guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
+			}
+		}
+	}
 }

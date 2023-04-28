@@ -20,11 +20,14 @@ namespace FinalProject
         private Form activeForm;
         private Button currentButton;
 
+
+
         public MainForm()
         {
             InitializeComponent();
             btnCloseChildForm.Visible = false;
         }
+
 
 
         private void ActivateButton(object btnSender)
@@ -38,6 +41,9 @@ namespace FinalProject
                 }
             }
         }
+
+
+
 
         private void OpenChildForm(Form childform, object btnSender)
         {
@@ -58,31 +64,29 @@ namespace FinalProject
         }
 
 
-        private void btnYuklamalar_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Yuklamalar(), sender);
-        }
 
-        private void btnDarsJadvali_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Dars_RejaForm(), sender);
-        }
 
-        private void btnAlmashtirishlar_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void btnCloseChildForm_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void panelDesktopPanel_Paint(object sender, PaintEventArgs e)
-        {
-        }
+		private void btnRoyxat_Click(object sender, EventArgs e)
+		{
+			OpenChildForm(new Royxatlar(), sender);
+		}
 
-        private void btnRoyxat_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new Royxatlar(), sender);
-        }
-    }
+		private void btnDarsJadvali_Click_1(object sender, EventArgs e)
+		{
+			OpenChildForm(new Dars_RejaForm(), sender);
+
+		}
+
+		private void btnYuklamalar_Click_1(object sender, EventArgs e)
+		{
+			OpenChildForm(new Yuklamalar(), sender);
+		}
+
+		private void btnAlmashtirishlar_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

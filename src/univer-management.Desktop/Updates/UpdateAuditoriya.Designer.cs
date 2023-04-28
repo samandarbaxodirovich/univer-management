@@ -30,11 +30,11 @@
         {
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2ComboBox11 = new System.Windows.Forms.ComboBox();
+			this.auditoriyaRaqami1 = new System.Windows.Forms.TextBox();
+			this.joylarSoni1 = new System.Windows.Forms.TextBox();
+			this.auditoriyaBino1 = new System.Windows.Forms.TextBox();
+			this.guna2Button21 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label2
@@ -61,69 +61,71 @@
 			this.label1.TabIndex = 21;
 			this.label1.Text = "Auditoriyani o\'zgartirish";
 			// 
-			// comboBox1
+			// guna2ComboBox11
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(35, 132);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 28;
+			this.guna2ComboBox11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox11.FormattingEnabled = true;
+			this.guna2ComboBox11.Location = new System.Drawing.Point(35, 132);
+			this.guna2ComboBox11.Name = "guna2ComboBox11";
+			this.guna2ComboBox11.Size = new System.Drawing.Size(283, 31);
+			this.guna2ComboBox11.TabIndex = 28;
 			// 
-			// textBox1
+			// auditoriyaRaqami1
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(35, 78);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "Auditoriya raqami";
-			this.textBox1.Size = new System.Drawing.Size(283, 30);
-			this.textBox1.TabIndex = 29;
+			this.auditoriyaRaqami1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.auditoriyaRaqami1.Location = new System.Drawing.Point(35, 78);
+			this.auditoriyaRaqami1.Name = "auditoriyaRaqami1";
+			this.auditoriyaRaqami1.PlaceholderText = "Auditoriya raqami";
+			this.auditoriyaRaqami1.Size = new System.Drawing.Size(283, 30);
+			this.auditoriyaRaqami1.TabIndex = 29;
 			// 
-			// textBox2
+			// joylarSoni1
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(36, 178);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PlaceholderText = "Joylar soni";
-			this.textBox2.Size = new System.Drawing.Size(283, 30);
-			this.textBox2.TabIndex = 30;
+			this.joylarSoni1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.joylarSoni1.Location = new System.Drawing.Point(36, 178);
+			this.joylarSoni1.Name = "joylarSoni1";
+			this.joylarSoni1.PlaceholderText = "Joylar soni";
+			this.joylarSoni1.Size = new System.Drawing.Size(283, 30);
+			this.joylarSoni1.TabIndex = 30;
 			// 
-			// textBox3
+			// auditoriyaBino1
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox3.Location = new System.Drawing.Point(36, 225);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.PlaceholderText = "Bino raqami";
-			this.textBox3.Size = new System.Drawing.Size(283, 30);
-			this.textBox3.TabIndex = 31;
+			this.auditoriyaBino1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.auditoriyaBino1.Location = new System.Drawing.Point(36, 225);
+			this.auditoriyaBino1.Name = "auditoriyaBino1";
+			this.auditoriyaBino1.PlaceholderText = "Bino raqami";
+			this.auditoriyaBino1.Size = new System.Drawing.Size(283, 30);
+			this.auditoriyaBino1.TabIndex = 31;
 			// 
-			// button1
+			// guna2Button21
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(36, 292);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(282, 43);
-			this.button1.TabIndex = 32;
-			this.button1.Text = "Create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button21.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button21.ForeColor = System.Drawing.Color.White;
+			this.guna2Button21.Location = new System.Drawing.Point(36, 292);
+			this.guna2Button21.Name = "guna2Button21";
+			this.guna2Button21.Size = new System.Drawing.Size(282, 43);
+			this.guna2Button21.TabIndex = 32;
+			this.guna2Button21.Text = "Create";
+			this.guna2Button21.UseVisualStyleBackColor = false;
+			this.guna2Button21.Click += new System.EventHandler(this.guna2Button21_Click);
 			// 
 			// UpdateAuditoriya
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(349, 375);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.guna2Button21);
+			this.Controls.Add(this.auditoriyaBino1);
+			this.Controls.Add(this.joylarSoni1);
+			this.Controls.Add(this.auditoriyaRaqami1);
+			this.Controls.Add(this.guna2ComboBox11);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 			this.Name = "UpdateAuditoriya";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "UpdateAuditoriya";
+			this.Load += new System.EventHandler(this.UpdateAuditoriya_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -133,10 +135,10 @@
 
         private Label label2;
         private Label label1;
-		private ComboBox comboBox1;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
-		private Button button1;
+		private ComboBox guna2ComboBox11;
+		private TextBox auditoriyaRaqami1;
+		private TextBox joylarSoni1;
+		private TextBox auditoriyaBino1;
+		private Button guna2Button21;
 	}
 }

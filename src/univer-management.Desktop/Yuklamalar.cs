@@ -29,27 +29,17 @@ namespace FinalProject.Forms
             userControl.BringToFront();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            UC_Uquv_reja uC_Uquv_Reja = new UC_Uquv_reja();
-            addUserControl(uC_Uquv_Reja);
-        }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            UC_Yuklama uC_Yuklama = new UC_Yuklama();
-            addUserControl(uC_Yuklama);
-        }
+		private void guna2Button1_Click_1(object sender, EventArgs e)
+		{
+			UC_Uquv_reja uC_Uquv_Reja = new UC_Uquv_reja();
+			addUserControl(uC_Uquv_Reja);
+		}
 
-        private void Yuklamalar_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void panelContainer2_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-
-       
-    }
+		private void guna2Button2_Click_1(object sender, EventArgs e)
+		{
+			UC_Yuklama uC_Yuklama = new UC_Yuklama();
+			addUserControl(uC_Yuklama);
+		}
+	}
 }

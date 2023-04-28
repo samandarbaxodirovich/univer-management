@@ -12,8 +12,8 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230418071250_kddd")]
-    partial class kddd
+    [Migration("20230428185217_initial_Create")]
+    partial class initial_Create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -78,26 +78,26 @@ namespace univer_management.DataAccess.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("Beshinchipara")
+                    b.Property<string>("Chorshanba")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("IkkinchiPara")
+                    b.Property<string>("Dushanba")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("KunRaqami")
+                    b.Property<string>("Juma")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("paraRaqami")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Tortinchipara")
+                    b.Property<string>("payshanba")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("birinchiPara")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("uchinchiPara")
+                    b.Property<string>("sehanba")
                         .IsRequired()
                         .HasColumnType("text");
 

@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace univer_management.DataAccess.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initial_Create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,24 @@ namespace univer_management.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Auditoriya_Tiplari", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DarsJadvalllari",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    paraRaqami = table.Column<int>(type: "integer", nullable: false),
+                    Dushanba = table.Column<string>(type: "text", nullable: false),
+                    sehanba = table.Column<string>(type: "text", nullable: false),
+                    Chorshanba = table.Column<string>(type: "text", nullable: false),
+                    payshanba = table.Column<string>(type: "text", nullable: false),
+                    Juma = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DarsJadvalllari", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -57,8 +75,8 @@ namespace univer_management.DataAccess.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     NumberOfOrder = table.Column<string>(type: "text", nullable: false),
                     Capacity = table.Column<int>(type: "integer", nullable: false),
-                    AuditoriyaTipi = table.Column<string>(type: "text", nullable: false),
-                    Auditoriya_TipiId = table.Column<long>(type: "bigint", nullable: false)
+                    Auditoriya_TipiId = table.Column<long>(type: "bigint", nullable: false),
+                    Korpus = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -103,6 +121,7 @@ namespace univer_management.DataAccess.Migrations
                     Capacity = table.Column<int>(type: "integer", nullable: false),
                     AuditoriyaId = table.Column<long>(type: "bigint", nullable: false),
                     MutaxasislikId = table.Column<long>(type: "bigint", nullable: false),
+                    Semestr = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
@@ -151,7 +170,7 @@ namespace univer_management.DataAccess.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     FullName = table.Column<string>(type: "text", nullable: false),
-                    Level = table.Column<double>(type: "double precision", nullable: false),
+                    Level = table.Column<string>(type: "text", nullable: false),
                     KafedraId = table.Column<long>(type: "bigint", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
@@ -174,14 +193,11 @@ namespace univer_management.DataAccess.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     FanId = table.Column<long>(type: "bigint", nullable: false),
-                    Leksiya = table.Column<double>(type: "double precision", nullable: false),
-                    Seminar = table.Column<double>(type: "double precision", nullable: false),
-                    Labaratoriya = table.Column<double>(type: "double precision", nullable: false),
-                    Zachot = table.Column<double>(type: "double precision", nullable: false),
-                    DifZachot = table.Column<double>(type: "double precision", nullable: false),
-                    Imtihon = table.Column<double>(type: "double precision", nullable: false),
                     TextUquvReja = table.Column<string>(type: "text", nullable: false),
                     MutaxasislikId = table.Column<long>(type: "bigint", nullable: false),
+                    Semestr = table.Column<int>(type: "integer", nullable: false),
+                    Soat = table.Column<double>(type: "double precision", nullable: false),
+                    Hafta = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
@@ -293,8 +309,8 @@ namespace univer_management.DataAccess.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     OquvRejaId = table.Column<long>(type: "bigint", nullable: false),
-                    Oquv_RejaId = table.Column<long>(type: "bigint", nullable: false),
-                    MashgulotId = table.Column<long>(type: "bigint", nullable: false)
+                    MashgulotId = table.Column<long>(type: "bigint", nullable: false),
+                    MashgulotLength = table.Column<double>(type: "double precision", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -306,8 +322,8 @@ namespace univer_management.DataAccess.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Oquv_Reja_Mashgulot_Oquv_Rejalar_Oquv_RejaId",
-                        column: x => x.Oquv_RejaId,
+                        name: "FK_Oquv_Reja_Mashgulot_Oquv_Rejalar_OquvRejaId",
+                        column: x => x.OquvRejaId,
                         principalTable: "Oquv_Rejalar",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -322,10 +338,10 @@ namespace univer_management.DataAccess.Migrations
                     GuruxId = table.Column<long>(type: "bigint", nullable: false),
                     FanId = table.Column<long>(type: "bigint", nullable: false),
                     OqituvchiId = table.Column<long>(type: "bigint", nullable: false),
-                    Oquv_Reja_Id = table.Column<long>(type: "bigint", nullable: false),
                     Oquv_RejaId = table.Column<long>(type: "bigint", nullable: false),
                     AuditoriyaId = table.Column<long>(type: "bigint", nullable: false),
                     HaftasigaDars = table.Column<double>(type: "double precision", nullable: false),
+                    Hafta = table.Column<int>(type: "integer", nullable: false),
                     MashgulotId = table.Column<long>(type: "bigint", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
@@ -437,9 +453,9 @@ namespace univer_management.DataAccess.Migrations
                 column: "MashgulotId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Oquv_Reja_Mashgulot_Oquv_RejaId",
+                name: "IX_Oquv_Reja_Mashgulot_OquvRejaId",
                 table: "Oquv_Reja_Mashgulot",
-                column: "Oquv_RejaId");
+                column: "OquvRejaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Oquv_Rejalar_FanId",
@@ -484,6 +500,9 @@ namespace univer_management.DataAccess.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "DarsJadvalllari");
+
             migrationBuilder.DropTable(
                 name: "Oqituvchi_Fan");
 

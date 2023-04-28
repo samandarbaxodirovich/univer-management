@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +21,8 @@ namespace univer_management.Desktop.UserControls2
             InitializeComponent();
             SetValues();
         }
+
+
         private void SetValues()
         {
             DataGridVIew_Oqituvchi.Rows.Clear();
@@ -46,6 +47,8 @@ namespace univer_management.Desktop.UserControls2
 
 
         }
+
+
         private async Task ActionControl(byte action, long id)
         {
             if (action == 3)
@@ -62,30 +65,60 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
-        private async void DataGridVIew_Oqituvchi_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (DataGridVIew_Oqituvchi.SelectedRows.Count > 0)
-            {
-                DataGridViewRow selectedRow = DataGridVIew_Oqituvchi.SelectedRows[0];
-                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
-                byte actionId = 10;
-                if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.RowIndex >= 0)
-                    actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 3)
-                {
-                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} Guruhni o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    if (dialogResult == DialogResult.Cancel)
-                    {
-                        return;
-                    }
-                    else
-                    {
-                        await ActionControl(actionId, clientId);
-                        SetValues();
-                    }
-                }
-            }
-        }
-    }
+
+
+		private async void DataGridVIew_Oqituvchi_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+		{
+			if (DataGridVIew_Oqituvchi.SelectedRows.Count > 0)
+			{
+				DataGridViewRow selectedRow = DataGridVIew_Oqituvchi.SelectedRows[0];
+				var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+				byte actionId = 10;
+				if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+				e.RowIndex >= 0)
+					actionId = byte.Parse(e.ColumnIndex.ToString());
+				if (actionId == 3)
+				{
+					DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} Guruhni o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+					if (dialogResult == DialogResult.Cancel)
+					{
+						return;
+					}
+					else
+					{
+						await ActionControl(actionId, clientId);
+						SetValues();
+					}
+				}
+			}
+		}
+
+		private async void guna2Button2_Click(object sender, EventArgs e)
+		{
+			if (guna2CheckBox1.Checked)
+			{
+				Mashgulot mashgulot = new Mashgulot() { Name = gunatextBox.Text };
+				var result = await _service.CreateAsync(mashgulot);
+				if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				SetValues();
+			}
+			else MessageBox.Show($"Siz avvalo mashgulot qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+		}
+
+
+		// backendi yozilmagan ekan
+		// search textbox
+		private void textBox4_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+
+		// search button(lupa)
+		private void button3_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

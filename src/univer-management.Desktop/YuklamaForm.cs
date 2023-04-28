@@ -21,6 +21,8 @@ namespace univer_management.Desktop
         GuruxService gurux = new GuruxService();
         OquvRejaService oquv = new OquvRejaService();
         UnitOfWork work = SingeltonUnitOfWork.Instance;
+
+
         public YuklamaForm()
         {
             service = new YuklamaService();
@@ -58,6 +60,8 @@ namespace univer_management.Desktop
                 guna2ComboBox4.ValueMember = "Id";
             }
         }
+
+
         private async void ComboBoxFill5()
         {
             using (var db = new AppDbContext())
@@ -68,6 +72,8 @@ namespace univer_management.Desktop
                 guna2ComboBox5.ValueMember = "Id";
             }
         }
+
+
 
         private async void ComboBoxFill6()
         {
@@ -80,24 +86,10 @@ namespace univer_management.Desktop
             }
         }
 
-        private void YuklamaForm_Load(object sender, EventArgs e)
-        {
-        }
 
-        private async void Yuxlamabtn_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void YuklamaForm_Load_1(object sender, EventArgs e)
-        {
-            ComboBoxFill(); ComboBoxFill2(); ComboBoxFill3(); ComboBoxFill5(); ComboBoxFill6();
-        }
 
-        private async void Yuxlamabtn_Click(object sender, EventArgs e)
-        {
-            
-        }
+
         public async void SetValues()
         {
             ComboBoxFill();
@@ -107,185 +99,182 @@ namespace univer_management.Desktop
             ComboBoxFill6();
         }
 
-        private async void Yuxlamabtn_Click_2(object sender, EventArgs e)
-        {
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                Yuklama yuklama = new Yuklama()
-                {
-                    GuruxId = obj5.Id,
-                    FanId = obj.Id,
-                    OqituvchiId = obj1.Id,
-                    MashgulotId = obj2.Id,
-                    HaftasigaDars = mashgulotVaqti,
-                    AuditoriyaId = obj4.Id,
-                    Oquv_RejaId = rejaFan.Id,
-                    Hafta = rejaFan.Hafta,
-                };
-                var result = await service.CreateAsync(yuklama);
-                if (result.Item1)
-                {
-                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                }
-                else
-                {
-                    MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch 
-            {
-                MessageBox.Show("Nimadir xato ketdi");
-            }
 
-            if (string.IsNullOrEmpty(YukDarstxt.Text))
-            {
-                MessageBox.Show("Iltimos barcha maydonlarni toldiring");
-                return;
-            }
 
-            
-        }
 
-        private void YukDarstxt_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        private async void guna2ComboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            YukDarstxt.Text = string.Empty;
-            guna2TextBox1.Text = string.Empty;
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                YukDarstxt.Text = mashgulotVaqti.ToString();
-                guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
-            }
-            catch
-            {
 
-            }
-        }
 
-        private async void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-            YukDarstxt.Text = string.Empty;
-            guna2TextBox1.Text = string.Empty;
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                YukDarstxt.Text = mashgulotVaqti.ToString();
-                guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
-            }
-            catch
-            {
+		private async void Yuxlamabtn_Click_3(object sender, EventArgs e)
+		{
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				Yuklama yuklama = new Yuklama()
+				{
+					GuruxId = obj5.Id,
+					FanId = obj.Id,
+					OqituvchiId = obj1.Id,
+					MashgulotId = obj2.Id,
+					HaftasigaDars = mashgulotVaqti,
+					AuditoriyaId = obj4.Id,
+					Oquv_RejaId = rejaFan.Id,
+					Hafta = rejaFan.Hafta,
+				};
+				var result = await service.CreateAsync(yuklama);
+				if (result.Item1)
+				{
+					MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            }
-        }
+				}
+				else
+				{
+					MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+			catch
+			{
+				MessageBox.Show("Nimadir xato ketdi");
+			}
 
-        private async void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+			if (string.IsNullOrEmpty(YukDarstxt.Text))
+			{
+				MessageBox.Show("Iltimos barcha maydonlarni toldiring");
+				return;
+			}
+		}
 
-            YukDarstxt.Text = string.Empty;
-            guna2TextBox1.Text = string.Empty;
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                YukDarstxt.Text = mashgulotVaqti.ToString();
-                guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
-            }
-            catch
-            {
 
-            }
-        }
 
-        private async void guna2ComboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
+		private async void guna2ComboBox6_SelectedIndexChanged_1(object sender, EventArgs e)
+		{
+			YukDarstxt.Text = string.Empty;
+			guna2TextBox1.Text = string.Empty;
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				YukDarstxt.Text = mashgulotVaqti.ToString();
+				guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
+			}
+			catch
+			{
 
-            YukDarstxt.Text = string.Empty;
-            guna2TextBox1.Text = string.Empty;
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                YukDarstxt.Text = mashgulotVaqti.ToString();
-                guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
-            }
-            catch
-            {
+			}
+		}
 
-            }
-        }
+		private async void guna2ComboBox4_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			YukDarstxt.Text = string.Empty;
+			guna2TextBox1.Text = string.Empty;
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				YukDarstxt.Text = mashgulotVaqti.ToString();
+				guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
+			}
+			catch
+			{
 
-        private async void guna2ComboBox6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            YukDarstxt.Text = string.Empty;
-            guna2TextBox1.Text = string.Empty;
-            try
-            {
-                Fan obj = guna2ComboBox1.SelectedItem as Fan;
-                Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
-                Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
-                Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
-                Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
-                var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
-                var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
-                var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
-                YukDarstxt.Text = mashgulotVaqti.ToString();
-                guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
-            }
-            catch
-            {
+			}
+		}
 
-            }
-        }
+		private async void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			YukDarstxt.Text = string.Empty;
+			guna2TextBox1.Text = string.Empty;
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				YukDarstxt.Text = mashgulotVaqti.ToString();
+				guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
+			}
+			catch
+			{
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
+			}
+		}
 
-        }
+		private async void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
 
-        private void YuklamaForm_Load_2(object sender, EventArgs e)
-        {
+			YukDarstxt.Text = string.Empty;
+			guna2TextBox1.Text = string.Empty;
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				YukDarstxt.Text = mashgulotVaqti.ToString();
+				guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
+			}
+			catch
+			{
 
-        }
-    }
+			}
+		}
+
+		private void YuklamaForm_Load_2(object sender, EventArgs e)
+		{
+			ComboBoxFill(); ComboBoxFill2(); ComboBoxFill3(); ComboBoxFill5(); ComboBoxFill6();
+		}
+
+		private async void guna2ComboBox5_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			YukDarstxt.Text = string.Empty;
+			guna2TextBox1.Text = string.Empty;
+			try
+			{
+				Fan obj = guna2ComboBox1.SelectedItem as Fan;
+				Oqituvchi obj1 = guna2ComboBox2.SelectedItem as Oqituvchi;
+				Mashgulot obj2 = guna2ComboBox4.SelectedItem as Mashgulot;
+				Auditoriya obj4 = guna2ComboBox5.SelectedItem as Auditoriya;
+				Gurux obj5 = guna2ComboBox6.SelectedItem as Gurux;
+				var mut = ((await gurux.GetAll()).FirstOrDefault(x => x.Id == obj5.Id)!).MutaxasislikId;
+				var rejaFan = oquv.GetAllR().FirstOrDefault(x => x.FanId == obj.Id && x.MutaxasislikId == mut)!;
+				var mashgulotVaqti = (work.OquvRejaMashgulotlar.GetAll().FirstOrDefault(x => x.OquvRejaId == rejaFan.Id && obj2.Id == x.MashgulotId))!.MashgulotLength;
+				YukDarstxt.Text = mashgulotVaqti.ToString();
+				guna2TextBox1.Text = (mashgulotVaqti / rejaFan.Hafta).ToString();
+			}
+			catch
+			{
+
+			}
+		}
+	}
 }

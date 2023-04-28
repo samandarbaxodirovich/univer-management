@@ -31,13 +31,13 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2ComboBox1 = new System.Windows.Forms.ComboBox();
+			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
+			this.guna2TextBox5 = new System.Windows.Forms.TextBox();
+			this.guna2TextBox7 = new System.Windows.Forms.TextBox();
+			this.guna2TextBox4 = new System.Windows.Forms.TextBox();
+			this.guna2TextBox2 = new System.Windows.Forms.TextBox();
+			this.Oquvrejabtn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -67,71 +67,75 @@
 			this.label3.Size = new System.Drawing.Size(0, 20);
 			this.label3.TabIndex = 22;
 			// 
-			// comboBox1
+			// guna2ComboBox1
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(22, 53);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(322, 31);
-			this.comboBox1.TabIndex = 23;
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox1.FormattingEnabled = true;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(22, 53);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox1.TabIndex = 23;
+			this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
 			// 
-			// textBox1
+			// guna2TextBox1
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(22, 125);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "Ma\'ruza soatini kiriting";
-			this.textBox1.Size = new System.Drawing.Size(322, 30);
-			this.textBox1.TabIndex = 24;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox1.Location = new System.Drawing.Point(22, 125);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.PlaceholderText = "Ma\'ruza soatini kiriting";
+			this.guna2TextBox1.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox1.TabIndex = 24;
 			// 
-			// textBox2
+			// guna2TextBox5
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(22, 285);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PlaceholderText = "Mustaqil ta\'lim soatini kiriting";
-			this.textBox2.Size = new System.Drawing.Size(322, 30);
-			this.textBox2.TabIndex = 25;
+			this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox5.Location = new System.Drawing.Point(22, 285);
+			this.guna2TextBox5.Name = "guna2TextBox5";
+			this.guna2TextBox5.PlaceholderText = "Mustaqil ta\'lim soatini kiriting";
+			this.guna2TextBox5.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox5.TabIndex = 25;
+			this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
 			// 
-			// textBox3
+			// guna2TextBox7
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox3.Location = new System.Drawing.Point(22, 334);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.PlaceholderText = "Haftalar soni";
-			this.textBox3.Size = new System.Drawing.Size(322, 30);
-			this.textBox3.TabIndex = 26;
+			this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox7.Location = new System.Drawing.Point(22, 334);
+			this.guna2TextBox7.Name = "guna2TextBox7";
+			this.guna2TextBox7.PlaceholderText = "Haftalar soni";
+			this.guna2TextBox7.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox7.TabIndex = 26;
 			// 
-			// textBox4
+			// guna2TextBox4
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox4.Location = new System.Drawing.Point(22, 229);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.PlaceholderText = "Oraliq nazorat soatini kiriting";
-			this.textBox4.Size = new System.Drawing.Size(322, 30);
-			this.textBox4.TabIndex = 27;
+			this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox4.Location = new System.Drawing.Point(22, 229);
+			this.guna2TextBox4.Name = "guna2TextBox4";
+			this.guna2TextBox4.PlaceholderText = "Oraliq nazorat soatini kiriting";
+			this.guna2TextBox4.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox4.TabIndex = 27;
+			this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
 			// 
-			// textBox5
+			// guna2TextBox2
 			// 
-			this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox5.Location = new System.Drawing.Point(22, 180);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.PlaceholderText = "Amaliy(seminar) soatini kiriting";
-			this.textBox5.Size = new System.Drawing.Size(322, 30);
-			this.textBox5.TabIndex = 28;
+			this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox2.Location = new System.Drawing.Point(22, 180);
+			this.guna2TextBox2.Name = "guna2TextBox2";
+			this.guna2TextBox2.PlaceholderText = "Amaliy(seminar) soatini kiriting";
+			this.guna2TextBox2.Size = new System.Drawing.Size(322, 30);
+			this.guna2TextBox2.TabIndex = 28;
+			this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_1);
 			// 
-			// button1
+			// Oquvrejabtn
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(22, 437);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(322, 49);
-			this.button1.TabIndex = 29;
-			this.button1.Text = "Create";
-			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.Oquvrejabtn.BackColor = System.Drawing.Color.Blue;
+			this.Oquvrejabtn.ForeColor = System.Drawing.Color.White;
+			this.Oquvrejabtn.Location = new System.Drawing.Point(22, 437);
+			this.Oquvrejabtn.Name = "Oquvrejabtn";
+			this.Oquvrejabtn.Size = new System.Drawing.Size(322, 49);
+			this.Oquvrejabtn.TabIndex = 29;
+			this.Oquvrejabtn.Text = "Create";
+			this.Oquvrejabtn.UseVisualStyleBackColor = false;
+			this.Oquvrejabtn.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// OquvrejaForm
 			// 
@@ -139,13 +143,13 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(370, 518);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.Oquvrejabtn);
+			this.Controls.Add(this.guna2TextBox2);
+			this.Controls.Add(this.guna2TextBox4);
+			this.Controls.Add(this.guna2TextBox7);
+			this.Controls.Add(this.guna2TextBox5);
+			this.Controls.Add(this.guna2TextBox1);
+			this.Controls.Add(this.guna2ComboBox1);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -163,12 +167,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-		private ComboBox comboBox1;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
-		private TextBox textBox4;
-		private TextBox textBox5;
-		private Button button1;
+		private ComboBox guna2ComboBox1;
+		private TextBox guna2TextBox1;
+		private TextBox guna2TextBox5;
+		private TextBox guna2TextBox7;
+		private TextBox guna2TextBox4;
+		private TextBox guna2TextBox2;
+		private Button Oquvrejabtn;
 	}
 }

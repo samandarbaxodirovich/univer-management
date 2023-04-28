@@ -30,8 +30,8 @@
         {
 			this.panelContainer11 = new System.Windows.Forms.Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.guna2Button33 = new System.Windows.Forms.Button();
+			this.guna2Button11 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -46,39 +46,41 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Controls.Add(this.button2);
-			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.guna2Button33);
+			this.panel1.Controls.Add(this.guna2Button11);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1061, 44);
 			this.panel1.TabIndex = 1;
 			// 
-			// button1
+			// guna2Button33
 			// 
-			this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-			this.button1.Location = new System.Drawing.Point(0, 0);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(211, 44);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "Dars reja";
-			this.button1.UseVisualStyleBackColor = true;
+			this.guna2Button33.Dock = System.Windows.Forms.DockStyle.Left;
+			this.guna2Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.guna2Button33.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.guna2Button33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.guna2Button33.Location = new System.Drawing.Point(211, 0);
+			this.guna2Button33.Name = "guna2Button33";
+			this.guna2Button33.Size = new System.Drawing.Size(211, 44);
+			this.guna2Button33.TabIndex = 1;
+			this.guna2Button33.Text = "O\'qituvchi dars rejasi";
+			this.guna2Button33.UseVisualStyleBackColor = true;
+			this.guna2Button33.Click += new System.EventHandler(this.guna2Button33_Click_1);
 			// 
-			// button2
+			// guna2Button11
 			// 
-			this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-			this.button2.Location = new System.Drawing.Point(211, 0);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(211, 44);
-			this.button2.TabIndex = 1;
-			this.button2.Text = "O\'qituvchi dars rejasi";
-			this.button2.UseVisualStyleBackColor = true;
+			this.guna2Button11.Dock = System.Windows.Forms.DockStyle.Left;
+			this.guna2Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.guna2Button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+			this.guna2Button11.Location = new System.Drawing.Point(0, 0);
+			this.guna2Button11.Name = "guna2Button11";
+			this.guna2Button11.Size = new System.Drawing.Size(211, 44);
+			this.guna2Button11.TabIndex = 0;
+			this.guna2Button11.Text = "Dars reja";
+			this.guna2Button11.UseVisualStyleBackColor = true;
+			this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click_1);
 			// 
 			// Dars_RejaForm
 			// 
@@ -100,7 +102,7 @@
 
         private Panel panelContainer11;
         private Panel panel1;
-		private Button button2;
-		private Button button1;
+		private Button guna2Button33;
+		private Button guna2Button11;
 	}
 }
