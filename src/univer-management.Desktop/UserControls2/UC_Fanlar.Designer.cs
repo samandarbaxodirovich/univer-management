@@ -32,19 +32,19 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.guna2Button1 = new System.Windows.Forms.Button();
+			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
+			this.guna2DataGridView1 = new System.Windows.Forms.DataGridView();
+			this.guna2Button3 = new System.Windows.Forms.Button();
+			this.guna2Button2 = new System.Windows.Forms.Button();
+			this.guna2CheckBox1 = new System.Windows.Forms.CheckBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.guna2TextBox2 = new System.Windows.Forms.TextBox();
+			this.guna2ComboBox2 = new System.Windows.Forms.ComboBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox1 = new System.Windows.Forms.ComboBox();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -83,71 +83,74 @@
 			this.label2.TabIndex = 18;
 			this.label2.Text = "Fan qo\'shish";
 			// 
-			// button3
+			// guna2Button1
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Control;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-			this.button3.Location = new System.Drawing.Point(343, 131);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(43, 32);
-			this.button3.TabIndex = 60;
-			this.button3.UseVisualStyleBackColor = false;
+			this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+			this.guna2Button1.Location = new System.Drawing.Point(343, 131);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(43, 32);
+			this.guna2Button1.TabIndex = 60;
+			this.guna2Button1.UseVisualStyleBackColor = false;
 			// 
-			// textBox4
+			// guna2TextBox1
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox4.Location = new System.Drawing.Point(43, 132);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.PlaceholderText = "Qidirish uchun so\'z kiriting";
-			this.textBox4.Size = new System.Drawing.Size(283, 30);
-			this.textBox4.TabIndex = 59;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox1.Location = new System.Drawing.Point(43, 132);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.PlaceholderText = "Qidirish uchun so\'z kiriting";
+			this.guna2TextBox1.Size = new System.Drawing.Size(283, 30);
+			this.guna2TextBox1.TabIndex = 59;
 			// 
-			// dataGridView1
+			// guna2DataGridView1
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(43, 181);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
-			this.dataGridView1.TabIndex = 58;
+			this.guna2DataGridView1.AllowUserToAddRows = false;
+			this.guna2DataGridView1.AllowUserToDeleteRows = false;
+			this.guna2DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.guna2DataGridView1.Location = new System.Drawing.Point(43, 181);
+			this.guna2DataGridView1.Name = "guna2DataGridView1";
+			this.guna2DataGridView1.ReadOnly = true;
+			this.guna2DataGridView1.RowHeadersVisible = false;
+			this.guna2DataGridView1.RowHeadersWidth = 51;
+			this.guna2DataGridView1.RowTemplate.Height = 29;
+			this.guna2DataGridView1.Size = new System.Drawing.Size(638, 266);
+			this.guna2DataGridView1.TabIndex = 58;
 			// 
-			// button2
+			// guna2Button3
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(869, 418);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(129, 29);
-			this.button2.TabIndex = 57;
-			this.button2.Text = "cancel";
-			this.button2.UseVisualStyleBackColor = false;
+			this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.guna2Button3.ForeColor = System.Drawing.Color.White;
+			this.guna2Button3.Location = new System.Drawing.Point(869, 418);
+			this.guna2Button3.Name = "guna2Button3";
+			this.guna2Button3.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button3.TabIndex = 57;
+			this.guna2Button3.Text = "cancel";
+			this.guna2Button3.UseVisualStyleBackColor = false;
 			// 
-			// button1
+			// guna2Button2
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(719, 418);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(129, 29);
-			this.button1.TabIndex = 56;
-			this.button1.Text = "create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(719, 418);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(129, 29);
+			this.guna2Button2.TabIndex = 56;
+			this.guna2Button2.Text = "create";
+			this.guna2Button2.UseVisualStyleBackColor = false;
 			// 
-			// checkBox1
+			// guna2CheckBox1
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.ForeColor = System.Drawing.Color.Tomato;
-			this.checkBox1.Location = new System.Drawing.Point(715, 360);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(185, 24);
-			this.checkBox1.TabIndex = 55;
-			this.checkBox1.Text = "Fan qo\'shishga roziman";
-			this.checkBox1.UseVisualStyleBackColor = true;
-			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+			this.guna2CheckBox1.AutoSize = true;
+			this.guna2CheckBox1.ForeColor = System.Drawing.Color.Tomato;
+			this.guna2CheckBox1.Location = new System.Drawing.Point(715, 360);
+			this.guna2CheckBox1.Name = "guna2CheckBox1";
+			this.guna2CheckBox1.Size = new System.Drawing.Size(185, 24);
+			this.guna2CheckBox1.TabIndex = 55;
+			this.guna2CheckBox1.Text = "Fan qo\'shishga roziman";
+			this.guna2CheckBox1.UseVisualStyleBackColor = true;
+			this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
 			// 
 			// label1
 			// 
@@ -160,23 +163,23 @@
 			this.label1.TabIndex = 54;
 			this.label1.Text = "Fan qiyinchiligini kiriting ";
 			// 
-			// textBox1
+			// guna2TextBox2
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(715, 181);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "O\'qituvchi";
-			this.textBox1.Size = new System.Drawing.Size(283, 30);
-			this.textBox1.TabIndex = 52;
+			this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2TextBox2.Location = new System.Drawing.Point(715, 181);
+			this.guna2TextBox2.Name = "guna2TextBox2";
+			this.guna2TextBox2.PlaceholderText = "Fan nomi";
+			this.guna2TextBox2.Size = new System.Drawing.Size(283, 30);
+			this.guna2TextBox2.TabIndex = 52;
 			// 
-			// comboBox1
+			// guna2ComboBox2
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(715, 246);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 50;
+			this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox2.FormattingEnabled = true;
+			this.guna2ComboBox2.Location = new System.Drawing.Point(715, 246);
+			this.guna2ComboBox2.Name = "guna2ComboBox2";
+			this.guna2ComboBox2.Size = new System.Drawing.Size(283, 31);
+			this.guna2ComboBox2.TabIndex = 50;
 			// 
 			// label3
 			// 
@@ -189,14 +192,14 @@
 			this.label3.TabIndex = 62;
 			this.label3.Text = "Kafedrani kiriting";
 			// 
-			// comboBox2
+			// guna2ComboBox1
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(715, 309);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(283, 31);
-			this.comboBox2.TabIndex = 61;
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox1.FormattingEnabled = true;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(715, 309);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(283, 31);
+			this.guna2ComboBox1.TabIndex = 61;
 			// 
 			// UC_Fanlar
 			// 
@@ -204,23 +207,23 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.guna2ComboBox1);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.guna2TextBox1);
+			this.Controls.Add(this.guna2DataGridView1);
+			this.Controls.Add(this.guna2Button3);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2CheckBox1);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.guna2TextBox2);
+			this.Controls.Add(this.guna2ComboBox2);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
 			this.Name = "UC_Fanlar";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -231,16 +234,16 @@
         private Panel panel1;
         private Label lblTitle;
 		private Label label2;
-		private Button button3;
-		private TextBox textBox4;
-		private DataGridView dataGridView1;
-		private Button button2;
-		private Button button1;
-		private CheckBox checkBox1;
+		private Button guna2Button1;
+		private TextBox guna2TextBox1;
+		private DataGridView guna2DataGridView1;
+		private Button guna2Button3;
+		private Button guna2Button2;
+		private CheckBox guna2CheckBox1;
 		private Label label1;
-		private TextBox textBox1;
-		private ComboBox comboBox1;
+		private TextBox guna2TextBox2;
+		private ComboBox guna2ComboBox2;
 		private Label label3;
-		private ComboBox comboBox2;
+		private ComboBox guna2ComboBox1;
 	}
 }
