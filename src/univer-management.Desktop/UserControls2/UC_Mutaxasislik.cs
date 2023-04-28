@@ -100,18 +100,16 @@ namespace univer_management.Desktop.UserControls2
 
                 else if (actionId == 3)
                 {
-                     MessageBox.Show($"Siz avvalo mutaxasislik qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                    //DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    //if (dialogResult == DialogResult.Cancel)
-                    //{
-                    //    return;
-                    //}
-                    //else
-                    //{
-                    //    await ActionControl(actionId, clientId);
-                    //    SetValues();
-                    //}
+                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (dialogResult == DialogResult.Cancel)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        await ActionControl(actionId, clientId);
+                        SetValues();
+                    }
                 }
             }
         }
