@@ -27,7 +27,8 @@ namespace univer_management.DataAccess.DbContexts
         public DbSet<DarsJadval> DarsJadvalllari { get; set; } = default!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host= trumpet.db.elephantsql.com; Port=5432; Database=cuhnoace; User Id = cuhnoace; Password= fDxvJyeMTbDIurb65qMXBXalfaXTiZJY;");
+           // optionsBuilder.UseNpgsql("Host= trumpet.db.elephantsql.com; Port=5432; Database=cuhnoace; User Id = cuhnoace; Password= fDxvJyeMTbDIurb65qMXBXalfaXTiZJY;");
+			optionsBuilder.UseNpgsql("Host= localhost Port=5432; Database=postgres; User Id = postgres; Password= root;");
         }   
 
     }

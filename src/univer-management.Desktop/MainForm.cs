@@ -68,18 +68,6 @@ namespace FinalProject
             OpenChildForm(new Dars_RejaForm(), sender);
         }
 
-        private void btnAlmashtirishlar_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnCloseChildForm_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void panelDesktopPanel_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void btnRoyxat_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Royxatlar(), sender);

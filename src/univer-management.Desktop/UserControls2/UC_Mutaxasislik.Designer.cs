@@ -90,6 +90,7 @@ namespace univer_management.Desktop.UserControls2
 			this.button3.Size = new System.Drawing.Size(43, 32);
 			this.button3.TabIndex = 71;
 			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// textBox4
 			// 
@@ -111,6 +112,7 @@ namespace univer_management.Desktop.UserControls2
 			this.dataGridView1.RowTemplate.Height = 29;
 			this.dataGridView1.Size = new System.Drawing.Size(638, 266);
 			this.dataGridView1.TabIndex = 69;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
 			// button2
 			// 
@@ -133,6 +135,7 @@ namespace univer_management.Desktop.UserControls2
 			this.button1.TabIndex = 67;
 			this.button1.Text = "create";
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// checkBox1
 			// 
@@ -181,7 +184,6 @@ namespace univer_management.Desktop.UserControls2
 			this.Name = "UC_Mutaxasislik";
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.Tag = "Mutahasislik";
-			this.Load += new System.EventHandler(this.UC_Mutaxasislik_Load_1);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

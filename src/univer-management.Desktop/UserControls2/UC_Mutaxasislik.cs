@@ -21,70 +21,22 @@ namespace univer_management.Desktop.UserControls2
             InitializeComponent();
             service = new MutaxasislikService();
             SetValues();
-            guna2Button1.KeyDown += guna2Button1_KeyDown;
-        }
-
-        private void UC_Muttaxasislik_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void UC_Muttaxasislik_Load_1(object sender, EventArgs e)
-        {
-
         }
 
         private void SetValues()
         {
-            guna2DataGridView1.Rows.Clear();
+            dataGridView1.Rows.Clear();
             var targets = service.GetAll();
             foreach (var item in targets)
-                guna2DataGridView1.Rows.Add(item.Id, item.Name);
+                dataGridView1.Rows.Add(item.Id, item.Name);
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void guna2Button2_Click(object sender, EventArgs e)
-        {
-            if (guna2CheckBox1.Checked)
-            {
-                Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = guna2TextBox2.Text };
-                var result = await service.CreateAsync(mutaxasislik);
-                if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                SetValues();
-            }
-            else MessageBox.Show($"Siz avvalo mutaxasislik qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        }
-
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            guna2TextBox3.Text = string.Empty;
-            guna2TextBox2.Text = string.Empty;
-            guna2CheckBox1.Checked = false;
+            textBox2.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            checkBox1.Checked = false;
         }
         private async Task ActionControl(byte action, long id)
         {
@@ -102,90 +54,64 @@ namespace univer_management.Desktop.UserControls2
 
         }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        private void guna2Button1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                guna2Button1.PerformClick();
-            }
-        }
+		private async void button1_Click(object sender, EventArgs e)
+		{
+			if (checkBox1.Checked)
+			{
+				Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = textBox2.Text };
+				var result = await service.CreateAsync(mutaxasislik);
+				if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				SetValues();
+			}
+			else MessageBox.Show($"Siz avvalo mutaxasislik qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-        private void guna2Button2_Click_1(object sender, EventArgs e)
-        {
+		}
 
-        }
+		private void button3_Click(object sender, EventArgs e)
+		{
+			dataGridView1.Rows.Clear();
+			var targets = service.GetByKeyword(textBox2.Text);
+			foreach (var item in targets)
+				dataGridView1.Rows.Add(item.Id, item.Name);
+		}
 
-        private async void guna2Button2_Click_2(object sender, EventArgs e)
-        {
-            if (guna2CheckBox1.Checked)
-            {
-                Mutaxasislik mutaxasislik = new Mutaxasislik() { Name = guna2TextBox2.Text };
-                var result = await service.CreateAsync(mutaxasislik);
-                if (result.Item1) MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                SetValues();
-            }
-            else MessageBox.Show($"Siz avvalo mutaxasislik qo'shishga roziligingizni bildirishingiz shart", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+		private async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+			if (dataGridView1.SelectedRows.Count > 0)
+			{
+				DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+				var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
+				byte actionId = 10;
+				if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+				e.RowIndex >= 0)
+					actionId = byte.Parse(e.ColumnIndex.ToString());
+				if (actionId == 2)
+				{
+					UpdateForm update = new UpdateForm();
+					update.Name = selectedRow.Cells[1].Value.ToString()!;
+					update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+					update.Tag = this.Tag.ToString()!;
+					update.ShowDialog();
+					SetValues();
+				}
 
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-            guna2DataGridView1.Rows.Clear();
-            var targets = service.GetByKeyword(guna2TextBox1.Text);
-            foreach (var item in targets)
-                guna2DataGridView1.Rows.Add(item.Id, item.Name);
-        }
-
-        private async void guna2DataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
-        {
-            if (guna2DataGridView1.SelectedRows.Count > 0)
-            {
-                DataGridViewRow selectedRow = guna2DataGridView1.SelectedRows[0];
-                var clientId = long.Parse(selectedRow.Cells[0].Value.ToString()!);
-                byte actionId = 10;
-                if (guna2DataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.RowIndex >= 0)
-                    actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 2)
-                {
-                    UpdateForm update = new UpdateForm();
-                    update.Name = selectedRow.Cells[1].Value.ToString()!;
-                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
-                    update.Tag = this.Tag.ToString()!;
-                    update.ShowDialog();
-                    SetValues();
-                }
-
-                else if (actionId == 3)
-                {
-                    DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                    if (dialogResult == DialogResult.Cancel)
-                    {
-                        return;
-                    }
-                    else
-                    {
-                        await ActionControl(actionId, clientId);
-                        SetValues();
-                    }
-                }
-            }
-        }
-
-        private void UC_Mutaxasislik_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UC_Mutaxasislik_Load_1(object sender, EventArgs e)
-        {
-
-        }
-    }
+				else if (actionId == 3)
+				{
+					DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value} mutaxasisligini o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+					if (dialogResult == DialogResult.Cancel)
+					{
+						return;
+					}
+					else
+					{
+						await ActionControl(actionId, clientId);
+						SetValues();
+					}
+				}
+			}
+		}
+	}
 }

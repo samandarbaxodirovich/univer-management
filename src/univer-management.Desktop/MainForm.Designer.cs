@@ -77,7 +77,6 @@
             btnAlmashtirishlar.TextAlign = ContentAlignment.MiddleLeft;
             btnAlmashtirishlar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAlmashtirishlar.UseVisualStyleBackColor = true;
-            btnAlmashtirishlar.Click += btnAlmashtirishlar_Click;
             // 
             // btnDarsJadvali
             // 
@@ -182,7 +181,6 @@
             btnCloseChildForm.Size = new Size(47, 80);
             btnCloseChildForm.TabIndex = 1;
             btnCloseChildForm.UseVisualStyleBackColor = true;
-            btnCloseChildForm.Click += btnCloseChildForm_Click;
             // 
             // lblTitle
             // 
@@ -203,7 +201,6 @@
             panelDesktopPanel.Name = "panelDesktopPanel";
             panelDesktopPanel.Size = new Size(769, 873);
             panelDesktopPanel.TabIndex = 2;
-            panelDesktopPanel.Paint += panelDesktopPanel_Paint;
             // 
             // MainForm
             // 
