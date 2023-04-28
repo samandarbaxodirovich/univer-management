@@ -18,6 +18,8 @@ namespace univer_management.Desktop
     {
         GuruxService _service;
         AddGuruhForm Instance;
+
+
         public AddGuruhForm()
         {
             Instance = this;
@@ -38,6 +40,8 @@ namespace univer_management.Desktop
                 mutaxasislikCombobox.ValueMember = "Id";
             }
         }
+
+
 
 
 
@@ -62,41 +66,43 @@ namespace univer_management.Desktop
             ComboBoxFill2();
         }
 
-        private async void guna2Button2_Click_1(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(nameTb.Text)
-               && string.IsNullOrEmpty(semestrTb.Text) && string.IsNullOrEmpty(numberofSTb.Text))
-            {
-                MessageBox.Show("Iltimos barcha maydonlarni toldiring");
-                return;
-
-            }
 
 
-            Mutaxasislik obj = mutaxasislikCombobox.SelectedItem as Mutaxasislik;
-            Auditoriya obj2 = auditorycombobox.SelectedItem as Auditoriya;
+		private async void guna2Button2_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrEmpty(nameTb.Text)
+                && string.IsNullOrEmpty(semestrTb.Text) && string.IsNullOrEmpty(numberofSTb.Text))
+			{
+				MessageBox.Show("Iltimos barcha maydonlarni toldiring");
+				return;
 
-            Gurux gurux = new Gurux()
-            {
-                Name = nameTb.Text,
-                Semestr = int.Parse(semestrTb.Text),
-                Capacity = int.Parse(numberofSTb.Text),
-                MutaxasislikId = obj.Id,
-                AuditoriyaId = obj2.Id
-            };
+			}
 
-            var result = await _service.CreateAsync(gurux);
 
-            if (result.Item1)
-            {
-                MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                UC_Guruh.Instance.SetValues();
-            }
-            else
-            {
-                MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            this.Close();
-        }
-    }
+			Mutaxasislik obj = mutaxasislikCombobox.SelectedItem as Mutaxasislik;
+			Auditoriya obj2 = auditorycombobox.SelectedItem as Auditoriya;
+
+			Gurux gurux = new Gurux()
+			{
+				Name = nameTb.Text,
+				Semestr = int.Parse(semestrTb.Text),
+				Capacity = int.Parse(numberofSTb.Text),
+				MutaxasislikId = obj.Id,
+				AuditoriyaId = obj2.Id
+			};
+
+			var result = await _service.CreateAsync(gurux);
+
+			if (result.Item1)
+			{
+				MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				UC_Guruh.Instance.SetValues();
+			}
+			else
+			{
+				MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			this.Close();
+		}
+	}
 }

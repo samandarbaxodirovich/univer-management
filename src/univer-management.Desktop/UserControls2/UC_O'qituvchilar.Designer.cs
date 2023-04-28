@@ -42,6 +42,12 @@
 			this.guna2Button1 = new System.Windows.Forms.Button();
 			this.guna2TextBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DataGridVIew_Oqituvchi)).BeginInit();
 			this.SuspendLayout();
@@ -71,10 +77,20 @@
 			// 
 			// DataGridVIew_Oqituvchi
 			// 
+			this.DataGridVIew_Oqituvchi.AllowUserToAddRows = false;
+			this.DataGridVIew_Oqituvchi.AllowUserToDeleteRows = false;
 			this.DataGridVIew_Oqituvchi.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.DataGridVIew_Oqituvchi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.DataGridVIew_Oqituvchi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
 			this.DataGridVIew_Oqituvchi.Location = new System.Drawing.Point(34, 179);
 			this.DataGridVIew_Oqituvchi.Name = "DataGridVIew_Oqituvchi";
+			this.DataGridVIew_Oqituvchi.ReadOnly = true;
 			this.DataGridVIew_Oqituvchi.RowHeadersVisible = false;
 			this.DataGridVIew_Oqituvchi.RowHeadersWidth = 51;
 			this.DataGridVIew_Oqituvchi.RowTemplate.Height = 29;
@@ -187,6 +203,57 @@
 			this.label1.TabIndex = 61;
 			this.label1.Text = "O\'qituvchi qo\'shish";
 			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "Id";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "Full Name";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "O\'qituvchi darajasi";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Width = 170;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Kafedra";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Update";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Text = "✏️";
+			this.Column5.UseColumnTextForButtonValue = true;
+			this.Column5.Width = 80;
+			// 
+			// Column6
+			// 
+			this.Column6.HeaderText = "Delete";
+			this.Column6.MinimumWidth = 6;
+			this.Column6.Name = "Column6";
+			this.Column6.ReadOnly = true;
+			this.Column6.Text = "X";
+			this.Column6.UseColumnTextForButtonValue = true;
+			this.Column6.Width = 80;
+			// 
 			// UC_O_qituvchilar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -230,5 +297,11 @@
 		private Button guna2Button1;
 		private TextBox guna2TextBox1;
 		private Label label1;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewTextBoxColumn Column3;
+		private DataGridViewTextBoxColumn Column4;
+		private DataGridViewButtonColumn Column5;
+		private DataGridViewButtonColumn Column6;
 	}
 }

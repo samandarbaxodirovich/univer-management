@@ -35,12 +35,12 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
-			this.comboBox6 = new System.Windows.Forms.ComboBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2ComboBox5 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox4 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox2 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox3 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox1 = new System.Windows.Forms.ComboBox();
+			this.DarsRejabtn = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -111,73 +111,74 @@
 			this.label6.TabIndex = 18;
 			this.label6.Text = "Juma kuni darsini kiriting";
 			// 
-			// comboBox2
+			// guna2ComboBox5
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(28, 113);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(322, 31);
-			this.comboBox2.TabIndex = 19;
+			this.guna2ComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox5.FormattingEnabled = true;
+			this.guna2ComboBox5.Location = new System.Drawing.Point(28, 113);
+			this.guna2ComboBox5.Name = "guna2ComboBox5";
+			this.guna2ComboBox5.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox5.TabIndex = 19;
 			// 
-			// comboBox3
+			// guna2ComboBox4
 			// 
-			this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(28, 178);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(322, 31);
-			this.comboBox3.TabIndex = 20;
+			this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox4.FormattingEnabled = true;
+			this.guna2ComboBox4.Location = new System.Drawing.Point(28, 178);
+			this.guna2ComboBox4.Name = "guna2ComboBox4";
+			this.guna2ComboBox4.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox4.TabIndex = 20;
 			// 
-			// comboBox4
+			// guna2ComboBox2
 			// 
-			this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(28, 240);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(322, 31);
-			this.comboBox4.TabIndex = 21;
+			this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox2.FormattingEnabled = true;
+			this.guna2ComboBox2.Location = new System.Drawing.Point(28, 240);
+			this.guna2ComboBox2.Name = "guna2ComboBox2";
+			this.guna2ComboBox2.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox2.TabIndex = 21;
 			// 
-			// comboBox5
+			// guna2ComboBox3
 			// 
-			this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Location = new System.Drawing.Point(28, 297);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(322, 31);
-			this.comboBox5.TabIndex = 22;
+			this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox3.FormattingEnabled = true;
+			this.guna2ComboBox3.Location = new System.Drawing.Point(28, 297);
+			this.guna2ComboBox3.Name = "guna2ComboBox3";
+			this.guna2ComboBox3.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox3.TabIndex = 22;
 			// 
-			// comboBox6
+			// guna2ComboBox1
 			// 
-			this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox6.FormattingEnabled = true;
-			this.comboBox6.Location = new System.Drawing.Point(28, 359);
-			this.comboBox6.Name = "comboBox6";
-			this.comboBox6.Size = new System.Drawing.Size(322, 31);
-			this.comboBox6.TabIndex = 23;
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox1.FormattingEnabled = true;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(28, 359);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(322, 31);
+			this.guna2ComboBox1.TabIndex = 23;
 			// 
-			// button1
+			// DarsRejabtn
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(38, 418);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(302, 50);
-			this.button1.TabIndex = 24;
-			this.button1.Text = "Create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.DarsRejabtn.BackColor = System.Drawing.Color.Blue;
+			this.DarsRejabtn.ForeColor = System.Drawing.Color.White;
+			this.DarsRejabtn.Location = new System.Drawing.Point(38, 418);
+			this.DarsRejabtn.Name = "DarsRejabtn";
+			this.DarsRejabtn.Size = new System.Drawing.Size(302, 50);
+			this.DarsRejabtn.TabIndex = 24;
+			this.DarsRejabtn.Text = "Create";
+			this.DarsRejabtn.UseVisualStyleBackColor = false;
+			this.DarsRejabtn.Click += new System.EventHandler(this.DarsRejabtn_Click_2);
 			// 
 			// Dars_RejaYaratishForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(383, 495);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.comboBox6);
-			this.Controls.Add(this.comboBox5);
-			this.Controls.Add(this.comboBox4);
-			this.Controls.Add(this.comboBox3);
-			this.Controls.Add(this.comboBox2);
+			this.Controls.Add(this.DarsRejabtn);
+			this.Controls.Add(this.guna2ComboBox1);
+			this.Controls.Add(this.guna2ComboBox3);
+			this.Controls.Add(this.guna2ComboBox2);
+			this.Controls.Add(this.guna2ComboBox4);
+			this.Controls.Add(this.guna2ComboBox5);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
@@ -203,11 +204,11 @@
         private Label label5;
         private Label label6;
         public ComboBox comboBox1;
-		private ComboBox comboBox2;
-		private ComboBox comboBox3;
-		private ComboBox comboBox4;
-		private ComboBox comboBox5;
-		private ComboBox comboBox6;
-		private Button button1;
+		private ComboBox guna2ComboBox5;
+		private ComboBox guna2ComboBox4;
+		private ComboBox guna2ComboBox2;
+		private ComboBox guna2ComboBox3;
+		private ComboBox guna2ComboBox1;
+		private Button DarsRejabtn;
 	}
 }

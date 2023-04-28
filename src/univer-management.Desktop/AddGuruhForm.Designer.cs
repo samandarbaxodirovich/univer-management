@@ -31,12 +31,12 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.nameTb = new System.Windows.Forms.TextBox();
+			this.numberofSTb = new System.Windows.Forms.TextBox();
+			this.semestrTb = new System.Windows.Forms.TextBox();
+			this.mutaxasislikCombobox = new System.Windows.Forms.ComboBox();
+			this.auditorycombobox = new System.Windows.Forms.ComboBox();
+			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -69,61 +69,62 @@
 			this.label3.TabIndex = 8;
 			this.label3.Text = "Guruh qo\'shish";
 			// 
-			// textBox1
+			// nameTb
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(55, 73);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "Guruh nomi/raqami";
-			this.textBox1.Size = new System.Drawing.Size(299, 30);
-			this.textBox1.TabIndex = 9;
+			this.nameTb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.nameTb.Location = new System.Drawing.Point(55, 73);
+			this.nameTb.Name = "nameTb";
+			this.nameTb.PlaceholderText = "Guruh nomi/raqami";
+			this.nameTb.Size = new System.Drawing.Size(299, 30);
+			this.nameTb.TabIndex = 9;
 			// 
-			// textBox2
+			// numberofSTb
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(55, 114);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PlaceholderText = "Guruh nomi/raqami";
-			this.textBox2.Size = new System.Drawing.Size(299, 30);
-			this.textBox2.TabIndex = 10;
+			this.numberofSTb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.numberofSTb.Location = new System.Drawing.Point(55, 114);
+			this.numberofSTb.Name = "numberofSTb";
+			this.numberofSTb.PlaceholderText = "Guruh nomi/raqami";
+			this.numberofSTb.Size = new System.Drawing.Size(299, 30);
+			this.numberofSTb.TabIndex = 10;
 			// 
-			// textBox3
+			// semestrTb
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox3.Location = new System.Drawing.Point(55, 261);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.PlaceholderText = "Guruh nomi/raqami";
-			this.textBox3.Size = new System.Drawing.Size(299, 30);
-			this.textBox3.TabIndex = 11;
+			this.semestrTb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.semestrTb.Location = new System.Drawing.Point(55, 261);
+			this.semestrTb.Name = "semestrTb";
+			this.semestrTb.PlaceholderText = "Guruh nomi/raqami";
+			this.semestrTb.Size = new System.Drawing.Size(299, 30);
+			this.semestrTb.TabIndex = 11;
 			// 
-			// comboBox1
+			// mutaxasislikCombobox
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(55, 164);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(299, 31);
-			this.comboBox1.TabIndex = 12;
+			this.mutaxasislikCombobox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.mutaxasislikCombobox.FormattingEnabled = true;
+			this.mutaxasislikCombobox.Location = new System.Drawing.Point(55, 164);
+			this.mutaxasislikCombobox.Name = "mutaxasislikCombobox";
+			this.mutaxasislikCombobox.Size = new System.Drawing.Size(299, 31);
+			this.mutaxasislikCombobox.TabIndex = 12;
 			// 
-			// comboBox2
+			// auditorycombobox
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(55, 217);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(299, 31);
-			this.comboBox2.TabIndex = 13;
+			this.auditorycombobox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.auditorycombobox.FormattingEnabled = true;
+			this.auditorycombobox.Location = new System.Drawing.Point(55, 217);
+			this.auditorycombobox.Name = "auditorycombobox";
+			this.auditorycombobox.Size = new System.Drawing.Size(299, 31);
+			this.auditorycombobox.TabIndex = 13;
 			// 
-			// button1
+			// guna2Button2
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(56, 335);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(294, 56);
-			this.button1.TabIndex = 14;
-			this.button1.Text = "Add";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(56, 335);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(294, 56);
+			this.guna2Button2.TabIndex = 14;
+			this.guna2Button2.Text = "Add";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
 			// 
 			// AddGuruhForm
 			// 
@@ -132,12 +133,12 @@
 			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.ClientSize = new System.Drawing.Size(404, 443);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.comboBox1);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.auditorycombobox);
+			this.Controls.Add(this.mutaxasislikCombobox);
+			this.Controls.Add(this.semestrTb);
+			this.Controls.Add(this.numberofSTb);
+			this.Controls.Add(this.nameTb);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -155,11 +156,11 @@
         private Label label1;
         private Label label2;
         private Label label3;
-		private TextBox textBox1;
-		private TextBox textBox2;
-		private TextBox textBox3;
-		private ComboBox comboBox1;
-		private ComboBox comboBox2;
-		private Button button1;
+		private TextBox nameTb;
+		private TextBox numberofSTb;
+		private TextBox semestrTb;
+		private ComboBox mutaxasislikCombobox;
+		private ComboBox auditorycombobox;
+		private Button guna2Button2;
 	}
 }

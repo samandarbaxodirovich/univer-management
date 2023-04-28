@@ -19,6 +19,9 @@ namespace univer_management.Desktop.Updates
     {
         AuditoriyaService _service;
         Auditoriya_TypiService _serviceTypiService;
+
+
+
         public UpdateAuditoriya()
         {
             _serviceTypiService=new Auditoriya_TypiService();
@@ -26,69 +29,54 @@ namespace univer_management.Desktop.Updates
             InitializeComponent();
             SetValue();
         }
+
+
+
         public long Id { get; set; }
         public string Number { get; set; }
         public string Sigimi { get; set; }
         public string Auditoriya_Tipiw { get; set; }
         public string Korpus { get; set; } = string.Empty;
 
-        private async void guna2Button2_Click(object sender, EventArgs e)
-        {
-            var mut =(await _serviceTypiService.GetAllAsync()).FirstOrDefault(x => x.Type == Auditoriya_Tipiw)!.Id;
-            var result = await _service.UpdateAsync(Id, new Auditoriya()
-            {
-                NumberOfOrder = auditoriyaRaqami1.Text,
-                Capacity = int.Parse(joylarSoni1.Text),
-                Auditoriya_TipiId = mut,
-                Korpus = auditoriyaBino1.Text
-            });
-            if (result.Item2 != null)
-            {
-                MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        }
+
+
         private void SetValue()
         {
             guna2ComboBox11.DataSource = _service.GetAll().Select(x => x.Auditoriya_Tipi.Type).ToList();
         }
 
-        private void UpdateAuditoriya_Load(object sender, EventArgs e)
-        {
-            auditoriyaRaqami1.Text = Number;
-            guna2ComboBox11.Text = Auditoriya_Tipiw;
-            joylarSoni1.Text = Sigimi;
-            auditoriyaBino1.Text = Korpus;
 
-        }
-        //private async void Auditoriya1()
-        //{
-        //    DialogResult dlg = MessageBox.Show("Auditoriya nomini o'zgartirishni xoxlaysizmi??", "редактировать", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-        //    if (dlg == DialogResult.OK)
-        //    {
-        //        var result = await _service.UpdateAsync(Id, new Auditoriya()
-        //        {
-        //            NumberOfOrder = auditoriyaRaqami1.Text,
-        //            Capacity = int.Parse(joylarSoni1.Text),
-        //            Auditoriya_TipiId = long.Parse(guna2ComboBox11.Text),
-        //            Korpus = auditoriyaBino1.Text
-        //        });
-        //        if (result.Item2!=null)
-        //        {
-        //            AutoClosingMessageBox.Show("Muvaffaqiyatli yangilandi", "O'zgartirish", 500);
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Iltimos maydonni toldiring");
-        //        }
-        //    }
-        //    if (dlg == DialogResult.Cancel)
-        //    {
-        //        this.Close();
-        //    }
 
-        //}
-    }
+		private async void guna2Button21_Click(object sender, EventArgs e)
+		{
+			var mut = (await _serviceTypiService.GetAllAsync()).FirstOrDefault(x => x.Type == Auditoriya_Tipiw)!.Id;
+			var result = await _service.UpdateAsync(Id, new Auditoriya()
+			{
+				NumberOfOrder = auditoriyaRaqami1.Text,
+				Capacity = int.Parse(joylarSoni1.Text),
+				Auditoriya_TipiId = mut,
+				Korpus = auditoriyaBino1.Text
+			});
+			if (result.Item2 != null)
+			{
+				MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				this.Close();
+			}
+			else MessageBox.Show($"{result.Item1}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+		}
+		
+
+
+
+
+		private void UpdateAuditoriya_Load(object sender, EventArgs e)
+		{
+			auditoriyaRaqami1.Text = Number;
+			guna2ComboBox11.Text = Auditoriya_Tipiw;
+			joylarSoni1.Text = Sigimi;
+			auditoriyaBino1.Text = Korpus;
+		}
+	}
 }

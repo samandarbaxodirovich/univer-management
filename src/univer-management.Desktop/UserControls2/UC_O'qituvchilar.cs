@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -120,7 +119,7 @@ namespace univer_management.Desktop.UserControls2
 			}
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private async void button1_Click(object sender, EventArgs e)
 		{
 			if (guna2Button2.Checked)
 			{

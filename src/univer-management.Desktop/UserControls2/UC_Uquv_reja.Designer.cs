@@ -33,13 +33,21 @@
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
+			this.datagrid_Oquv_reja = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.guna2ComboBox1 = new System.Windows.Forms.ComboBox();
+			this.guna2ComboBox2 = new System.Windows.Forms.ComboBox();
+			this.guna2Button1 = new System.Windows.Forms.Button();
+			this.guna2Button2 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.datagrid_Oquv_reja)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -85,69 +93,151 @@
 			this.label2.TabIndex = 15;
 			this.label2.Text = "Semestrni tanlang";
 			// 
-			// dataGridView1
+			// datagrid_Oquv_reja
 			// 
-			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(28, 185);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 29;
-			this.dataGridView1.Size = new System.Drawing.Size(973, 266);
-			this.dataGridView1.TabIndex = 59;
+			this.datagrid_Oquv_reja.AllowUserToAddRows = false;
+			this.datagrid_Oquv_reja.AllowUserToDeleteRows = false;
+			this.datagrid_Oquv_reja.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.datagrid_Oquv_reja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.datagrid_Oquv_reja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+			this.datagrid_Oquv_reja.Location = new System.Drawing.Point(28, 185);
+			this.datagrid_Oquv_reja.Name = "datagrid_Oquv_reja";
+			this.datagrid_Oquv_reja.ReadOnly = true;
+			this.datagrid_Oquv_reja.RowHeadersVisible = false;
+			this.datagrid_Oquv_reja.RowHeadersWidth = 51;
+			this.datagrid_Oquv_reja.RowTemplate.Height = 29;
+			this.datagrid_Oquv_reja.Size = new System.Drawing.Size(973, 266);
+			this.datagrid_Oquv_reja.TabIndex = 59;
+			this.datagrid_Oquv_reja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Oquv_reja_CellContentClick_1);
 			// 
-			// comboBox1
+			// Column1
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(28, 136);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 60;
+			this.Column1.HeaderText = "ID";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
 			// 
-			// comboBox2
+			// Column2
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(335, 136);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(283, 31);
-			this.comboBox2.TabIndex = 61;
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.HeaderText = "Fan nomi";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
 			// 
-			// button3
+			// Column3
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Control;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-			this.button3.Location = new System.Drawing.Point(642, 135);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(43, 32);
-			this.button3.TabIndex = 62;
-			this.button3.UseVisualStyleBackColor = false;
+			this.Column3.HeaderText = "Ma\'ruza";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Width = 125;
 			// 
-			// button1
+			// Column4
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(805, 136);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(196, 32);
-			this.button1.TabIndex = 63;
-			this.button1.Text = "O\'quv reja qo\'shish";
-			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.Column4.HeaderText = "Amaliy";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Width = 125;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Oraliq imtixon";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Width = 150;
+			// 
+			// Column6
+			// 
+			this.Column6.HeaderText = "Mustaqil ta\'lim";
+			this.Column6.MinimumWidth = 6;
+			this.Column6.Name = "Column6";
+			this.Column6.ReadOnly = true;
+			this.Column6.Width = 150;
+			// 
+			// Column7
+			// 
+			this.Column7.HeaderText = "Update";
+			this.Column7.MinimumWidth = 6;
+			this.Column7.Name = "Column7";
+			this.Column7.ReadOnly = true;
+			this.Column7.Text = "✏️";
+			this.Column7.UseColumnTextForButtonValue = true;
+			this.Column7.Width = 80;
+			// 
+			// Column8
+			// 
+			this.Column8.HeaderText = "Delete";
+			this.Column8.MinimumWidth = 6;
+			this.Column8.Name = "Column8";
+			this.Column8.ReadOnly = true;
+			this.Column8.Text = "X";
+			this.Column8.UseColumnTextForButtonValue = true;
+			this.Column8.Width = 80;
+			// 
+			// guna2ComboBox1
+			// 
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox1.FormattingEnabled = true;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(28, 136);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(283, 31);
+			this.guna2ComboBox1.TabIndex = 60;
+			// 
+			// guna2ComboBox2
+			// 
+			this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2ComboBox2.FormattingEnabled = true;
+			this.guna2ComboBox2.Location = new System.Drawing.Point(335, 136);
+			this.guna2ComboBox2.Name = "guna2ComboBox2";
+			this.guna2ComboBox2.Size = new System.Drawing.Size(283, 31);
+			this.guna2ComboBox2.TabIndex = 61;
+			// 
+			// guna2Button1
+			// 
+			this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+			this.guna2Button1.Location = new System.Drawing.Point(642, 135);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(43, 32);
+			this.guna2Button1.TabIndex = 62;
+			this.guna2Button1.UseVisualStyleBackColor = false;
+			this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+			// 
+			// guna2Button2
+			// 
+			this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+			this.guna2Button2.ForeColor = System.Drawing.Color.White;
+			this.guna2Button2.Location = new System.Drawing.Point(805, 136);
+			this.guna2Button2.Name = "guna2Button2";
+			this.guna2Button2.Size = new System.Drawing.Size(196, 32);
+			this.guna2Button2.TabIndex = 63;
+			this.guna2Button2.Text = "O\'quv reja qo\'shish";
+			this.guna2Button2.UseVisualStyleBackColor = false;
+			this.guna2Button2.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// UC_Uquv_reja
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.comboBox1);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.guna2Button2);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.guna2ComboBox2);
+			this.Controls.Add(this.guna2ComboBox1);
+			this.Controls.Add(this.datagrid_Oquv_reja);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
@@ -155,7 +245,7 @@
 			this.Size = new System.Drawing.Size(1040, 481);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.datagrid_Oquv_reja)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -167,10 +257,18 @@
         private Label lblTitle;
         private Label label1;
         private Label label2;
-		private DataGridView dataGridView1;
-		private ComboBox comboBox1;
-		private ComboBox comboBox2;
-		private Button button3;
-		private Button button1;
+		private DataGridView datagrid_Oquv_reja;
+		private ComboBox guna2ComboBox1;
+		private ComboBox guna2ComboBox2;
+		private Button guna2Button1;
+		private Button guna2Button2;
+		private DataGridViewTextBoxColumn Column1;
+		private DataGridViewTextBoxColumn Column2;
+		private DataGridViewTextBoxColumn Column3;
+		private DataGridViewTextBoxColumn Column4;
+		private DataGridViewTextBoxColumn Column5;
+		private DataGridViewTextBoxColumn Column6;
+		private DataGridViewButtonColumn Column7;
+		private DataGridViewButtonColumn Column8;
 	}
 }

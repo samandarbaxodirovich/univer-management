@@ -30,10 +30,10 @@
         {
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.guna2Combo = new System.Windows.Forms.ComboBox();
+			this.oqituvchi = new System.Windows.Forms.TextBox();
+			this.auditoriyaRaqami11 = new System.Windows.Forms.TextBox();
+			this.guna2But = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label2
@@ -60,59 +60,61 @@
 			this.label1.TabIndex = 28;
 			this.label1.Text = "O\'qituvchinio\'zgartirish";
 			// 
-			// comboBox1
+			// guna2Combo
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(32, 207);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(283, 31);
-			this.comboBox1.TabIndex = 34;
+			this.guna2Combo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.guna2Combo.FormattingEnabled = true;
+			this.guna2Combo.Location = new System.Drawing.Point(32, 207);
+			this.guna2Combo.Name = "guna2Combo";
+			this.guna2Combo.Size = new System.Drawing.Size(283, 31);
+			this.guna2Combo.TabIndex = 34;
 			// 
-			// textBox2
+			// oqituvchi
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox2.Location = new System.Drawing.Point(32, 144);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.PlaceholderText = "O\'qituvchi darjasi(raqam)";
-			this.textBox2.Size = new System.Drawing.Size(283, 30);
-			this.textBox2.TabIndex = 35;
+			this.oqituvchi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.oqituvchi.Location = new System.Drawing.Point(32, 144);
+			this.oqituvchi.Name = "oqituvchi";
+			this.oqituvchi.PlaceholderText = "O\'qituvchi darjasi(raqam)";
+			this.oqituvchi.Size = new System.Drawing.Size(283, 30);
+			this.oqituvchi.TabIndex = 35;
 			// 
-			// textBox1
+			// auditoriyaRaqami11
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.textBox1.Location = new System.Drawing.Point(32, 92);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.PlaceholderText = "O\'qituvchi";
-			this.textBox1.Size = new System.Drawing.Size(283, 30);
-			this.textBox1.TabIndex = 36;
+			this.auditoriyaRaqami11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.auditoriyaRaqami11.Location = new System.Drawing.Point(32, 92);
+			this.auditoriyaRaqami11.Name = "auditoriyaRaqami11";
+			this.auditoriyaRaqami11.PlaceholderText = "O\'qituvchi";
+			this.auditoriyaRaqami11.Size = new System.Drawing.Size(283, 30);
+			this.auditoriyaRaqami11.TabIndex = 36;
 			// 
-			// button1
+			// guna2But
 			// 
-			this.button1.BackColor = System.Drawing.Color.Blue;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(32, 261);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(283, 38);
-			this.button1.TabIndex = 37;
-			this.button1.Text = "Create";
-			this.button1.UseVisualStyleBackColor = false;
+			this.guna2But.BackColor = System.Drawing.Color.Blue;
+			this.guna2But.ForeColor = System.Drawing.Color.White;
+			this.guna2But.Location = new System.Drawing.Point(32, 261);
+			this.guna2But.Name = "guna2But";
+			this.guna2But.Size = new System.Drawing.Size(283, 38);
+			this.guna2But.TabIndex = 37;
+			this.guna2But.Text = "Create";
+			this.guna2But.UseVisualStyleBackColor = false;
+			this.guna2But.Click += new System.EventHandler(this.guna2But_Click_1);
 			// 
 			// UpdateOqituvchi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(346, 335);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.guna2But);
+			this.Controls.Add(this.auditoriyaRaqami11);
+			this.Controls.Add(this.oqituvchi);
+			this.Controls.Add(this.guna2Combo);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 			this.Name = "UpdateOqituvchi";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "UpdateOqituvchi";
+			this.Load += new System.EventHandler(this.UpdateOqituvchi_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -122,9 +124,9 @@
 
         private Label label2;
         private Label label1;
-		private ComboBox comboBox1;
-		private TextBox textBox2;
-		private TextBox textBox1;
-		private Button button1;
+		private ComboBox guna2Combo;
+		private TextBox oqituvchi;
+		private TextBox auditoriyaRaqami11;
+		private Button guna2But;
 	}
 }
