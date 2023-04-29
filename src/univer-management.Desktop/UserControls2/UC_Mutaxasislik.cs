@@ -113,5 +113,10 @@ namespace univer_management.Desktop.UserControls2
                 }
             }
         }
+
+        private void UC_Mutaxasislik_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

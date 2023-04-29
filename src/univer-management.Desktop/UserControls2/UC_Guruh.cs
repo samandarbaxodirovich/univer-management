@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.DataAccess.DbContexts;
+using univer_management.DataAccess.Repositories.Main;
+using univer_management.Desktop.Updates;
 using univer_management.Service.Services;
 
 namespace univer_management.Desktop.UserControls2
@@ -16,10 +19,14 @@ namespace univer_management.Desktop.UserControls2
 
         GuruxService _service;
         public static UC_Guruh Instance;
+        public readonly MutaxasislikService _mutaxasislikService;
+        public readonly AuditoriyaRepository auditoriyaService;
         public UC_Guruh()
         {
             Instance = this;
             _service = new GuruxService();
+            _mutaxasislikService = new MutaxasislikService();
+            auditoriyaService = new AuditoriyaRepository(new AppDbContext());
             InitializeComponent();
 
 
@@ -56,7 +63,7 @@ namespace univer_management.Desktop.UserControls2
             {
                 foreach (var item in targets)
                 {
-                    datagridview1.Rows.Add(item.Id, item.Name, item.Smena, item.Capacity, item.Semestr, item.Mutaxasislik.Name, item.Auditoriya.NumberOfOrder);
+                    datagridview1.Rows.Add(item.Id, item.Name, item.Capacity, (await _mutaxasislikService.GetById(item.MutaxasislikId)).Name,(await auditoriyaService.FindByIdAsync(item.AuditoriyaId))!.NumberOfOrder);
                 }
             }
         }
@@ -82,7 +89,18 @@ namespace univer_management.Desktop.UserControls2
                 if (datagridview1.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 6)
+                if (actionId == 5)
+                {
+                    UpdateGuruh update = new UpdateGuruh();
+                    update.GuruhNomi = selectedRow.Cells[1].Value.ToString();
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.Talabasoni = selectedRow.Cells[2].Value.ToString();
+                    update.Auditoriya = selectedRow.Cells[3].Value.ToString();
+                    update.Mutaxassilik = selectedRow.Cells[4].Value.ToString();
+                    update.ShowDialog();
+                    SetValues();
+                }
+                else if (actionId == 6)
                 {
                     DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} Guruhni o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     if (dialogResult == DialogResult.Cancel)

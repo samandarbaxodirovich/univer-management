@@ -243,6 +243,7 @@
             Name = "UC_Mutaxasislik";
             Size = new Size(1040, 481);
             Tag = "Mutahasislik";
+            Load += UC_Mutaxasislik_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView11).EndInit();

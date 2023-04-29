@@ -48,9 +48,17 @@ namespace univer_management.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<Domain.Entities.Mashgulot> UpdateAsync(string name, long id)
+        public async Task<Mashgulot> UpdateAsync(string name, long id)
         {
-            throw new NotImplementedException();
+            var mutahasislik = await _work.Mashgulotlar.FindByIdAsync(id);
+
+            if (mutahasislik != null)
+            {
+                mutahasislik.Name = name;
+                await _work.SaveChangesAsync();
+                return mutahasislik;
+            }
+            return null!;
         }
     }
 }

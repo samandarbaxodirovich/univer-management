@@ -14,6 +14,6 @@ namespace univer_management.Service.Interfaces
 		public IEnumerable<Gurux> GetByKeyword(string keyword);
 		public Task<(bool, string)> CreateAsync(Gurux  entity);
 		public Task<(bool, string)> DeleteAsync(long id);
-		public Task<Gurux> UpdateAsync(string name, long id);
+		public Task<(bool, string)> UpdateAsync(long id, Gurux entity);
 	}
 }
