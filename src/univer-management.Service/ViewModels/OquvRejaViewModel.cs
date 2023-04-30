@@ -19,6 +19,8 @@ namespace univer_management.Service.ViewModels
         public double Seminar { get; set; }
         public double OraliqImtihon { get; set; }
         public double MustaqilTalim { get; set; }
+        public int Hafta { get; set; }
+
         public static implicit operator OquvRejaViewModel(Oquv_Reja reja)
         {
             FanService fan = new();
@@ -31,6 +33,7 @@ namespace univer_management.Service.ViewModels
                 Seminar = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 4).FirstOrDefault()!.MashgulotLength,
                 OraliqImtihon = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 5).FirstOrDefault()!.MashgulotLength,
                 MustaqilTalim = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 6).FirstOrDefault()!.MashgulotLength,
+                Hafta = reja.Hafta
             };
         }
 

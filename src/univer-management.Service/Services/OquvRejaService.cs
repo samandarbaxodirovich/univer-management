@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Diagnostics;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using univer_management.DataAccess.DbContexts;
 using univer_management.DataAccess.Repositories.Common;
 using univer_management.Domain.Entities;
 using univer_management.Service.Dtos.CreateDtos;
+using univer_management.Service.Dtos.UpdateDtos;
 using univer_management.Service.Interfaces;
 using univer_management.Service.ViewModels;
 
@@ -86,10 +88,53 @@ namespace univer_management.Service.Services
             return _work.Oquvrejalar.GetAll().ToList();
 
         }
-
-
-
-
+        public async Task<bool> Delete(long id)
+        {
+            var listDeads = _work.OquvRejaMashgulotlar.Where(x => x.OquvRejaId == id).Select(x => x.Id).ToList();
+            _work.Oquvrejalar.Delete(id);
+            foreach (var item in listDeads)
+            {
+                _work.OquvRejaMashgulotlar.Delete(item);
+            }
+            if((await _work.SaveChangesAsync()) != listDeads.Count() + 1)
+            {
+                return false;
+            }
+            return true;
+        }
+        public async Task<OquvRejaViewModel> GetById(long id)
+        {
+            var result = await _work.Oquvrejalar.GetAll().FirstOrDefaultAsync(x => x.Id == id);
+            if (result != null)
+            {
+                return (OquvRejaViewModel)result;
+            }
+            else return null!;
+        }
+        public async Task<bool> Update(OquvRejaFanUpdateDto dto)
+        {
+            var editedEntity = await _work.Oquvrejalar.GetAll().FirstOrDefaultAsync(x=>x.Id == dto.OquvRejaId);
+            if (editedEntity != null)
+            {
+                editedEntity.Soat = dto.UmumiyDarsSoati;
+                editedEntity.UpdatedAt = DateTime.UtcNow;
+            }
+            var targetList = await _work.OquvRejaMashgulotlar.GetAll().Where(x=>x.OquvRejaId == dto.OquvRejaId).ToListAsync();
+            foreach (var target in targetList)
+            {
+                if(target.MashgulotId == 3)
+                    target.MashgulotLength = dto.Lektsiya;
+                if (target.MashgulotId == 4)
+                    target.MashgulotLength = dto.Seminar;
+                if (target.MashgulotId == 5)
+                    target.MashgulotLength = dto.Imtihon;
+                if (target.MashgulotId == 6)
+                    target.MashgulotLength = dto.MustaqilTalim;
+            }
+            if (await _work.SaveChangesAsync() != 0)
+                return true;
+            return false;
+        }
         public async Task<Oquv_Reja> CurrentGet(OquvRejaFanCreateDto dto)
         {
             return await _work.Oquvrejalar.FirstOrDefaultAsync(x=>x.FanId == dto.Fan&&x.MutaxasislikId == dto.Mutaxasislik&&x.Semestr == dto.Semestr);

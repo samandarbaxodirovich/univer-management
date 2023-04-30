@@ -132,9 +132,10 @@ namespace univer_management.Desktop
 					Hafta = rejaFan.Hafta,
 				};
 				var result = await service.CreateAsync(yuklama);
-				if (result.Item1)
+				if (result.Item1!=null)
 				{
 					MessageBox.Show($"{result.Item2}", "Natija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					this.Close();
 
 				}
 				else

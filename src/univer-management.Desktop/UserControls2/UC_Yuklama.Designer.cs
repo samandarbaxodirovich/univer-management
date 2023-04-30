@@ -43,7 +43,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2Button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -124,7 +123,6 @@
             this.Column6,
             this.Column7,
             this.Column8,
-            this.Column9,
             this.Column10});
             this.guna2DataGridView1.Location = new System.Drawing.Point(22, 185);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -135,6 +133,7 @@
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(1010, 266);
             this.guna2DataGridView1.TabIndex = 64;
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -200,16 +199,6 @@
             this.Column8.ReadOnly = true;
             this.Column8.Width = 125;
             // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "O\'zgartirish";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Text = "✏️";
-            this.Column9.UseColumnTextForButtonValue = true;
-            this.Column9.Width = 70;
-            // 
             // Column10
             // 
             this.Column10.HeaderText = "O\'chirish";
@@ -230,6 +219,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(43, 32);
             this.guna2Button1.TabIndex = 69;
             this.guna2Button1.UseVisualStyleBackColor = false;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label3
             // 
@@ -323,6 +313,8 @@
         private ComboBox YuklamaGuruhR;
         private DataGridView guna2DataGridView1;
         private Button guna2Button1;
+        private Label label3;
+        private ComboBox comboBox1;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -331,9 +323,6 @@
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column8;
-        private DataGridViewButtonColumn Column9;
         private DataGridViewButtonColumn Column10;
-        private Label label3;
-        private ComboBox comboBox1;
     }
 }
