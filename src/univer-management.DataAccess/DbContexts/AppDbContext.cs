@@ -28,7 +28,7 @@ namespace univer_management.DataAccess.DbContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseNpgsql("Host= hansken.db.elephantsql.com; Port=5432; Database=unmwgzfo; User Id = unmwgzfo; Password= 8rpCkvQs9-L-TNtHp98CTs4kj8CmZYs4;");
-            optionsBuilder.UseNpgsql("host=localhost; Port=5432; Database=univermanage; User Id = postgres; Password= bigchange");
+            optionsBuilder.UseNpgsql("host=localhost; Port=5432; Database=univermanage; User Id = postgres; Password= 5005");
         }   
 
     }

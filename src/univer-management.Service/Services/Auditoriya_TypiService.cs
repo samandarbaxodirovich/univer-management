@@ -30,5 +30,14 @@ namespace univer_management.Service.Services
         {
             throw new NotImplementedException();
         }
+        public async Task<bool> Create(Auditoriya_Tipi auditoriya_Tipi)
+        {
+            _work.AuditoriyaTiplari.Add(auditoriya_Tipi);
+            if((await _work.SaveChangesAsync())!= 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
