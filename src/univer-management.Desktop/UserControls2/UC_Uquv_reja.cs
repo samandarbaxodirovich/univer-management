@@ -130,5 +130,10 @@ namespace FinalProject.UserControls2
             };
 
         }
+
+        private void UC_Uquv_reja_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

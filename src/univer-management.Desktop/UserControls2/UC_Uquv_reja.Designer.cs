@@ -118,7 +118,7 @@
             this.datagrid_Oquv_reja.RowHeadersWidth = 51;
             this.datagrid_Oquv_reja.RowTemplate.Height = 29;
             this.datagrid_Oquv_reja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagrid_Oquv_reja.Size = new System.Drawing.Size(973, 266);
+            this.datagrid_Oquv_reja.Size = new System.Drawing.Size(801, 266);
             this.datagrid_Oquv_reja.TabIndex = 59;
             this.datagrid_Oquv_reja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_Oquv_reja_CellContentClick);
             // 
@@ -362,6 +362,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Uquv_reja";
             this.Size = new System.Drawing.Size(1040, 481);
+            this.Load += new System.EventHandler(this.UC_Uquv_reja_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_Oquv_reja)).EndInit();

@@ -63,12 +63,17 @@ namespace FinalProject.UserControls2
         }
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            guna2DataGridView1.Rows.Clear();
-            var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
-            foreach (var item in result)
+            try
             {
-                guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
+                guna2DataGridView1.Rows.Clear();
+                var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
+                foreach (var item in result)
+                {
+                    guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
+                }
             }
+            catch { }
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -117,12 +122,22 @@ namespace FinalProject.UserControls2
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-                        guna2DataGridView1.Rows.Clear();
-            var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
-            foreach (var item in result)
+            try
             {
-                guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
-            }
+                guna2DataGridView1.Rows.Clear();
+                var result = service.GetAll().Where(x => x.GuruxNomi == YuklamaGuruhR.SelectedItem.ToString()).ToList();
+                foreach (var item in result)
+                {
+                    guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
+                }
+            } 
+            catch { }
+            
+        }
+
+        private void UC_Yuklama_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

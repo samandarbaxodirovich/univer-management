@@ -296,6 +296,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Yuklama";
             this.Size = new System.Drawing.Size(1053, 481);
+            this.Load += new System.EventHandler(this.UC_Yuklama_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
