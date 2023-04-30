@@ -8,7 +8,7 @@ using univer_management.Domain.Common;
 
 namespace univer_management.Domain.Entities
 {
-    public class Yuklama:Auditable
+    public class Yuklama: Auditable
     {
         public long GuruxId { get; set; }
         public virtual Gurux Gurux { get; set; } = default!;
@@ -24,5 +24,6 @@ namespace univer_management.Domain.Entities
         public int Hafta { get; set; }  
         public long MashgulotId { get; set; }
         public virtual Mashgulot Mashgulot { get; set; } = default!;
+        public int Year { get; set; }
     }
 }

@@ -32,6 +32,7 @@ namespace univer_management.Service.Services
                     CreatedAt = DateTime.UtcNow.AddHours(5.0),
                     UpdatedAt = DateTime.UtcNow.AddHours(5.0),
                     Soat = dto.UmumiyDarsSoati,
+                    Year = dto.Year
                 }
             );
                 if (await _work.SaveChangesAsync() != 0)
@@ -39,25 +40,25 @@ namespace univer_management.Service.Services
                     var oquvRejaId = (await CurrentGet(dto)).Id;
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 1,
+                        MashgulotId = 3,
                         MashgulotLength = dto.Lektsiya,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 2,
+                        MashgulotId = 4,
                         MashgulotLength = dto.Seminar,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 3,
+                        MashgulotId = 5,
                         MashgulotLength = dto.Imtihon,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 4,
+                        MashgulotId = 6,
                         MashgulotLength = dto.MustaqilTalim,
                         OquvRejaId = oquvRejaId,
                     });
@@ -75,9 +76,9 @@ namespace univer_management.Service.Services
             
             
         }
-        public IEnumerable<OquvRejaViewModel> GetAll(long mutaxasislikId,int semestr)
+        public IEnumerable<OquvRejaViewModel> GetAll(long mutaxasislikId,int semestr,int year)
         {
-            var trainings = _work.Oquvrejalar.GetAll().Where(x=>x.MutaxasislikId == mutaxasislikId&&x.Semestr == semestr).ToList();
+            var trainings = _work.Oquvrejalar.GetAll().Where(x=>x.MutaxasislikId == mutaxasislikId&&x.Semestr == semestr&&x.Year == year).ToList();
             return trainings.Select(x => (OquvRejaViewModel)x).ToList();
         }
         public IEnumerable<Oquv_Reja> GetAllR()

@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace univer_management.DataAccess.Migrations
 {
-    public partial class initial_Create : Migration
+    public partial class AddingYear : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -198,6 +198,7 @@ namespace univer_management.DataAccess.Migrations
                     Semestr = table.Column<int>(type: "integer", nullable: false),
                     Soat = table.Column<double>(type: "double precision", nullable: false),
                     Hafta = table.Column<int>(type: "integer", nullable: false),
+                    Year = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
@@ -343,6 +344,7 @@ namespace univer_management.DataAccess.Migrations
                     HaftasigaDars = table.Column<double>(type: "double precision", nullable: false),
                     Hafta = table.Column<int>(type: "integer", nullable: false),
                     MashgulotId = table.Column<long>(type: "bigint", nullable: false),
+                    Year = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },

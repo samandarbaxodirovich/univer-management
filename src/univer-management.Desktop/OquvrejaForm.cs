@@ -11,6 +11,7 @@ using univer_management.Desktop.UserControls2;
 using univer_management.Domain.Entities;
 using univer_management.Service.Dtos.CreateDtos;
 using univer_management.Service.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace univer_management.Desktop
 {
@@ -18,18 +19,20 @@ namespace univer_management.Desktop
     {
 
 
-        public OquvrejaForm(long mutaxasislik,int semestr)
+        public OquvrejaForm(long mutaxasislik,int semestr, int year)
         {
             InitializeComponent();
             SetCombo();
-            mutaxasisId= mutaxasislik;
+            mutaxasisId = mutaxasislik;
             semest = semestr;
+            this.year = year;
         }
 
 
 
         private long mutaxasisId;
         private int semest;
+		private int year;
         FanService fanService = new();
         OquvRejaService service = new();
 
@@ -111,6 +114,11 @@ namespace univer_management.Desktop
 				{
 					dto.Seminar = double.Parse(guna2TextBox2.Text);
 
+				}
+				catch { }
+				try
+				{
+					dto.Year = year;
 				}
 				catch { }
 				dto.UmumiyDarsSoati = double.Parse(label3.Text);

@@ -12,8 +12,8 @@ using univer_management.DataAccess.DbContexts;
 namespace univer_management.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230428185217_initial_Create")]
-    partial class initial_Create
+    [Migration("20230429172114_AddingYear")]
+    partial class AddingYear
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -390,6 +390,9 @@ namespace univer_management.DataAccess.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<int>("Year")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("FanId");
@@ -462,6 +465,9 @@ namespace univer_management.DataAccess.Migrations
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

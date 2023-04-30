@@ -53,9 +53,7 @@ namespace FinalProject.UserControls2
 
         private void guna2Button2_Click_2(object sender, EventArgs e)
         {
-            YuklamaForm yuklamaForm = new YuklamaForm();
-            yuklamaForm.ShowDialog();
-            yuklamaForm.SetValues();
+            
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
@@ -66,6 +64,13 @@ namespace FinalProject.UserControls2
             {
                 guna2DataGridView1.Rows.Add(item.Id.ToString(), item.GuruxNomi, item.FanNomi, item.OqituvchiIsmi, item.Mashgulot, item.Haftalar, item.HaftalarSoatlar, item.AuditoriyaIsmi);
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            YuklamaForm yuklamaForm = new YuklamaForm();
+            yuklamaForm.ShowDialog();
+            yuklamaForm.SetValues();
         }
     }
 }

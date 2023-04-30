@@ -17,5 +17,7 @@ namespace univer_management.Domain.Entities
         public int Semestr { get; set; }
         public double Soat { get; set; }
         public int Hafta { get; set; }
+        public int Year { get; set; }
+
     }
 }

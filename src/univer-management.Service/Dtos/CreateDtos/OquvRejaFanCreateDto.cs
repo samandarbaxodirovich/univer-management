@@ -18,5 +18,6 @@ namespace univer_management.Service.Dtos.CreateDtos
         public int HaftalarSoni { get; set; }
         public double UmumiyDarsSoati { get; set; }
         public int Semestr { get; set; }
+        public int Year { get; set; }
     }
 }

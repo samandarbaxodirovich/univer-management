@@ -29,213 +29,289 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Yuklama));
-            panel1 = new Panel();
-            lblTitle = new Label();
-            label1 = new Label();
-            guna2Button2 = new Button();
-            YuklamaGuruhR = new ComboBox();
-            guna2DataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
-            Column9 = new DataGridViewButtonColumn();
-            Column10 = new DataGridViewButtonColumn();
-            guna2Button1 = new Button();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button2 = new System.Windows.Forms.Button();
+            this.YuklamaGuruhR = new System.Windows.Forms.ComboBox();
+            this.guna2DataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.guna2Button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.FromArgb(41, 128, 185);
-            panel1.Controls.Add(lblTitle);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1053, 80);
-            panel1.TabIndex = 0;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1053, 80);
+            this.panel1.TabIndex = 0;
             // 
             // lblTitle
             // 
-            lblTitle.Anchor = AnchorStyles.None;
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(395, 23);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(269, 32);
-            lblTitle.TabIndex = 2;
-            lblTitle.Text = "Yuklamalarni kiritish";
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(395, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(269, 32);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "Yuklamalarni kiritish";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(33, 113);
-            label1.Name = "label1";
-            label1.Size = new Size(161, 20);
-            label1.TabIndex = 12;
-            label1.Text = "Guruh raqamini kiriting";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Guruh raqamini kiriting";
             // 
             // guna2Button2
             // 
-            guna2Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2Button2.BackColor = Color.Blue;
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(810, 136);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.Size = new Size(196, 32);
-            guna2Button2.TabIndex = 68;
-            guna2Button2.Text = "Yuklama qo'shish";
-            guna2Button2.UseVisualStyleBackColor = false;
-            guna2Button2.Click += guna2Button2_Click_2;
+            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button2.BackColor = System.Drawing.Color.Blue;
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(810, 136);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(196, 32);
+            this.guna2Button2.TabIndex = 68;
+            this.guna2Button2.Text = "Yuklama qo\'shish";
+            this.guna2Button2.UseVisualStyleBackColor = false;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // YuklamaGuruhR
             // 
-            YuklamaGuruhR.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            YuklamaGuruhR.FormattingEnabled = true;
-            YuklamaGuruhR.Location = new Point(33, 136);
-            YuklamaGuruhR.Name = "YuklamaGuruhR";
-            YuklamaGuruhR.Size = new Size(283, 31);
-            YuklamaGuruhR.TabIndex = 65;
+            this.YuklamaGuruhR.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YuklamaGuruhR.FormattingEnabled = true;
+            this.YuklamaGuruhR.Location = new System.Drawing.Point(33, 136);
+            this.YuklamaGuruhR.Name = "YuklamaGuruhR";
+            this.YuklamaGuruhR.Size = new System.Drawing.Size(283, 31);
+            this.YuklamaGuruhR.TabIndex = 65;
             // 
             // guna2DataGridView1
             // 
-            guna2DataGridView1.AllowUserToAddRows = false;
-            guna2DataGridView1.AllowUserToDeleteRows = false;
-            guna2DataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            guna2DataGridView1.BackgroundColor = SystemColors.Control;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            guna2DataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10 });
-            guna2DataGridView1.Location = new Point(22, 185);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.ReadOnly = true;
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.RowTemplate.Height = 29;
-            guna2DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            guna2DataGridView1.Size = new Size(1010, 266);
-            guna2DataGridView1.TabIndex = 64;
+            this.guna2DataGridView1.AllowUserToAddRows = false;
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            this.guna2DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10});
+            this.guna2DataGridView1.Location = new System.Drawing.Point(22, 185);
+            this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
+            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 51;
+            this.guna2DataGridView1.RowTemplate.Height = 29;
+            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1010, 266);
+            this.guna2DataGridView1.TabIndex = 64;
             // 
             // Column1
             // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 40;
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 40;
             // 
             // Column2
             // 
-            Column2.HeaderText = "Guruh";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            Column2.Width = 125;
+            this.Column2.HeaderText = "Guruh";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
-            Column3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column3.HeaderText = "Fan nomi";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Fan nomi";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            Column4.HeaderText = "O'qituvchi";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Width = 125;
+            this.Column4.HeaderText = "O\'qituvchi";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
-            Column5.HeaderText = "Mashg'ulot";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.ReadOnly = true;
-            Column5.Width = 125;
+            this.Column5.HeaderText = "Mashg\'ulot";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // Column6
             // 
-            Column6.HeaderText = "Dars-soati(1-s)";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.ReadOnly = true;
-            Column6.Width = 125;
+            this.Column6.HeaderText = "Dars-soati(1-s)";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // Column7
             // 
-            Column7.HeaderText = "Haftalik dars soati";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            Column7.ReadOnly = true;
-            Column7.Width = 160;
+            this.Column7.HeaderText = "Haftalik dars soati";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 160;
             // 
             // Column8
             // 
-            Column8.HeaderText = "Auditoriya";
-            Column8.MinimumWidth = 6;
-            Column8.Name = "Column8";
-            Column8.ReadOnly = true;
-            Column8.Width = 125;
+            this.Column8.HeaderText = "Auditoriya";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 125;
             // 
             // Column9
             // 
-            Column9.HeaderText = "O'zgartirish";
-            Column9.MinimumWidth = 6;
-            Column9.Name = "Column9";
-            Column9.ReadOnly = true;
-            Column9.Text = "✏️";
-            Column9.UseColumnTextForButtonValue = true;
-            Column9.Width = 70;
+            this.Column9.HeaderText = "O\'zgartirish";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Text = "✏️";
+            this.Column9.UseColumnTextForButtonValue = true;
+            this.Column9.Width = 70;
             // 
             // Column10
             // 
-            Column10.HeaderText = "O'chirish";
-            Column10.MinimumWidth = 6;
-            Column10.Name = "Column10";
-            Column10.ReadOnly = true;
-            Column10.Text = "X";
-            Column10.UseColumnTextForButtonValue = true;
-            Column10.Width = 70;
+            this.Column10.HeaderText = "O\'chirish";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Text = "X";
+            this.Column10.UseColumnTextForButtonValue = true;
+            this.Column10.Width = 70;
             // 
             // guna2Button1
             // 
-            guna2Button1.BackColor = SystemColors.Control;
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
-            guna2Button1.Location = new Point(332, 136);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.Size = new Size(43, 32);
-            guna2Button1.TabIndex = 69;
-            guna2Button1.UseVisualStyleBackColor = false;
-            guna2Button1.Click += guna2Button1_Click_1;
+            this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(461, 134);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(43, 32);
+            this.guna2Button1.TabIndex = 69;
+            this.guna2Button1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(354, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "O\'quv yili";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1990",
+            "1991",
+            "1992",
+            "1993",
+            "1994",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030"});
+            this.comboBox1.Location = new System.Drawing.Point(325, 135);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(130, 31);
+            this.comboBox1.TabIndex = 70;
             // 
             // UC_Yuklama
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2Button2);
-            Controls.Add(YuklamaGuruhR);
-            Controls.Add(guna2DataGridView1);
-            Controls.Add(label1);
-            Controls.Add(panel1);
-            Name = "UC_Yuklama";
-            Size = new Size(1053, 481);
-            Load += UC_Yuklama_Load_1;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.YuklamaGuruhR);
+            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.Name = "UC_Yuklama";
+            this.Size = new System.Drawing.Size(1053, 481);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -257,5 +333,7 @@
         private DataGridViewTextBoxColumn Column8;
         private DataGridViewButtonColumn Column9;
         private DataGridViewButtonColumn Column10;
+        private Label label3;
+        private ComboBox comboBox1;
     }
 }
