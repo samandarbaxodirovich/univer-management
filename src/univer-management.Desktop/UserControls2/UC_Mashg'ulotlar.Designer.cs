@@ -221,6 +221,7 @@
             Controls.Add(panel1);
             Name = "UC_Mashg_ulotlar";
             Size = new Size(1040, 481);
+            Load += UC_Mashg_ulotlar_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridVIew_Oqituvchi).EndInit();

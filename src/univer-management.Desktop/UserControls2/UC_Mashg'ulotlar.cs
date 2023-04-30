@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using univer_management.Desktop.Updates;
 using univer_management.Domain.Entities;
 using univer_management.Service.Services;
 
@@ -77,7 +78,15 @@ namespace univer_management.Desktop.UserControls2
                 if (DataGridVIew_Oqituvchi.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
                     actionId = byte.Parse(e.ColumnIndex.ToString());
-                if (actionId == 3)
+                if (actionId == 2)
+                {
+                    UpdateMashg_ulotlar update = new UpdateMashg_ulotlar();
+                    update.Name = selectedRow.Cells[1].Value.ToString()!;
+                    update.Id = Convert.ToInt64(selectedRow.Cells[0].Value.ToString());
+                    update.ShowDialog();
+                    SetValues();
+                }
+                else if (actionId == 3)
                 {
                     DialogResult dialogResult = MessageBox.Show($"Siz xaqiqatdan xam {selectedRow.Cells[1].Value.ToString()} Guruhni o'chirmoqchimisiz?", "Natija", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                     if (dialogResult == DialogResult.Cancel)
@@ -90,6 +99,7 @@ namespace univer_management.Desktop.UserControls2
                         SetValues();
                     }
                 }
+                
             }
         }
 
@@ -117,6 +127,11 @@ namespace univer_management.Desktop.UserControls2
 
         // search button(lupa)
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_Mashg_ulotlar_Load(object sender, EventArgs e)
         {
 
         }

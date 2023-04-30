@@ -14,6 +14,6 @@ namespace univer_management.Service.Interfaces
         public IEnumerable<FanViewModel> GetAll();
         public IEnumerable<Fan> GetByKeyword(string keyword);
         public Task<(bool, string)> DeleteAsync(long id);
-        public Task<Fan> UpdateAsync(string name, long id);
+        public Task<(bool, string)> UpdateAsync(Fan entity,long id);
     }
 }

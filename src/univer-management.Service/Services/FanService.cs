@@ -44,9 +44,21 @@ namespace univer_management.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<Fan> UpdateAsync(string name, long id)
+        public async Task<(bool, string)> UpdateAsync(Fan entity, long id)
         {
-            throw new NotImplementedException();
+            var res = await _work.Fanlar.FindByIdAsync(id);
+            if (res != null)
+            {
+                res.KafedraId = entity.KafedraId;
+                res.Name = entity.Name;
+                res.Level = entity.Level;
+                if (await _work.SaveChangesAsync() != 0)
+                {
+                    return (true,"Fan muvaffaqiyatli o'zgartirildi");
+                }
+                return (false,"Fan xato ketti internet aloqasini tekshiring");
+            }
+            return (false, "Fan kafedra topilmadi");
         }
     }
 }

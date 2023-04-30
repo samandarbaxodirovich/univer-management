@@ -65,10 +65,21 @@ namespace univer_management.Service.Services
 			throw new NotImplementedException();
 		}
 
-		public Task<Gurux> UpdateAsync(string name, long id)
+		public async Task<(bool, string)> UpdateAsync(long id, Gurux entity)
 		{
-			throw new NotImplementedException();
-		}
+            var result = await _work.Guruxlar.FindByIdAsync(id);
+            if (result != null)
+            {
+                result.Name = entity.Name;
+                result.Capacity = entity.Capacity;
+                result.AuditoriyaId = entity.AuditoriyaId;
+                result.MutaxasislikId = entity.MutaxasislikId;
+            }
+            else
+                return (false,"Bunaqa Guruh mavjud emas");
+            if (await _work.SaveChangesAsync() != 0) return (true,"Guruh muvaffaqiyatli o'zgartirildi");
+            return (false, "Nimadir xato ketdi,internet aloqasini tekshiring");
+        }
 		public IEnumerable<Gurux> GetAllBit()
 		{
             return _work.Guruxlar.GetAll().Include(x => x.Mutaxasislik).Include(x => x.Auditoriya).OrderByDescending(x => x.Id).ToList();
