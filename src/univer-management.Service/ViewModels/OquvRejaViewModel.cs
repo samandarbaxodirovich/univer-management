@@ -29,10 +29,10 @@ namespace univer_management.Service.ViewModels
             {
                 Id = reja.Id,
                 FanName = fan.GetAll().FirstOrDefault(x => x.Id == reja.FanId)!.Name,
-                Lektsiya = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 3).FirstOrDefault()!.MashgulotLength,
-                Seminar = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 4).FirstOrDefault()!.MashgulotLength,
-                OraliqImtihon = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 5).FirstOrDefault()!.MashgulotLength,
-                MustaqilTalim = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 6).FirstOrDefault()!.MashgulotLength,
+                Lektsiya = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 1).FirstOrDefault()!.MashgulotLength,
+                Seminar = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 2).FirstOrDefault()!.MashgulotLength,
+                OraliqImtihon = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 3).FirstOrDefault()!.MashgulotLength,
+                MustaqilTalim = _work.OquvRejaMashgulotlar.GetAll().Where(x => x.OquvRejaId == reja.Id && x.MashgulotId == 4).FirstOrDefault()!.MashgulotLength,
                 Hafta = reja.Hafta
             };
         }

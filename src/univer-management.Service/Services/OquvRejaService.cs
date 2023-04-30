@@ -42,25 +42,25 @@ namespace univer_management.Service.Services
                     var oquvRejaId = (await CurrentGet(dto)).Id;
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 3,
+                        MashgulotId = 1,
                         MashgulotLength = dto.Lektsiya,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 4,
+                        MashgulotId = 2,
                         MashgulotLength = dto.Seminar,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 5,
+                        MashgulotId = 3,
                         MashgulotLength = dto.Imtihon,
                         OquvRejaId = oquvRejaId,
                     });
                     _work.OquvRejaMashgulotlar.Add(new Oquv_Reja_Mashgulot()
                     {
-                        MashgulotId = 6,
+                        MashgulotId = 4,
                         MashgulotLength = dto.MustaqilTalim,
                         OquvRejaId = oquvRejaId,
                     });
@@ -122,13 +122,13 @@ namespace univer_management.Service.Services
             var targetList = await _work.OquvRejaMashgulotlar.GetAll().Where(x=>x.OquvRejaId == dto.OquvRejaId).ToListAsync();
             foreach (var target in targetList)
             {
-                if(target.MashgulotId == 3)
+                if(target.MashgulotId == 1)
                     target.MashgulotLength = dto.Lektsiya;
-                if (target.MashgulotId == 4)
+                if (target.MashgulotId == 2)
                     target.MashgulotLength = dto.Seminar;
-                if (target.MashgulotId == 5)
+                if (target.MashgulotId == 3)
                     target.MashgulotLength = dto.Imtihon;
-                if (target.MashgulotId == 6)
+                if (target.MashgulotId == 4)
                     target.MashgulotLength = dto.MustaqilTalim;
             }
             if (await _work.SaveChangesAsync() != 0)
